@@ -10,5 +10,6 @@ item.RubyChestplate.name=Ruby Chestplate
 item.RubyHelmet.name=Ruby Helmet
 
 tile.jarm.rubyblock.name=Ruby Block
+tile.jarm.rubyore.name=Ruby Ore
 
 itemGroup.JARM=Just Another Ruby Mod
