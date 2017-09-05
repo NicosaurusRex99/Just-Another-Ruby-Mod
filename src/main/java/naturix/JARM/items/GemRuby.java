@@ -20,7 +20,7 @@ public class GemRuby extends Item {
         setUnlocalizedName(JARM.MODID + ".gemruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);
     }
-    
+
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));

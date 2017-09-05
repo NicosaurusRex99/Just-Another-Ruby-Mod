@@ -17,7 +17,7 @@ import naturix.JARM.items.HoeRuby;
 import naturix.JARM.items.PickaxeRuby;
 import naturix.JARM.items.ShovelRuby;
 import naturix.JARM.items.SwordRuby;
-import naturix.JARM.ModCrafting;
+import naturix.JARM.world.WorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -40,12 +40,11 @@ public class CommonProxy {
 		File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "JARM.cfg"));
         Config.readConfig();
-    	ModCrafting.initCrafting();
     }
 
-    public void init(FMLInitializationEvent e) 
+    public void init(FMLInitializationEvent e)
     {
-
+        	
     }
     
     public void postInit(FMLPostInitializationEvent e) 

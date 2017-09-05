@@ -10,6 +10,7 @@ import naturix.JARM.items.HoeRuby;
 import naturix.JARM.items.PickaxeRuby;
 import naturix.JARM.items.ShovelRuby;
 import naturix.JARM.items.SwordRuby;
+import net.minecraft.block.BlockOre;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -26,6 +27,8 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class ModItems 
 {
+	
+	
     @GameRegistry.ObjectHolder("JARM:gemruby")
     public static GemRuby gemruby;
     @GameRegistry.ObjectHolder("JARM:swordruby")

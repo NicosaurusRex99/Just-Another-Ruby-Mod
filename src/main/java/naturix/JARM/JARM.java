@@ -19,6 +19,7 @@ import org.apache.logging.log4j.Logger;
 
 import naturix.JARM.items.GemRuby;
 import naturix.JARM.proxy.CommonProxy;
+import naturix.JARM.recipestuffz.ModRecipes;
 
 @Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[13.19.0.2129,)", useMetadata = true)
 public class JARM {
@@ -45,6 +46,7 @@ public class JARM {
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
+        ModRecipes.init();
     }
 
     @Mod.EventHandler
@@ -59,5 +61,6 @@ public class JARM {
         {
             return new ItemStack(ModItems.gemruby);
         }
+		
     };
 }
