@@ -5,6 +5,7 @@ import java.io.File;
 import naturix.JARM.Config;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.armor.RubyBoots;
+import naturix.JARM.blocks.RubyOre;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
@@ -15,16 +16,16 @@ import naturix.JARM.items.HoeRuby;
 import naturix.JARM.items.PickaxeRuby;
 import naturix.JARM.items.ShovelRuby;
 import naturix.JARM.items.SwordRuby;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -37,9 +38,11 @@ public class CommonProxy {
         Config.readConfig();
     }
 
-    public void init(FMLInitializationEvent e) {
+    public void init(FMLInitializationEvent e) 
+    {
+    	
     }
-
+    
     public void postInit(FMLPostInitializationEvent e) 
     {
     	if (config.hasChanged()) {
@@ -65,5 +68,9 @@ public class CommonProxy {
         event.getRegistry().register(new RubyChestplate());
         event.getRegistry().register(new RubyHelmet());
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
-}
+        event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
+
+    }
+
+
 }

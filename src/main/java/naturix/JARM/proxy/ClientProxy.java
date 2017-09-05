@@ -1,5 +1,6 @@
 package naturix.JARM.proxy;
 
+import naturix.JARM.ModBlocks;
 import naturix.JARM.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +24,7 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         ModItems.initModels();
+        ModBlocks.initModels();
     }
 
 

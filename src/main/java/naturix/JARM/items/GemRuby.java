@@ -19,12 +19,7 @@ public class GemRuby extends Item {
         setRegistryName("gemruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".gemruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);
-        
     }
-
-	public ItemStack getWildcard() {
-		return new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE);
-	}
     
     @SideOnly(Side.CLIENT)
     public void initModel() {

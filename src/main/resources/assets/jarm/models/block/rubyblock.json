@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "jarm:blocks/blockruby"
+    "all": "jarm:blocks/rubyblock"
   }
 }

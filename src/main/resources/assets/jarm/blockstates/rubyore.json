@@ -1,7 +1,7 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "jarm:rubyblock"
+    "model": "jarm:rubyore"
   },
   "variants": {
     "normal": [{}],
