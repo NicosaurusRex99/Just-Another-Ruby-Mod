@@ -7,6 +7,7 @@ import naturix.JARM.recipestuffz.ModRecipes;
 import naturix.JARM.world.ModWorldGeneration;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
@@ -24,7 +25,7 @@ public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "JARM";
-    public static final String MODVERSION = "1.12.1.1";
+    public static final String MODVERSION = "1.12.1.5";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
@@ -35,6 +36,7 @@ public class JARM {
     public static Logger logger;
     
     public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("RUBY", 4, 4096, 14, 9, 19);
 
 
     @Mod.EventHandler

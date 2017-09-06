@@ -1,0 +1,15 @@
+item.jarm.gemruby.name=Ruby
+item.jarm.swordruby.name=Ruby Sword
+item.jarm.pickaxeruby.name=Ruby Pickaxe
+item.jarm.axeruby.name=Ruby Axe
+item.jarm.shovelruby.name=Ruby Shovel
+item.jarm.hoeruby.name=Ruby Hoe
+item.RubyBoots.name=Ruby Boots
+item.RubyLeggings.name=Ruby Leggings
+item.RubyChestplate.name=Ruby Chestplate
+item.RubyHelmet.name=Ruby Helmet
+
+tile.jarm.rubyblock.name=Ruby Block
+tile.jarm.rubyore.name=Ruby Ore
+
+itemGroup.JARM=Just Another Ruby Mod

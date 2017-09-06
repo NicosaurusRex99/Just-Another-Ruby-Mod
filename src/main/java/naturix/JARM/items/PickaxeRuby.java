@@ -15,7 +15,7 @@ import net.minecraftforge.event.RegistryEvent;
 public class PickaxeRuby extends ItemPickaxe {
 
     public PickaxeRuby(ToolMaterial material) {
-    	super(material.DIAMOND);
+    	super(JARM.rubyToolMaterial);
         setRegistryName("pickaxeruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".pickaxeruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);

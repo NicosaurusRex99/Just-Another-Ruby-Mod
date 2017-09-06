@@ -16,7 +16,7 @@ import net.minecraftforge.event.RegistryEvent;
 public class HoeRuby extends ItemHoe {
 
     public HoeRuby(ToolMaterial material) {
-    	super(material.DIAMOND);
+    	super(JARM.rubyToolMaterial);
         setRegistryName("hoeruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".hoeruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);

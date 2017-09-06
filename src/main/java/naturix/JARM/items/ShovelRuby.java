@@ -16,7 +16,7 @@ import net.minecraftforge.event.RegistryEvent;
 public class ShovelRuby extends ItemSpade {
 
 	public ShovelRuby(ToolMaterial material) {
-    	super(material.IRON);
+    	super(JARM.rubyToolMaterial);
         setRegistryName("shovelruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".shovelruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);

@@ -22,7 +22,7 @@ public class SwordRuby extends ItemSword
 
 	public double attackDamage;
 	public SwordRuby(ToolMaterial material) {
-		super(material.IRON);
+		super(JARM.rubyToolMaterial);
 		setRegistryName("swordruby");
 		setUnlocalizedName(JARM.MODID + ".swordruby");
         setCreativeTab(JARM.JustAnotherRubyMod);
@@ -30,18 +30,7 @@ public class SwordRuby extends ItemSword
         setMaxDamage(1500);
         	
 	}
-	public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot)
-    {
-        Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(equipmentSlot);
 
-        if (equipmentSlot == EntityEquipmentSlot.MAINHAND)
-        {
-            multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)this.attackDamage, 0));
-            multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -2.4000000953674316D, 0));
-        }
-
-        return multimap;
-    }
 	@SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
