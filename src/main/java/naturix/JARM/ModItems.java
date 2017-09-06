@@ -27,8 +27,7 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class ModItems 
 {
-	
-	
+
     @GameRegistry.ObjectHolder("JARM:gemruby")
     public static GemRuby gemruby;
     @GameRegistry.ObjectHolder("JARM:swordruby")

@@ -58,10 +58,7 @@ public class JARM {
     
     public static final CreativeTabs JustAnotherRubyMod = new CreativeTabs("JARM")
     {
-    	@Override
-    	public boolean hasSearchBar() {
-    		return true;
-    	}
+
         @SideOnly(Side.CLIENT)
         public ItemStack getTabIconItem()
         {
