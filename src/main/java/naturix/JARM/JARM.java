@@ -1,25 +1,23 @@
 package naturix.JARM;
 
+import org.apache.logging.log4j.Logger;
+
+import naturix.JARM.proxy.CommonProxy;
+import naturix.JARM.recipestuffz.ModRecipes;
+import naturix.JARM.world.ModWorldGeneration;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-
-import org.apache.logging.log4j.Logger;
-
-import naturix.JARM.items.GemRuby;
-import naturix.JARM.proxy.CommonProxy;
-import naturix.JARM.recipestuffz.ModRecipes;
 
 @Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[13.19.0.2129,)", useMetadata = true)
 public class JARM {
@@ -35,12 +33,16 @@ public class JARM {
     public static JARM instance;
 
     public static Logger logger;
+    
+    public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
         proxy.preInit(event);
+        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
     }
 
     @Mod.EventHandler
@@ -56,6 +58,10 @@ public class JARM {
     
     public static final CreativeTabs JustAnotherRubyMod = new CreativeTabs("JARM")
     {
+    	@Override
+    	public boolean hasSearchBar() {
+    		return true;
+    	}
         @SideOnly(Side.CLIENT)
         public ItemStack getTabIconItem()
         {
