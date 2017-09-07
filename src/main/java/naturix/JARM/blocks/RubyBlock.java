@@ -21,6 +21,8 @@ public class RubyBlock extends Block {
         setUnlocalizedName(JARM.MODID + ".rubyblock");
         setRegistryName("rubyblock");
         setCreativeTab(JARM.JustAnotherRubyMod);
+        setHardness(4f);
+		setResistance(5f);
     }
 	@SideOnly(Side.CLIENT)
     public void initModel() {

@@ -18,8 +18,10 @@ public class RubyOre extends Block {
         setRegistryName("rubyore");
         setCreativeTab(JARM.JustAnotherRubyMod);
         setHarvestLevel("pickaxe", 3);
-		// TODO Auto-generated constructor stub
+        setHardness(4f);
+		setResistance(5f);
 	}
+		// TODO Auto-generated constructor stub
 	@SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));

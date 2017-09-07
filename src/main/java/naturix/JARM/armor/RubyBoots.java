@@ -1,5 +1,6 @@
 package naturix.JARM.armor;
 
+import naturix.JARM.JARM;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -14,7 +15,7 @@ public class RubyBoots extends ItemArmor
 {
 	public RubyBoots()
 	{
-		super(ItemArmor.ArmorMaterial.DIAMOND, 0, EntityEquipmentSlot.FEET);
+		super(JARM.rubyArmorMaterial, 0, EntityEquipmentSlot.FEET);
 		ItemBase.registerItem("RubyBoots", this);
 	}
 
@@ -34,7 +35,7 @@ public class RubyBoots extends ItemArmor
 	@Override
 	public int getMaxDamage()
 	{
-		return 92;
+		return 492;
 	}
 
 

@@ -1,6 +1,7 @@
 	package naturix.JARM.armor;
 
-	import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+	import naturix.JARM.JARM;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 	import net.minecraft.entity.Entity;
 	import net.minecraft.inventory.EntityEquipmentSlot;
 	import net.minecraft.item.EnumRarity;
@@ -14,7 +15,7 @@
 	{
 		public RubyChestplate()
 		{
-			super(ItemArmor.ArmorMaterial.DIAMOND, 0, EntityEquipmentSlot.CHEST);
+			super(JARM.rubyArmorMaterial, 0, EntityEquipmentSlot.CHEST);
 			ItemBase.registerItem("RubyChestplate", this);
 		}
 
