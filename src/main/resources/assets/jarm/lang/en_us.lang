@@ -8,6 +8,8 @@ item.RubyBoots.name=Ruby Boots
 item.RubyLeggings.name=Ruby Leggings
 item.RubyChestplate.name=Ruby Chestplate
 item.RubyHelmet.name=Ruby Helmet
+item.PrismarineHelmet.name=Prismarine Helmet
+item.LapisBoots.name=Lapis Boots
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore
