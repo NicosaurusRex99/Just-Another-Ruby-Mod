@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 	
 	public class RubyHelmet extends ItemArmor 
 	{
+
 		public RubyHelmet()
 		{
 			super(JARM.rubyArmorMaterial, 0, EntityEquipmentSlot.HEAD);

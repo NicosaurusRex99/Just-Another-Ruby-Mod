@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 	{
 		public RubyChestplate()
 		{
+			
 			super(JARM.rubyArmorMaterial, 0, EntityEquipmentSlot.CHEST);
 			ItemBase.registerItem("RubyChestplate", this);
 		}

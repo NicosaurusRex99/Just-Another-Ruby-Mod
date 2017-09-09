@@ -3,6 +3,7 @@ package naturix.JARM.proxy;
 import java.io.File;
 
 import naturix.JARM.Config;
+import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
@@ -40,7 +41,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e)
     {
-        	
+    	 JARM.logger.info("JARM is present, Its loading :D");
     }
     
     public void postInit(FMLPostInitializationEvent e) 
@@ -54,8 +55,8 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
     	event.getRegistry().register(new RubyBlock());
     	event.getRegistry().register(new RubyOre(null));
+    	JARM.logger.info("JARM Blocks have just been loaded");
     }
-    
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new GemRuby());
@@ -70,7 +71,7 @@ public class CommonProxy {
         event.getRegistry().register(new RubyHelmet());
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
-
+        JARM.logger.info("JARM Items have just been loaded");
     }
 
 

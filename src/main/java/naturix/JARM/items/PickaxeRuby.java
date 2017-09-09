@@ -22,6 +22,7 @@ public class PickaxeRuby extends ItemPickaxe {
         setMaxStackSize(1);
         setMaxDamage(1420);
         setHarvestLevel(getUnlocalizedName(), 4);
+        getItemEnchantability();
     }
     @SideOnly(Side.CLIENT)
     public void initModel() {

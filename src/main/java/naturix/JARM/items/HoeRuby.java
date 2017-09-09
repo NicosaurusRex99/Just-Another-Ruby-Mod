@@ -23,6 +23,7 @@ public class HoeRuby extends ItemHoe {
         setMaxStackSize(1);
         setMaxDamage(1620);
         setHarvestLevel(getUnlocalizedName(), 1);
+        getItemEnchantability();
     }
     @SideOnly(Side.CLIENT)
     public void initModel() {

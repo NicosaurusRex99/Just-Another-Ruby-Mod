@@ -28,7 +28,7 @@ public class SwordRuby extends ItemSword
         setCreativeTab(JARM.JustAnotherRubyMod);
         setMaxStackSize(1);
         setMaxDamage(1500);
-        	
+        getItemEnchantability();
 	}
 
 	@SideOnly(Side.CLIENT)

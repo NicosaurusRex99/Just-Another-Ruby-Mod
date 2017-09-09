@@ -22,7 +22,8 @@ public class ShovelRuby extends ItemSpade {
         setCreativeTab(JARM.JustAnotherRubyMod);
         setMaxStackSize(1);
         setMaxDamage(1480);
-        setHarvestLevel(getUnlocalizedName(), 1);
+        setHarvestLevel(getUnlocalizedName(), 3);
+        getItemEnchantability();
     }
     @SideOnly(Side.CLIENT)
     public void initModel() {
