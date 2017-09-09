@@ -1,6 +1,8 @@
 package naturix.JARM;
 
 import naturix.JARM.armor.LapisBoots;
+import naturix.JARM.armor.LapisChestplate;
+import naturix.JARM.armor.LapisLeggings;
 import naturix.JARM.armor.PrismarineHelmet;
 import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
@@ -12,19 +14,9 @@ import naturix.JARM.items.HoeRuby;
 import naturix.JARM.items.PickaxeRuby;
 import naturix.JARM.items.ShovelRuby;
 import naturix.JARM.items.SwordRuby;
-import net.minecraft.block.BlockOre;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
 
 
 
@@ -55,6 +47,10 @@ public class ModItems
     public static PrismarineHelmet prismarinehelmet;
     @GameRegistry.ObjectHolder("JARM:lapisboots")
     public static LapisBoots lapisboots;
+    @GameRegistry.ObjectHolder("JARM:lapisleggings")
+    public static LapisLeggings lapisleggings;
+    @GameRegistry.ObjectHolder("JARM:lapischestplate")
+    public static LapisChestplate lapischestplate;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -70,6 +66,8 @@ public static void initModels() {
     rubyhelmet.initModel();
     prismarinehelmet.initModel();
     lapisboots.initModel();
+    lapisleggings.initModel();
+    lapischestplate.initModel();
 }
 
 }
