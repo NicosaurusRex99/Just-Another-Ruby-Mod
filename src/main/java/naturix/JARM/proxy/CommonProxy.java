@@ -7,6 +7,7 @@ import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.armor.LapisBoots;
 import naturix.JARM.armor.LapisChestplate;
+import naturix.JARM.armor.LapisHelmet;
 import naturix.JARM.armor.LapisLeggings;
 import naturix.JARM.armor.PrismarineHelmet;
 import naturix.JARM.armor.RubyBoots;
@@ -77,6 +78,7 @@ public class CommonProxy {
         event.getRegistry().register(new LapisBoots());
         event.getRegistry().register(new LapisLeggings());
         event.getRegistry().register(new LapisChestplate());
+        event.getRegistry().register(new LapisHelmet());
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
         JARM.logger.info("JARM Items have just been loaded");

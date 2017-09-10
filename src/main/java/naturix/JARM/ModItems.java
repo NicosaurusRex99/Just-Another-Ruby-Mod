@@ -2,6 +2,7 @@ package naturix.JARM;
 
 import naturix.JARM.armor.LapisBoots;
 import naturix.JARM.armor.LapisChestplate;
+import naturix.JARM.armor.LapisHelmet;
 import naturix.JARM.armor.LapisLeggings;
 import naturix.JARM.armor.PrismarineHelmet;
 import naturix.JARM.armor.RubyBoots;
@@ -51,6 +52,8 @@ public class ModItems
     public static LapisLeggings lapisleggings;
     @GameRegistry.ObjectHolder("JARM:lapischestplate")
     public static LapisChestplate lapischestplate;
+    @GameRegistry.ObjectHolder("JARM:lapishelmet")
+    public static LapisHelmet lapishelmet;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -68,6 +71,7 @@ public static void initModels() {
     lapisboots.initModel();
     lapisleggings.initModel();
     lapischestplate.initModel();
+    lapishelmet.initModel();
 }
 
 }
