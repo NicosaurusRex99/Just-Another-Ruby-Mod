@@ -9,11 +9,16 @@ import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
+import naturix.JARM.items.AxeLapis;
 import naturix.JARM.items.AxeRuby;
 import naturix.JARM.items.GemRuby;
+import naturix.JARM.items.HoeLapis;
 import naturix.JARM.items.HoeRuby;
+import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
+import naturix.JARM.items.ShovelLapis;
 import naturix.JARM.items.ShovelRuby;
+import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -54,6 +59,16 @@ public class ModItems
     public static LapisChestplate lapischestplate;
     @GameRegistry.ObjectHolder("JARM:lapishelmet")
     public static LapisHelmet lapishelmet;
+    @GameRegistry.ObjectHolder("JARM:axelapis")
+    public static AxeLapis axelapis;
+    @GameRegistry.ObjectHolder("JARM:swordlapis")
+    public static SwordLapis swordlapis;
+    @GameRegistry.ObjectHolder("JARM:hoelapis")
+    public static HoeLapis hoelapis;
+    @GameRegistry.ObjectHolder("JARM:pickaxelapis")
+    public static PickaxeLapis pickaxelapis;
+    @GameRegistry.ObjectHolder("JARM:shovellapis")
+    public static ShovelLapis shovellapis;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -72,6 +87,11 @@ public static void initModels() {
     lapisleggings.initModel();
     lapischestplate.initModel();
     lapishelmet.initModel();
+    axelapis.initModel();
+    swordlapis.initModel();
+    hoelapis.initModel();
+    pickaxelapis.initModel();
+    shovellapis.initModel();
 }
 
 }
