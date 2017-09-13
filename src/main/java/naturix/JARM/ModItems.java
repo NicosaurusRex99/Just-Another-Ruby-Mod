@@ -1,5 +1,9 @@
 package naturix.JARM;
 
+import naturix.JARM.armor.EmeraldBoots;
+import naturix.JARM.armor.EmeraldChestplate;
+import naturix.JARM.armor.EmeraldHelmet;
+import naturix.JARM.armor.EmeraldLeggings;
 import naturix.JARM.armor.LapisBoots;
 import naturix.JARM.armor.LapisChestplate;
 import naturix.JARM.armor.LapisHelmet;
@@ -69,6 +73,14 @@ public class ModItems
     public static PickaxeLapis pickaxelapis;
     @GameRegistry.ObjectHolder("JARM:shovellapis")
     public static ShovelLapis shovellapis;
+    @GameRegistry.ObjectHolder("JARM:emeraldboots")
+    public static EmeraldBoots emeraldboots;
+    @GameRegistry.ObjectHolder("JARM:emeraldleggings")
+    public static EmeraldLeggings emeraldleggings;
+    @GameRegistry.ObjectHolder("JARM:emeraldchestplate")
+    public static EmeraldChestplate emeraldchestplate;
+    @GameRegistry.ObjectHolder("JARM:emeraldhelmet")
+    public static EmeraldHelmet emeraldhelmet;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -92,6 +104,10 @@ public static void initModels() {
     hoelapis.initModel();
     pickaxelapis.initModel();
     shovellapis.initModel();
+    emeraldboots.initModel();
+    emeraldleggings.initModel();
+    emeraldchestplate.initModel();
+    emeraldhelmet.initModel();
 }
 
 }

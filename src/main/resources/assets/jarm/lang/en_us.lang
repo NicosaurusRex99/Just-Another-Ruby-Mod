@@ -18,6 +18,10 @@ item.LapisBoots.name=Lapis Boots
 item.LapisLeggings.name=Lapis Leggings
 item.LapisChestplate.name=Lapis Chestplate
 item.LapisHelmet.name=Lapis Helmet
+item.EmeraldBoots.name=Emerald Boots
+item.EmeraldLeggings.name=Emerald Leggings
+item.EmeraldChestplate.name=Emerald Chestplate
+item.EmeraldHelmet.name=Emerald Helmet
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore
