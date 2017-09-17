@@ -20,15 +20,20 @@ import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
 import naturix.JARM.blocks.RubyBlock;
 import naturix.JARM.blocks.RubyOre;
+import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
 import naturix.JARM.items.AxeRuby;
 import naturix.JARM.items.GemRuby;
+import naturix.JARM.items.HoeEmerald;
 import naturix.JARM.items.HoeLapis;
 import naturix.JARM.items.HoeRuby;
+import naturix.JARM.items.PickaxeEmerald;
 import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
+import naturix.JARM.items.ShovelEmerald;
 import naturix.JARM.items.ShovelLapis;
 import naturix.JARM.items.ShovelRuby;
+import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
 import net.minecraft.block.Block;
@@ -49,7 +54,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();
-        config = new Configuration(new File(directory.getPath(), "JARM.cfg"));
+        config = new Configuration(new File(directory.getPath(), "Just Another Ruby Mod.cfg"));
         Config.readConfig();
     }
 
@@ -99,6 +104,11 @@ public class CommonProxy {
         event.getRegistry().register(new EmeraldLeggings());
         event.getRegistry().register(new EmeraldChestplate());
         event.getRegistry().register(new EmeraldHelmet());
+        event.getRegistry().register(new AxeEmerald(null));
+        event.getRegistry().register(new HoeEmerald(null));
+        event.getRegistry().register(new PickaxeEmerald(null));
+        event.getRegistry().register(new ShovelEmerald(null));
+        event.getRegistry().register(new SwordEmerald(null));
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
         JARM.logger.info("JARM Items have just been loaded");

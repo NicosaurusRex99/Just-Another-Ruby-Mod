@@ -13,15 +13,20 @@ import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
+import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
 import naturix.JARM.items.AxeRuby;
 import naturix.JARM.items.GemRuby;
+import naturix.JARM.items.HoeEmerald;
 import naturix.JARM.items.HoeLapis;
 import naturix.JARM.items.HoeRuby;
+import naturix.JARM.items.PickaxeEmerald;
 import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
+import naturix.JARM.items.ShovelEmerald;
 import naturix.JARM.items.ShovelLapis;
 import naturix.JARM.items.ShovelRuby;
+import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -81,6 +86,16 @@ public class ModItems
     public static EmeraldChestplate emeraldchestplate;
     @GameRegistry.ObjectHolder("JARM:emeraldhelmet")
     public static EmeraldHelmet emeraldhelmet;
+    @GameRegistry.ObjectHolder("JARM:axeemerald")
+    public static AxeEmerald emeraldaxe;
+    @GameRegistry.ObjectHolder("JARM:hoeemerald")
+    public static HoeEmerald emeraldhoe;
+    @GameRegistry.ObjectHolder("JARM:pickaxeemerald")
+    public static PickaxeEmerald emeraldpickaxe;
+    @GameRegistry.ObjectHolder("JARM:shovelemerald")
+    public static ShovelEmerald emeraldshovel;
+    @GameRegistry.ObjectHolder("JARM:swordemerald")
+    public static SwordEmerald emeraldsword;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -108,6 +123,11 @@ public static void initModels() {
     emeraldleggings.initModel();
     emeraldchestplate.initModel();
     emeraldhelmet.initModel();
+    emeraldaxe.initModel();
+    emeraldhoe.initModel();
+    emeraldpickaxe.initModel();
+    emeraldshovel.initModel();
+    emeraldsword.initModel();
 }
 
 }
