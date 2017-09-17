@@ -70,7 +70,9 @@ public class CommonProxy {
     	event.getRegistry().register(new RubyBlock());
     	event.getRegistry().register(new RubyOre(null));
     	JARM.logger.info("JARM Blocks have just been loaded");
+    	
     }
+        
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new GemRuby());
