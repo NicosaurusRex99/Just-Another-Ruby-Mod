@@ -25,7 +25,7 @@ public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "JARM";
-    public static final String MODVERSION = "1.12.1.9";
+    public static final String MODVERSION = "1.12.2.2";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
