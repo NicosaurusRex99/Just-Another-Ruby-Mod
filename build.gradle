@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.12.2.2"
-group = "naturix.JARM" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "naturix.jarm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "jarm"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.0.2486"
+    version = "1.12.1-14.22.1.2481"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
