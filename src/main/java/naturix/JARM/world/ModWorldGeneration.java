@@ -2,6 +2,7 @@ package naturix.JARM.world;
 
 import java.util.Random;
 
+import naturix.JARM.Config;
 import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
 import net.minecraft.block.state.IBlockState;
@@ -18,7 +19,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		if (world.provider.getDimension() == 0) { // the overworld
+		if (world.provider.getDimension() == 0) { 
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
 	}
@@ -35,8 +36,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 		}
 	}
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(ModBlocks.rubyore.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 4, 14, 4 + random.nextInt(2), 2);
-
+		generateOre(ModBlocks.rubyore.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, Config.rubyVeinSize + random.nextInt(4), Config.rubySpawnTries);
 	}
 
 

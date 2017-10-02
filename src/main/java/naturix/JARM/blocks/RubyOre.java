@@ -21,7 +21,6 @@ public class RubyOre extends Block {
         setHardness(4f);
 		setResistance(5f);
 	}
-		// TODO Auto-generated constructor stub
 	@SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));

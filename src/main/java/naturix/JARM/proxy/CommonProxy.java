@@ -55,18 +55,21 @@ public class CommonProxy {
 	{
 		File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "Just Another Ruby Mod.cfg"));
+        JARM.logger.info("JARM config found");
         Config.readConfig();
+        JARM.logger.info("JARM config read");
     }
 
     public void init(FMLInitializationEvent e)
     {
-    	 JARM.logger.info("JARM is present, Its loading :D");
+    	 JARM.logger.info("JARM Initialized :D");
     }
     
     public void postInit(FMLPostInitializationEvent e) 
     {
     	if (config.hasChanged()) {
             config.save();
+            JARM.logger.info("JARM config loaded");
     }
     }
     

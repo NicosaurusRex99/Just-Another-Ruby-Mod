@@ -25,7 +25,7 @@ public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "JARM";
-    public static final String MODVERSION = "1.12.2.2";
+    public static final String MODVERSION = "1.12.2.4";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
@@ -36,7 +36,7 @@ public class JARM {
     public static Logger logger;
     
     public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{5, 9, 12, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("RUBY", 4, 4096, 14, Config.rubyDamage, 19);
+    public static final Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("RUBY", 4, 4096, 14, 9, 19);
     public static final ItemArmor.ArmorMaterial PrismarineArmorMaterial = EnumHelper.addArmorMaterial("prismarine", MODID + ":prismarine", 4, new int[]{2, 5, 2, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static final ItemArmor.ArmorMaterial LapisArmorMaterial = EnumHelper.addArmorMaterial("lapis", MODID + ":lapis", 4, new int[]{2, 5, 2, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static final ItemArmor.ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("emerald", MODID + ":emerald", 4, new int[]{4, 7, 5, 3}, 500, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
@@ -47,15 +47,17 @@ public class JARM {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
         logger = event.getModLog();
         proxy.preInit(event);
-        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
+        JARM.logger.info("WorldGen Loaded *fingers crossed*");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
         ModRecipes.init();
+        JARM.logger.info("JARM recipes loaded");
     }
 
     @Mod.EventHandler
