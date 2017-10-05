@@ -37,6 +37,7 @@ import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.config.Configuration;
