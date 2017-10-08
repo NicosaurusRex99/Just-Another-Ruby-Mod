@@ -42,15 +42,17 @@ public class JARM {
     public static final ItemArmor.ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("emerald", MODID + ":emerald", 4, new int[]{Config.emeraldHelm, Config.emeraldChest, Config.emeraldLeg, Config.emeraldBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
     public static final Item.ToolMaterial LapisToolMaterial = EnumHelper.addToolMaterial("LAPIS", 1, 100, 2, 1, 50);
     public static final Item.ToolMaterial EmeraldToolMaterial = EnumHelper.addToolMaterial("EMERALD", 3, 1300, 11, 7, 50);
-
+    public static final Item.ToolMaterial AmethystToolMaterial = EnumHelper.addToolMaterial("AMETHYST", 4, 6723, 13, 10, 500);
+    public static final ItemArmor.ArmorMaterial AmethystArmorMaterial = EnumHelper.addArmorMaterial("amethyst", MODID + ":emerald", 4, new int[]{Config.emeraldHelm, Config.emeraldChest, Config.emeraldLeg, Config.emeraldBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
-        logger = event.getModLog();
+    	logger = event.getModLog();
         proxy.preInit(event);
-        JARM.logger.info("WorldGen Loaded");
+    	GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
+    	JARM.logger.info("WorldGen Loaded");
     }
 
     @Mod.EventHandler

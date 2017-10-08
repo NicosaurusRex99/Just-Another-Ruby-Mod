@@ -5,6 +5,10 @@ import java.io.File;
 import naturix.JARM.Config;
 import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
+import naturix.JARM.armor.AmethystBoots;
+import naturix.JARM.armor.AmethystChestplate;
+import naturix.JARM.armor.AmethystHelmet;
+import naturix.JARM.armor.AmethystLeggings;
 import naturix.JARM.armor.EmeraldBoots;
 import naturix.JARM.armor.EmeraldChestplate;
 import naturix.JARM.armor.EmeraldHelmet;
@@ -18,6 +22,7 @@ import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
+import naturix.JARM.blocks.Amethyst;
 import naturix.JARM.blocks.RubyBlock;
 import naturix.JARM.blocks.RubyOre;
 import naturix.JARM.items.AxeEmerald;
@@ -37,7 +42,6 @@ import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.config.Configuration;
@@ -78,6 +82,7 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
     	event.getRegistry().register(new RubyBlock());
     	event.getRegistry().register(new RubyOre(null));
+    	event.getRegistry().register(new Amethyst(null));
     	JARM.logger.info("JARM Blocks have just been loaded");
     	
     }
@@ -113,8 +118,13 @@ public class CommonProxy {
         event.getRegistry().register(new PickaxeEmerald(null));
         event.getRegistry().register(new ShovelEmerald(null));
         event.getRegistry().register(new SwordEmerald(null));
+        event.getRegistry().register(new AmethystHelmet());
+        event.getRegistry().register(new AmethystChestplate());
+        event.getRegistry().register(new AmethystLeggings());
+        event.getRegistry().register(new AmethystBoots());
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(ModBlocks.amethystrock).setRegistryName(ModBlocks.amethystrock.getRegistryName()));
         JARM.logger.info("JARM Items have just been loaded");
     }
 

@@ -1,5 +1,9 @@
 package naturix.JARM;
 
+import naturix.JARM.armor.AmethystBoots;
+import naturix.JARM.armor.AmethystChestplate;
+import naturix.JARM.armor.AmethystHelmet;
+import naturix.JARM.armor.AmethystLeggings;
 import naturix.JARM.armor.EmeraldBoots;
 import naturix.JARM.armor.EmeraldChestplate;
 import naturix.JARM.armor.EmeraldHelmet;
@@ -96,6 +100,14 @@ public class ModItems
     public static ShovelEmerald emeraldshovel;
     @GameRegistry.ObjectHolder("JARM:swordemerald")
     public static SwordEmerald emeraldsword;
+    @GameRegistry.ObjectHolder("JARM:amethysthelmet")
+    public static AmethystHelmet amethysthelmet;
+    @GameRegistry.ObjectHolder("JARM:amethystchestplate")
+    public static AmethystChestplate amethystchestplate;
+    @GameRegistry.ObjectHolder("JARM:amethystleggings")
+    public static AmethystLeggings amethystleggings;
+    @GameRegistry.ObjectHolder("JARM:amethystboot")
+    public static AmethystBoots amethystboots;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -128,6 +140,10 @@ public static void initModels() {
     emeraldpickaxe.initModel();
     emeraldshovel.initModel();
     emeraldsword.initModel();
+    amethystboots.initModel();
+    amethystleggings.initModel();
+    amethystchestplate.initModel();
+    amethysthelmet.initModel();
 }
 
 }

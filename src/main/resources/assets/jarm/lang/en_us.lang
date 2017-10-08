@@ -27,8 +27,13 @@ item.EmeraldBoots.name=Emerald Boots
 item.EmeraldLeggings.name=Emerald Leggings
 item.EmeraldChestplate.name=Emerald Chestplate
 item.EmeraldHelmet.name=Emerald Helmet
+item.AmethystHelmet.name=Amethyst Helmet
+item.AmethystChestplate.name=Amethyst Chestplate
+item.AmethystLeggings.name=Amethyst Leggings
+item.AmethystBoot.name=Amethyst Boots
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore
+tile.jarm.amethystrock.name=Amethyst
 
 itemGroup.JARM=Just Another Ruby Mod

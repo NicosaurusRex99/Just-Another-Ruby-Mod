@@ -37,6 +37,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 	}
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		generateOre(ModBlocks.rubyore.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, Config.rubyVeinSize + random.nextInt(4), Config.rubySpawnTries);
+		generateOre(ModBlocks.amethystrock.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 1 + random.nextInt(4), Config.AmethystSpawnTries);
 	}
 
 
