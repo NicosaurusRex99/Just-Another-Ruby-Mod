@@ -17,19 +17,24 @@ import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
+import naturix.JARM.items.AxeAmethyst;
 import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
 import naturix.JARM.items.AxeRuby;
 import naturix.JARM.items.GemRuby;
+import naturix.JARM.items.HoeAmethyst;
 import naturix.JARM.items.HoeEmerald;
 import naturix.JARM.items.HoeLapis;
 import naturix.JARM.items.HoeRuby;
+import naturix.JARM.items.PickaxeAmethyst;
 import naturix.JARM.items.PickaxeEmerald;
 import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
+import naturix.JARM.items.ShovelAmethyst;
 import naturix.JARM.items.ShovelEmerald;
 import naturix.JARM.items.ShovelLapis;
 import naturix.JARM.items.ShovelRuby;
+import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
@@ -106,8 +111,18 @@ public class ModItems
     public static AmethystChestplate amethystchestplate;
     @GameRegistry.ObjectHolder("JARM:amethystleggings")
     public static AmethystLeggings amethystleggings;
-    @GameRegistry.ObjectHolder("JARM:amethystboot")
+    @GameRegistry.ObjectHolder("JARM:amethystboots")
     public static AmethystBoots amethystboots;
+    @GameRegistry.ObjectHolder("JARM:axeamethyst")
+    public static AxeAmethyst axeamethyst;
+    @GameRegistry.ObjectHolder("JARM:hoeamethyst")
+    public static HoeAmethyst hoeamethyst;
+    @GameRegistry.ObjectHolder("JARM:pickaxeamethyst")
+    public static PickaxeAmethyst pickaxeamethyst;
+    @GameRegistry.ObjectHolder("JARM:swordamethyst")
+    public static SwordAmethyst swordamethyst;
+    @GameRegistry.ObjectHolder("JARM:shovelamethyst")
+    public static ShovelAmethyst shovelamethyst;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -128,6 +143,7 @@ public static void initModels() {
     lapishelmet.initModel();
     axelapis.initModel();
     swordlapis.initModel();
+    pickaxeamethyst.initModel();
     hoelapis.initModel();
     pickaxelapis.initModel();
     shovellapis.initModel();
@@ -140,10 +156,14 @@ public static void initModels() {
     emeraldpickaxe.initModel();
     emeraldshovel.initModel();
     emeraldsword.initModel();
-    amethystboots.initModel();
     amethystleggings.initModel();
     amethystchestplate.initModel();
     amethysthelmet.initModel();
+    amethystboots.initModel();
+    axeamethyst.initModel();
+    hoeamethyst.initModel();
+    swordamethyst.initModel();
+    shovelamethyst.initModel();
 }
 
 }

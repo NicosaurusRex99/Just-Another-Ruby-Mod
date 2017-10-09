@@ -35,7 +35,7 @@ public class AmethystBoots extends ItemArmor
 	@Override
 	public int getMaxDamage()
 	{
-		return 4092;
+		return 1232;
 	}
 
 

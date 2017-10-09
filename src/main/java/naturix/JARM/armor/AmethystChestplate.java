@@ -29,7 +29,7 @@ public class AmethystChestplate extends ItemArmor
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
-		return "jarm:textures/models/armor/amesthystchestplate.png";
+		return "jarm:textures/models/armor/amethystchestplate.png";
 	}
 
 

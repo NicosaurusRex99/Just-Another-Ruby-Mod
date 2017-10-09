@@ -30,7 +30,12 @@ item.EmeraldHelmet.name=Emerald Helmet
 item.AmethystHelmet.name=Amethyst Helmet
 item.AmethystChestplate.name=Amethyst Chestplate
 item.AmethystLeggings.name=Amethyst Leggings
-item.AmethystBoot.name=Amethyst Boots
+item.AmethystBoots.name=Amethyst Boots
+item.jarm.axeamethyst.name=Amethyst Axe
+item.jarm.swordamethyst.name=Amethyst Sword
+item.jarm.pickaxeamethyst.name=Amethyst Pickaxe
+item.jarm.shovelamethyst.name=Amethyst Shovel
+item.jarm.hoeamethyst.name=Amethyst Hoe
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore

@@ -36,6 +36,10 @@ public class Config {
     public static int AmethystMax = 5;
     public static int AmethystMin = 1;
     public static int AmethystSpawnTries = 1;
+    public static int amethystHelm = 6;
+    public static int amethystChest = 10;
+    public static int amethystLeg = 13;
+    public static int amethystBoot = 6;
 
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -76,6 +80,10 @@ public class Config {
         AmethystMin = cfg.getInt("AmethystMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min amethyst height");
         AmethystMax = cfg.getInt("AmethystMax", CATEGORY_ORE, 5, 1, 256, "Choose a number between 1 and 256 to choose the max amethyst height");
         AmethystSpawnTries = cfg.getInt("AmethystSpawnTries", CATEGORY_ORE, 1, 1, 100, "Choose a number between 1 and 100 to change how often you see amethyst");
+        amethystHelm = cfg.getInt("amethystHelm", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst helmet.");
+        amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
+        amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
+        amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
         
         
     }
