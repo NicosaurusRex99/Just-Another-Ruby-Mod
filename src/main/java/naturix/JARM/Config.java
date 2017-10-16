@@ -13,6 +13,7 @@ public class Config {
     private static final String CATEGORY_GENERAL = "general";
     private static final String CATEGORY_ORE = "Ore Gen";
     private static final String CATEGORY_ARMOUR = "Armour";
+    private static final String CATEGORY_MISC = "misc";
 
     public static boolean isRubyBeaconBase = true;
     public static int rubyVeinSize = 2;
@@ -84,8 +85,8 @@ public class Config {
         amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
         amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
-        
-        
+        cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff (not yet implimented");
+
     }
     
 

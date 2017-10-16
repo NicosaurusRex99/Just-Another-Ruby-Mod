@@ -24,8 +24,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JARM {
 
     public static final String MODID = "jarm";
-    public static final String MODNAME = "JARM";
-    public static final String MODVERSION = "1.12.2.6";
+    public static final String MODNAME = "Just Another Ruby Mod";
+    public static final String MODVERSION = "1.12.2.7";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
