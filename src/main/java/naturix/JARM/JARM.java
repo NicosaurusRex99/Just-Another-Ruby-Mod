@@ -3,7 +3,6 @@ package naturix.JARM;
 import org.apache.logging.log4j.Logger;
 
 import naturix.JARM.proxy.CommonProxy;
-import naturix.JARM.recipestuffz.ModRecipes;
 import naturix.JARM.world.ModWorldGeneration;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
@@ -19,6 +18,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import nonJSONRecipes.ModRecipes;
 import scala.xml.PrettyPrinter.Item;
 
 @Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[14.21.0.2320,)", useMetadata = true)
