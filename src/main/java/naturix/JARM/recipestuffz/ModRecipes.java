@@ -1,6 +1,5 @@
 package naturix.JARM.recipestuffz;
 
-import naturix.JARM.Config;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.ModItems;
 import net.minecraft.item.ItemStack;

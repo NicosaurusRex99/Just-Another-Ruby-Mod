@@ -16,6 +16,7 @@ public class Config {
     private static final String CATEGORY_MISC = "misc";
 
     public static boolean isRubyBeaconBase = true;
+    public static boolean doWorldGen = true;
     public static int rubyVeinSize = 2;
     public static int rubyMax = 15;
     public static int rubyMin = 1;
@@ -86,7 +87,8 @@ public class Config {
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
         amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
         cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff (not yet implimented");
-
+        doWorldGen = cfg.getBoolean("doWorldGen", CATEGORY_MISC, doWorldGen, "Set to false to disable all world gen");
+        
     }
     
 
