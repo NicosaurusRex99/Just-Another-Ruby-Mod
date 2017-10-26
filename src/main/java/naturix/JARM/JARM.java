@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 
 import naturix.JARM.proxy.CommonProxy;
 import naturix.JARM.world.ModWorldGeneration;
+import naturix.nonJSONRecipes.ModRecipes;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item.ToolMaterial;
@@ -18,7 +19,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import nonJSONRecipes.ModRecipes;
 import scala.xml.PrettyPrinter.Item;
 
 @Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[14.21.0.2320,)", useMetadata = true)
@@ -26,7 +26,7 @@ public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
-    public static final String MODVERSION = "1.12.2.7";
+    public static final String MODVERSION = "1.12.2.8";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
