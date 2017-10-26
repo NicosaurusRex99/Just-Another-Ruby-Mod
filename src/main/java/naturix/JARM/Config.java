@@ -10,44 +10,38 @@ import naturix.JARM.proxy.CommonProxy;
 
 public class Config {
 
-    private static final String CATEGORY_GENERAL = "General";
+    private static final String CATEGORY_GENERAL = "general";
     private static final String CATEGORY_ORE = "Ore Gen";
     private static final String CATEGORY_ARMOUR = "Armour";
-    private static final String CATEGORY_MISC = "Misc";
-    private static final String CATEGORY_TOOLS = "Tools";
+    private static final String CATEGORY_MISC = "misc";
 
     public static boolean isRubyBeaconBase = true;
     public static boolean doWorldGen = true;
-    public static int rubyVeinSize;
-    public static int rubyMax;
-    public static int rubyMin;
-    public static int rubySpawnTries;
-    public static int rubyHelm;
-    public static int rubyChest;
-    public static int rubyLeg;
-    public static int rubyBoot;
-    public static int emeraldHelm;
-    public static int emeraldChest;
-    public static int emeraldLeg;
-    public static int emeraldBoot;
-    public static int lapisHelm;
-    public static int lapisChest;
-    public static int lapisLeg;
-    public static int lapisBoot;
-    public static int prismarineHelm;
-    public static int AmethystVeinSize;
-    public static int AmethystMax;
-    public static int AmethystMin;
-    public static int AmethystSpawnTries;
-    public static int amethystHelm;
-    public static int amethystChest;
-    public static int amethystLeg;
-    public static int amethystBoot;
-    public static int rubyHarvestLevel;
-    public static int rubyMaxUses;
-    public static int rubyEfficiency;
-    public static int rubyDamage;
-    public static int rubyEnchantability;
+    public static int rubyVeinSize = 2;
+    public static int rubyMax = 15;
+    public static int rubyMin = 1;
+    public static int rubySpawnTries = 1;
+    public static int rubyHelm = 5;
+    public static int rubyChest = 9;
+    public static int rubyLeg = 12;
+    public static int rubyBoot = 5;
+    public static int emeraldHelm = 4;
+    public static int emeraldChest = 7;
+    public static int emeraldLeg = 5;
+    public static int emeraldBoot = 3;
+    public static int lapisHelm = 2;
+    public static int lapisChest = 5;
+    public static int lapisLeg = 3;
+    public static int lapisBoot = 2;
+    public static int prismarineHelm = 2;
+    public static int AmethystVeinSize = 1;
+    public static int AmethystMax = 5;
+    public static int AmethystMin = 1;
+    public static int AmethystSpawnTries = 1;
+    public static int amethystHelm = 6;
+    public static int amethystChest = 10;
+    public static int amethystLeg = 13;
+    public static int amethystBoot = 6;
 
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -92,14 +86,8 @@ public class Config {
         amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
         amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
-        cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff");
+        cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff (not yet implimented");
         doWorldGen = cfg.getBoolean("doWorldGen", CATEGORY_MISC, doWorldGen, "Set to false to disable all world gen");
-        cfg.addCustomCategoryComment(CATEGORY_TOOLS, "values of tools");
-        rubyHarvestLevel = cfg.getInt("rubyHarvestLevel", CATEGORY_TOOLS, 4, 0, 10, "Ruby pickaxe harvest level");
-        rubyMaxUses = cfg.getInt("Ruby Uses", CATEGORY_TOOLS, 4096, 0, 100000000, "Maximum durability of the ruby tools");
-        rubyEfficiency = cfg.getInt("RubyEfficiency", CATEGORY_TOOLS, 14, 0, 5000, "Efficiency of ruby tools");
-        rubyDamage = cfg.getInt("Ruby Damage", CATEGORY_TOOLS, 9, 0, 1000000, "Damage dealt by ruby tools");
-        rubyEnchantability = cfg.getInt("Ruby Enchantability", CATEGORY_TOOLS, 19, 0, 50, "Higher means better enchants");
         
     }
     

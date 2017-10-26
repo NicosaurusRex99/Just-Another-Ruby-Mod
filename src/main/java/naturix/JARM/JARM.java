@@ -37,7 +37,7 @@ public class JARM {
     public static Logger logger;
     
     public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{Config.rubyHelm, Config.rubyChest, Config.rubyLeg, Config.rubyBoot}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("RUBY", Config.rubyHarvestLevel, Config.rubyMaxUses, Config.rubyEfficiency, Config.rubyDamage, Config.rubyEnchantability);
+    public static final ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("RUBY", 4, 4096, 14, 9, 19);
     public static final ItemArmor.ArmorMaterial PrismarineArmorMaterial = EnumHelper.addArmorMaterial("prismarine", MODID + ":prismarine", 4, new int[]{Config.prismarineHelm, 5, 2, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static final ItemArmor.ArmorMaterial LapisArmorMaterial = EnumHelper.addArmorMaterial("lapis", MODID + ":lapis", 4, new int[]{Config.lapisHelm, Config.lapisChest, Config.lapisLeg, Config.lapisBoot}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static final ItemArmor.ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("emerald", MODID + ":emerald", 4, new int[]{Config.emeraldHelm, Config.emeraldChest, Config.emeraldLeg, Config.emeraldBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
