@@ -168,9 +168,10 @@ public static void initModels() {
     swordamethyst.initModel();
     shovelamethyst.initModel();
 }
-	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent event)
+	
+	public static void initOreDict() {
 {
 		OreDictionary.registerOre("gemRuby", ModItems.gemruby);
 }
+	}
 }

@@ -5,6 +5,7 @@ import java.io.File;
 import naturix.JARM.Config;
 import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
+import naturix.JARM.ModItems;
 import naturix.JARM.armor.AmethystBoots;
 import naturix.JARM.armor.AmethystChestplate;
 import naturix.JARM.armor.AmethystHelmet;
@@ -68,6 +69,7 @@ public class CommonProxy {
         JARM.logger.info("JARM config found");
         Config.readConfig();
         JARM.logger.info("JARM config read");
+        ModItems.initOreDict();
     }
 
     public void init(FMLInitializationEvent e)
