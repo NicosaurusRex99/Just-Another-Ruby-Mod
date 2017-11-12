@@ -2,9 +2,9 @@ package naturix.JARM;
 
 import org.apache.logging.log4j.Logger;
 
+import naturix.JARM.nonJSONRecipes.ModRecipes;
 import naturix.JARM.proxy.CommonProxy;
 import naturix.JARM.world.ModWorldGeneration;
-import naturix.nonJSONRecipes.ModRecipes;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item.ToolMaterial;
