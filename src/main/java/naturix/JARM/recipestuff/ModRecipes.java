@@ -1,4 +1,4 @@
-package naturix.JARM.nonJSONRecipes;
+package naturix.JARM.recipestuff;
 
 import naturix.JARM.ModBlocks;
 import naturix.JARM.ModItems;

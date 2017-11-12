@@ -38,9 +38,12 @@ import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 
 
@@ -165,5 +168,9 @@ public static void initModels() {
     swordamethyst.initModel();
     shovelamethyst.initModel();
 }
-
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+{
+		OreDictionary.registerOre("gemRuby", ModItems.gemruby);
+}
 }
