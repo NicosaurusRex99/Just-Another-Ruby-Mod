@@ -13,6 +13,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class Amethyst extends Block {
 
@@ -25,6 +26,7 @@ public class Amethyst extends Block {
         setHarvestLevel("pickaxe", 4);
         setHardness(4f);
 		setResistance(5f);
+		OreDictionary.registerOre("gemAmethyst", this);
 	}
 	@SideOnly(Side.CLIENT)
     public void initModel() {

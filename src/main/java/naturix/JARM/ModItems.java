@@ -172,6 +172,7 @@ public static void initModels() {
 	public static void initOreDict() {
 {
 		OreDictionary.registerOre("gemRuby", ModItems.gemruby);
+		OreDictionary.registerOre("gemAmethyst", ModBlocks.amethystrock);
 }
 	}
 }
