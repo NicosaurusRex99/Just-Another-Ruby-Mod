@@ -11,22 +11,25 @@ import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import scala.xml.PrettyPrinter.Item;
 
-@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[14.21.0.2320,)", useMetadata = true)
+@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[14.21.0.2320,)", useMetadata = true, certificateFingerprint = JARM.FINGERPRINT)
 public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
     public static final String MODVERSION = "1.12.2.8";
+    public static final String FINGERPRINT = "xbuyrtnrewkdf73ad1am";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
@@ -76,6 +79,10 @@ public class JARM {
         {
             return new ItemStack(ModItems.swordruby);
         }
+        @EventHandler
+            public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
+                FMLLog.bigWarning("Invalid fingerprint detected for the JARM jar file! The file " + e.getSource().getName() + " may have been tampered with. This version will NOT be supported!");
+            }
 		
     };
 }
