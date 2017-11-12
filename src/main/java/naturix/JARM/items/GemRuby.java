@@ -19,6 +19,7 @@ public class GemRuby extends Item {
         setRegistryName("gemruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".gemruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);
+        OreDictionary.registerOre("gemRuby", this);
     }
 
     @SideOnly(Side.CLIENT)
