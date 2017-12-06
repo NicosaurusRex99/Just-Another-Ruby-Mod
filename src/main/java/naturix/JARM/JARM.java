@@ -3,6 +3,8 @@ package naturix.JARM;
 import org.apache.logging.log4j.Logger;
 
 import cofh.CoFHCore;
+import cofh.redstoneflux.RedstoneFlux;
+import mezz.jei.JustEnoughItems;
 import naturix.JARM.proxy.CommonProxy;
 import naturix.JARM.recipestuff.ModRecipes;
 import naturix.JARM.world.ModWorldGeneration;
@@ -32,7 +34,6 @@ public class JARM {
     public static final String MODNAME = "Just Another Ruby Mod";
     public static final String MODVERSION = "1.12.2.9";
     public static final String UPDATE_URL = "https://raw.github.com/nicosaurusrex99/jarm/1.12.2/\" + MOD_ID + \"_update.json";
-	
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;

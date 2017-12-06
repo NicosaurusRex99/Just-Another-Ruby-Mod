@@ -30,7 +30,6 @@ import naturix.JARM.items.PickaxeAmethyst;
 import naturix.JARM.items.PickaxeEmerald;
 import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
-import naturix.JARM.items.RFSword;
 import naturix.JARM.items.ShovelAmethyst;
 import naturix.JARM.items.ShovelEmerald;
 import naturix.JARM.items.ShovelLapis;
@@ -125,8 +124,6 @@ public class ModItems
     public static SwordAmethyst swordamethyst;
     @GameRegistry.ObjectHolder("JARM:shovelamethyst")
     public static ShovelAmethyst shovelamethyst;
-    @GameRegistry.ObjectHolder("JARM:rfsword")
-    public static RFSword rfsword;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -167,8 +164,7 @@ public static void initModels() {
     axeamethyst.initModel();
     hoeamethyst.initModel();
     swordamethyst.initModel();
-    shovelamethyst.initModel();
-    rfsword.initModel(); 
+    shovelamethyst.initModel(); 
 }
 	
 	public static void initOreDict() {
