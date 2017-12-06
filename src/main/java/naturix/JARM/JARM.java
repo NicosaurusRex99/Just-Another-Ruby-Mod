@@ -2,6 +2,7 @@ package naturix.JARM;
 
 import org.apache.logging.log4j.Logger;
 
+import cofh.CoFHCore;
 import naturix.JARM.proxy.CommonProxy;
 import naturix.JARM.recipestuff.ModRecipes;
 import naturix.JARM.world.ModWorldGeneration;
@@ -24,13 +25,14 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
-@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, dependencies = "required-after:forge@[14.21.0.2320,)", useMetadata = true, certificateFingerprint = JARM.FINGERPRINT)
+@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, updateJSON = JARM.UPDATE_URL)
 public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
-    public static final String MODVERSION = "1.12.2.8";
-    public static final String FINGERPRINT = "xbuyrtnrewkdf73ad1am";
+    public static final String MODVERSION = "1.12.2.9";
+    public static final String UPDATE_URL = "https://raw.github.com/nicosaurusrex99/jarm/1.12.2/\" + MOD_ID + \"_update.json";
+	
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;

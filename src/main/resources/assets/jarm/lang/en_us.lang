@@ -36,6 +36,7 @@ item.jarm.swordamethyst.name=Amethyst Sword
 item.jarm.pickaxeamethyst.name=Amethyst Pickaxe
 item.jarm.shovelamethyst.name=Amethyst Shovel
 item.jarm.hoeamethyst.name=Amethyst Hoe
+item.rfsword.name=RF Sword
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore
@@ -43,3 +44,6 @@ tile.jarm.amethystrock.name=Amethyst
 
 itemGroup.JARM=Just Another Ruby Mod
 itemGroup.RFlux=RFlux
+
+info.jarm.tool.energyPerUse=Rf per use
+info.jarm.tool.chargeOn=Charge active

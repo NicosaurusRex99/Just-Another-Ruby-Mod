@@ -30,6 +30,7 @@ import naturix.JARM.items.PickaxeAmethyst;
 import naturix.JARM.items.PickaxeEmerald;
 import naturix.JARM.items.PickaxeLapis;
 import naturix.JARM.items.PickaxeRuby;
+import naturix.JARM.items.RFSword;
 import naturix.JARM.items.ShovelAmethyst;
 import naturix.JARM.items.ShovelEmerald;
 import naturix.JARM.items.ShovelLapis;
@@ -38,8 +39,6 @@ import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -126,6 +125,8 @@ public class ModItems
     public static SwordAmethyst swordamethyst;
     @GameRegistry.ObjectHolder("JARM:shovelamethyst")
     public static ShovelAmethyst shovelamethyst;
+    @GameRegistry.ObjectHolder("JARM:rfsword")
+    public static RFSword rfsword;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -167,6 +168,7 @@ public static void initModels() {
     hoeamethyst.initModel();
     swordamethyst.initModel();
     shovelamethyst.initModel();
+    rfsword.initModel(); 
 }
 	
 	public static void initOreDict() {
