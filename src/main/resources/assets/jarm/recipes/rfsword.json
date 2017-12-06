@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "YXY",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_rod"
+    },
+    "X": {
+      "item": "jarm:gemruby"
+    },
+    "Y": {
+      "item": "jarm:amethystrock"
+    }
+  },
+  "result": {
+    "item": "jarm:rfsword"
+  }
+}

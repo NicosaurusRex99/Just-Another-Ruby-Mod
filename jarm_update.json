@@ -1,7 +1,10 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
-		"1.12.2.9": "New RF Sword"
+		"1.12.2.9": "New RF Sword",
+		"1.12.2.8": "",
+		"1.12.2.7": "",
+		"1.12.2.6": ""
 	},
 	"promos": {
 		"1.12.2-latest": "1.12.2.9",
