@@ -29,7 +29,7 @@ public class JARM {
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
     public static final String MODVERSION = "1.12.2.9";
-    public static final String UPDATE_URL = "https://raw.github.com/nicosaurusrex99/jarm/1.12.2/\" + MOD_ID + \"_update.json";
+    public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
