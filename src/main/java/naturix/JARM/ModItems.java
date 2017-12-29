@@ -17,6 +17,10 @@ import naturix.JARM.armor.RubyBoots;
 import naturix.JARM.armor.RubyChestplate;
 import naturix.JARM.armor.RubyHelmet;
 import naturix.JARM.armor.RubyLeggings;
+import naturix.JARM.armor.ShulkerBoots;
+import naturix.JARM.armor.ShulkerChestplate;
+import naturix.JARM.armor.ShulkerHelmet;
+import naturix.JARM.armor.ShulkerLeggings;
 import naturix.JARM.items.AxeAmethyst;
 import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
@@ -124,6 +128,14 @@ public class ModItems
     public static SwordAmethyst swordamethyst;
     @GameRegistry.ObjectHolder("JARM:shovelamethyst")
     public static ShovelAmethyst shovelamethyst;
+    @GameRegistry.ObjectHolder("JARM:shulkerboots")
+    public static ShulkerBoots shulkerboots;
+    @GameRegistry.ObjectHolder("JARM:shulkerleggings")
+    public static ShulkerLeggings shulkerleggings;
+    @GameRegistry.ObjectHolder("JARM:shulkerhelmet")
+    public static ShulkerHelmet shulkerhelmet;
+    @GameRegistry.ObjectHolder("JARM:shulkerchestplate")
+    public static ShulkerChestplate shulkerchestplate;
     
 @SideOnly(Side.CLIENT)
 public static void initModels() {
@@ -165,6 +177,10 @@ public static void initModels() {
     hoeamethyst.initModel();
     swordamethyst.initModel();
     shovelamethyst.initModel(); 
+    shulkerboots.initModel();
+    shulkerleggings.initModel();
+    shulkerhelmet.initModel();
+    shulkerchestplate.initModel();
 }
 	
 	public static void initOreDict() {

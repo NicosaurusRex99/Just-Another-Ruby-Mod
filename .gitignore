@@ -22,17 +22,16 @@ eclipse
 run
 build.gradle
 CREDITS-fml.txt
-forge-1.12.2-14.23.0.2512-changelog.txt
 forge-1.12.2-14.23.0.2528-changelog.txt
+forge-1.12.2-14.23.0.2512-changelog.txt
 forge-1.12.2-14.23.1.2559-changelog.txt
+forge-1.12.2-14.23.1.2581-changelog.txt
 gradle.properties
-JARM_Client.launch
-JARM_Client.launch
 LICENSE-new.txt
 MinecraftForge-Credits.txt
 Paulscode IBXM Library License.txt
 Paulscode SoundSystem CodecIBXM License.txt
 README.txt
 setupCleanCache.bat
-*.bat
-build.gradle
+setupEclipse.bat
+UpdateForge.bat

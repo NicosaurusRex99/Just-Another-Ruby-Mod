@@ -2,9 +2,6 @@ package naturix.JARM;
 
 import org.apache.logging.log4j.Logger;
 
-import cofh.CoFHCore;
-import cofh.redstoneflux.RedstoneFlux;
-import mezz.jei.JustEnoughItems;
 import naturix.JARM.proxy.CommonProxy;
 import naturix.JARM.recipestuff.ModRecipes;
 import naturix.JARM.world.ModWorldGeneration;
@@ -25,7 +22,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, updateJSON = JARM.UPDATE_URL)
 public class JARM {
@@ -52,7 +48,8 @@ public class JARM {
     public static final ToolMaterial EmeraldToolMaterial = EnumHelper.addToolMaterial("EMERALD", 3, 1300, 11, 7, 50);
     public static final ToolMaterial AmethystToolMaterial = EnumHelper.addToolMaterial("AMETHYST", 4, 6723, 13, 10, 500);
     public static final ItemArmor.ArmorMaterial AmethystArmorMaterial = EnumHelper.addArmorMaterial("amethyst", MODID + ":emerald", 4, new int[]{Config.amethystHelm, Config.amethystChest, Config.amethystLeg, Config.amethystBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    
+    public static final ItemArmor.ArmorMaterial ShulkerArmorMaterial = EnumHelper.addArmorMaterial("SHULKER", MODID + ":shulker", 4, new int[]{Config.shulkerHelm, Config.shulkerChest, Config.shulkerLeg, Config.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
+  
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

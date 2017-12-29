@@ -42,6 +42,10 @@ public class Config {
     public static int amethystChest = 10;
     public static int amethystLeg = 13;
     public static int amethystBoot = 6;
+    public static int shulkerHelm = 5;
+    public static int shulkerChest = 8;
+    public static int shulkerLeg = 10;
+    public static int shulkerBoot = 4;
 
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -88,7 +92,11 @@ public class Config {
         amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
         cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff (not yet implimented");
         doWorldGen = cfg.getBoolean("doWorldGen", CATEGORY_MISC, doWorldGen, "Set to false to disable all world gen");
-        
+        shulkerHelm = cfg.getInt("shulkerHelm", CATEGORY_ARMOUR, 5, 1, 1000000, "Damage reduction on the shulker helmet.");
+        shulkerChest = cfg.getInt("shulkerChest", CATEGORY_ARMOUR, 8, 1, 1000000, "Damage reduction on the shulker chestplate.");
+        shulkerLeg = cfg.getInt("shulkerLeg", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the shulker leggings.");
+        shulkerBoot = cfg.getInt("shulkerBoot", CATEGORY_ARMOUR, 4, 1, 1000000, "Damage reduction on the shulker boots.");
+       
     }
     
 
