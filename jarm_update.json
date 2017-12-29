@@ -1,10 +1,15 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
-		"1.12.2.9": "New RF Sword",
-		"1.12.2.8": "",
-		"1.12.2.7": "",
-		"1.12.2.6": ""
+		"1.12.2.9": "Shulker Armour",
+		"1.12.2.8": "Ore Dictionary Update",
+		"1.12.2.7": "New block properties",
+		"1.12.2.6": "Added amethyst",
+		"1.12.2.5": "Added config options",
+		"1.12.2.4": "World gen fixes",
+		"1.12.2.3": "Added world gen config options",
+		"1.12.2.2": "Ruby sword back end stuff",
+		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
 		"1.12.2-latest": "1.12.2.9",
