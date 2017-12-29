@@ -69,7 +69,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();
-        config = new Configuration(new File(directory.getPath(), "Just Another Ruby Mod.cfg"));
+        config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod.cfg"));
         JARM.logger.info("JARM config found");
         Config.readConfig();
         JARM.logger.info("JARM config read");

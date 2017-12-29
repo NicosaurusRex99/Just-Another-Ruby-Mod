@@ -10,10 +10,10 @@ import naturix.JARM.proxy.CommonProxy;
 
 public class Config {
 
-    private static final String CATEGORY_GENERAL = "general";
+    private static final String CATEGORY_GENERAL = "General";
     private static final String CATEGORY_ORE = "Ore Gen";
     private static final String CATEGORY_ARMOUR = "Armour";
-    private static final String CATEGORY_MISC = "misc";
+    private static final String CATEGORY_MISC = "Misc";
 
     public static boolean isRubyBeaconBase = true;
     public static boolean doWorldGen = true;
@@ -90,7 +90,7 @@ public class Config {
         amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
         amethystBoot = cfg.getInt("amethystBoot", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst boots.");
-        cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff (not yet implimented");
+        cfg.addCustomCategoryComment(CATEGORY_MISC, "Random stuff");
         doWorldGen = cfg.getBoolean("doWorldGen", CATEGORY_MISC, doWorldGen, "Set to false to disable all world gen");
         shulkerHelm = cfg.getInt("shulkerHelm", CATEGORY_ARMOUR, 5, 1, 1000000, "Damage reduction on the shulker helmet.");
         shulkerChest = cfg.getInt("shulkerChest", CATEGORY_ARMOUR, 8, 1, 1000000, "Damage reduction on the shulker chestplate.");
