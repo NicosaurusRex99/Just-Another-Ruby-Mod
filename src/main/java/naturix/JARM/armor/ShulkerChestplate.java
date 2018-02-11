@@ -13,13 +13,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ShulkerChestplate extends ItemArmor 
 {
+	
 	public ShulkerChestplate()
 	{
-		
+
 		super(JARM.ShulkerArmorMaterial, 0, EntityEquipmentSlot.CHEST);
 		ItemBase.registerItem("ShulkerChestplate", this);
 	}
-
 	@Override
 	public EnumRarity getRarity(ItemStack stack)
 	{
@@ -50,4 +50,5 @@ public class ShulkerChestplate extends ItemArmor
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
-}
+
+	}

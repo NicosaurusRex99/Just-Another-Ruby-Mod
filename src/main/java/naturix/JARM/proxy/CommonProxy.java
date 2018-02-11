@@ -74,7 +74,7 @@ public class CommonProxy {
         Config.readConfig();
         JARM.logger.info("JARM config read");
         ModItems.initOreDict();
-    }
+	}
 
     public void init(FMLInitializationEvent e)
     {

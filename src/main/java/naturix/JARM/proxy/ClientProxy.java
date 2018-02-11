@@ -1,11 +1,7 @@
 package naturix.JARM.proxy;
 
-import naturix.JARM.Config;
-import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.ModItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -18,6 +14,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
     }
+
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         ModItems.initModels();

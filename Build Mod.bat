@@ -1,1 +1,1 @@
-gradlew build --stacktrace --info
+gradlew build --stacktrace

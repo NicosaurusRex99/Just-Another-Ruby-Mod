@@ -28,7 +28,7 @@ public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
-    public static final String MODVERSION = "1.12.2.9";
+    public static final String MODVERSION = "1.12.2.10";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
@@ -81,10 +81,5 @@ public class JARM {
         {
             return new ItemStack(ModItems.swordruby);
         }
-        @EventHandler
-            public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
-                FMLLog.bigWarning("Invalid fingerprint detected for the JARM jar file! The file " + e.getSource().getName() + " may have been tampered with. This version will NOT be supported!");
-            }
-		
     };
 }

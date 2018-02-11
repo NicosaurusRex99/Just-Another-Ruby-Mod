@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.12.2.9"
+version = "1.12.2.10"
 group = "naturix.jarm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "jarm"
 
@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.1.2581"
+    version = "1.12.2-14.23.2.2611"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -74,4 +74,23 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+	repositories {
+    maven {
+        name 'progwm\'s maven' // JEI
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'tterrag\'s maven' // CTM
+        url 'http://maven.tterrag.com/'
+    }
+}
+
+dependencies {   
+    compile "mezz.jei:jei_1.12.2:${jei_version}"
+    compile "team.chisel.ctm:CTM:MC1.12-${ctm_version}"
+    compile "team.chisel:Chisel:MC${chisel_version}:api"
+    runtime "team.chisel:Chisel:MC${chisel_version}"
+    compile "slimeknights:TConstruct:$minecraft_version-$tcon_version:deobf"
+    compile "slimeknights.mantle:Mantle:1.12-$mantle_version:deobf"
+}
 }

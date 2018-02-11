@@ -35,3 +35,14 @@ README.txt
 setupCleanCache.bat
 setupEclipse.bat
 UpdateForge.bat
+Build Mod.bat
+*.bat
+forge-1.12.2-14.23.1.2582-changelog.txt
+forge-1.12.2-14.23.2.2611-changelog.txt
+JARM_Client.launch
+src/main/java/com/example/examplemod/ExampleMod.java
+JARM_Client.launch
+*.launch
+Build Mod.bat
+JARM_Client.launch
+Build Mod.bat
