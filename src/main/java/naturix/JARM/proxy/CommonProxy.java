@@ -30,6 +30,7 @@ import naturix.JARM.armor.ShulkerLeggings;
 import naturix.JARM.blocks.Amethyst;
 import naturix.JARM.blocks.RubyBlock;
 import naturix.JARM.blocks.RubyOre;
+import naturix.JARM.compat.JARMCompat;
 import naturix.JARM.items.AxeAmethyst;
 import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
@@ -74,7 +75,8 @@ public class CommonProxy {
         Config.readConfig();
         JARM.logger.info("JARM config read");
         ModItems.initOreDict();
-	}
+        JARMCompat.registerTOP();
+       	}
 
     public void init(FMLInitializationEvent e)
     {
@@ -148,6 +150,4 @@ public class CommonProxy {
         JARM.logger.info("JARM Items have just been loaded");
     }
 
-
-
-}
+    }
