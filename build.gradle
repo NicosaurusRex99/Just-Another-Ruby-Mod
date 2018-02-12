@@ -83,6 +83,10 @@ processResources {
         name 'tterrag\'s maven' // CTM
         url 'http://maven.tterrag.com/'
     }
+	maven {
+        name = "CoFH Maven"
+        url = "http://maven.covers1624.net"
+    }
 }
 
 dependencies {   
@@ -93,5 +97,6 @@ dependencies {
     compile "slimeknights:TConstruct:$minecraft_version-$tcon_version:deobf"
     compile "slimeknights.mantle:Mantle:1.12-$mantle_version:deobf"
 	deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.14-7"
+	deobfCompile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
 }
 }
