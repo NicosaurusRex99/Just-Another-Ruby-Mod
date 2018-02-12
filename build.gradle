@@ -92,5 +92,6 @@ dependencies {
     runtime "team.chisel:Chisel:MC${chisel_version}"
     compile "slimeknights:TConstruct:$minecraft_version-$tcon_version:deobf"
     compile "slimeknights.mantle:Mantle:1.12-$mantle_version:deobf"
+	deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.14-7"
 }
 }
