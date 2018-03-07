@@ -22,6 +22,9 @@ public class ModWorldGeneration implements IWorldGenerator {
 		if (world.provider.getDimension() == 0) { 
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
+		if (world.provider.getDimension() == -11325) {
+			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+		}
 	}
 	
 
