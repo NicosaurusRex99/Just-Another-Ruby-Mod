@@ -76,7 +76,7 @@ public class JARM {
         @SideOnly(Side.CLIENT)
         public ItemStack getTabIconItem()
         {
-            return new ItemStack(ModItems.swordruby);
+            return new ItemStack(ModBlocks.rubyblock);
         }
     };
 
