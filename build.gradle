@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.2.2611"
+    version = "1.12.2-14.23.2.2624"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -95,7 +95,7 @@ dependencies {
     compile "team.chisel:Chisel:MC${chisel_version}:api"
     runtime "team.chisel:Chisel:MC${chisel_version}"
 	deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.14-7"
-	deobfCompile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
-	compile "cofh:CoFHCore:${minecraft_version}-${cofh_core_version}:deobf"
+	//deobfCompile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
+	//compile "cofh:CoFHCore:${minecraft_version}-${cofh_core_version}:deobf"
 }
 }

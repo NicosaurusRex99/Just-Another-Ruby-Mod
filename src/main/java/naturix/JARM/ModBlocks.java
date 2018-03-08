@@ -3,6 +3,9 @@ package naturix.JARM;
 import naturix.JARM.blocks.Amethyst;
 import naturix.JARM.blocks.RubyBlock;
 import naturix.JARM.blocks.RubyOre;
+import net.minecraft.block.Block;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -23,4 +26,5 @@ public class ModBlocks
         rubyore.initModel();
         amethystrock.initModel();
 	}
+
 }

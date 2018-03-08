@@ -21,6 +21,9 @@ import naturix.JARM.armor.ShulkerBoots;
 import naturix.JARM.armor.ShulkerChestplate;
 import naturix.JARM.armor.ShulkerHelmet;
 import naturix.JARM.armor.ShulkerLeggings;
+import naturix.JARM.blocks.Amethyst;
+import naturix.JARM.blocks.RubyBlock;
+import naturix.JARM.blocks.RubyOre;
 import naturix.JARM.items.AxeAmethyst;
 import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
@@ -42,6 +45,11 @@ import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -189,4 +197,5 @@ public static void initModels() {
 		OreDictionary.registerOre("gemAmethyst", ModBlocks.amethystrock);
 }
 	}
+
 }
