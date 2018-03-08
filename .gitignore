@@ -20,32 +20,8 @@ build
 # other
 eclipse
 run
-build.gradle
-CREDITS-fml.txt
-forge-1.12.2-14.23.0.2528-changelog.txt
-forge-1.12.2-14.23.0.2512-changelog.txt
-forge-1.12.2-14.23.1.2559-changelog.txt
-forge-1.12.2-14.23.1.2581-changelog.txt
-gradle.properties
-LICENSE-new.txt
-MinecraftForge-Credits.txt
-Paulscode IBXM Library License.txt
-Paulscode SoundSystem CodecIBXM License.txt
-README.txt
-setupCleanCache.bat
-setupEclipse.bat
-UpdateForge.bat
-Build Mod.bat
-*.bat
-forge-1.12.2-14.23.1.2582-changelog.txt
-forge-1.12.2-14.23.2.2611-changelog.txt
+src/main/resources/mcmod.info
+src/main/resources/pack.mcmeta
+*.txt
+gradlew.bat
 JARM_Client.launch
-src/main/java/com/example/examplemod/ExampleMod.java
-JARM_Client.launch
-*.launch
-Build Mod.bat
-JARM_Client.launch
-Build Mod.bat
-JARM_Server.launch
-JARM_Server.launch
-forge-1.12.2-14.23.2.2615-changelog.txt
