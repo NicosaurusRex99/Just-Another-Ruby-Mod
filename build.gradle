@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.12.2.10"
+version = "1.12.2.11"
 group = "naturix.jarm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "jarm"
 
@@ -32,8 +32,7 @@ minecraft {
     mappings = "snapshot_20171003"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
-
-	repositories {
+repositories {
     maven {
         name 'progwm\'s maven' // JEI
         url 'http://dvs1.progwml6.com/files/maven'
@@ -46,16 +45,24 @@ minecraft {
         name 'tterrag maven'
         url "http://maven.tterrag.com/"
     }
-
+	maven {
+	name 'chickenbones maven'
+	url "http://chickenbones.net/maven/"
+	}
 
 }
 
 dependencies {   
     compile "mezz.jei:jei_1.12.2:${jei_version}"
 	deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.14-7"
-	//deobfCompile "cofh:RedstoneFlux:1.12-2.0.0.2:universal"
 	compile "cofh:CoFHCore:${minecraft_version}-${cofh_core_version}:deobf"
+	compile "cofh:ThermalExpansion:${minecraft_version}-5.3.9.9:deobf"
+	compile "cofh:ThermalFoundation:${minecraft_version}-2.3.9.4:deobf"
+	compile "cofh:ThermalFoundation:${minecraft_version}-2.3.9.4:deobf"
+	compile "codechicken:CodeChickenLib:${minecraft_version}-3.1.6.339:deobf"
+    compile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
 }
+
 processResources {
     // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version

@@ -6,90 +6,44 @@ import naturix.JARM.Config;
 import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
 import naturix.JARM.ModItems;
-import naturix.JARM.armor.AmethystBoots;
-import naturix.JARM.armor.AmethystChestplate;
-import naturix.JARM.armor.AmethystHelmet;
-import naturix.JARM.armor.AmethystLeggings;
-import naturix.JARM.armor.EmeraldBoots;
-import naturix.JARM.armor.EmeraldChestplate;
-import naturix.JARM.armor.EmeraldHelmet;
-import naturix.JARM.armor.EmeraldLeggings;
-import naturix.JARM.armor.LapisBoots;
-import naturix.JARM.armor.LapisChestplate;
-import naturix.JARM.armor.LapisHelmet;
-import naturix.JARM.armor.LapisLeggings;
-import naturix.JARM.armor.PrismarineHelmet;
-import naturix.JARM.armor.RubyBoots;
-import naturix.JARM.armor.RubyChestplate;
-import naturix.JARM.armor.RubyHelmet;
-import naturix.JARM.armor.RubyLeggings;
-import naturix.JARM.armor.ShulkerBoots;
-import naturix.JARM.armor.ShulkerChestplate;
-import naturix.JARM.armor.ShulkerHelmet;
-import naturix.JARM.armor.ShulkerLeggings;
-import naturix.JARM.blocks.Amethyst;
-import naturix.JARM.blocks.RubyBlock;
-import naturix.JARM.blocks.RubyOre;
+import naturix.JARM.armor.*;
+import naturix.JARM.blocks.*;
 import naturix.JARM.compat.JARMCompat;
-import naturix.JARM.items.AxeAmethyst;
-import naturix.JARM.items.AxeEmerald;
-import naturix.JARM.items.AxeLapis;
-import naturix.JARM.items.AxeRuby;
-import naturix.JARM.items.GemRuby;
-import naturix.JARM.items.HoeAmethyst;
-import naturix.JARM.items.HoeEmerald;
-import naturix.JARM.items.HoeLapis;
-import naturix.JARM.items.HoeRuby;
-import naturix.JARM.items.PickaxeAmethyst;
-import naturix.JARM.items.PickaxeEmerald;
-import naturix.JARM.items.PickaxeLapis;
-import naturix.JARM.items.PickaxeRuby;
-import naturix.JARM.items.ShovelAmethyst;
-import naturix.JARM.items.ShovelEmerald;
-import naturix.JARM.items.ShovelLapis;
-import naturix.JARM.items.ShovelRuby;
-import naturix.JARM.items.SwordAmethyst;
-import naturix.JARM.items.SwordEmerald;
-import naturix.JARM.items.SwordLapis;
-import naturix.JARM.items.SwordRuby;
+import naturix.JARM.compat.ThermalFoundation.RubyHammer;
+import naturix.JARM.items.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
 @Mod.EventBusSubscriber
 public class CommonProxy {
-	public static Configuration config;
 
-	public void preInit(FMLPreInitializationEvent e) 
-	{
-		File directory = e.getModConfigurationDirectory();
+    // Config instance
+    public static Configuration config;
+
+    public void preInit(FMLPreInitializationEvent e) {
+        File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod.cfg"));
-        JARM.logger.info("JARM config found");
         Config.readConfig();
-        JARM.logger.info("JARM config read");
-        ModItems.initOreDict();
-        JARMCompat.registerTOP();
-       	}
+    }
 
-    public void init(FMLInitializationEvent e)
-    {
-    	 JARM.logger.info("JARM Initialized :D");
+    public void init(FMLInitializationEvent e) {
+        
     }
-    
-    public void postInit(FMLPostInitializationEvent e) 
-    {
-    	if (config.hasChanged()) {
+
+    public void postInit(FMLPostInitializationEvent e) {
+        if (config.hasChanged()) {
             config.save();
-            JARM.logger.info("JARM config loaded");
+        }
     }
-    }
+
 	@SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
     	event.getRegistry().register(new RubyBlock());
@@ -146,6 +100,11 @@ public static void registerItems(RegistryEvent.Register<Item> event) {
     event.getRegistry().register(new ItemBlock(ModBlocks.rubyblock).setRegistryName(ModBlocks.rubyblock.getRegistryName()));
     event.getRegistry().register(new ItemBlock(ModBlocks.rubyore).setRegistryName(ModBlocks.rubyore.getRegistryName()));
     event.getRegistry().register(new ItemBlock(ModBlocks.amethystrock).setRegistryName(ModBlocks.amethystrock.getRegistryName()));
+    
+    if(Loader.isModLoaded("thermalexpansion")) {
+    	event.getRegistry().register(new RubyHammer(JARM.rubyToolMaterial));
+    	JARM.logger.info("JARM and thermal expansion compat loaded");
+    }
     JARM.logger.info("JARM Items have just been loaded");
 }
 

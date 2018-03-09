@@ -20,17 +20,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, updateJSON = JARM.UPDATE_URL)
+@Mod(modid = JARM.MODID, name = JARM.MODNAME, version = JARM.MODVERSION, updateJSON = JARM.UPDATE_URL, dependencies = "required-after:forge@[13.19.0.2129,)", useMetadata = true)
 public class JARM {
 
     public static final String MODID = "jarm";
     public static final String MODNAME = "Just Another Ruby Mod";
-    public static final String MODVERSION = "1.12.2.10";
+    public static final String MODVERSION = "1.12.2.11";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
 
     @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     public static CommonProxy proxy;
-
     @Mod.Instance
     public static JARM instance;
 

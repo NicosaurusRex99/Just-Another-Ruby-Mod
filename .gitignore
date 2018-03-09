@@ -20,8 +20,6 @@ build
 # other
 eclipse
 run
-src/main/resources/mcmod.info
-src/main/resources/pack.mcmeta
 *.txt
-gradlew.bat
-JARM_Client.launch
+*.bat
+Build Mod.bat

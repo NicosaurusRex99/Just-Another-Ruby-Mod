@@ -68,7 +68,7 @@ public class Config {
         rubyVeinSize = cfg.getInt("rubyVeinSize", CATEGORY_ORE, 2, 1, 1000, "Choose a number between 1 and 1000 to change the size of ruby ore veins");
         rubyMin = cfg.getInt("rubyMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min ruby ore height");
         rubyMax = cfg.getInt("rubyMax", CATEGORY_ORE, 15, 1, 256, "Choose a number between 1 and 256 to choose the max ruby ore height");
-        rubySpawnTries = cfg.getInt("rubySpawnTries", CATEGORY_ORE, 1, 1, 100, "Choose a number between 1 and 100 to change how often you see ruby ore");
+        rubySpawnTries = cfg.getInt("rubySpawnTries", CATEGORY_ORE, 2, 1, 100, "Choose a number between 1 and 100 to change how often you see ruby ore");
         cfg.addCustomCategoryComment(CATEGORY_ARMOUR, "Armour values");
         rubyHelm = cfg.getInt("rubyHelm", CATEGORY_ARMOUR, 5, 1, 1000000, "Damage reduction on the ruby helmet.");
         rubyChest = cfg.getInt("rubyChest", CATEGORY_ARMOUR, 9, 1, 1000000, "Damage reduction on the ruby chestplate.");
@@ -85,7 +85,7 @@ public class Config {
         prismarineHelm = cfg.getInt("prismarineHelm", CATEGORY_ARMOUR, 2, 1, 1000000, "Damage reduction on the prismarine helmet.");
         AmethystMin = cfg.getInt("AmethystMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min amethyst height");
         AmethystMax = cfg.getInt("AmethystMax", CATEGORY_ORE, 5, 1, 256, "Choose a number between 1 and 256 to choose the max amethyst height");
-        AmethystSpawnTries = cfg.getInt("AmethystSpawnTries", CATEGORY_ORE, 1, 1, 100, "Choose a number between 1 and 100 to change how often you see amethyst");
+        AmethystSpawnTries = cfg.getInt("AmethystSpawnTries", CATEGORY_ORE, 2, 1, 100, "Choose a number between 1 and 100 to change how often you see amethyst");
         amethystHelm = cfg.getInt("amethystHelm", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst helmet.");
         amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
