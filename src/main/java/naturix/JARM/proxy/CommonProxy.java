@@ -9,6 +9,7 @@ import naturix.JARM.ModItems;
 import naturix.JARM.armor.*;
 import naturix.JARM.blocks.*;
 import naturix.JARM.compat.JARMCompat;
+import naturix.JARM.compat.ThermalFoundation.AmethystHammer;
 import naturix.JARM.compat.ThermalFoundation.RubyHammer;
 import naturix.JARM.items.*;
 import net.minecraft.block.Block;
@@ -35,7 +36,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
-        
+        ModItems.initOreDict();
     }
 
     public void postInit(FMLPostInitializationEvent e) {
@@ -103,6 +104,7 @@ public static void registerItems(RegistryEvent.Register<Item> event) {
     
     if(Loader.isModLoaded("thermalexpansion")) {
     	event.getRegistry().register(new RubyHammer(JARM.rubyToolMaterial));
+    	event.getRegistry().register(new AmethystHammer(JARM.AmethystToolMaterial));
     	JARM.logger.info("JARM and thermal expansion compat loaded");
     }
     JARM.logger.info("JARM Items have just been loaded");

@@ -1,12 +1,14 @@
 package naturix.JARM.blocks;
 
 import naturix.JARM.JARM;
+import naturix.JARM.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -26,7 +28,7 @@ public class Amethyst extends Block {
         setHarvestLevel("pickaxe", 4);
         setHardness(4f);
 		setResistance(5f);
-		OreDictionary.registerOre("gemAmethyst", this);
+		OreDictionary.registerOre("gemAmethyst", new ItemStack(ModBlocks.amethystrock));
 	}
 	@SideOnly(Side.CLIENT)
     public void initModel() {

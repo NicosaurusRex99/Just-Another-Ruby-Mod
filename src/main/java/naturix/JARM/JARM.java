@@ -54,7 +54,6 @@ public class JARM {
         proxy.preInit(event);
     	GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
     	JARM.logger.info("WorldGen Loaded");
-    	
     }
 
     @Mod.EventHandler

@@ -16,7 +16,7 @@ public class RubyHammer extends ItemHammerCore {
         setUnlocalizedName(JARM.MODID + ".hammer_ruby");
         setCreativeTab(JARM.JustAnotherRubyMod);
         setMaxStackSize(1);
-        setMaxDamage(3420);
+        setMaxDamage(8420);
         setHarvestLevel(getUnlocalizedName(), 4);
         getItemEnchantability();
     }

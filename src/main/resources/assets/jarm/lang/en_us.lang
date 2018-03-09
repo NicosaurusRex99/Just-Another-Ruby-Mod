@@ -40,8 +40,8 @@ item.ShulkerHelmet.name=Shulker Helmet
 item.ShulkerChestplate.name=Shulker Chestplate
 item.ShulkerLeggings.name=Shulker Leggings
 item.shulkerBoots.name=Shulker Boots
-item.hammer_ruby.name=Ruby Hammer
-item.hammer_amethyst.name= Amethyst Hammer
+item.jarm.hammer_ruby.name=Ruby Hammer
+item.jarm.hammer_amethyst.name= Amethyst Hammer
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore

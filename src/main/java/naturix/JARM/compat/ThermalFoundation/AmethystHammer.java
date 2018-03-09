@@ -16,7 +16,7 @@ public class AmethystHammer extends ItemHammerCore {
         setUnlocalizedName(JARM.MODID + ".hammer_amethyst");
         setCreativeTab(JARM.JustAnotherRubyMod);
         setMaxStackSize(1);
-        setMaxDamage(3420);
+        setMaxDamage(13420);
         setHarvestLevel(getUnlocalizedName(), 4);
         getItemEnchantability();
     }

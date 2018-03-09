@@ -40,6 +40,9 @@ public class ModWorldGeneration implements IWorldGenerator {
 		if (world.provider.getDimension() == -127) {
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
+		if (world.provider.getDimension() == -9999) {
+			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+		}
 		
 	}
 	
