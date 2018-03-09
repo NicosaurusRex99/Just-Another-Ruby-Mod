@@ -1,0 +1,7 @@
+-Copper Set
+-Tin Set
+-Nickel Set
+-Uranium Set <--- Kills Player slowly
+-Lead Set <--- adds slow killing effect
+-Silver Set
+-Osmium Set
