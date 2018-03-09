@@ -28,17 +28,17 @@ public class CommonProxy {
 
     // Config instance
     public static Configuration config;
-
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod.cfg"));
         Config.readConfig();
     }
-
+    @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         ModItems.initOreDict();
     }
-
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         if (config.hasChanged()) {
             config.save();

@@ -1,7 +1,8 @@
 package naturix.JARM.compat.ThermalFoundation;
 
-import cofh.core.item.tool.ItemHammerCore;
+
 import naturix.JARM.JARM;
+import naturix.JARM.hidden.ItemHammerCore;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.client.model.ModelLoader;
