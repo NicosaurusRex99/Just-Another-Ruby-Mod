@@ -14,6 +14,7 @@ import net.minecraftforge.fml.relauncher.Side;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
+
 	@Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
@@ -25,7 +26,7 @@ public class ClientProxy extends CommonProxy {
 	@Override
     public void postInit(FMLPostInitializationEvent e) {
         super.postInit(e);
-    }
+        }
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
@@ -35,5 +36,4 @@ public class ClientProxy extends CommonProxy {
         	TFModItems.initModels();
         }
         }
-
 }
