@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class AmethystHammer extends ItemHammerCore {
 
     public AmethystHammer(ToolMaterial material) {
-    	super(material);
+    	super(12, 4, material);
         setRegistryName("hammer_amethyst");
         setUnlocalizedName(JARM.MODID + ".hammer_amethyst");
         setCreativeTab(JARM.JustAnotherRubyMod);

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class RubyHammer extends ItemHammerCore {
 
     public RubyHammer(ToolMaterial material) {
-    	super(material);
+    	super(11, 4, material);
         setRegistryName("hammer_ruby");
         setUnlocalizedName(JARM.MODID + ".hammer_ruby");
         setCreativeTab(JARM.JustAnotherRubyMod);
