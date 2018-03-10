@@ -27,3 +27,5 @@ src/main/java/naturix/JARM/hidden/RayTracer.java
 src/main/java/naturix/JARM/hidden/ItemHammerCore.java
 src/main/java/naturix/JARM/hidden/ItemToolCore.java
 src/main/java/naturix/JARM/hidden/AOEBreak.java
+gradle/wrapper/gradle-wrapper.properties
+gradlew
