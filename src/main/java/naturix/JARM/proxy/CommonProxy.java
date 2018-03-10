@@ -50,7 +50,9 @@ public class CommonProxy {
     	event.getRegistry().register(new RubyBlock());
     	event.getRegistry().register(new RubyOre(null));
     	event.getRegistry().register(new Amethyst(null));
+    	if (Config.debug == true ) {
     	JARM.logger.info("JARM Blocks have just been loaded");
+    	}
     	
     }
     
@@ -105,9 +107,12 @@ public static void registerItems(RegistryEvent.Register<Item> event) {
     if(Loader.isModLoaded("thermalexpansion")) {
     	event.getRegistry().register(new RubyHammer(JARM.rubyToolMaterial));
     	event.getRegistry().register(new AmethystHammer(JARM.AmethystToolMaterial));
+    	if (Config.debug == true ) {
     	JARM.logger.info("JARM and thermal expansion compat loaded");
+    	}
     }
+    if (Config.debug == true ) {
     JARM.logger.info("JARM Items have just been loaded");
-}
+}}
 
     }

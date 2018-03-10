@@ -43,7 +43,9 @@ public class ModWorldGeneration implements IWorldGenerator {
 		if (world.provider.getDimension() == -9999) {
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
-		
+		if (Config.debug == true ) {
+			JARM.logger.info("World Gen Loaded");
+		}
 	}
 	
 

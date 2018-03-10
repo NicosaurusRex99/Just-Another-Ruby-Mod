@@ -52,15 +52,18 @@ public class JARM {
     	logger = event.getModLog();
         proxy.preInit(event);
     	GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
+    	if (Config.debug == true ) {
     	JARM.logger.info("WorldGen Loaded");
+    	}
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
         ModRecipes.init();
+        if (Config.debug == true ) {
         JARM.logger.info("JARM recipes loaded");
-    }
+    }}
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
