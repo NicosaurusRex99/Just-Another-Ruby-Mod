@@ -21,13 +21,11 @@ import naturix.JARM.armor.ShulkerBoots;
 import naturix.JARM.armor.ShulkerChestplate;
 import naturix.JARM.armor.ShulkerHelmet;
 import naturix.JARM.armor.ShulkerLeggings;
-import naturix.JARM.blocks.Amethyst;
-import naturix.JARM.blocks.RubyBlock;
-import naturix.JARM.blocks.RubyOre;
 import naturix.JARM.items.AxeAmethyst;
 import naturix.JARM.items.AxeEmerald;
 import naturix.JARM.items.AxeLapis;
 import naturix.JARM.items.AxeRuby;
+import naturix.JARM.items.GemBraunite;
 import naturix.JARM.items.GemRuby;
 import naturix.JARM.items.HoeAmethyst;
 import naturix.JARM.items.HoeEmerald;
@@ -45,11 +43,6 @@ import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -144,7 +137,8 @@ public class ModItems
     public static ShulkerHelmet shulkerhelmet;
     @GameRegistry.ObjectHolder("JARM:shulkerchestplate")
     public static ShulkerChestplate shulkerchestplate;
-    
+    @GameRegistry.ObjectHolder("JARM:gembraunite")
+	public static GemBraunite gembraunite;
 @SideOnly(Side.CLIENT)
 public static void initModels() {
     gemruby.initModel();
@@ -189,12 +183,14 @@ public static void initModels() {
     shulkerleggings.initModel();
     shulkerhelmet.initModel();
     shulkerchestplate.initModel();
+    gembraunite.initModel();
 }
 	
 	public static void initOreDict() {
 {
 		OreDictionary.registerOre("gemRuby", ModItems.gemruby);
 		OreDictionary.registerOre("gemAmethyst", ModBlocks.amethystrock);
+		OreDictionary.registerOre("gemBraunite", ModItems.gembraunite);
 }
 	}
 

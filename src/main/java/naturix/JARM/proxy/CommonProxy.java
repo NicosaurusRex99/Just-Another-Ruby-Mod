@@ -58,7 +58,8 @@ public class CommonProxy {
     
 @SubscribeEvent
 public static void registerItems(RegistryEvent.Register<Item> event) {
-    event.getRegistry().register(new GemRuby());
+	event.getRegistry().register(new GemRuby());
+	event.getRegistry().register(new GemBraunite());
     event.getRegistry().register(new SwordRuby(null));
     event.getRegistry().register(new PickaxeRuby(null));
     event.getRegistry().register(new AxeRuby(null));

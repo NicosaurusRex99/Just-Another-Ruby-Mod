@@ -158,6 +158,7 @@ public abstract class ItemHammerCore extends ItemTool {
 		return harvestLevel != -1 ? harvestLevel : toolMaterial.getHarvestLevel();
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	@Override
 	public float getDestroySpeed(ItemStack stack, IBlockState state) {
 
