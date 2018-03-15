@@ -14,6 +14,7 @@ public class Config {
     private static final String CATEGORY_ORE = "Ore Gen";
     private static final String CATEGORY_ARMOUR = "Armour";
     private static final String CATEGORY_MISC = "Misc";
+    private static final String CATEGORY_MODULES = "Modules";
 
     public static boolean isRubyBeaconBase = true;
     public static boolean doWorldGen = true;
@@ -47,7 +48,14 @@ public class Config {
     public static int shulkerChest = 8;
     public static int shulkerLeg = 10;
     public static int shulkerBoot = 4;
-
+    public static boolean rubyModule = true;
+    public static boolean amethystModule = true;
+    public static boolean brauniteModule = true;
+    public static boolean emeraldModule = true;
+    public static boolean lapisModule = true;
+    public static boolean prismarineModule = true;
+    public static boolean shulkerModule = true;
+    
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
         try {
@@ -98,6 +106,14 @@ public class Config {
         shulkerLeg = cfg.getInt("shulkerLeg", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the shulker leggings.");
         shulkerBoot = cfg.getInt("shulkerBoot", CATEGORY_ARMOUR, 4, 1, 1000000, "Damage reduction on the shulker boots.");
         debug = cfg.getBoolean("debug", CATEGORY_GENERAL, debug, "set to true to see what loaded");
+        cfg.addCustomCategoryComment(CATEGORY_MODULES, "Individual Modules");
+        rubyModule = cfg.getBoolean("ruby", CATEGORY_MODULES, rubyModule, "Disable to remove this module");
+        amethystModule = cfg.getBoolean("amethyst", CATEGORY_MODULES, amethystModule, "Disable to remove this module");
+        brauniteModule = cfg.getBoolean("braunite", CATEGORY_MODULES, brauniteModule, "Disable to remove this module");
+        emeraldModule = cfg.getBoolean("emerald", CATEGORY_MODULES, emeraldModule, "Disable to remove this module");
+        lapisModule = cfg.getBoolean("lapis", CATEGORY_MODULES, lapisModule, "Disable to remove this module");
+        prismarineModule = cfg.getBoolean("prismarine", CATEGORY_MODULES, prismarineModule, "Disable to remove this module");
+        shulkerModule = cfg.getBoolean("shulker", CATEGORY_MODULES, shulkerModule, "Disable to remove this module");
         
     }
     

@@ -41,11 +41,14 @@ item.ShulkerChestplate.name=Shulker Chestplate
 item.ShulkerLeggings.name=Shulker Leggings
 item.shulkerBoots.name=Shulker Boots
 item.jarm.hammer_ruby.name=Ruby Hammer
-item.jarm.hammer_amethyst.name= Amethyst Hammer
+item.jarm.hammer_amethyst.name=Amethyst Hammer
+item.jarm.gembraunite.name=Braunite Gem
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore
 tile.jarm.amethystrock.name=Amethyst
+tile.jarm.brauniteblock.name=Braunite Block
+tile.jarm.brauniteore.name=Braunite Ore
 
 itemGroup.JARM=Just Another Ruby Mod
 itemGroup.RFlux=RFlux
