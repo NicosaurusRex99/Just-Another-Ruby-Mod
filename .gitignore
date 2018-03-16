@@ -25,3 +25,4 @@ run
 Build Mod.bat
 gradle/wrapper/gradle-wrapper.properties
 gradlew
+gradle/wrapper/gradle-wrapper.jar
