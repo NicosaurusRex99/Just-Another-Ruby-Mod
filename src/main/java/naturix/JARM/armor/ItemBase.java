@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ItemBase extends Item
 {
-	public static List<Item> JARMItemList = new ArrayList<>(30);
+	public static List<Item> JARMItemList = new ArrayList<>(34);
 	
 	public ItemBase(String name)
 	{

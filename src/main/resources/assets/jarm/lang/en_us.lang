@@ -43,6 +43,10 @@ item.shulkerBoots.name=Shulker Boots
 item.jarm.hammer_ruby.name=Ruby Hammer
 item.jarm.hammer_amethyst.name=Amethyst Hammer
 item.jarm.gembraunite.name=Braunite Gem
+item.BrauniteHelmet.name=Braunite Helmet
+item.BrauniteChestplate.name=Braunite Chestplate
+item.BrauniteLeggings.name=Braunite Leggings
+item.shulkerBoots.name=Braunite Boots
 
 tile.jarm.rubyblock.name=Ruby Block
 tile.jarm.rubyore.name=Ruby Ore

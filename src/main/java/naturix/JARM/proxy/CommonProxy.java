@@ -9,6 +9,10 @@ import naturix.JARM.armor.AmethystBoots;
 import naturix.JARM.armor.AmethystChestplate;
 import naturix.JARM.armor.AmethystHelmet;
 import naturix.JARM.armor.AmethystLeggings;
+import naturix.JARM.armor.BrauniteBoots;
+import naturix.JARM.armor.BrauniteChestplate;
+import naturix.JARM.armor.BrauniteHelmet;
+import naturix.JARM.armor.BrauniteLeggings;
 import naturix.JARM.armor.EmeraldBoots;
 import naturix.JARM.armor.EmeraldChestplate;
 import naturix.JARM.armor.EmeraldHelmet;
@@ -128,6 +132,10 @@ public static void registerItems(RegistryEvent.Register<Item> event) {
 	}
 	if(Config.brauniteModule == true) {
 		event.getRegistry().register(new GemBraunite());
+		event.getRegistry().register(new BrauniteBoots());
+	    event.getRegistry().register(new BrauniteLeggings());
+	    event.getRegistry().register(new BrauniteChestplate());
+	    event.getRegistry().register(new BrauniteHelmet());
 		}
 	if(Config.emeraldModule == true) {
 		event.getRegistry().register(new EmeraldBoots());
