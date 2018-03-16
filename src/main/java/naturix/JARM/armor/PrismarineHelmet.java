@@ -2,6 +2,7 @@ package naturix.JARM.armor;
 
 import naturix.JARM.JARM;
 import naturix.JARM.modules.BrauniteModule;
+import naturix.JARM.modules.PrismarineModule;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -52,7 +53,7 @@ public class PrismarineHelmet extends ItemArmor
 	}
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
     {
-         if (itemStack.getItem() == BrauniteModule.prismarinehelmet)
+         if (itemStack.getItem() == PrismarineModule.prismarinehelmet)
          {
         	 player.addPotionEffect(new PotionEffect(Potion.getPotionFromResourceLocation("night_vision"), 2, 5));
         	 player.addPotionEffect(new PotionEffect(Potion.getPotionFromResourceLocation("water_breathing"), 2, 5));
