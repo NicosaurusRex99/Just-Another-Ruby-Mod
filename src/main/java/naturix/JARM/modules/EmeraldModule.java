@@ -14,23 +14,23 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EmeraldModule {
-	@GameRegistry.ObjectHolder("JARM:emeraldboots")
+	@GameRegistry.ObjectHolder("jarm:emeraldboots")
     public static EmeraldBoots emeraldboots;
-    @GameRegistry.ObjectHolder("JARM:emeraldleggings")
+    @GameRegistry.ObjectHolder("jarm:emeraldleggings")
     public static EmeraldLeggings emeraldleggings;
-    @GameRegistry.ObjectHolder("JARM:emeraldchestplate")
+    @GameRegistry.ObjectHolder("jarm:emeraldchestplate")
     public static EmeraldChestplate emeraldchestplate;
-    @GameRegistry.ObjectHolder("JARM:emeraldhelmet")
+    @GameRegistry.ObjectHolder("jarm:emeraldhelmet")
     public static EmeraldHelmet emeraldhelmet;
-    @GameRegistry.ObjectHolder("JARM:axeemerald")
+    @GameRegistry.ObjectHolder("jarm:axeemerald")
     public static AxeEmerald emeraldaxe;
-    @GameRegistry.ObjectHolder("JARM:hoeemerald")
+    @GameRegistry.ObjectHolder("jarm:hoeemerald")
     public static HoeEmerald emeraldhoe;
-    @GameRegistry.ObjectHolder("JARM:pickaxeemerald")
+    @GameRegistry.ObjectHolder("jarm:pickaxeemerald")
     public static PickaxeEmerald emeraldpickaxe;
-    @GameRegistry.ObjectHolder("JARM:shovelemerald")
+    @GameRegistry.ObjectHolder("jarm:shovelemerald")
     public static ShovelEmerald emeraldshovel;
-    @GameRegistry.ObjectHolder("JARM:swordemerald")
+    @GameRegistry.ObjectHolder("jarm:swordemerald")
     public static SwordEmerald emeraldsword;
     @SideOnly(Side.CLIENT)
     public static void initModels() {

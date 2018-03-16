@@ -6,7 +6,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PrismarineModule {
-	@GameRegistry.ObjectHolder("JARM:prismarinehelmet")
+	@GameRegistry.ObjectHolder("jarm:prismarinehelmet")
     public static PrismarineHelmet prismarinehelmet;
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {

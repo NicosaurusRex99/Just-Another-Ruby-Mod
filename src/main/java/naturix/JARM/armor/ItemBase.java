@@ -23,7 +23,7 @@ public class ItemBase extends Item
 		item.setCreativeTab(JARM.JustAnotherRubyMod);
 		item.setUnlocalizedName(name);
 
-		ForgeRegistries.ITEMS.register(item);
+		//ForgeRegistries.ITEMS.register(item);
 		
 		JARMItemList.add(item);
 	}

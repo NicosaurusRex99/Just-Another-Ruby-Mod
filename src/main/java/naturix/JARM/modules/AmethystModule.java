@@ -16,23 +16,23 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class AmethystModule {
-	@GameRegistry.ObjectHolder("JARM:amethysthelmet")
+	@GameRegistry.ObjectHolder("jarm:amethysthelmet")
     public static AmethystHelmet amethysthelmet;
-    @GameRegistry.ObjectHolder("JARM:amethystchestplate")
+    @GameRegistry.ObjectHolder("jarm:amethystchestplate")
     public static AmethystChestplate amethystchestplate;
-    @GameRegistry.ObjectHolder("JARM:amethystleggings")
+    @GameRegistry.ObjectHolder("jarm:amethystleggings")
     public static AmethystLeggings amethystleggings;
-    @GameRegistry.ObjectHolder("JARM:amethystboots")
+    @GameRegistry.ObjectHolder("jarm:amethystboots")
     public static AmethystBoots amethystboots;
-    @GameRegistry.ObjectHolder("JARM:axeamethyst")
+    @GameRegistry.ObjectHolder("jarm:axeamethyst")
     public static AxeAmethyst axeamethyst;
-    @GameRegistry.ObjectHolder("JARM:hoeamethyst")
+    @GameRegistry.ObjectHolder("jarm:hoeamethyst")
     public static HoeAmethyst hoeamethyst;
-    @GameRegistry.ObjectHolder("JARM:pickaxeamethyst")
+    @GameRegistry.ObjectHolder("jarm:pickaxeamethyst")
     public static PickaxeAmethyst pickaxeamethyst;
-    @GameRegistry.ObjectHolder("JARM:swordamethyst")
+    @GameRegistry.ObjectHolder("jarm:swordamethyst")
     public static SwordAmethyst swordamethyst;
-    @GameRegistry.ObjectHolder("JARM:shovelamethyst")
+    @GameRegistry.ObjectHolder("jarm:shovelamethyst")
     public static ShovelAmethyst shovelamethyst;
     
     @SideOnly(Side.CLIENT)

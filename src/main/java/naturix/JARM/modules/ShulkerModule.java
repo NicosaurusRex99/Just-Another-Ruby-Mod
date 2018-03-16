@@ -9,13 +9,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ShulkerModule {
-    @GameRegistry.ObjectHolder("JARM:shulkerboots")
+    @GameRegistry.ObjectHolder("jarm:shulkerboots")
     public static ShulkerBoots shulkerboots;
-    @GameRegistry.ObjectHolder("JARM:shulkerleggings")
+    @GameRegistry.ObjectHolder("jarm:shulkerleggings")
     public static ShulkerLeggings shulkerleggings;
-    @GameRegistry.ObjectHolder("JARM:shulkerhelmet")
+    @GameRegistry.ObjectHolder("jarm:shulkerhelmet")
     public static ShulkerHelmet shulkerhelmet;
-    @GameRegistry.ObjectHolder("JARM:shulkerchestplate")
+    @GameRegistry.ObjectHolder("jarm:shulkerchestplate")
     public static ShulkerChestplate shulkerchestplate;
     @SideOnly(Side.CLIENT)
     public static void initModels() {

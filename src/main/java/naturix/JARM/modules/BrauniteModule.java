@@ -12,15 +12,15 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class BrauniteModule 
 {
-    @GameRegistry.ObjectHolder("JARM:gembraunite")
+    @GameRegistry.ObjectHolder("jarm:gembraunite")
 	public static GemBraunite gembraunite;
-    @GameRegistry.ObjectHolder("JARM:helmet_braunite")
+    @GameRegistry.ObjectHolder("jarm:helmet_braunite")
 	public static BrauniteHelmet helmetbraunite;
-    @GameRegistry.ObjectHolder("JARM:chestplate_braunite")
+    @GameRegistry.ObjectHolder("jarm:chestplate_braunite")
 	public static BrauniteChestplate chestplatebraunite;
-    @GameRegistry.ObjectHolder("JARM:leggings_braunite")
+    @GameRegistry.ObjectHolder("jarm:leggings_braunite")
 	public static BrauniteLeggings leggingsbraunite;
-    @GameRegistry.ObjectHolder("JARM:boots_braunite")
+    @GameRegistry.ObjectHolder("jarm:boots_braunite")
 	public static BrauniteBoots bootsbraunite;
     
 @SideOnly(Side.CLIENT)

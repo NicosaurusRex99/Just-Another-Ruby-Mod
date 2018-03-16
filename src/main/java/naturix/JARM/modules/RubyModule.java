@@ -16,25 +16,25 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class RubyModule {
-	@GameRegistry.ObjectHolder("JARM:gemruby")
+	@GameRegistry.ObjectHolder("jarm:gemruby")
     public static GemRuby gemruby;
-    @GameRegistry.ObjectHolder("JARM:swordruby")
+    @GameRegistry.ObjectHolder("jarm:swordruby")
     public static SwordRuby swordruby;
-    @GameRegistry.ObjectHolder("JARM:pickaxeruby")
+    @GameRegistry.ObjectHolder("jarm:pickaxeruby")
     public static PickaxeRuby pickaxeruby;
-    @GameRegistry.ObjectHolder("JARM:axeruby")
+    @GameRegistry.ObjectHolder("jarm:axeruby")
     public static AxeRuby axeruby;
-    @GameRegistry.ObjectHolder("JARM:shovelruby")
+    @GameRegistry.ObjectHolder("jarm:shovelruby")
     public static ShovelRuby shovelruby;
-    @GameRegistry.ObjectHolder("JARM:hoeruby")
+    @GameRegistry.ObjectHolder("jarm:hoeruby")
     public static HoeRuby hoeruby;
-    @GameRegistry.ObjectHolder("JARM:rubyboots")
+    @GameRegistry.ObjectHolder("jarm:rubyboots")
     public static RubyBoots rubyboots;
-    @GameRegistry.ObjectHolder("JARM:rubyleggings")
+    @GameRegistry.ObjectHolder("jarm:rubyleggings")
     public static RubyLeggings rubyleggings;
-    @GameRegistry.ObjectHolder("JARM:rubychestplate")
+    @GameRegistry.ObjectHolder("jarm:rubychestplate")
     public static RubyChestplate rubychestplate;
-    @GameRegistry.ObjectHolder("JARM:rubyhelmet")
+    @GameRegistry.ObjectHolder("jarm:rubyhelmet")
     public static RubyHelmet rubyhelmet;
    
     @SideOnly(Side.CLIENT)

@@ -14,23 +14,23 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class LapisModule {
-	@GameRegistry.ObjectHolder("JARM:lapisboots")
+	@GameRegistry.ObjectHolder("jarm:lapisboots")
     public static LapisBoots lapisboots;
-    @GameRegistry.ObjectHolder("JARM:lapisleggings")
+    @GameRegistry.ObjectHolder("jarm:lapisleggings")
     public static LapisLeggings lapisleggings;
-    @GameRegistry.ObjectHolder("JARM:lapischestplate")
+    @GameRegistry.ObjectHolder("jarm:lapischestplate")
     public static LapisChestplate lapischestplate;
-    @GameRegistry.ObjectHolder("JARM:lapishelmet")
+    @GameRegistry.ObjectHolder("jarm:lapishelmet")
     public static LapisHelmet lapishelmet;
-    @GameRegistry.ObjectHolder("JARM:axelapis")
+    @GameRegistry.ObjectHolder("jarm:axelapis")
     public static AxeLapis axelapis;
-    @GameRegistry.ObjectHolder("JARM:swordlapis")
+    @GameRegistry.ObjectHolder("jarm:swordlapis")
     public static SwordLapis swordlapis;
-    @GameRegistry.ObjectHolder("JARM:hoelapis")
+    @GameRegistry.ObjectHolder("jarm:hoelapis")
     public static HoeLapis hoelapis;
-    @GameRegistry.ObjectHolder("JARM:pickaxelapis")
+    @GameRegistry.ObjectHolder("jarm:pickaxelapis")
     public static PickaxeLapis pickaxelapis;
-    @GameRegistry.ObjectHolder("JARM:shovellapis")
+    @GameRegistry.ObjectHolder("jarm:shovellapis")
     public static ShovelLapis shovellapis;
     
 @SideOnly(Side.CLIENT)
