@@ -6,10 +6,11 @@ import java.util.List;
 import naturix.JARM.JARM;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import scala.reflect.internal.Trees.This;
 
 public class ItemBase extends Item
 {
-	public static List<Item> JARMItemList = new ArrayList<>(34);
+	public static List<Item> JARMItemList = new ArrayList<>(30);
 	
 	public ItemBase(String name)
 	{
