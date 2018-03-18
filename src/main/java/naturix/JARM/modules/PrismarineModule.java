@@ -8,8 +8,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class PrismarineModule {
 	@GameRegistry.ObjectHolder("jarm:prismarinehelmet")
     public static PrismarineHelmet prismarinehelmet;
+	
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {
-	    //prismarinehelmet.initModel();
+	    prismarinehelmet.initModel();
 	}
 }

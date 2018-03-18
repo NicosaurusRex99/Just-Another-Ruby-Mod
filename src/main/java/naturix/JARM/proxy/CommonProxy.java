@@ -174,8 +174,12 @@ public static void registerItems(RegistryEvent.Register<Item> event) {
     event.getRegistry().register(new ShulkerHelmet());
 	}
     if(Loader.isModLoaded("thermalexpansion")) {
+    	if(Config.rubyModule == true) {
     	event.getRegistry().register(new RubyHammer(JARM.rubyToolMaterial));
+    	}
+    	if (Config.amethystModule == true) {
     	event.getRegistry().register(new AmethystHammer(JARM.AmethystToolMaterial));
+    	}
     	if (Config.debug == true ) {
     	JARM.logger.info("JARM and thermal expansion compat loaded");
     	}
