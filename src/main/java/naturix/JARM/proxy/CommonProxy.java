@@ -5,6 +5,7 @@ import java.io.File;
 import naturix.JARM.Config;
 import naturix.JARM.JARM;
 import naturix.JARM.ModBlocks;
+import naturix.JARM.ModOreDict;
 import naturix.JARM.armor.AmethystBoots;
 import naturix.JARM.armor.AmethystChestplate;
 import naturix.JARM.armor.AmethystHelmet;
@@ -87,15 +88,7 @@ public class CommonProxy {
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
-        if(Config.rubyModule == true) {
-        	RubyModule.initOreDict();
-        }
-        if(Config.amethystModule == true) {
-        	AmethystModule.initOreDict();
-        }
-        if(Config.brauniteModule == true) {
-        	BrauniteModule.initOreDict();
-        }
+    	ModOreDict.initOreDict();
     }
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {

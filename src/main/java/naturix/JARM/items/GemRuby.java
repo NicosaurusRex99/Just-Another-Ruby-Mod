@@ -1,6 +1,7 @@
 package naturix.JARM.items;
 
 import naturix.JARM.JARM;
+import naturix.JARM.modules.RubyModule;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -19,8 +20,7 @@ public class GemRuby extends Item {
         setRegistryName("gemruby");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".gemruby");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);
-        OreDictionary.registerOre("gemRuby", this);
-    }
+        }
 
     @SideOnly(Side.CLIENT)
     public void initModel() {

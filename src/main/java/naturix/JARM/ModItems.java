@@ -1,13 +1,7 @@
 package naturix.JARM;
 
 import naturix.JARM.compat.ThermalFoundation.TFModItems;
-import naturix.JARM.modules.AmethystModule;
-import naturix.JARM.modules.BrauniteModule;
-import naturix.JARM.modules.EmeraldModule;
-import naturix.JARM.modules.LapisModule;
-import naturix.JARM.modules.PrismarineModule;
-import naturix.JARM.modules.RubyModule;
-import naturix.JARM.modules.ShulkerModule;
+import naturix.JARM.modules.*;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -25,7 +19,7 @@ public static void initModels() {
     	RubyModule.initModels();
     }
     if(Config.prismarineModule == true) {
-    	PrismarineModule.initModels();
+    	//PrismarineModule.initModels();
     }
     if(Config.lapisModule == true) {
     	LapisModule.initModels();

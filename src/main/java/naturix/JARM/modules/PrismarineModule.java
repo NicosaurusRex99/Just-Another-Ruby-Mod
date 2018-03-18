@@ -10,6 +10,6 @@ public class PrismarineModule {
     public static PrismarineHelmet prismarinehelmet;
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {
-	    prismarinehelmet.initModel();
+	    //prismarinehelmet.initModel();
 	}
 }

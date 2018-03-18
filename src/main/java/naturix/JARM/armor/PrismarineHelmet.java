@@ -59,8 +59,8 @@ public class PrismarineHelmet extends ItemArmor
         	 player.addPotionEffect(new PotionEffect(Potion.getPotionFromResourceLocation("water_breathing"), 2, 5));
          }
     }
-	@SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
+	//@SideOnly(Side.CLIENT)
+    //public void initModel() {
+    //    ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation("prismarinehelmet", "inventory"));
+	//}
 }

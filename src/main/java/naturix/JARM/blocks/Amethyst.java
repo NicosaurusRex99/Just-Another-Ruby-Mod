@@ -28,13 +28,8 @@ public class Amethyst extends Block {
         setHarvestLevel("pickaxe", 4);
         setHardness(4f);
 		setResistance(5f);
-		OreDictionary.registerOre("gemAmethyst", new ItemStack(ModBlocks.amethystrock));
-	}
-	@SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
-	
+		}
+		
 	@Override
 	@Deprecated
 	public boolean isOpaqueCube(IBlockState state) {
@@ -56,5 +51,8 @@ public class Amethyst extends Block {
 	{
 		return false;
 	}
-	
+	@SideOnly(Side.CLIENT)
+    public void initModel() {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
 }

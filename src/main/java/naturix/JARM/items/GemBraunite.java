@@ -14,7 +14,6 @@ public class GemBraunite extends Item {
         setRegistryName("gembraunite");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName(JARM.MODID + ".gembraunite");     // Used for localization (en_US.lang)
         setCreativeTab(JARM.JustAnotherRubyMod);
-        OreDictionary.registerOre("gemBraunite", this);
     }
 
     @SideOnly(Side.CLIENT)

@@ -13,7 +13,6 @@ import naturix.JARM.items.SwordRuby;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class RubyModule {
 	@GameRegistry.ObjectHolder("jarm:gemruby")
@@ -50,7 +49,4 @@ public class RubyModule {
         rubychestplate.initModel();
         rubyhelmet.initModel();
     }
-    public static void initOreDict() {
-    	{
-    		OreDictionary.registerOre("gemRuby", RubyModule.gemruby);
-}}}
+    }
