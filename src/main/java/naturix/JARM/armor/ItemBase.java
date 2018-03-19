@@ -29,6 +29,7 @@ public class ItemBase extends Item
 		item.setUnlocalizedName(name);
 		//ForgeRegistries.ITEMS.register(item);	
 		JARMItemList.add(item);
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 
 }
