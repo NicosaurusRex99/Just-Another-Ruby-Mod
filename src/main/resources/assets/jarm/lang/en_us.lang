@@ -1,4 +1,4 @@
-item.jarm.gemruby.name=Ruby
+item.gem_ruby.name=Ruby
 item.jarm.swordruby.name=Ruby Sword
 item.jarm.pickaxeruby.name=Ruby Pickaxe
 item.jarm.axeruby.name=Ruby Axe
@@ -39,19 +39,19 @@ item.jarm.hoeamethyst.name=Amethyst Hoe
 item.ShulkerHelmet.name=Shulker Helmet
 item.ShulkerChestplate.name=Shulker Chestplate
 item.ShulkerLeggings.name=Shulker Leggings
-item.shulkerBoots.name=Shulker Boots
+item.ShulkerBoots.name=Shulker Boots
 item.jarm.hammer_ruby.name=Ruby Hammer
 item.jarm.hammer_amethyst.name=Amethyst Hammer
-item.jarm.gembraunite.name=Braunite Gem
+item.gem_braunite.name=Braunite Gem
 item.BrauniteHelmet.name=Braunite Helmet
 item.BrauniteChestplate.name=Braunite Chestplate
 item.BrauniteLeggings.name=Braunite Leggings
 item.BrauniteBoots.name=Braunite Boots
 
-tile.jarm.rubyblock.name=Ruby Block
-tile.jarm.rubyore.name=Ruby Ore
-tile.jarm.amethystrock.name=Amethyst
-tile.jarm.brauniteblock.name=Braunite Block
-tile.jarm.brauniteore.name=Braunite Ore
+tile.jarm.block_ruby.name=Ruby Block
+tile.ore_ruby.name=Ruby Ore
+tile.jarm.block_amethyst.name=Amethyst
+tile.jarm.block_braunite.name=Braunite Block
+tile.ore_braunite.name=Braunite Ore
 
-itemGroup.JARM=Just Another Ruby Mod
+itemGroup.JARMTab=Just Another Ruby Mod!

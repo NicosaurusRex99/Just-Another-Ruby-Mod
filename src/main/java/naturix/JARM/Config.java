@@ -1,11 +1,9 @@
-package naturix.JARM;
-
-import net.minecraftforge.common.config.Configuration;
-import scala.Int;
+package naturix.jarm;
 
 import org.apache.logging.log4j.Level;
-import naturix.JARM.blocks.RubyBlock;
-import naturix.JARM.proxy.CommonProxy;
+
+import naturix.jarm.proxy.CommonProxy;
+import net.minecraftforge.common.config.Configuration;
 
 
 public class Config {
@@ -16,9 +14,8 @@ public class Config {
     private static final String CATEGORY_MISC = "Misc";
     private static final String CATEGORY_MODULES = "Modules";
 
-    public static boolean isRubyBeaconBase = true;
+    public static boolean addBeaconBase = true;
     public static boolean doWorldGen = true;
-    public static boolean debug = false;
     public static int rubyVeinSize = 2;
     public static int rubyMax = 15;
     public static int rubyMin = 1;
@@ -72,7 +69,7 @@ public class Config {
 
     private static void initGeneralConfig(Configuration cfg) {
         cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration");
-        isRubyBeaconBase = cfg.getBoolean("isRubyBeaconBase", CATEGORY_GENERAL, isRubyBeaconBase, "Set to false to disable ruby block from being a beacon base");
+        addBeaconBase = cfg.getBoolean("addBeaconBase", CATEGORY_GENERAL, addBeaconBase, "Set to false to disable ingot/gem blocks from being a beacon base");
         cfg.addCustomCategoryComment(CATEGORY_ORE, "Generation of ore");
         rubyVeinSize = cfg.getInt("rubyVeinSize", CATEGORY_ORE, 2, 1, 1000, "Choose a number between 1 and 1000 to change the size of ruby ore veins");
         rubyMin = cfg.getInt("rubyMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min ruby ore height");
@@ -105,7 +102,6 @@ public class Config {
         shulkerChest = cfg.getInt("shulkerChest", CATEGORY_ARMOUR, 8, 1, 1000000, "Damage reduction on the shulker chestplate.");
         shulkerLeg = cfg.getInt("shulkerLeg", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the shulker leggings.");
         shulkerBoot = cfg.getInt("shulkerBoot", CATEGORY_ARMOUR, 4, 1, 1000000, "Damage reduction on the shulker boots.");
-        debug = cfg.getBoolean("debug", CATEGORY_GENERAL, debug, "set to true to see what loaded");
         cfg.addCustomCategoryComment(CATEGORY_MODULES, "Individual Modules");
         rubyModule = cfg.getBoolean("ruby", CATEGORY_MODULES, rubyModule, "Disable to remove this module");
         amethystModule = cfg.getBoolean("amethyst", CATEGORY_MODULES, amethystModule, "Disable to remove this module");
@@ -118,4 +114,4 @@ public class Config {
     }
     
 
-}
+} 

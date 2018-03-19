@@ -1,7 +1,5 @@
-package naturix.JARM.proxy;
+package naturix.jarm.proxy;
 
-public class ServerProxy extends CommonProxy 
-{
+public class ServerProxy extends CommonProxy{
 
 }
-	

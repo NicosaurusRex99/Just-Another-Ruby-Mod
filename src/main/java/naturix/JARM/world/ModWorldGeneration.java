@@ -1,10 +1,10 @@
-package naturix.JARM.world;
+package naturix.jarm.world;
 
 import java.util.Random;
 
-import naturix.JARM.Config;
-import naturix.JARM.JARM;
-import naturix.JARM.ModBlocks;
+import naturix.jarm.Config;
+import naturix.jarm.JARM;
+import naturix.jarm.registry.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -43,9 +43,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 		if (world.provider.getDimension() == -9999) {
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
-		if (Config.debug == true ) {
 			JARM.logger.info("World Gen Loaded");
-		}
 	}
 	
 
@@ -60,10 +58,13 @@ public class ModWorldGeneration implements IWorldGenerator {
 		}
 	}
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		generateOre(ModBlocks.rubyore.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, Config.rubyVeinSize + random.nextInt(4), Config.rubySpawnTries);
-		generateOre(ModBlocks.amethystrock.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 1 + random.nextInt(4), Config.AmethystSpawnTries);
-		generateOre(ModBlocks.brauniteore.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 1 + random.nextInt(4), Config.AmethystSpawnTries);
-		}
+		if(Config.rubyModule == true) {
+		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, Config.rubyVeinSize + random.nextInt(4), Config.rubySpawnTries);
+		}if(Config.amethystModule == true) {
+		generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 1 + random.nextInt(4), Config.AmethystSpawnTries);
+		}if(Config.brauniteModule == true) {
+		generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 1 + random.nextInt(4), Config.AmethystSpawnTries);
+		}}
 
 
 }

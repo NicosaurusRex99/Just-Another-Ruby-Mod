@@ -1,7 +1,7 @@
-package naturix.JARM.armor;
+package naturix.jarm.armor;
 
-import naturix.JARM.JARM;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import naturix.jarm.JARM;
+import naturix.jarm.items.ItemBase;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -9,16 +9,14 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ShulkerBoots extends ItemArmor 
 {
-	public ShulkerBoots()
+	public ShulkerBoots(String name)
 	{
 		super(JARM.ShulkerArmorMaterial, 0, EntityEquipmentSlot.FEET);
-		ItemBase.registerItem("shulkerBoots", this);
+		ItemBase.registerItem(name, this);
+		this.name = name;
 	}
 
 	@Override
@@ -33,7 +31,10 @@ public class ShulkerBoots extends ItemArmor
 		return "jarm:textures/models/armor/shulkerboots.png";
 	}
 
-
+	private String name;
+	public void registerItemModel() {
+		JARM.proxy.registerItemRenderer(this, 0, name);
+	}
 	@Override
 	public int getMaxDamage()
 	{
@@ -46,12 +47,7 @@ public class ShulkerBoots extends ItemArmor
 	{
 		return true;
 	}
-
-	@SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
-	public void onArmorTickUpdate(World world, EntityPlayer player, ItemStack stack)
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
     {
      player.fallDistance = 0;
     }
