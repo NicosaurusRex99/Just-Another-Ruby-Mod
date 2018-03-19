@@ -60,9 +60,6 @@ import naturix.JARM.items.SwordAmethyst;
 import naturix.JARM.items.SwordEmerald;
 import naturix.JARM.items.SwordLapis;
 import naturix.JARM.items.SwordRuby;
-import naturix.JARM.modules.AmethystModule;
-import naturix.JARM.modules.BrauniteModule;
-import naturix.JARM.modules.RubyModule;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -99,12 +96,15 @@ public class CommonProxy {
 
 	@SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-    	event.getRegistry().register(new RubyBlock());
+		if(Config.rubyModule == true) {
+		event.getRegistry().register(new RubyBlock());
     	event.getRegistry().register(new RubyOre(Material.ROCK));
+		}if(Config.amethystModule == true) {
     	event.getRegistry().register(new Amethyst(Material.IRON));
+    	}if(Config.brauniteModule == true) {
     	event.getRegistry().register(new BrauniteBlock());
     	event.getRegistry().register(new BrauniteOre(Material.ROCK));
-    	if (Config.debug == true ) {
+    	}if (Config.debug == true ) {
     	JARM.logger.info("JARM Blocks have just been loaded");
     	}
     	

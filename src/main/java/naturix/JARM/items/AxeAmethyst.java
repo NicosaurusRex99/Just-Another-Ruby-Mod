@@ -2,8 +2,8 @@ package naturix.JARM.items;
 
 import naturix.JARM.JARM;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;

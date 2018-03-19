@@ -31,5 +31,7 @@ public class ModBlocks
         brauniteblock.initModel();
         brauniteore.initModel();
 	}
-
+	public static void registerBlocks() {
+		rubyblock.registerBlocks();
+	}
 }

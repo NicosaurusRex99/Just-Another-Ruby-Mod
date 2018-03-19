@@ -3,8 +3,8 @@
   "defaults": {
     "model": "jarm:amethystrock"
   },
-  "variants": {
+	"variants": {
     "normal": [{}],
     "inventory": [{}]
-  }
+}
 }
