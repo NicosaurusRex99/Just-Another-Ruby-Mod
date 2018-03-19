@@ -215,6 +215,11 @@ import naturix.jarm.armor.LeggingsBase;
 import naturix.jarm.armor.PrismarineHelmet;
 import naturix.jarm.armor.ShulkerBoots;
 import naturix.jarm.items.ItemBase;
+import naturix.jarm.items.tools.AxeBase;
+import naturix.jarm.items.tools.HoeBase;
+import naturix.jarm.items.tools.PickaxeBase;
+import naturix.jarm.items.tools.SpadeBase;
+import naturix.jarm.items.tools.SwordBase;
 import naturix.jarm.items.tools.hammers.HammerBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
@@ -251,6 +256,31 @@ public class ModItems {
 	public static PrismarineHelmet helmetPrismarine= new PrismarineHelmet("PrismarineHelmet");
 	public static HammerBase rubyHammer = new HammerBase(JARM.rubyToolMaterial, "hammer_ruby");
 	public static HammerBase amethystHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_amethyst");
+	public static SwordBase amethystSword = new SwordBase(JARM.AmethystToolMaterial, "sword_amethyst");
+	public static SwordBase brauniteSword = new SwordBase(JARM.brauniteToolMaterial, "sword_amethyst");
+	public static SwordBase emeraldSword = new SwordBase(JARM.EmeraldToolMaterial, "sword_amethyst");
+	public static SwordBase lapisSword = new SwordBase(JARM.LapisToolMaterial, "sword_amethyst");
+	public static SwordBase rubySword = new SwordBase(JARM.rubyToolMaterial, "sword_amethyst");
+	public static SpadeBase amethystSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_amethyst");
+	public static SpadeBase brauniteSpade = new SpadeBase(JARM.brauniteToolMaterial, "spade_amethyst");
+	public static SpadeBase emeraldSpade = new SpadeBase(JARM.EmeraldToolMaterial, "spade_amethyst");
+	public static SpadeBase lapisSpade = new SpadeBase(JARM.LapisToolMaterial, "spade_amethyst");
+	public static SpadeBase rubySpade = new SpadeBase(JARM.rubyToolMaterial, "spade_amethyst");
+	public static PickaxeBase amethystPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_amethyst");
+	public static PickaxeBase braunitePickaxe = new PickaxeBase(JARM.brauniteToolMaterial, "pickaxe_amethyst");
+	public static PickaxeBase emeraldPickaxe = new PickaxeBase(JARM.EmeraldToolMaterial, "pickaxe_amethyst");
+	public static PickaxeBase lapisPickaxe = new PickaxeBase(JARM.LapisToolMaterial, "pickaxe_amethyst");
+	public static PickaxeBase rubyPickaxe = new PickaxeBase(JARM.rubyToolMaterial, "pickaxe_amethyst");
+	public static AxeBase amethystAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_amethyst");
+	public static AxeBase brauniteAxe = new AxeBase(JARM.brauniteToolMaterial, "axe_amethyst");
+	public static AxeBase emeraldAxe = new AxeBase(JARM.EmeraldToolMaterial, "axe_amethyst");
+	public static AxeBase lapisAxe = new AxeBase(JARM.LapisToolMaterial, "axe_amethyst");
+	public static AxeBase rubyAxe = new AxeBase(JARM.rubyToolMaterial, "axe_amethyst");
+	public static HoeBase amethystHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_amethyst");
+	public static HoeBase brauniteHoe = new HoeBase(JARM.brauniteToolMaterial, "hoe_amethyst");
+	public static HoeBase emeraldHoe = new HoeBase(JARM.EmeraldToolMaterial, "hoe_amethyst");
+	public static HoeBase lapisHoe = new HoeBase(JARM.LapisToolMaterial, "hoe_amethyst");
+	public static HoeBase rubyHoe = new HoeBase(JARM.rubyToolMaterial, "hoe_amethyst");
 	
 	public static void register(IForgeRegistry<Item> registry) {
 	if(Config.rubyModule == true) {
@@ -259,7 +289,12 @@ public class ModItems {
 				bootsRuby,
 				leggingsRuby,
 				chestplateRuby,
-				helmetRuby
+				helmetRuby,
+				rubyHoe,
+				rubyPickaxe,
+				rubySpade,
+				rubySword,
+				rubyAxe
 		);
 		if(Loader.isModLoaded("thermalfoundation")) {
 			registry.registerAll(
@@ -272,7 +307,12 @@ public class ModItems {
 				bootsBraunite,
 				leggingsBraunite,
 				chestplateBraunite,
-				helmetBraunite
+				helmetBraunite,
+				brauniteHoe,
+				braunitePickaxe,
+				brauniteSpade,
+				brauniteSword,
+				brauniteAxe
 		);
 		}
 	 
@@ -286,7 +326,12 @@ public class ModItems {
 					bootsLapis,
 					leggingsLapis,
 					chestplateLapis,
-					helmetLapis
+					helmetLapis,
+					lapisHoe,
+					lapisPickaxe,
+					lapisSpade,
+					lapisSword,
+					lapisAxe
 			);
 	    }
 	 if(Config.emeraldModule == true) {
@@ -294,7 +339,12 @@ public class ModItems {
 				 	bootsEmerald,
 					leggingsEmerald,
 					chestplateEmerald,
-					helmetEmerald
+					helmetEmerald,
+					emeraldHoe,
+					emeraldPickaxe,
+					emeraldSpade,
+					emeraldSword,
+					emeraldAxe
 					);
 	    }
 	 if(Config.amethystModule == true) {
@@ -302,7 +352,12 @@ public class ModItems {
 				 	bootsAmethyst,
 					leggingsAmethyst,
 					chestplateAmethyst,
-					helmetAmethyst
+					helmetAmethyst,
+					amethystHoe,
+					amethystPickaxe,
+					amethystSpade,
+					amethystSword,
+					amethystAxe
 					);
 		 if(Loader.isModLoaded("thermalfoundation")) {
 				registry.registerAll(
@@ -318,14 +373,7 @@ public class ModItems {
 					helmetShulker
 					);
 	    }
-	 if(Config.brauniteModule == true) {
-		 registry.registerAll(
-				 	bootsBraunite,
-					leggingsBraunite,
-					chestplateBraunite,
-					helmetBraunite
-					);
-	    }}}
+	 }}
 
 public static void registerModels() {
 	if(Config.rubyModule == true) {
@@ -334,6 +382,12 @@ public static void registerModels() {
 				leggingsRuby.registerItemModel();
 				chestplateRuby.registerItemModel();
 				helmetRuby.registerItemModel();
+				rubyHoe.registerItemModel();
+				rubyPickaxe.registerItemModel();
+				rubySpade.registerItemModel();
+				rubySword.registerItemModel();
+				rubyAxe.registerItemModel();
+				
 				if(Loader.isModLoaded("thermalexpansion")) {
 					rubyHammer.registerItemModel();
 				}
@@ -344,6 +398,11 @@ public static void registerModels() {
 				leggingsBraunite.registerItemModel();
 				chestplateBraunite.registerItemModel();
 				helmetBraunite.registerItemModel();
+				brauniteHoe.registerItemModel();
+				braunitePickaxe.registerItemModel();
+				brauniteSpade.registerItemModel();
+				brauniteSword.registerItemModel();
+				brauniteAxe.registerItemModel();
 		}
 	 
 	 if(Config.prismarineModule == true) {
@@ -354,18 +413,33 @@ public static void registerModels() {
 					leggingsLapis.registerItemModel();
 					chestplateLapis.registerItemModel();
 					helmetLapis.registerItemModel();
+					lapisHoe.registerItemModel();
+					lapisPickaxe.registerItemModel();
+					lapisSpade.registerItemModel();
+					lapisSword.registerItemModel();
+					lapisAxe.registerItemModel();
 	    }
 	 if(Config.emeraldModule == true) {
 				 	bootsEmerald.registerItemModel();
 					leggingsEmerald.registerItemModel();
 					chestplateEmerald.registerItemModel();
 					helmetEmerald.registerItemModel();
+					emeraldHoe.registerItemModel();
+					emeraldPickaxe.registerItemModel();
+					emeraldSpade.registerItemModel();
+					emeraldSword.registerItemModel();
+					emeraldAxe.registerItemModel();
 	    }
 	 if(Config.amethystModule == true) {
 				 	bootsAmethyst.registerItemModel();
 					leggingsAmethyst.registerItemModel();
 					chestplateAmethyst.registerItemModel();
 					helmetAmethyst.registerItemModel();
+					amethystHoe.registerItemModel();
+					amethystPickaxe.registerItemModel();
+					amethystSpade.registerItemModel();
+					amethystSword.registerItemModel();
+					amethystAxe.registerItemModel();
 					if(Loader.isModLoaded("thermalexpansion")) {
 						amethystHammer.registerItemModel();
 					}
@@ -375,12 +449,6 @@ public static void registerModels() {
 					leggingsShulker.registerItemModel();
 					chestplateShulker.registerItemModel();
 					helmetShulker.registerItemModel();
-	    }
-	 if(Config.brauniteModule == true) {
-				 	bootsBraunite.registerItemModel();
-					leggingsBraunite.registerItemModel();
-					chestplateBraunite.registerItemModel();
-					helmetBraunite.registerItemModel();
 	    }
 }
 }

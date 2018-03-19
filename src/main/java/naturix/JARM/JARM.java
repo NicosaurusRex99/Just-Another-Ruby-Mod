@@ -47,7 +47,9 @@ public class JARM
     public static final ToolMaterial AmethystToolMaterial = EnumHelper.addToolMaterial("AMETHYST", 4, 6723, 13, 10, 500);
     public static final ItemArmor.ArmorMaterial AmethystArmorMaterial = EnumHelper.addArmorMaterial("amethyst", MODID + ":emerald", 4, new int[]{Config.amethystHelm, Config.amethystChest, Config.amethystLeg, Config.amethystBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
     public static final ItemArmor.ArmorMaterial ShulkerArmorMaterial = EnumHelper.addArmorMaterial("SHULKER", MODID + ":shulker", 4, new int[]{Config.shulkerHelm, Config.shulkerChest, Config.shulkerLeg, Config.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
-  
+    public static final ItemArmor.ArmorMaterial brauniteArmorMaterial = EnumHelper.addArmorMaterial("braunite", MODID + ":shulker", 4, new int[]{Config.shulkerHelm, Config.shulkerChest, Config.shulkerLeg, Config.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
+    public static final ToolMaterial brauniteToolMaterial = EnumHelper.addToolMaterial("BRAUNITE", 4, 6723, 13, 10, 500);
+    
     @Mod.Instance
     public static JARM instance;
 
