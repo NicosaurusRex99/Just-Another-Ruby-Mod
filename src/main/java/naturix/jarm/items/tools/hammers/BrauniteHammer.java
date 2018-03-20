@@ -1,6 +1,7 @@
 package naturix.jarm.items.tools.hammers;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.ImmutableList;
@@ -18,11 +19,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class HammerBase extends ItemHammerCore {
+public class BrauniteHammer extends ItemHammerCore {
 	public String name;
-	private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.ACTIVATOR_RAIL, Blocks.COAL_ORE, Blocks.COBBLESTONE, Blocks.DETECTOR_RAIL, Blocks.DIAMOND_BLOCK, Blocks.DIAMOND_ORE, Blocks.DOUBLE_STONE_SLAB, Blocks.GOLDEN_RAIL, Blocks.GOLD_BLOCK, Blocks.GOLD_ORE, Blocks.ICE, Blocks.IRON_BLOCK, Blocks.IRON_ORE, Blocks.LAPIS_BLOCK, Blocks.LAPIS_ORE, Blocks.LIT_REDSTONE_ORE, Blocks.MOSSY_COBBLESTONE, Blocks.NETHERRACK, Blocks.PACKED_ICE, Blocks.RAIL, Blocks.REDSTONE_ORE, Blocks.SANDSTONE, Blocks.RED_SANDSTONE, Blocks.STONE, Blocks.STONE_SLAB, Blocks.STONE_BUTTON, Blocks.STONE_PRESSURE_PLATE);
+	private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.ACTIVATOR_RAIL, Blocks.COAL_ORE, Blocks.COBBLESTONE, Blocks.DETECTOR_RAIL, Blocks.DIAMOND_BLOCK, Blocks.DIAMOND_ORE, Blocks.DOUBLE_STONE_SLAB, Blocks.GOLDEN_RAIL, Blocks.GOLD_BLOCK, Blocks.GOLD_ORE, Blocks.ICE, Blocks.IRON_BLOCK, Blocks.IRON_ORE, Blocks.LAPIS_BLOCK, Blocks.LAPIS_ORE, Blocks.LIT_REDSTONE_ORE, Blocks.MOSSY_COBBLESTONE, Blocks.NETHERRACK, Blocks.PACKED_ICE, Blocks.RAIL, Blocks.REDSTONE_ORE, Blocks.SANDSTONE, Blocks.RED_SANDSTONE, Blocks.STONE, Blocks.STONE_SLAB, Blocks.STONE_BUTTON, Blocks.STONE_PRESSURE_PLATE, Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE, Blocks.COCOA, Blocks.CLAY, Blocks.DIRT, Blocks.FARMLAND, Blocks.GRASS, Blocks.GRAVEL, Blocks.MYCELIUM, Blocks.SAND, Blocks.SNOW, Blocks.SNOW_LAYER, Blocks.SOUL_SAND, Blocks.GRASS_PATH, Blocks.CONCRETE_POWDER);
 
-	    public HammerBase(ToolMaterial material, String name) {
+	    public BrauniteHammer(ToolMaterial material, String name) {
 	    	super(11, 4, material);
 	        setRegistryName(name);
 	        setUnlocalizedName(JARM.MODID + "." + name);
@@ -45,6 +46,17 @@ public class HammerBase extends ItemHammerCore {
 	    		effectiveMaterials.add(Material.PACKED_ICE);
 	    		effectiveMaterials.add(Material.GLASS);
 	    		effectiveMaterials.add(Material.REDSTONE_LIGHT);
+	    		effectiveMaterials.add(Material.GROUND);
+	    		effectiveMaterials.add(Material.CLAY);
+	    		effectiveMaterials.add(Material.LEAVES);
+	    		effectiveMaterials.add(Material.GRASS);
+	    		effectiveMaterials.add(Material.PISTON);
+	    		effectiveMaterials.add(Material.SAND);
+	    		effectiveMaterials.add(Material.SNOW);
+	    		effectiveMaterials.add(Material.SPONGE);
+	    		effectiveMaterials.add(Material.VINE);
+	    		effectiveMaterials.add(Material.WEB);
+	    		effectiveMaterials.add(Material.WOOD);
 
 	    		if (harvestLevel > 0) {
 	    			attackDamage = 10.0F;
@@ -211,5 +223,10 @@ public class HammerBase extends ItemHammerCore {
 	    		}
 	    		return ImmutableList.copyOf(area);
 	    	}
+	    	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
+	    	{
+	    	list.add("Mines more blocks!");
+	    	}
+	    	}
 
-	    }
+	    

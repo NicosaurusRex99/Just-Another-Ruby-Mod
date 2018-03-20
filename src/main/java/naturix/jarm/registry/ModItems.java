@@ -220,6 +220,7 @@ import naturix.jarm.items.tools.HoeBase;
 import naturix.jarm.items.tools.PickaxeBase;
 import naturix.jarm.items.tools.SpadeBase;
 import naturix.jarm.items.tools.SwordBase;
+import naturix.jarm.items.tools.hammers.BrauniteHammer;
 import naturix.jarm.items.tools.hammers.HammerBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
@@ -255,6 +256,7 @@ public class ModItems {
 	public static HelmetBase helmetShulker= new HelmetBase("ShulkerHelmet");
 	public static PrismarineHelmet helmetPrismarine= new PrismarineHelmet("PrismarineHelmet");
 	public static HammerBase rubyHammer = new HammerBase(JARM.rubyToolMaterial, "hammer_ruby");
+	public static BrauniteHammer brauniteHammer = new BrauniteHammer(JARM.brauniteToolMaterial, "hammer_braunite");
 	public static HammerBase amethystHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_amethyst");
 	public static SwordBase amethystSword = new SwordBase(JARM.AmethystToolMaterial, "sword_amethyst");
 	public static SwordBase brauniteSword = new SwordBase(JARM.brauniteToolMaterial, "sword_braunite");
@@ -313,7 +315,11 @@ public class ModItems {
 				brauniteSpade,
 				brauniteSword,
 				brauniteAxe
-		);
+		);if(Loader.isModLoaded("thermalfoundation")) {
+			registry.registerAll(
+					brauniteHammer
+					);
+		}
 		}
 	 
 	 if(Config.prismarineModule == true) {
@@ -403,6 +409,9 @@ public static void registerModels() {
 				brauniteSpade.registerItemModel();
 				brauniteSword.registerItemModel();
 				brauniteAxe.registerItemModel();
+				if(Loader.isModLoaded("thermalexpansion")) {
+					brauniteHammer.registerItemModel();
+				}
 		}
 	 
 	 if(Config.prismarineModule == true) {

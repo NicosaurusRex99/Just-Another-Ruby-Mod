@@ -52,6 +52,7 @@ item.jarm.axe_braunite.name=Braunite Axe
 item.pickaxe_braunite.name=Braunite Pickaxe
 item.sword_braunite.name=Braunite Sword
 item.spade_braunite.name=Braunite Shovel
+item.jarm.hammer_braunite.name=Braunite Hammer
 
 tile.jarm.block_ruby.name=Ruby Block
 tile.ore_ruby.name=Ruby Ore
