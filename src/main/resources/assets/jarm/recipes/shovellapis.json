@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " X ",
-    " # ",
-    " # "
+    "X",
+    "#",
+    "#"
   ],
     "key": {
     "#": {
@@ -15,6 +15,6 @@
     }
   },
   "result": {
-    "item": "jarm:shovellapis"
+    "item": "jarm:spade_lapis"
   }
 }

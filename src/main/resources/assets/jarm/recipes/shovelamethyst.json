@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " X ",
-    " # ",
-    " # "
+    "X",
+    "#",
+    "#"
   ],
     "key": {
     "#": {
         "item": "minecraft:stick"
     },
     "X": {
-        "item": "jarm:amethystrock"
+        "item": "jarm:block_amethyst"
     }
   },
   "result": {
-    "item": "jarm:shovelamethyst"
+    "item": "jarm:spade_amethyst"
   }
 }

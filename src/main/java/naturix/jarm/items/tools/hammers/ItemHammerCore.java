@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 import java.util.Collections;
 import java.util.Set;
 
-public abstract class ItemHammerCore extends ItemTool {
+public abstract class ItemHammerCore extends ItemTool implements IAOEBreakItem  {
 
 	protected final TLinkedHashSet<String> toolClasses = new TLinkedHashSet<>();
 	protected final Set<String> immutableClasses = Collections.unmodifiableSet(toolClasses);

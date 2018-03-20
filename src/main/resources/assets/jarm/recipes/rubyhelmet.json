@@ -6,10 +6,10 @@
   ],
   "key": {
     "X": {
-      "item": "jarm:gemruby"
+      "item": "jarm:gem_ruby"
     }
   },
   "result": {
-    "item": "jarm:rubyhelmet"
+    "item": "jarm:RubyHelmet"
   }
 }

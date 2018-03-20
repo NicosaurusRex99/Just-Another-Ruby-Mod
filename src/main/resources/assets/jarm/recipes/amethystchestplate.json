@@ -7,10 +7,10 @@
   ],
   "key": {
     "X": {
-        "item": "jarm:amethystrock"
+        "item": "jarm:block_amethyst"
     }
   },
   "result": {
-    "item": "jarm:amethystchestplate"
+    "item": "jarm:AmethystChestplate"
   }
 }

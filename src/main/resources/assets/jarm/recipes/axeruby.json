@@ -7,13 +7,13 @@
   ],
   "key": {
     "X": {
-        "item": "jarm:gemruby"
+        "item": "jarm:gem_ruby"
     },
     "#": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "jarm:axeruby"
+    "item": "jarm:axe_ruby"
   }
 }

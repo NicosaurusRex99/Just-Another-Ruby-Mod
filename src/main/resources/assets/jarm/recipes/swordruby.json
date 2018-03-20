@@ -10,10 +10,10 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "jarm:gemruby"
+      "item": "jarm:gem_ruby"
     }
   },
   "result": {
-    "item": "jarm:swordruby"
+    "item": "jarm:sword_ruby"
   }
 }

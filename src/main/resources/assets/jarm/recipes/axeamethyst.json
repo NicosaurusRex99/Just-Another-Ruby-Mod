@@ -10,10 +10,10 @@
         "item": "minecraft:stick"
     },
     "X": {
-        "item": "jarm:amethystrock"
+        "item": "jarm:block_amethyst"
     }
   },
   "result": {
-    "item": "jarm:axeamethyst"
+    "item": "jarm:axe_amethyst"
   }
 }

@@ -7,10 +7,10 @@
   ],
   "key": {
     "X": {
-      "item": "jarm:gemruby"
+      "item": "jarm:gem_ruby"
     }
   },
   "result": {
-    "item": "jarm:rubyleggings"
+    "item": "jarm:RubyLeggings"
   }
 }

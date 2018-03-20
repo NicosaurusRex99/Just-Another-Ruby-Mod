@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:gem_braunite",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_braunite"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}
