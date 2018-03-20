@@ -1,32 +1,35 @@
 package naturix.jarm.items.tools;
 
+import java.util.Set;
+
+import com.google.common.collect.Sets;
+
 import naturix.jarm.JARM;
-import naturix.jarm.items.ItemBase;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
+import net.minecraft.item.Item.ToolMaterial;
 
-public class AxeBase extends ModItemAxe {
-
-	protected String name;
-
-	public AxeBase(ToolMaterial material, String name) {
-		super(material);
-		this.name = name;
-		registerItem(name, this);
-		
-	}
-	
-//public static List<Item> JARMItemList = new ArrayList<>(30);
-
-	public static void registerItem(String name, Item item)
-	{
-		item.setRegistryName(name);
-		item.setCreativeTab(JARM.JARM);
-		item.setUnlocalizedName(name);
-		//ForgeRegistries.ITEMS.register(item);	
-		//JARMItemList.add(item);
-		}
-	public void registerItemModel() {
-		JARM.proxy.registerItemRenderer(this, 0, name);
-	}
+public class AxeBase extends ItemTool{
+	private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.PLANKS, Blocks.COCOA, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE);
+    
+public String name;
+public AxeBase(ToolMaterial material, String name) {
+	super(11, 4, material, EFFECTIVE_ON);
+    setRegistryName(name);
+    setUnlocalizedName(JARM.MODID + "." + name);
+    setCreativeTab(JARM.JARM);
+    setMaxStackSize(1);
+    setMaxDamage(8420);
+    setHarvestLevel(getUnlocalizedName(), 4);
+    getItemEnchantability();
+    this.name = name;
+}
+public void registerItemModel() {
+	JARM.proxy.registerItemRenderer(this, 0, name);
+}
 }
