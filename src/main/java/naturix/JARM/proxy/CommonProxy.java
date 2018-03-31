@@ -22,6 +22,7 @@ public class CommonProxy {
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod!.cfg"));
         Config.readConfig();
+
             }
 
     public void init(FMLInitializationEvent e)
