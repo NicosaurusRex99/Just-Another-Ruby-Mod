@@ -1,4 +1,4 @@
-Tin
+..*Tin
 Copper
 Lead
 Silver
