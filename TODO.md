@@ -13,10 +13,9 @@
 13. Saphire
 14. Uranium (for new tnt?!?)
 15. Opal
-16. Dogite
+16. Nickel
 17. Steel (simple recipe no ore though)
 18. Mercury/Cinnabar (highly deadly)
 19. Amber
 20. Jade
 21. Osmium
-22. Nickel
