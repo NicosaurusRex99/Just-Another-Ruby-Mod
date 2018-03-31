@@ -1,22 +1,22 @@
 1. Tin
 2. Copper
-Lead
-Silver
-Tungsten
-Platinum
-Meteorite
-Cobalt
-Mythrill
-Titanium
-Luminite (lights up in darkness)
-Fossil (potentially mobs?)
-Saphire
-Uranium (for new tnt?!?)
-Opal
-Dogite
-Steel (simple recipe no ore though)
-Mercury/Cinnabar (highly deadly)
-Amber
-Jade
-Osmium
-Nickel
+3. Lead
+4. Silver
+5. Tungsten
+6. Platinum
+7. Meteorite
+8. Cobalt
+9. Mythrill
+10. Titanium
+11. Luminite (lights up in darkness)
+12. Fossil (potentially mobs?)
+13. Saphire
+14. Uranium (for new tnt?!?)
+15. Opal
+16. Dogite
+17. Steel (simple recipe no ore though)
+18. Mercury/Cinnabar (highly deadly)
+19. Amber
+20. Jade
+21. Osmium
+22. Nickel
