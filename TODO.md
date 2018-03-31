@@ -1,7 +1,22 @@
--Copper Set
--Tin Set
--Nickel Set
--Uranium Set <--- Kills Player slowly
--Lead Set <--- adds slow killing effect
--Silver Set
--Osmium Set
+Tin
+Copper
+Lead
+Silver
+Tungsten
+Platinum
+Meteorite
+Cobalt
+Mythrill
+Titanium
+Luminite (lights up in darkness)
+Fossil (potentially mobs?)
+Saphire
+Uranium (for new tnt?!?)
+Opal
+Dogite
+Steel (simple recipe no ore though)
+Mercury/Cinnabar (highly deadly)
+Amber
+Jade
+Osmium
+Nickel
