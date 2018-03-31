@@ -1,5 +1,5 @@
 ..*Tin
-Copper
+..*Copper
 Lead
 Silver
 Tungsten
