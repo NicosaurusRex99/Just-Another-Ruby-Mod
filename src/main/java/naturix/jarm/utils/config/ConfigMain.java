@@ -54,7 +54,28 @@ public class ConfigMain {
     public static boolean lapisModule = true;
     public static boolean prismarineModule = true;
     public static boolean shulkerModule = true;
- 
+    public static boolean amberModule = true;
+    public static boolean cinnibarModule = true;
+    public static boolean fossilModule = true;
+    public static boolean jadeModule = true;
+    public static boolean meteoriteModule = true;
+    public static boolean opalModule = true;
+    public static boolean saphireModule = true;
+    public static boolean tinModule = true;
+    public static boolean copperModule = true;
+    public static boolean leadModule = true;
+    public static boolean silverModule = true;
+    public static boolean tungstenModule = true;
+    public static boolean platinumModule = true;
+    public static boolean cobaltModule = true;
+    public static boolean mythrillModule = true;
+    public static boolean titaniumModule = true;
+    public static boolean luminiteModule = true;
+    public static boolean uraniumModule = true;
+    public static boolean nickelModule = true;
+    public static boolean steelModule = true;
+    public static boolean osmiumModule = true;
+    
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
         try {
@@ -112,6 +133,27 @@ public class ConfigMain {
         lapisModule = cfg.getBoolean("lapis", CATEGORY_MODULES, lapisModule, "Disable to remove this module");
         prismarineModule = cfg.getBoolean("prismarine", CATEGORY_MODULES, prismarineModule, "Disable to remove this module");
         shulkerModule = cfg.getBoolean("shulker", CATEGORY_MODULES, shulkerModule, "Disable to remove this module");
+        amberModule = cfg.getBoolean("amber", CATEGORY_MODULES, amberModule, "Disable to remove this module");
+        cinnibarModule = cfg.getBoolean("cinnibar", CATEGORY_MODULES, cinnibarModule, "Disable to remove this module");
+        fossilModule = cfg.getBoolean("fossil", CATEGORY_MODULES, fossilModule, "Disable to remove this module");
+        jadeModule = cfg.getBoolean("jade", CATEGORY_MODULES, jadeModule, "Disable to remove this module");
+        meteoriteModule = cfg.getBoolean("meteorite", CATEGORY_MODULES, meteoriteModule, "Disable to remove this module");
+        opalModule = cfg.getBoolean("opal", CATEGORY_MODULES, opalModule, "Disable to remove this module");
+        saphireModule = cfg.getBoolean("saphire", CATEGORY_MODULES, saphireModule, "Disable to remove this module");
+        tinModule = cfg.getBoolean("tin", CATEGORY_MODULES, tinModule, "Disable to remove this module");
+        copperModule = cfg.getBoolean("copper", CATEGORY_MODULES, copperModule, "Disable to remove this module");
+        leadModule = cfg.getBoolean("lead", CATEGORY_MODULES, leadModule, "Disable to remove this module");
+        silverModule = cfg.getBoolean("silver", CATEGORY_MODULES, silverModule, "Disable to remove this module");
+        tungstenModule = cfg.getBoolean("tungsten", CATEGORY_MODULES, tungstenModule, "Disable to remove this module");
+        platinumModule = cfg.getBoolean("platinum", CATEGORY_MODULES, platinumModule, "Disable to remove this module");
+        cobaltModule = cfg.getBoolean("cobalt", CATEGORY_MODULES, cobaltModule, "Disable to remove this module");
+        mythrillModule = cfg.getBoolean("mythrill", CATEGORY_MODULES, mythrillModule, "Disable to remove this module");
+        titaniumModule = cfg.getBoolean("titanium", CATEGORY_MODULES, titaniumModule, "Disable to remove this module");
+        luminiteModule = cfg.getBoolean("luminite", CATEGORY_MODULES, luminiteModule, "Disable to remove this module");
+        uraniumModule = cfg.getBoolean("uranium", CATEGORY_MODULES, uraniumModule, "Disable to remove this module");
+        nickelModule = cfg.getBoolean("nickel", CATEGORY_MODULES, nickelModule, "Disable to remove this module");
+        steelModule = cfg.getBoolean("steel", CATEGORY_MODULES, steelModule, "Disable to remove this module");
+        osmiumModule = cfg.getBoolean("osmium", CATEGORY_MODULES, osmiumModule, "Disable to remove this module");
         }
     public static class GameRules
     {

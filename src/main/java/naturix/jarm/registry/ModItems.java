@@ -229,6 +229,27 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 	public static ItemBase gemRuby = new ItemBase("gem_ruby").setCreativeTab(JARM.JARM);
 	public static ItemBase gemBraunite= new ItemBase("gem_braunite").setCreativeTab(JARM.JARM);
+	public static ItemBase gemAmber= new ItemBase("gem_amber").setCreativeTab(JARM.JARM);
+	public static ItemBase gemCinnibar= new ItemBase("gem_cinnibar").setCreativeTab(JARM.JARM);
+	public static ItemBase gemFossil= new ItemBase("gem_fossil").setCreativeTab(JARM.JARM);
+	public static ItemBase gemJade= new ItemBase("gem_jade").setCreativeTab(JARM.JARM);
+	public static ItemBase gemMeteorite= new ItemBase("gem_meteorite").setCreativeTab(JARM.JARM);
+	public static ItemBase gemOpal= new ItemBase("gem_opal").setCreativeTab(JARM.JARM);
+	public static ItemBase gemSaphire= new ItemBase("gem_saphire").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_tin= new ItemBase("ingot_tin").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_copper= new ItemBase("ingot_copper").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_lead= new ItemBase("ingot_lead").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_silver= new ItemBase("ingot_silver").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_tungsten= new ItemBase("ingot_tungsten").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_platinum= new ItemBase("ingot_platinum").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_cobalt= new ItemBase("ingot_cobalt").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_mythrill= new ItemBase("ingot_mythrill").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_titanium= new ItemBase("ingot_titanium").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_luminite= new ItemBase("ingot_luminite").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_uranium= new ItemBase("ingot_uranium").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_nickel= new ItemBase("ingot_nickel").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_steel= new ItemBase("ingot_steel").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_osmium= new ItemBase("ingot_osmium").setCreativeTab(JARM.JARM);
 	
 	public static BootsBase bootsAmethyst= new BootsBase("AmethystBoots");
 	public static LeggingsBase leggingsAmethyst= new LeggingsBase("AmethystLeggings");
@@ -379,6 +400,112 @@ public class ModItems {
 					helmetShulker
 					);
 	    }
+	 if(ConfigMain.amberModule == true) {
+		 registry.registerAll(
+				 gemAmber
+				 );
+	 }
+	 if(ConfigMain.cinnibarModule == true) {
+		 registry.registerAll(
+				 gemCinnibar
+				 );
+	 }
+	 if(ConfigMain.fossilModule == true) {
+		 registry.registerAll(
+				 gemFossil
+				 );
+	 }
+	 if(ConfigMain.jadeModule == true) {
+		 registry.registerAll(
+				 gemJade
+				 );
+	 }
+	 if(ConfigMain.opalModule == true) {
+		 registry.registerAll(
+				 gemOpal
+				 );
+	 }
+	 if(ConfigMain.saphireModule == true) {
+		 registry.registerAll(
+				 gemSaphire
+				 );
+	 }
+	 if(ConfigMain.meteoriteModule == true) {
+		 registry.registerAll(
+				 gemMeteorite
+				 );
+	 }
+	 if(ConfigMain.tinModule == true) {
+		 registry.registerAll(
+				 ingot_tin
+				 );
+	 }
+	 if(ConfigMain.copperModule == true) {
+		 registry.registerAll(
+				 ingot_copper
+				 );
+	 }
+	 if(ConfigMain.leadModule == true) {
+		 registry.registerAll(
+				 ingot_lead
+				 );
+	 }
+	 if(ConfigMain.silverModule == true) {
+		 registry.registerAll(
+				 ingot_silver
+				 );
+	 }
+	 if(ConfigMain.tungstenModule == true) {
+		 registry.registerAll(
+				 ingot_tungsten
+				 );
+	 }
+	 if(ConfigMain.platinumModule == true) {
+		 registry.registerAll(
+				 ingot_platinum
+				 );
+	 }
+	 if(ConfigMain.cobaltModule == true) {
+		 registry.registerAll(
+				 ingot_cobalt
+				 );
+	 }
+	 if(ConfigMain.mythrillModule == true) {
+		 registry.registerAll(
+				 ingot_mythrill
+				 );
+	 }
+	 if(ConfigMain.titaniumModule == true) {
+		 registry.registerAll(
+				 ingot_titanium
+				 );
+	 }
+	 if(ConfigMain.luminiteModule == true) {
+		 registry.registerAll(
+				 ingot_luminite
+				 );
+	 }
+	 if(ConfigMain.uraniumModule == true) {
+		 registry.registerAll(
+				 ingot_uranium
+				 );
+	 }
+	 if(ConfigMain.nickelModule == true) {
+		 registry.registerAll(
+				 ingot_nickel
+				 );
+	 }
+	 if(ConfigMain.steelModule == true) {
+		 registry.registerAll(
+				 ingot_steel
+				 );
+	 }
+	 if(ConfigMain.osmiumModule == true) {
+		 registry.registerAll(
+				 ingot_osmium
+				 );
+	 }
+	 
 	 }}
 
 public static void registerModels() {
@@ -459,5 +586,68 @@ public static void registerModels() {
 					chestplateShulker.registerItemModel();
 					helmetShulker.registerItemModel();
 	    }
-}
+	 if(ConfigMain.amberModule == true) {
+		 gemAmber.registerItemModel();
+	 }
+	 if(ConfigMain.cinnibarModule == true) {
+		 gemCinnibar.registerItemModel();
+	 }
+	 if(ConfigMain.fossilModule == true) {
+		 gemFossil.registerItemModel();
+	 }
+	 if(ConfigMain.jadeModule == true) {
+		 gemJade.registerItemModel();
+	 }
+	 if(ConfigMain.opalModule == true) {
+		 gemOpal.registerItemModel();
+	 }
+	 if(ConfigMain.saphireModule == true) {
+		 gemSaphire.registerItemModel();
+	 }
+	 if(ConfigMain.meteoriteModule == true) {
+		 gemMeteorite.registerItemModel();
+	 }
+	 if(ConfigMain.tinModule == true) {
+		 ingot_tin.registerItemModel();
+		 	 }
+	 if(ConfigMain.copperModule == true) {
+		 ingot_copper.registerItemModel();
+		 	 }
+	 if(ConfigMain.leadModule == true) {
+		 ingot_lead.registerItemModel();
+		 	 }
+	 if(ConfigMain.silverModule == true) {
+		 ingot_silver.registerItemModel();
+		 	 }
+	 if(ConfigMain.tungstenModule == true) {
+		 ingot_tungsten.registerItemModel();
+		 	 }
+	 if(ConfigMain.platinumModule == true) {
+		 ingot_platinum.registerItemModel();
+		 	 }
+	 if(ConfigMain.cobaltModule == true) {
+		 ingot_cobalt.registerItemModel();
+		 	 }
+	 if(ConfigMain.mythrillModule == true) {
+		 ingot_mythrill.registerItemModel();
+		 	 }
+	 if(ConfigMain.titaniumModule == true) {
+		 ingot_titanium.registerItemModel();
+		 	 }
+	 if(ConfigMain.luminiteModule == true) {
+		 ingot_luminite.registerItemModel();
+		 	 }
+	 if(ConfigMain.uraniumModule == true) {
+		 ingot_uranium.registerItemModel();
+		 	 }
+	 if(ConfigMain.nickelModule == true) {
+		 ingot_nickel.registerItemModel();
+		 	 }
+	 if(ConfigMain.steelModule == true) {
+		 ingot_steel.registerItemModel();
+		 	 }
+	 if(ConfigMain.osmiumModule == true) {
+		 ingot_osmium.registerItemModel();
+		 	 }
+	}
 }
