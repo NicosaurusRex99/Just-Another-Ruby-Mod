@@ -1,7 +1,7 @@
 package naturix.jarm.blocks;
 
-import naturix.jarm.Config;
 import naturix.jarm.JARM;
+import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BeaconBase extends Block {
 
-	public boolean addBeaconBase = Config.addBeaconBase;
+	public boolean addBeaconBase = ConfigMain.addBeaconBase;
 	private String name;
 	
     public BeaconBase(String name) {

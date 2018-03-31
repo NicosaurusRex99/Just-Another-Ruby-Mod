@@ -206,7 +206,6 @@ any resulting litigation.
 */
 package naturix.jarm.registry;
 
-import naturix.jarm.Config;
 import naturix.jarm.JARM;
 import naturix.jarm.armor.BootsBase;
 import naturix.jarm.armor.ChestplateBase;
@@ -222,6 +221,7 @@ import naturix.jarm.items.tools.SpadeBase;
 import naturix.jarm.items.tools.SwordBase;
 import naturix.jarm.items.tools.hammers.BrauniteHammer;
 import naturix.jarm.items.tools.hammers.HammerBase;
+import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -285,7 +285,7 @@ public class ModItems {
 	public static HoeBase rubyHoe = new HoeBase(JARM.rubyToolMaterial, "hoe_ruby");
 	
 	public static void register(IForgeRegistry<Item> registry) {
-	if(Config.rubyModule == true) {
+	if(ConfigMain.rubyModule == true) {
 		registry.registerAll(
 				gemRuby,
 				bootsRuby,
@@ -303,7 +303,7 @@ public class ModItems {
 					rubyHammer
 					);
 		}
-	if(Config.brauniteModule == true) {
+	if(ConfigMain.brauniteModule == true) {
 		registry.registerAll(
 				gemBraunite,
 				bootsBraunite,
@@ -322,12 +322,12 @@ public class ModItems {
 		}
 		}
 	 
-	 if(Config.prismarineModule == true) {
+	 if(ConfigMain.prismarineModule == true) {
 		 registry.registerAll(
 					helmetPrismarine
 			);
 	    }
-	 if(Config.lapisModule == true) {
+	 if(ConfigMain.lapisModule == true) {
 		 registry.registerAll(
 					bootsLapis,
 					leggingsLapis,
@@ -340,7 +340,7 @@ public class ModItems {
 					lapisAxe
 			);
 	    }
-	 if(Config.emeraldModule == true) {
+	 if(ConfigMain.emeraldModule == true) {
 		 registry.registerAll(
 				 	bootsEmerald,
 					leggingsEmerald,
@@ -353,7 +353,7 @@ public class ModItems {
 					emeraldAxe
 					);
 	    }
-	 if(Config.amethystModule == true) {
+	 if(ConfigMain.amethystModule == true) {
 		 registry.registerAll(
 				 	bootsAmethyst,
 					leggingsAmethyst,
@@ -371,7 +371,7 @@ public class ModItems {
 						);
 			}
 	    }
-	 if(Config.shulkerModule == true) {
+	 if(ConfigMain.shulkerModule == true) {
 		 registry.registerAll(
 				 	bootsShulker,
 					leggingsShulker,
@@ -382,7 +382,7 @@ public class ModItems {
 	 }}
 
 public static void registerModels() {
-	if(Config.rubyModule == true) {
+	if(ConfigMain.rubyModule == true) {
 				gemRuby.registerItemModel();
 				bootsRuby.registerItemModel();
 				leggingsRuby.registerItemModel();
@@ -398,7 +398,7 @@ public static void registerModels() {
 					rubyHammer.registerItemModel();
 				}
 				}
-	if(Config.brauniteModule == true) {
+	if(ConfigMain.brauniteModule == true) {
 				gemBraunite.registerItemModel();
 				bootsBraunite.registerItemModel();
 				leggingsBraunite.registerItemModel();
@@ -414,10 +414,10 @@ public static void registerModels() {
 				}
 		}
 	 
-	 if(Config.prismarineModule == true) {
+	 if(ConfigMain.prismarineModule == true) {
 					helmetPrismarine.registerItemModel();
 	    }
-	 if(Config.lapisModule == true) {
+	 if(ConfigMain.lapisModule == true) {
 					bootsLapis.registerItemModel();
 					leggingsLapis.registerItemModel();
 					chestplateLapis.registerItemModel();
@@ -428,7 +428,7 @@ public static void registerModels() {
 					lapisSword.registerItemModel();
 					lapisAxe.registerItemModel();
 	    }
-	 if(Config.emeraldModule == true) {
+	 if(ConfigMain.emeraldModule == true) {
 				 	bootsEmerald.registerItemModel();
 					leggingsEmerald.registerItemModel();
 					chestplateEmerald.registerItemModel();
@@ -439,7 +439,7 @@ public static void registerModels() {
 					emeraldSword.registerItemModel();
 					emeraldAxe.registerItemModel();
 	    }
-	 if(Config.amethystModule == true) {
+	 if(ConfigMain.amethystModule == true) {
 				 	bootsAmethyst.registerItemModel();
 					leggingsAmethyst.registerItemModel();
 					chestplateAmethyst.registerItemModel();
@@ -453,7 +453,7 @@ public static void registerModels() {
 						amethystHammer.registerItemModel();
 					}
 	    }
-	 if(Config.shulkerModule == true) {
+	 if(ConfigMain.shulkerModule == true) {
 				 	bootsShulker.registerItemModel();
 					leggingsShulker.registerItemModel();
 					chestplateShulker.registerItemModel();

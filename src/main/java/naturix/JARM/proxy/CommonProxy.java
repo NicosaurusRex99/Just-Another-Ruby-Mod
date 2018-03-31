@@ -2,8 +2,8 @@ package naturix.jarm.proxy;
 
 import java.io.File;
 
-import naturix.jarm.Config;
 import naturix.jarm.registry.ModRecipes;
+import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
@@ -21,7 +21,7 @@ public class CommonProxy {
 	{
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod!.cfg"));
-        Config.readConfig();
+        ConfigMain.readConfig();
 
             }
 

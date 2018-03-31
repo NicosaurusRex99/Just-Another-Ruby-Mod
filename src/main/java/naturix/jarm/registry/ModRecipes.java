@@ -206,7 +206,7 @@ any resulting litigation.
 */
 package naturix.jarm.registry;
 
-import naturix.jarm.Config;
+import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -214,9 +214,9 @@ public class ModRecipes {
 
 	public static void init() 
 {
-		if(Config.rubyModule == true) {
+		if(ConfigMain.rubyModule == true) {
 		GameRegistry.addSmelting(ModBlocks.ore_ruby, new ItemStack(ModItems.gemRuby), 0.7f);
-		}if(Config.brauniteModule == true) {
+		}if(ConfigMain.brauniteModule == true) {
 		GameRegistry.addSmelting(ModBlocks.ore_braunite, new ItemStack(ModItems.gemBraunite), 0.7f);
 		}}
 }

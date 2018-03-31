@@ -61,3 +61,4 @@ tile.jarm.block_braunite.name=Braunite Block
 tile.ore_braunite.name=Braunite Ore
 
 itemGroup.JARMTab=Just Another Ruby Mod!
+jarm.general.customdimensions.customdimensionids=Custom Dimension ID's (requires restart)

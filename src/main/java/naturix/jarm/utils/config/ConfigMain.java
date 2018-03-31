@@ -1,12 +1,14 @@
-package naturix.jarm;
+package naturix.jarm.utils.config;
 
 import org.apache.logging.log4j.Level;
 
+import naturix.jarm.JARM;
 import naturix.jarm.proxy.CommonProxy;
+import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Configuration;
 
 
-public class Config {
+public class ConfigMain {
 
     private static final String CATEGORY_GENERAL = "General";
     private static final String CATEGORY_ORE = "Ore Gen";
@@ -52,7 +54,7 @@ public class Config {
     public static boolean lapisModule = true;
     public static boolean prismarineModule = true;
     public static boolean shulkerModule = true;
-    
+ 
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
         try {
@@ -110,8 +112,12 @@ public class Config {
         lapisModule = cfg.getBoolean("lapis", CATEGORY_MODULES, lapisModule, "Disable to remove this module");
         prismarineModule = cfg.getBoolean("prismarine", CATEGORY_MODULES, prismarineModule, "Disable to remove this module");
         shulkerModule = cfg.getBoolean("shulker", CATEGORY_MODULES, shulkerModule, "Disable to remove this module");
-        
+        }
+    public static class GameRules
+    {
+    	@Comment("Adding dimension ids to this list allows JARM ores to spawn in that dimension")
+		public String[] CustomDimensionIDs = {""};
+		
+    }
     }
     
-
-} 
