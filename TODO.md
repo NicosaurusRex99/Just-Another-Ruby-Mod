@@ -1,5 +1,5 @@
-..*Tin
-..*Copper
+1. Tin
+2. Copper
 Lead
 Silver
 Tungsten
