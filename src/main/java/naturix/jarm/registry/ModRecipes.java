@@ -218,5 +218,66 @@ public class ModRecipes {
 		GameRegistry.addSmelting(ModBlocks.ore_ruby, new ItemStack(ModItems.gemRuby), 0.7f);
 		}if(ConfigMain.brauniteModule == true) {
 		GameRegistry.addSmelting(ModBlocks.ore_braunite, new ItemStack(ModItems.gemBraunite), 0.7f);
-		}}
+		}
+			if(ConfigMain.amberModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_amber, new ItemStack(ModItems.gemAmber), 0.7f);
+				}
+			if(ConfigMain.cinnibarModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_cinnibar, new ItemStack(ModItems.gemCinnibar), 0.7f);
+				}
+			if(ConfigMain.cobaltModule == true) {
+				GameRegistry.addSmelting(ModBlocks.ore_cobalt, new ItemStack(ModItems.ingot_cobalt), 1.0f);
+				}
+			if(ConfigMain.copperModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_copper, new ItemStack(ModItems.ingot_copper), 0.7f);
+			}
+			if(ConfigMain.fossilModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_fossil, new ItemStack(ModItems.gemFossil), 0.7f);
+				}
+			if(ConfigMain.jadeModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_jade, new ItemStack(ModItems.gemJade), 0.7f);
+				}
+			if(ConfigMain.leadModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_lead, new ItemStack(ModItems.ingot_lead), 0.7f);
+				}
+			if(ConfigMain.luminiteModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_luminite, new ItemStack(ModItems.ingot_luminite), 0.7f);
+				}
+			if(ConfigMain.mythrillModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_mythrill, new ItemStack(ModItems.ingot_mythrill), 0.7f);
+				}
+			if(ConfigMain.nickelModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_nickel, new ItemStack(ModItems.ingot_nickel), 0.7f);
+				}
+			if(ConfigMain.opalModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_opal, new ItemStack(ModItems.gemOpal), 0.7f);
+				}
+			if(ConfigMain.osmiumModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_osmium, new ItemStack(ModItems.ingot_osmium), 0.7f);
+				}
+			if(ConfigMain.platinumModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_platinum, new ItemStack(ModItems.ingot_platinum), 0.7f);
+				}
+			if(ConfigMain.saphireModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_saphire, new ItemStack(ModItems.gemSaphire), 0.7f);
+				}
+			if(ConfigMain.silverModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_silver, new ItemStack(ModItems.ingot_silver), 0.7f);
+				}
+			if(ConfigMain.tinModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_tin, new ItemStack(ModItems.ingot_tin), 0.7f);
+				}
+			if(ConfigMain.titaniumModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_titanium, new ItemStack(ModItems.ingot_titanium), 0.7f);
+				}
+			if(ConfigMain.tungstenModule == true) {	
+			GameRegistry.addSmelting(ModBlocks.ore_tungsten, new ItemStack(ModItems.ingot_tungsten), 0.7f);
+				}
+			if(ConfigMain.uraniumModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_uranium, new ItemStack(ModItems.ingot_uranium), 0.7f);
+				}
+			if(ConfigMain.meteoriteModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_meteorite, new ItemStack(ModItems.gemMeteorite), 0.7f);
+				}
+		}
 }
