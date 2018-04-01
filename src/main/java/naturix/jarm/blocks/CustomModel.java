@@ -1,5 +1,4 @@
 package naturix.jarm.blocks;
-
 import naturix.jarm.JARM;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,16 +10,18 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class Amethyst  extends Block {
+public class CustomModel  extends Block {
 
-	public Amethyst() {
+	private String name;
+	public CustomModel(String name, float hardness, float resistance) {
 		super(Material.ROCK);
-        setUnlocalizedName(JARM.MODID + ".block_amethyst");
-        setRegistryName("block_amethyst");
+        setUnlocalizedName(JARM.MODID + "." + name);
+        setRegistryName(name);
         setCreativeTab(JARM.JARM);
         setHarvestLevel("pickaxe", 4);
-        setHardness(4f);
-		setResistance(5f);
+        setHardness(hardness);
+		setResistance(resistance);
+		this.name = name;
 		}
 		
 	@Override
@@ -45,7 +46,7 @@ public class Amethyst  extends Block {
 		return false;
 	}
 	public void registerItemModel(Item itemBlock) {
-		JARM.proxy.registerItemRenderer(itemBlock, 0, "block_amethyst");
+		JARM.proxy.registerItemRenderer(itemBlock, 0, name);
 	}
 	
 	public Item createItemBlock() {

@@ -10,7 +10,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModBlocks {
 	public static BlockOre ore_ruby = new BlockOre(Material.ROCK, "ore_ruby");
 	public static BeaconBase block_ruby = new BeaconBase("block_ruby");
-	public static Amethyst block_amethyst = new Amethyst();
+	public static CustomModel block_amethyst = new CustomModel("block_amethyst", 4f, 5f);
 	public static BlockOre ore_braunite = new BlockOre(Material.ROCK, "ore_braunite");
 	public static BeaconBase block_braunite = new BeaconBase("block_braunite");
 	public static BlockOre ore_amber = new BlockOre(Material.ROCK, "ore_amber");
@@ -32,7 +32,7 @@ public class ModBlocks {
 	public static BlockOre ore_titanium = new BlockOre(Material.ROCK, "ore_titanium");
 	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten");
 	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium");
-	public static BlockOre ore_meteorite = new BlockOre(Material.ROCK, "ore_meteorite");
+	public static CustomModel ore_meteorite = new CustomModel("ore_meteorite", 6f, 7f);
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		if(ConfigMain.rubyModule == true) {

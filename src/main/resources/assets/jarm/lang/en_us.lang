@@ -100,7 +100,7 @@ tile.ore_tin.name=Tin Ore
 tile.ore_titanium.name=Titanium Ore
 tile.ore_tungsten.name=Tungsten Ore
 tile.ore_uranium.name=Uranium Ore
-tile.ore_meteorite.name=Meteorite
+tile.jarm.ore_meteorite.name=Meteorite
 
 
 itemGroup.JARMTab=Just Another Ruby Mod!
