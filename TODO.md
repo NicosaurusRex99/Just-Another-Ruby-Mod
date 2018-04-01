@@ -4,7 +4,7 @@
 4. Silver
 5. Tungsten
 6. Platinum
-7. Meteorite
+7. Meteorite (epic custom model)
 8. Cobalt
 9. Mythrill
 10. Titanium
