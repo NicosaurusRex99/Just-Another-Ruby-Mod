@@ -10,7 +10,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModBlocks {
 	public static BlockOre ore_ruby = new BlockOre(Material.ROCK, "ore_ruby");
 	public static BeaconBase block_ruby = new BeaconBase("block_ruby");
-	public static CustomModel block_amethyst = new CustomModel("block_amethyst", 4f, 5f);
+	public static Amethyst block_amethyst = new Amethyst("block_amethyst", 4f, 5f);
 	public static BlockOre ore_braunite = new BlockOre(Material.ROCK, "ore_braunite");
 	public static BeaconBase block_braunite = new BeaconBase("block_braunite");
 	public static BlockOre ore_amber = new BlockOre(Material.ROCK, "ore_amber");
@@ -20,7 +20,7 @@ public class ModBlocks {
 	public static BlockOre ore_fossil = new BlockOre(Material.ROCK, "ore_fossil");
 	public static BlockOre ore_jade = new BlockOre(Material.ROCK, "ore_jade");
 	public static BlockOre ore_lead = new BlockOre(Material.ROCK, "ore_lead");
-	public static BlockOre ore_luminite = new BlockOre(Material.ROCK, "ore_luminite");
+	public static BlockOre ore_luminite = new BlockOre(Material.ROCK, "ore_luminite", 4);
 	public static BlockOre ore_mythrill = new BlockOre(Material.ROCK, "ore_mythrill");
 	public static BlockOre ore_nickel = new BlockOre(Material.ROCK, "ore_nickel");
 	public static BlockOre ore_opal = new BlockOre(Material.ROCK, "ore_opal");
@@ -32,7 +32,26 @@ public class ModBlocks {
 	public static BlockOre ore_titanium = new BlockOre(Material.ROCK, "ore_titanium");
 	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten");
 	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium");
-	public static CustomModel ore_meteorite = new CustomModel("ore_meteorite", 6f, 7f);
+	public static Meteorite ore_meteorite = new Meteorite("ore_meteorite", 6f, 7f);
+	public static BlockOre block_amber = new BlockOre(Material.IRON, "block_amber");
+	public static BlockOre block_cinnibar = new BlockOre(Material.IRON, "block_cinnibar");
+	public static BlockOre block_cobalt = new BlockOre(Material.IRON, "block_cobalt");
+	public static BlockOre block_copper = new BlockOre(Material.IRON, "block_copper");
+	public static BlockOre block_fossil = new BlockOre(Material.IRON, "block_fossil");
+	public static BlockOre block_jade = new BlockOre(Material.IRON, "block_jade");
+	public static BlockOre block_lead = new BlockOre(Material.IRON, "block_lead");
+	public static BlockOre block_luminite = new BlockOre(Material.IRON, "block_luminite", 4);
+	public static BlockOre block_mythrill = new BlockOre(Material.IRON, "block_mythrill");
+	public static BlockOre block_nickel = new BlockOre(Material.IRON, "block_nickel");
+	public static BlockOre block_opal = new BlockOre(Material.IRON, "block_opal");
+	public static BlockOre block_osmium = new BlockOre(Material.IRON, "block_osmium");
+	public static BlockOre block_platinum = new BlockOre(Material.IRON, "block_platinum");
+	public static BlockOre block_saphire = new BlockOre(Material.IRON, "block_saphire");
+	public static BlockOre block_silver = new BlockOre(Material.IRON, "block_silver");
+	public static BlockOre block_tin = new BlockOre(Material.IRON, "block_tin");
+	public static BlockOre block_titanium = new BlockOre(Material.IRON, "block_titanium");
+	public static BlockOre block_tungsten = new BlockOre(Material.IRON, "block_tungsten");
+	public static BlockOre block_uranium = new BlockOre(Material.IRON, "block_uranium");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		if(ConfigMain.rubyModule == true) {

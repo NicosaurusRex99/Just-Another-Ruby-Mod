@@ -48,7 +48,7 @@ public class ConfigLists
                 try {
                     final String fileName = "Just Another Ruby Mod Lists.cfg";
 
-                    @SuppressWarnings("unchecked")
+                    //@SuppressWarnings("unchecked")
                     final Map<String, Configuration> configsMap = (Map<String, Configuration>) EventHandler.CONFIGS_GETTER.invokeExact();
 
                     final Optional<Map.Entry<String, Configuration>> entryOptional = configsMap.entrySet().stream()

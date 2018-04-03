@@ -2,10 +2,14 @@ package naturix.jarm.world;
 
 import java.util.Random;
 
+import naturix.jarm.JARM;
 import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.utils.ConfigStringToInt;
 import naturix.jarm.utils.config.ConfigMain;
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.state.pattern.BlockMatcher;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -19,15 +23,15 @@ public class ModWorldGeneration implements IWorldGenerator {
 	private static final int ConfigStringToInt = 0;
 	public static ModWorldGeneration instance = new ModWorldGeneration();
 	private int parsedint;
-	
+	public static IBlockState[] glazedStates = {ModBlocks.ore_amber.getDefaultState(), ModBlocks.ore_braunite.getDefaultState(), ModBlocks.ore_cinnibar.getDefaultState(), ModBlocks.ore_cobalt.getDefaultState()};
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if (world.provider.getDimension() == 0) { //overworld
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
-		if (world.provider.getDimension() == -1) {//nether
-			generateNether(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);	
+		if (world.provider.getDimension() == -1) { //Nether
+			generateNether(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
 		if (world.provider.getDimension() == -11325) {//Deep Dark
 			generateModDimensions(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
@@ -103,6 +107,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 			generator.generate(world, random, pos);
 		}
 	}
+
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if(ConfigMain.rubyModule == true) {
 		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.rubyMin, ConfigMain.rubyMax, ConfigMain.rubyVeinSize + random.nextInt(4), ConfigMain.rubySpawnTries);
@@ -165,7 +170,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 			generateOre(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + random.nextInt(4), 2);
 				}
 			if(ConfigMain.meteoriteModule == true) {
-			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, random.nextInt(2), 2);
 				}
 		}
 	
@@ -234,10 +239,17 @@ public class ModWorldGeneration implements IWorldGenerator {
 			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, 1 + random.nextInt(4), 2);
 				}
 		}
-	private void generateNether(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		if(ConfigMain.cobaltModule == true) {
-			generateOre(ModBlocks.ore_cobalt.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, world.provider.getActualHeight(), 1 + random.nextInt(4), 2);
-			}}
+	private void generateNether(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+        generateOre2(ModBlocks.ore_cobalt.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 256, random.nextInt(2) + random.nextInt(4), 10, Blocks.NETHERRACK);
+    }
 
+    private void generateOre2(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances, Block block){
 
+        int deltaY = maxY - minY;
+        for(int i=0; i<chances; i++){
+            BlockPos pos = new BlockPos(x + random.nextInt(16), minY + random.nextInt(deltaY), z + random.nextInt(16));
+            WorldGenMinable generator = new WorldGenMinable(ore, size, BlockMatcher.forBlock(block));
+            generator.generate(world, random, pos);
+        }
+    }
 }

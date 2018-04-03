@@ -57,6 +57,8 @@ public class BrauniteHammer extends ItemHammerCore {
 	    		effectiveMaterials.add(Material.VINE);
 	    		effectiveMaterials.add(Material.WEB);
 	    		effectiveMaterials.add(Material.WOOD);
+	    		effectiveMaterials.add(Material.TNT);
+	    		
 
 	    		if (harvestLevel > 0) {
 	    			attackDamage = 10.0F;
@@ -223,10 +225,4 @@ public class BrauniteHammer extends ItemHammerCore {
 	    		}
 	    		return ImmutableList.copyOf(area);
 	    	}
-	    	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
-	    	{
-	    	list.add("Mines more blocks!");
-	    	}
-	    	}
-
-	    
+	    	}    

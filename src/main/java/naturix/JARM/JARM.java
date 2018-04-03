@@ -50,7 +50,7 @@ public class JARM
     public static final ItemArmor.ArmorMaterial ShulkerArmorMaterial = EnumHelper.addArmorMaterial("SHULKER", MODID + ":shulker", 4, new int[]{ConfigMain.shulkerHelm, ConfigMain.shulkerChest, ConfigMain.shulkerLeg, ConfigMain.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
     public static final ItemArmor.ArmorMaterial brauniteArmorMaterial = EnumHelper.addArmorMaterial("braunite", MODID + ":shulker", 4, new int[]{ConfigMain.shulkerHelm, ConfigMain.shulkerChest, ConfigMain.shulkerLeg, ConfigMain.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
     public static final ToolMaterial brauniteToolMaterial = EnumHelper.addToolMaterial("BRAUNITE", 4, 6723, 13, 10, 500);
-    
+
     @Mod.Instance
     public static JARM instance;
 
