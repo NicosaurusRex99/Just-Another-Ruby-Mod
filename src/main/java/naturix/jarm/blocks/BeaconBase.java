@@ -19,13 +19,32 @@ public class BeaconBase extends Block {
 	public boolean addBeaconBase = ConfigMain.addBeaconBase;
 	private String name;
 	
-    public BeaconBase(String name) {
-        super(Material.ROCK);
+	public BeaconBase(String name) {
+        super(Material.IRON);
         setUnlocalizedName(JARM.MODID + "." + name);
         setRegistryName(name);
         setCreativeTab(JARM.JARM);
         setHardness(4f);
 		setResistance(5f);
+		this.name = name;
+	}
+	public BeaconBase(Material material, String name) {
+        super(material);
+        setUnlocalizedName(JARM.MODID + "." + name);
+        setRegistryName(name);
+        setCreativeTab(JARM.JARM);
+        setHardness(4f);
+		setResistance(5f);
+		this.name = name;
+	}
+	public BeaconBase(Material material, String name, int luminance) {
+        super(material);
+        setUnlocalizedName(JARM.MODID + "." + name);
+        setRegistryName(name);
+        setCreativeTab(JARM.JARM);
+        setHardness(4f);
+		setResistance(5f);
+		this.setLightLevel(luminance);
 		this.name = name;
 	}
 	public BeaconBase setBeaconBase(boolean b){
@@ -43,7 +62,6 @@ public class BeaconBase extends Block {
 	public void registerItemModel(Item itemBlock) {
 		JARM.proxy.registerItemRenderer(itemBlock, 0, name);
 	}
-	
 	public Item createItemBlock() {
 		return new ItemBlock(this).setRegistryName(getRegistryName());
 	}

@@ -33,142 +33,161 @@ public class ModBlocks {
 	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten");
 	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium");
 	public static Meteorite ore_meteorite = new Meteorite("ore_meteorite", 6f, 7f);
-	public static BlockOre block_amber = new BlockOre(Material.IRON, "block_amber");
-	public static BlockOre block_cinnibar = new BlockOre(Material.IRON, "block_cinnibar");
-	public static BlockOre block_cobalt = new BlockOre(Material.IRON, "block_cobalt");
-	public static BlockOre block_copper = new BlockOre(Material.IRON, "block_copper");
-	public static BlockOre block_fossil = new BlockOre(Material.IRON, "block_fossil");
-	public static BlockOre block_jade = new BlockOre(Material.IRON, "block_jade");
-	public static BlockOre block_lead = new BlockOre(Material.IRON, "block_lead");
-	public static BlockOre block_luminite = new BlockOre(Material.IRON, "block_luminite", 4);
-	public static BlockOre block_mythrill = new BlockOre(Material.IRON, "block_mythrill");
-	public static BlockOre block_nickel = new BlockOre(Material.IRON, "block_nickel");
-	public static BlockOre block_opal = new BlockOre(Material.IRON, "block_opal");
-	public static BlockOre block_osmium = new BlockOre(Material.IRON, "block_osmium");
-	public static BlockOre block_platinum = new BlockOre(Material.IRON, "block_platinum");
-	public static BlockOre block_saphire = new BlockOre(Material.IRON, "block_saphire");
-	public static BlockOre block_silver = new BlockOre(Material.IRON, "block_silver");
-	public static BlockOre block_tin = new BlockOre(Material.IRON, "block_tin");
-	public static BlockOre block_titanium = new BlockOre(Material.IRON, "block_titanium");
-	public static BlockOre block_tungsten = new BlockOre(Material.IRON, "block_tungsten");
-	public static BlockOre block_uranium = new BlockOre(Material.IRON, "block_uranium");
+	public static BeaconBase block_amber = new BeaconBase(Material.IRON, "block_amber");
+	public static BeaconBase block_cinnibar = new BeaconBase(Material.IRON, "block_cinnibar");
+	public static BeaconBase block_cobalt = new BeaconBase(Material.IRON, "block_cobalt");
+	public static BeaconBase block_copper = new BeaconBase(Material.IRON, "block_copper");
+	public static BeaconBase block_fossil = new BeaconBase(Material.IRON, "block_fossil");
+	public static BeaconBase block_jade = new BeaconBase(Material.IRON, "block_jade");
+	public static BeaconBase block_lead = new BeaconBase(Material.IRON, "block_lead");
+	public static BeaconBase block_luminite = new BeaconBase(Material.IRON, "block_luminite", 4);
+	public static BeaconBase block_mythrill = new BeaconBase(Material.IRON, "block_mythrill");
+	public static BeaconBase block_nickel = new BeaconBase(Material.IRON, "block_nickel");
+	public static BeaconBase block_opal = new BeaconBase(Material.IRON, "block_opal");
+	public static BeaconBase block_osmium = new BeaconBase(Material.IRON, "block_osmium");
+	public static BeaconBase block_platinum = new BeaconBase(Material.IRON, "block_platinum");
+	public static BeaconBase block_saphire = new BeaconBase(Material.IRON, "block_saphire");
+	public static BeaconBase block_silver = new BeaconBase(Material.IRON, "block_silver");
+	public static BeaconBase block_tin = new BeaconBase(Material.IRON, "block_tin");
+	public static BeaconBase block_titanium = new BeaconBase(Material.IRON, "block_titanium");
+	public static BeaconBase block_tungsten = new BeaconBase(Material.IRON, "block_tungsten");
+	public static BeaconBase block_uranium = new BeaconBase(Material.IRON, "block_uranium");
 	
 	public static void register(IForgeRegistry<Block> registry) {
-		if(ConfigMain.rubyModule == true) {
-			registry.registerAll(
-					ore_ruby,
-					block_ruby
-			);
-		}
-		if(ConfigMain.amethystModule == true) {
-			registry.registerAll(
+	if(ConfigMain.rubyModule == true) {
+	registry.registerAll(
+			ore_ruby,
+			block_ruby
+	);
+	}
+	if(ConfigMain.amethystModule == true) {
+	registry.registerAll(
 			block_amethyst
-			);
-		}
-		if(ConfigMain.brauniteModule == true) {
-			registry.registerAll(
-					ore_braunite,
-					block_braunite
-			);
-		}
-		if(ConfigMain.amberModule == true) {
-			registry.registerAll(
-	ore_amber
+	);
+	}
+	if(ConfigMain.brauniteModule == true) {
+	registry.registerAll(
+			ore_braunite,
+			block_braunite
+	);
+	}
+	if(ConfigMain.amberModule == true) {
+	registry.registerAll(
+			ore_amber,
+			block_amber
 	);
 		}
 	if(ConfigMain.cinnibarModule == true) {
-			registry.registerAll(
-	ore_cinnibar
+		registry.registerAll(
+			ore_cinnibar,
+			block_cinnibar
 	);
 		}
 	if(ConfigMain.cobaltModule == true) {
-			registry.registerAll(
-	ore_cobalt
+		registry.registerAll(
+				ore_cobalt,
+				block_cobalt
 	);
 		}
 	if(ConfigMain.copperModule == true) {
-			registry.registerAll(
-	ore_copper
+		registry.registerAll(
+				ore_copper,
+				block_copper
 	);
 		}
 	if(ConfigMain.fossilModule == true) {
-			registry.registerAll(
-	ore_fossil
+		registry.registerAll(
+				ore_fossil,
+				block_fossil
 	);
 		}
 	if(ConfigMain.jadeModule == true) {
-			registry.registerAll(
-	ore_jade
+		registry.registerAll(
+				ore_jade,
+				block_jade
 	);
 		}
 	if(ConfigMain.leadModule == true) {
-			registry.registerAll(
-	ore_lead
+		registry.registerAll(
+				ore_lead,
+				block_lead
 	);
 		}
 	if(ConfigMain.luminiteModule == true) {
-			registry.registerAll(
-	ore_luminite
+		registry.registerAll(
+				ore_luminite,
+				block_luminite
 	);
 		}
 	if(ConfigMain.mythrillModule == true) {
-			registry.registerAll(
-	ore_mythrill
+		registry.registerAll(
+				ore_mythrill,
+				block_mythrill
 	);
 		}
 	if(ConfigMain.nickelModule == true) {
-			registry.registerAll(
-	ore_nickel
+		registry.registerAll(
+				ore_nickel,
+				block_nickel
 	);
 		}
 	if(ConfigMain.opalModule == true) {
-			registry.registerAll(
-	ore_opal
+		registry.registerAll(
+				ore_opal,
+				block_opal
 	);
 		}
 	if(ConfigMain.osmiumModule == true) {
-			registry.registerAll(
-	ore_osmium
+		registry.registerAll(
+				ore_osmium,
+				block_osmium
 	);
 		}
 	if(ConfigMain.platinumModule == true) {
-			registry.registerAll(
-	ore_platinum
+		registry.registerAll(
+				ore_platinum,
+				block_platinum
 	);
 		}
 	if(ConfigMain.saphireModule == true) {
-			registry.registerAll(
-	ore_saphire
+		registry.registerAll(
+				ore_saphire,
+				block_saphire
 	);
 		}
 	if(ConfigMain.silverModule == true) {
-			registry.registerAll(
-	ore_silver
+		registry.registerAll(
+				ore_silver,
+				block_silver
 	);
 		}
 	if(ConfigMain.tinModule == true) {
-			registry.registerAll(
-	ore_tin
+		registry.registerAll(
+				ore_tin,
+				block_tin
 	);
 		}
 	if(ConfigMain.titaniumModule == true) {
-			registry.registerAll(
-	ore_titanium
+		registry.registerAll(
+				ore_titanium,
+				block_titanium
 	);
 		}
 	if(ConfigMain.tungstenModule == true) {
-			registry.registerAll(
-	ore_tungsten
+		registry.registerAll(
+				ore_tungsten,
+				block_tungsten
 	);
 		}
 	if(ConfigMain.uraniumModule == true) {
-			registry.registerAll(
-	ore_uranium
+		registry.registerAll(
+			ore_uranium,
+			block_uranium
 	);
 		}
 	if(ConfigMain.meteoriteModule == true) {
-			registry.registerAll(
-	ore_meteorite
+		registry.registerAll(
+					ore_meteorite
 	);
 		}
 	}
@@ -176,111 +195,130 @@ public class ModBlocks {
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
 		if(ConfigMain.rubyModule == true) {
 			registry.registerAll(
-					ore_ruby.createItemBlock(),
-					block_ruby.createItemBlock()
+		ore_ruby.createItemBlock(),
+		block_ruby.createItemBlock()
 			);}
 		if(ConfigMain.amethystModule == true) {
 			registry.registerAll(
-					block_amethyst.createItemBlock()
+		block_amethyst.createItemBlock()
 			);}
 		if(ConfigMain.brauniteModule == true) {
 			registry.registerAll(
-					ore_braunite.createItemBlock(),
-					block_braunite.createItemBlock()
+		ore_braunite.createItemBlock(),
+		block_braunite.createItemBlock()
 			);
-			if(ConfigMain.rubyModule == true) {
+			if(ConfigMain.amberModule == true) {
 				registry.registerAll(
-		ore_amber.createItemBlock()
+		ore_amber.createItemBlock(),
+		block_amber.createItemBlock()
+		);
+			}
+		if(ConfigMain.cinnibarModule == true) {
+				registry.registerAll(
+		ore_cinnibar.createItemBlock(),
+		block_cinnibar.createItemBlock()
+		);
+			}
+		if(ConfigMain.cobaltModule == true) {
+				registry.registerAll(
+		ore_cobalt.createItemBlock(),
+		block_cobalt.createItemBlock()
+		);
+			}
+		if(ConfigMain.copperModule == true) {
+				registry.registerAll(
+		ore_copper.createItemBlock(),
+		block_copper.createItemBlock()
+		);
+			}
+		if(ConfigMain.fossilModule == true) {
+				registry.registerAll(
+		ore_fossil.createItemBlock(),
+		block_fossil.createItemBlock()
+		);
+			}
+		if(ConfigMain.jadeModule == true) {
+				registry.registerAll(
+		ore_jade.createItemBlock(),
+		block_jade.createItemBlock()
+		);
+			}
+		if(ConfigMain.leadModule == true) {
+				registry.registerAll(
+		ore_lead.createItemBlock(),
+		block_lead.createItemBlock()
 		);
 			}
 		if(ConfigMain.rubyModule == true) {
 				registry.registerAll(
-		ore_cinnibar.createItemBlock()
+		ore_luminite.createItemBlock(),
+		block_luminite.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.mythrillModule == true) {
 				registry.registerAll(
-		ore_cobalt.createItemBlock()
+		ore_mythrill.createItemBlock(),
+		block_mythrill.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.nickelModule == true) {
 				registry.registerAll(
-		ore_copper.createItemBlock()
+		ore_nickel.createItemBlock(),
+		block_nickel.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.opalModule == true) {
 				registry.registerAll(
-		ore_fossil.createItemBlock()
+		ore_opal.createItemBlock(),
+		block_opal.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.osmiumModule == true) {
 				registry.registerAll(
-		ore_jade.createItemBlock()
+		ore_osmium.createItemBlock(),
+		block_osmium.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.platinumModule == true) {
 				registry.registerAll(
-		ore_lead.createItemBlock()
+		ore_platinum.createItemBlock(),
+		block_platinum.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.saphireModule == true) {
 				registry.registerAll(
-		ore_luminite.createItemBlock()
+		ore_saphire.createItemBlock(),
+		block_saphire.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.silverModule == true) {
 				registry.registerAll(
-		ore_mythrill.createItemBlock()
+		ore_silver.createItemBlock(),
+		block_silver.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.tinModule == true) {
 				registry.registerAll(
-		ore_nickel.createItemBlock()
+		ore_tin.createItemBlock(),
+		block_tin.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.titaniumModule == true) {
 				registry.registerAll(
-		ore_opal.createItemBlock()
+		ore_titanium.createItemBlock(),
+		block_titanium.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.tungstenModule == true) {
 				registry.registerAll(
-		ore_osmium.createItemBlock()
+		ore_tungsten.createItemBlock(),
+		block_tungsten.createItemBlock()
 		);
 			}
-		if(ConfigMain.rubyModule == true) {
+		if(ConfigMain.uraniumModule == true) {
 				registry.registerAll(
-		ore_platinum.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_saphire.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_silver.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_tin.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_titanium.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_tungsten.createItemBlock()
-		);
-			}
-		if(ConfigMain.rubyModule == true) {
-				registry.registerAll(
-		ore_uranium.createItemBlock()
+		ore_uranium.createItemBlock(),
+		block_uranium.createItemBlock()
 		);
 			}
 		if(ConfigMain.rubyModule == true) {
@@ -305,60 +343,79 @@ public class ModBlocks {
 			}
 		if(ConfigMain.amberModule == true) {
 			ore_amber.registerItemModel(Item.getItemFromBlock(ore_amber));
+			block_amber.registerItemModel(Item.getItemFromBlock(block_amber));
 				}
 			if(ConfigMain.cinnibarModule == true) {
 			ore_cinnibar.registerItemModel(Item.getItemFromBlock(ore_cinnibar));
+			block_cinnibar.registerItemModel(Item.getItemFromBlock(block_cinnibar));
 				}
 			if(ConfigMain.cobaltModule == true) {
 			ore_cobalt.registerItemModel(Item.getItemFromBlock(ore_cobalt));
+			block_cobalt.registerItemModel(Item.getItemFromBlock(block_cobalt));
 				}
 			if(ConfigMain.copperModule == true) {
 			ore_copper.registerItemModel(Item.getItemFromBlock(ore_copper));
+			block_copper.registerItemModel(Item.getItemFromBlock(block_copper));
 				}
 			if(ConfigMain.fossilModule == true) {
 			ore_fossil.registerItemModel(Item.getItemFromBlock(ore_fossil));
+			block_fossil.registerItemModel(Item.getItemFromBlock(block_fossil));
 				}
 			if(ConfigMain.jadeModule == true) {
 			ore_jade.registerItemModel(Item.getItemFromBlock(ore_jade));
+			block_jade.registerItemModel(Item.getItemFromBlock(block_jade));
 				}
 			if(ConfigMain.leadModule == true) {
 			ore_lead.registerItemModel(Item.getItemFromBlock(ore_lead));
+			block_lead.registerItemModel(Item.getItemFromBlock(block_lead));
 				}
 			if(ConfigMain.luminiteModule == true) {
 			ore_luminite.registerItemModel(Item.getItemFromBlock(ore_luminite));
+			block_luminite.registerItemModel(Item.getItemFromBlock(block_luminite));
 				}
 			if(ConfigMain.mythrillModule == true) {
 			ore_mythrill.registerItemModel(Item.getItemFromBlock(ore_mythrill));
+			block_mythrill.registerItemModel(Item.getItemFromBlock(block_mythrill));
 				}
 			if(ConfigMain.nickelModule == true) {
 			ore_nickel.registerItemModel(Item.getItemFromBlock(ore_nickel));
+			block_nickel.registerItemModel(Item.getItemFromBlock(block_nickel));
 				}
 			if(ConfigMain.opalModule == true) {
 			ore_opal.registerItemModel(Item.getItemFromBlock(ore_opal));
+			block_opal.registerItemModel(Item.getItemFromBlock(block_opal));
 				}
 			if(ConfigMain.osmiumModule == true) {
 			ore_osmium.registerItemModel(Item.getItemFromBlock(ore_osmium));
+			block_osmium.registerItemModel(Item.getItemFromBlock(block_osmium));
 				}
 			if(ConfigMain.platinumModule == true) {
 			ore_platinum.registerItemModel(Item.getItemFromBlock(ore_platinum));
+			block_platinum.registerItemModel(Item.getItemFromBlock(block_platinum));
 				}
 			if(ConfigMain.saphireModule == true) {
 			ore_saphire.registerItemModel(Item.getItemFromBlock(ore_saphire));
+			block_saphire.registerItemModel(Item.getItemFromBlock(block_saphire));
 				}
 			if(ConfigMain.silverModule == true) {
 			ore_silver.registerItemModel(Item.getItemFromBlock(ore_silver));
+			block_silver.registerItemModel(Item.getItemFromBlock(block_silver));
 				}
 			if(ConfigMain.tinModule == true) {
 			ore_tin.registerItemModel(Item.getItemFromBlock(ore_tin));
+			block_tin.registerItemModel(Item.getItemFromBlock(block_tin));
 				}
 			if(ConfigMain.titaniumModule == true) {
 			ore_titanium.registerItemModel(Item.getItemFromBlock(ore_titanium));
+			block_titanium.registerItemModel(Item.getItemFromBlock(block_titanium));
 				}
 			if(ConfigMain.tungstenModule == true) {
 			ore_tungsten.registerItemModel(Item.getItemFromBlock(ore_tungsten));
+			block_tungsten.registerItemModel(Item.getItemFromBlock(block_tungsten));
 				}
 			if(ConfigMain.uraniumModule == true) {
 			ore_uranium.registerItemModel(Item.getItemFromBlock(ore_uranium));
+			block_uranium.registerItemModel(Item.getItemFromBlock(block_uranium));
 				}
 			if(ConfigMain.meteoriteModule == true) {
 			ore_meteorite.registerItemModel(Item.getItemFromBlock(ore_meteorite));

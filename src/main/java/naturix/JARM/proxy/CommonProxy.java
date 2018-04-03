@@ -3,8 +3,8 @@ package naturix.jarm.proxy;
 import java.io.File;
 
 import naturix.jarm.registry.ModRecipes;
-import naturix.jarm.utils.TradeHandler;
 import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.utils.handlers.TradeHandler;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;

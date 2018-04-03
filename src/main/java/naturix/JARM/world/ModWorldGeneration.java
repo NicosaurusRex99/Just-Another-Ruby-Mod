@@ -109,19 +109,22 @@ public class ModWorldGeneration implements IWorldGenerator {
 	}
 
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		if(ConfigMain.rubyModule == true) {
-		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.rubyMin, ConfigMain.rubyMax, ConfigMain.rubyVeinSize + random.nextInt(4), ConfigMain.rubySpawnTries);
-		}if(ConfigMain.amethystModule == true) {
-		generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.AmethystMin, ConfigMain.AmethystMax, 1 + random.nextInt(4), ConfigMain.AmethystSpawnTries);
-		}if(ConfigMain.brauniteModule == true) {
-		generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.AmethystMin, ConfigMain.AmethystMax, 1 + random.nextInt(4), ConfigMain.AmethystSpawnTries);
-		if(ConfigMain.amberModule == true) {
+			if(ConfigMain.rubyModule == true) {
+			generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.rubyMin, ConfigMain.rubyMax, ConfigMain.rubyVeinSize + random.nextInt(4), ConfigMain.rubySpawnTries);
+				}	
+			if(ConfigMain.amethystModule == true) {
+			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.AmethystMin, ConfigMain.AmethystMax, 1 + random.nextInt(4), ConfigMain.AmethystSpawnTries);
+				}
+			if(ConfigMain.brauniteModule == true) {
+			generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, ConfigMain.AmethystMin, ConfigMain.AmethystMax, 1 + random.nextInt(4), ConfigMain.AmethystSpawnTries);
+				}	
+			if(ConfigMain.amberModule == true) 	{
 			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + random.nextInt(4), 2);
 				}
 			if(ConfigMain.cinnibarModule == true) {
 			generateOre(ModBlocks.ore_cinnibar.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 24, 1 + random.nextInt(4), 2);
 				}
-			if(ConfigMain.copperModule == true) 
+			if(ConfigMain.copperModule == true) { 
 			generateOre(ModBlocks.ore_copper.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + random.nextInt(4), 2);
 				}
 			if(ConfigMain.fossilModule == true) {
