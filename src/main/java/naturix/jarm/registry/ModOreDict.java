@@ -34,6 +34,8 @@ public class ModOreDict {
 		 if(ConfigMain.meteoriteModule == true) {
 			 OreDictionary.registerOre("gemMeteorite", ModItems.gemMeteorite);
 			 OreDictionary.registerOre("gemMeteor", ModItems.gemMeteorite);
+			 OreDictionary.registerOre("oreMeteor", ModBlocks.ore_meteorite);
+			 OreDictionary.registerOre("oreMeteorite", ModBlocks.ore_meteorite);
 			 }
 		 if(ConfigMain.tinModule == true) {
 			 OreDictionary.registerOre("ingotTin", ModItems.ingot_tin);

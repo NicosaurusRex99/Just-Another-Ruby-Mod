@@ -15,6 +15,7 @@ import naturix.jarm.items.tools.SpadeBase;
 import naturix.jarm.items.tools.SwordBase;
 import naturix.jarm.items.tools.hammers.BrauniteHammer;
 import naturix.jarm.items.tools.hammers.HammerBase;
+import naturix.jarm.items.tools.hammers.MeteoriteHammer;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
@@ -98,6 +99,116 @@ public class ModItems {
 	public static HoeBase emeraldHoe = new HoeBase(JARM.EmeraldToolMaterial, "hoe_emerald");
 	public static HoeBase lapisHoe = new HoeBase(JARM.LapisToolMaterial, "hoe_lapis");
 	public static HoeBase rubyHoe = new HoeBase(JARM.rubyToolMaterial, "hoe_ruby");
+	public static HammerBase amberHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_amber");
+	public static SwordBase amberSword = new SwordBase(JARM.AmethystToolMaterial, "sword_amber");
+	public static SpadeBase amberSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_amber");
+	public static PickaxeBase amberPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_amber");
+	public static AxeBase amberAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_amber");
+	public static HoeBase amberHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_amber");
+	public static HammerBase jadeHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_jade");
+	public static SwordBase jadeSword = new SwordBase(JARM.AmethystToolMaterial, "sword_jade");
+	public static SpadeBase jadeSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_jade");
+	public static PickaxeBase jadePickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_jade");
+	public static AxeBase jadeAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_jade");
+	public static HoeBase jadeHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_jade");
+	public static HammerBase osmiumHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_osmium");
+	public static SwordBase osmiumSword = new SwordBase(JARM.AmethystToolMaterial, "sword_osmium");
+	public static SpadeBase osmiumSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_osmium");
+	public static PickaxeBase osmiumPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_osmium");
+	public static AxeBase osmiumAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_osmium");
+	public static HoeBase osmiumHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_osmium");
+	public static HammerBase cinnibarHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_cinnibar");
+	public static SwordBase cinnibarSword = new SwordBase(JARM.AmethystToolMaterial, "sword_cinnibar");
+	public static SpadeBase cinnibarSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_cinnibar");
+	public static PickaxeBase cinnibarPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_cinnibar");
+	public static AxeBase cinnibarAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_cinnibar");
+	public static HoeBase cinnibarHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_cinnibar");
+	public static HammerBase steelHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_steel");
+	public static SwordBase steelSword = new SwordBase(JARM.AmethystToolMaterial, "sword_steel");
+	public static SpadeBase steelSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_steel");
+	public static PickaxeBase steelPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_steel");
+	public static AxeBase steelAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_steel");
+	public static HoeBase steelHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_steel");
+	public static HammerBase nickelHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_nickel");
+	public static SwordBase nickelSword = new SwordBase(JARM.AmethystToolMaterial, "sword_nickel");
+	public static SpadeBase nickelSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_nickel");
+	public static PickaxeBase nickelPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_nickel");
+	public static AxeBase nickelAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_nickel");
+	public static HoeBase nickelHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_nickel");
+	public static HammerBase opalHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_opal");
+	public static SwordBase opalSword = new SwordBase(JARM.AmethystToolMaterial, "sword_opal");
+	public static SpadeBase opalSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_opal");
+	public static PickaxeBase opalPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_opal");
+	public static AxeBase opalAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_opal");
+	public static HoeBase opalHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_opal");
+	public static HammerBase uraniumHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_uranium");
+	public static HammerBase saphireHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_saphire");
+	public static SwordBase saphireSword = new SwordBase(JARM.AmethystToolMaterial, "sword_saphire");
+	public static SpadeBase saphireSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_saphire");
+	public static PickaxeBase saphirePickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_saphire");
+	public static AxeBase saphireAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_saphire");
+	public static HoeBase saphireHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_saphire");
+	public static HammerBase luminiteHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_luminite");
+	public static SwordBase luminiteSword = new SwordBase(JARM.AmethystToolMaterial, "sword_luminite");
+	public static SpadeBase luminiteSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_luminite");
+	public static PickaxeBase luminitePickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_luminite");
+	public static AxeBase luminiteAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_luminite");
+	public static HoeBase luminiteHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_luminite");
+	public static HammerBase titaniumHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_titanium");
+	public static SwordBase titaniumSword = new SwordBase(JARM.AmethystToolMaterial, "sword_titanium");
+	public static SpadeBase titaniumSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_titanium");
+	public static PickaxeBase titaniumPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_titanium");
+	public static AxeBase titaniumAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_titanium");
+	public static HoeBase titaniumHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_titanium");
+	public static HammerBase mythrillHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_mythrill");
+	public static SwordBase mythrillSword = new SwordBase(JARM.AmethystToolMaterial, "sword_mythrill");
+	public static SpadeBase mythrillSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_mythrill");
+	public static PickaxeBase mythrillPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_mythrill");
+	public static AxeBase mythrillAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_mythrill");
+	public static HoeBase mythrillHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_mythrill");
+	public static HammerBase cobaltHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_cobalt");
+	public static SwordBase cobaltSword = new SwordBase(JARM.AmethystToolMaterial, "sword_cobalt");
+	public static SpadeBase cobaltSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_cobalt");
+	public static PickaxeBase cobaltPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_cobalt");
+	public static AxeBase cobaltAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_cobalt");
+	public static HoeBase cobaltHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_cobalt");
+	public static MeteoriteHammer meteoriteHammer = new MeteoriteHammer(JARM.AmethystToolMaterial, "hammer_meteorite");
+	public static SwordBase meteoriteSword = new SwordBase(JARM.AmethystToolMaterial, "sword_meteorite");
+	public static SpadeBase meteoriteSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_meteorite");
+	public static PickaxeBase meteoritePickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_meteorite");
+	public static AxeBase meteoriteAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_meteorite");
+	public static HoeBase meteoriteHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_meteorite");
+	public static SwordBase platinumSword = new SwordBase(JARM.AmethystToolMaterial, "sword_platinum");
+	public static SpadeBase platinumSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_platinum");
+	public static PickaxeBase platinumPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_platinum");
+	public static AxeBase platinumAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_platinum");
+	public static HoeBase platinumHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_platinum");
+	public static HammerBase tungstenHammer = new HammerBase(JARM.AmethystToolMaterial, "hammer_tungsten");
+	public static SwordBase tungstenSword = new SwordBase(JARM.AmethystToolMaterial, "sword_tungsten");
+	public static SpadeBase tungstenSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_tungsten");
+	public static PickaxeBase tungstenPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_tungsten");
+	public static AxeBase tungstenAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_tungsten");
+	public static HoeBase tungstenHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_tungsten");
+	public static SwordBase silverSword = new SwordBase(JARM.AmethystToolMaterial, "sword_silver");
+	public static SpadeBase silverSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_silver");
+	public static PickaxeBase silverPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_silver");
+	public static AxeBase silverAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_silver");
+	public static HoeBase silverHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_silver");
+	public static SwordBase leadSword = new SwordBase(JARM.AmethystToolMaterial, "sword_lead");
+	public static SpadeBase leadSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_lead");
+	public static PickaxeBase leadPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_lead");
+	public static AxeBase leadAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_lead");
+	public static HoeBase leadHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_lead");
+	public static SwordBase copperSword = new SwordBase(JARM.AmethystToolMaterial, "sword_copper");
+	public static SpadeBase copperSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_copper");
+	public static PickaxeBase copperPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_copper");
+	public static AxeBase copperAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_copper");
+	public static HoeBase copperHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_copper");
+	public static SwordBase tinSword = new SwordBase(JARM.AmethystToolMaterial, "sword_tin");
+	public static SpadeBase tinSpade = new SpadeBase(JARM.AmethystToolMaterial, "spade_tin");
+	public static PickaxeBase tinPickaxe = new PickaxeBase(JARM.AmethystToolMaterial, "pickaxe_tin");
+	public static AxeBase tinAxe = new AxeBase(JARM.AmethystToolMaterial, "axe_tin");
+	public static HoeBase tinHoe = new HoeBase(JARM.AmethystToolMaterial, "hoe_tin");
 	
 	public static void register(IForgeRegistry<Item> registry) {
 	if(ConfigMain.rubyModule == true) {
@@ -196,13 +307,33 @@ public class ModItems {
 	    }
 	 if(ConfigMain.amberModule == true) {
 		 registry.registerAll(
-				 gemAmber
+				 gemAmber,
+				 amberHoe,
+				 amberPickaxe,
+				 amberSpade,
+				 amberSword,
+				 amberAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						amberHammer
+						);
+			}
 	 }
 	 if(ConfigMain.cinnibarModule == true) {
 		 registry.registerAll(
-				 gemCinnibar
+				 gemCinnibar,
+				 cinnibarHoe,
+				 cinnibarPickaxe,
+				 cinnibarSpade,
+				 cinnibarSword,
+				 cinnibarAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						cinnibarHammer
+						);
+			}
 	 }
 	 if(ConfigMain.fossilModule == true) {
 		 registry.registerAll(
@@ -211,72 +342,163 @@ public class ModItems {
 	 }
 	 if(ConfigMain.jadeModule == true) {
 		 registry.registerAll(
-				 gemJade
+				 gemJade,
+				 jadeHoe,
+				 jadePickaxe,
+				 jadeSpade,
+				 jadeSword,
+				 jadeAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						jadeHammer
+						);
+			}
 	 }
 	 if(ConfigMain.opalModule == true) {
 		 registry.registerAll(
-				 gemOpal
+				 gemOpal,
+				 opalHoe,
+				 opalPickaxe,
+				 opalSpade,
+				 opalSword,
+				 opalAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						opalHammer
+						);
+			}
 	 }
 	 if(ConfigMain.saphireModule == true) {
 		 registry.registerAll(
-				 gemSaphire
+				 gemSaphire,
+				 saphireHoe,
+				 saphirePickaxe,
+				 saphireSpade,
+				 saphireSword,
+				 saphireAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						saphireHammer
+						);
+			}
 	 }
 	 if(ConfigMain.meteoriteModule == true) {
 		 registry.registerAll(
-				 gemMeteorite
+				 gemMeteorite,
+				 meteoriteHoe,
+				 meteoritePickaxe,
+				 meteoriteSpade,
+				 meteoriteSword,
+				 meteoriteAxe
 				 );
+		 if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						meteoriteHammer
+						);
+			}
 	 }
 	 if(ConfigMain.tinModule == true) {
 		 registry.registerAll(
-				 ingot_tin
+				 ingot_tin,
+				 tinHoe,
+				 tinPickaxe,
+				 tinSpade,
+				 tinSword,
+				 tinAxe
 				 );
+
 	 }
 	 if(ConfigMain.copperModule == true) {
 		 registry.registerAll(
-				 ingot_copper
+				 ingot_copper,
+				 copperHoe,
+				 copperPickaxe,
+				 copperSpade,
+				 copperSword,
+				 copperAxe
 				 );
 	 }
 	 if(ConfigMain.leadModule == true) {
 		 registry.registerAll(
-				 ingot_lead
+				 ingot_lead,
+				 leadHoe,
+				 leadPickaxe,
+				 leadSpade,
+				 leadSword,
+				 leadAxe
 				 );
 	 }
 	 if(ConfigMain.silverModule == true) {
 		 registry.registerAll(
-				 ingot_silver
+				 ingot_silver,
+				 silverHoe,
+				 silverPickaxe,
+				 silverSpade,
+				 silverSword,
+				 silverAxe
 				 );
 	 }
 	 if(ConfigMain.tungstenModule == true) {
 		 registry.registerAll(
-				 ingot_tungsten
+				 ingot_tungsten,
+				 tungstenHoe,
+				 tungstenPickaxe,
+				 tungstenSpade,
+				 tungstenSword,
+				 tungstenAxe
 				 );
 	 }
 	 if(ConfigMain.platinumModule == true) {
 		 registry.registerAll(
-				 ingot_platinum
+				 ingot_platinum,
+				 platinumHoe,
+				 platinumPickaxe,
+				 platinumSpade,
+				 platinumSword,
+				 platinumAxe
 				 );
 	 }
 	 if(ConfigMain.cobaltModule == true) {
 		 registry.registerAll(
-				 ingot_cobalt
+				 ingot_cobalt,
+				 cobaltHoe,
+				 cobaltPickaxe,
+				 cobaltSpade,
+				 cobaltSword,
+				 cobaltAxe
 				 );
 	 }
 	 if(ConfigMain.mythrillModule == true) {
 		 registry.registerAll(
-				 ingot_mythrill
+				 ingot_mythrill,
+				 mythrillHoe,
+				 mythrillPickaxe,
+				 mythrillSpade,
+				 mythrillSword,
+				 mythrillAxe
 				 );
 	 }
 	 if(ConfigMain.titaniumModule == true) {
 		 registry.registerAll(
-				 ingot_titanium
+				 ingot_titanium,
+				 titaniumHoe,
+				 titaniumPickaxe,
+				 titaniumSpade,
+				 titaniumSword,
+				 titaniumAxe
 				 );
 	 }
 	 if(ConfigMain.luminiteModule == true) {
 		 registry.registerAll(
-				 ingot_luminite
+				 ingot_luminite,
+				 luminiteHoe,
+				 luminitePickaxe,
+				 luminiteSpade,
+				 luminiteSword,
+				 luminiteAxe
 				 );
 	 }
 	 if(ConfigMain.uraniumModule == true) {
@@ -286,17 +508,32 @@ public class ModItems {
 	 }
 	 if(ConfigMain.nickelModule == true) {
 		 registry.registerAll(
-				 ingot_nickel
+				 ingot_nickel,
+				 nickelHoe,
+				 nickelPickaxe,
+				 nickelSpade,
+				 nickelSword,
+				 nickelAxe
 				 );
 	 }
 	 if(ConfigMain.steelModule == true) {
 		 registry.registerAll(
-				 ingot_steel
+				 ingot_steel,
+				 steelHoe,
+				 steelPickaxe,
+				 steelSpade,
+				 steelSword,
+				 steelAxe
 				 );
 	 }
 	 if(ConfigMain.osmiumModule == true) {
 		 registry.registerAll(
-				 ingot_osmium
+				 ingot_osmium,
+				 osmiumHoe,
+				 osmiumPickaxe,
+				 osmiumSpade,
+				 osmiumSword,
+				 osmiumAxe
 				 );
 	 }
 	 
@@ -381,67 +618,235 @@ public static void registerModels() {
 					helmetShulker.registerItemModel();
 	    }
 	 if(ConfigMain.amberModule == true) {
+		 
 		 gemAmber.registerItemModel();
-	 }
-	 if(ConfigMain.cinnibarModule == true) {
+		 amberHoe.registerItemModel();
+		 amberPickaxe.registerItemModel();
+		 amberSpade.registerItemModel();
+		 amberSword.registerItemModel();
+		 amberAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				amberHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.cinnibarModule == true) {
+ 
 		 gemCinnibar.registerItemModel();
-	 }
-	 if(ConfigMain.fossilModule == true) {
+		 cinnibarHoe.registerItemModel();
+		 cinnibarPickaxe.registerItemModel();
+		 cinnibarSpade.registerItemModel();
+		 cinnibarSword.registerItemModel();
+		 cinnibarAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				cinnibarHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.fossilModule == true) {
+ 
 		 gemFossil.registerItemModel();
-	 }
-	 if(ConfigMain.jadeModule == true) {
+		 
+}
+if(ConfigMain.jadeModule == true) {
+ 
 		 gemJade.registerItemModel();
-	 }
-	 if(ConfigMain.opalModule == true) {
+		 jadeHoe.registerItemModel();
+		 jadePickaxe.registerItemModel();
+		 jadeSpade.registerItemModel();
+		 jadeSword.registerItemModel();
+		 jadeAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				jadeHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.opalModule == true) {
+ 
 		 gemOpal.registerItemModel();
-	 }
-	 if(ConfigMain.saphireModule == true) {
+		 opalHoe.registerItemModel();
+		 opalPickaxe.registerItemModel();
+		 opalSpade.registerItemModel();
+		 opalSword.registerItemModel();
+		 opalAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				opalHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.saphireModule == true) {
+ 
 		 gemSaphire.registerItemModel();
-	 }
-	 if(ConfigMain.meteoriteModule == true) {
+		 saphireHoe.registerItemModel();
+		 saphirePickaxe.registerItemModel();
+		 saphireSpade.registerItemModel();
+		 saphireSword.registerItemModel();
+		 saphireAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				saphireHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.meteoriteModule == true) {
+ 
 		 gemMeteorite.registerItemModel();
-	 }
-	 if(ConfigMain.tinModule == true) {
+		 meteoriteHoe.registerItemModel();
+		 meteoritePickaxe.registerItemModel();
+		 meteoriteSpade.registerItemModel();
+		 meteoriteSword.registerItemModel();
+		 meteoriteAxe.registerItemModel();
+		 
+ if(Loader.isModLoaded("thermalfoundation")) {
+		
+				meteoriteHammer.registerItemModel();
+				
+	}
+}
+if(ConfigMain.tinModule == true) {
+ 
 		 ingot_tin.registerItemModel();
-		 	 }
-	 if(ConfigMain.copperModule == true) {
+		 tinHoe.registerItemModel();
+		 tinPickaxe.registerItemModel();
+		 tinSpade.registerItemModel();
+		 tinSword.registerItemModel();
+		 tinAxe.registerItemModel();
+		 
+
+}
+if(ConfigMain.copperModule == true) {
+ 
 		 ingot_copper.registerItemModel();
-		 	 }
-	 if(ConfigMain.leadModule == true) {
+		 copperHoe.registerItemModel();
+		 copperPickaxe.registerItemModel();
+		 copperSpade.registerItemModel();
+		 copperSword.registerItemModel();
+		 copperAxe.registerItemModel();
+		 
+}
+if(ConfigMain.leadModule == true) {
+ 
 		 ingot_lead.registerItemModel();
-		 	 }
-	 if(ConfigMain.silverModule == true) {
+		 leadHoe.registerItemModel();
+		 leadPickaxe.registerItemModel();
+		 leadSpade.registerItemModel();
+		 leadSword.registerItemModel();
+		 leadAxe.registerItemModel();
+		 
+}
+if(ConfigMain.silverModule == true) {
+ 
 		 ingot_silver.registerItemModel();
-		 	 }
-	 if(ConfigMain.tungstenModule == true) {
+		 silverHoe.registerItemModel();
+		 silverPickaxe.registerItemModel();
+		 silverSpade.registerItemModel();
+		 silverSword.registerItemModel();
+		 silverAxe.registerItemModel();
+		 
+}
+if(ConfigMain.tungstenModule == true) {
+ 
 		 ingot_tungsten.registerItemModel();
-		 	 }
-	 if(ConfigMain.platinumModule == true) {
+		 tungstenHoe.registerItemModel();
+		 tungstenPickaxe.registerItemModel();
+		 tungstenSpade.registerItemModel();
+		 tungstenSword.registerItemModel();
+		 tungstenAxe.registerItemModel();
+		 
+}
+if(ConfigMain.platinumModule == true) {
+ 
 		 ingot_platinum.registerItemModel();
-		 	 }
-	 if(ConfigMain.cobaltModule == true) {
+		 platinumHoe.registerItemModel();
+		 platinumPickaxe.registerItemModel();
+		 platinumSpade.registerItemModel();
+		 platinumSword.registerItemModel();
+		 platinumAxe.registerItemModel();
+		 
+}
+if(ConfigMain.cobaltModule == true) {
+ 
 		 ingot_cobalt.registerItemModel();
-		 	 }
-	 if(ConfigMain.mythrillModule == true) {
+		 cobaltHoe.registerItemModel();
+		 cobaltPickaxe.registerItemModel();
+		 cobaltSpade.registerItemModel();
+		 cobaltSword.registerItemModel();
+		 cobaltAxe.registerItemModel();
+		 
+}
+if(ConfigMain.mythrillModule == true) {
+ 
 		 ingot_mythrill.registerItemModel();
-		 	 }
-	 if(ConfigMain.titaniumModule == true) {
+		 mythrillHoe.registerItemModel();
+		 mythrillPickaxe.registerItemModel();
+		 mythrillSpade.registerItemModel();
+		 mythrillSword.registerItemModel();
+		 mythrillAxe.registerItemModel();
+		 
+}
+if(ConfigMain.titaniumModule == true) {
+ 
 		 ingot_titanium.registerItemModel();
-		 	 }
-	 if(ConfigMain.luminiteModule == true) {
+		 titaniumHoe.registerItemModel();
+		 titaniumPickaxe.registerItemModel();
+		 titaniumSpade.registerItemModel();
+		 titaniumSword.registerItemModel();
+		 titaniumAxe.registerItemModel();
+		 
+}
+if(ConfigMain.luminiteModule == true) {
+ 
 		 ingot_luminite.registerItemModel();
-		 	 }
-	 if(ConfigMain.uraniumModule == true) {
+		 luminiteHoe.registerItemModel();
+		 luminitePickaxe.registerItemModel();
+		 luminiteSpade.registerItemModel();
+		 luminiteSword.registerItemModel();
+		 luminiteAxe.registerItemModel();
+		 
+}
+if(ConfigMain.uraniumModule == true) {
+ 
 		 ingot_uranium.registerItemModel();
-		 	 }
-	 if(ConfigMain.nickelModule == true) {
+		 
+}
+if(ConfigMain.nickelModule == true) {
+ 
 		 ingot_nickel.registerItemModel();
-		 	 }
-	 if(ConfigMain.steelModule == true) {
+		 nickelHoe.registerItemModel();
+		 nickelPickaxe.registerItemModel();
+		 nickelSpade.registerItemModel();
+		 nickelSword.registerItemModel();
+		 nickelAxe.registerItemModel();
+		 
+}
+if(ConfigMain.steelModule == true) {
+ 
 		 ingot_steel.registerItemModel();
-		 	 }
-	 if(ConfigMain.osmiumModule == true) {
+		 steelHoe.registerItemModel();
+		 steelPickaxe.registerItemModel();
+		 steelSpade.registerItemModel();
+		 steelSword.registerItemModel();
+		 steelAxe.registerItemModel();
+		 
+}
+if(ConfigMain.osmiumModule == true) {
+ 
 		 ingot_osmium.registerItemModel();
-		 	 }
+		 osmiumHoe.registerItemModel();
+		 osmiumPickaxe.registerItemModel();
+		 osmiumSpade.registerItemModel();
+		 osmiumSword.registerItemModel();
+		 osmiumAxe.registerItemModel();
+		 
+}
 	}
 }

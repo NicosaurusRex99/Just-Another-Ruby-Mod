@@ -76,7 +76,10 @@ public class ConfigMain {
     public static boolean steelModule = true;
     public static boolean osmiumModule = true;
     public static boolean updateNotifications = true;
-
+    public static int maxCooldown;
+    public static int magRange;
+    public static int pullSpeed;
+    public static int maxPull;
     
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -157,7 +160,12 @@ public class ConfigMain {
         steelModule = cfg.getBoolean("steel", CATEGORY_MODULES, steelModule, "Disable to remove this module");
         osmiumModule = cfg.getBoolean("osmium", CATEGORY_MODULES, osmiumModule, "Disable to remove this module");
         updateNotifications = cfg.getBoolean("update alerts", CATEGORY_GENERAL, updateNotifications, "Disable to remove the ingame update notification");
-        }
+        maxCooldown = cfg.getInt("MeteorCooldown", CATEGORY_GENERAL, 4, 1, 1000000, "How long until the meteor can pull more stuff");
+        magRange = cfg.getInt("MeteorRange", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor pull range");
+        pullSpeed = cfg.getInt("MeteorPullSpeed", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor pull speed");
+        maxPull = cfg.getInt("MeteorPull", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor max pull");
+        
+    }
     public static class GameRules
     {
     	@Comment("Adding dimension ids to this list allows JARM ores to spawn in that dimension")
