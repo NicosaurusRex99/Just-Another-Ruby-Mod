@@ -101,7 +101,25 @@ tile.ore_titanium.name=Titanium Ore
 tile.ore_tungsten.name=Tungsten Ore
 tile.ore_uranium.name=Uranium Ore
 tile.jarm.ore_meteorite.name=Meteorite
-
+tile.jarm.block_fossil.name=Compressed Fossil
+tile.jarm.block_amber.name=Amber Block
+tile.jarm.block_cinnibar.name=Cinnibar Block
+tile.jarm.block_cobalt.name=Cobalt Block
+tile.jarm.block_copper.name=Copper Block
+tile.jarm.block_jade.name=Jade Block
+tile.jarm.block_lead.name=Lead Block
+tile.jarm.block_luminite.name=Luminite Block
+tile.jarm.block_mythrill.name=Mythrill Block
+tile.jarm.block_nickel.name=Nickel Block
+tile.jarm.block_opal.name=Opal Block
+tile.jarm.block_osmium.name=Osmium Block
+tile.jarm.block_platinum.name=Platinum Block
+tile.jarm.block_saphire.name=Saphire Block
+tile.jarm.block_silver.name=Silver Block
+tile.jarm.block_tin.name=Tin Block
+tile.jarm.block_titanium.name=Titanium Block
+tile.jarm.block_tungsten.name=Tungsten Block
+tile.jarm.block_uranium.name=Uranium Block
 
 itemGroup.JARMTab=Just Another Ruby Mod!
 jarm.general.customdimensions.customdimensionids=Custom Dimension ID's (requires restart)
