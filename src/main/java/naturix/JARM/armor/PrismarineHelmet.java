@@ -2,6 +2,7 @@ package naturix.jarm.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
+import naturix.jarm.utils.CustomMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -17,7 +18,7 @@ public class PrismarineHelmet extends ItemArmor
 
 	public PrismarineHelmet(String name)
 	{
-		super(JARM.PrismarineArmorMaterial, 0, EntityEquipmentSlot.HEAD);
+		super(CustomMaterials.PrismarineArmorMaterial, 0, EntityEquipmentSlot.HEAD);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}

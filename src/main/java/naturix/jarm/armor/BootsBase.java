@@ -7,13 +7,14 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class BootsBase extends ItemArmor 
 {
 	
-	public BootsBase(String name)
+	public BootsBase(String name, ArmorMaterial material)
 	{
-		super(JARM.AmethystArmorMaterial, 0, EntityEquipmentSlot.FEET);
+		super(material, 0, EntityEquipmentSlot.FEET);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}

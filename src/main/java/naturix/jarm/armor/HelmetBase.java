@@ -2,6 +2,7 @@ package naturix.jarm.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumRarity;
@@ -11,9 +12,9 @@ import net.minecraft.item.ItemStack;
 public class HelmetBase extends ItemArmor 
 	{
 	
-		public HelmetBase(String name)
+		public HelmetBase(String name, ArmorMaterial material)
 		{
-			super(JARM.AmethystArmorMaterial, 0, EntityEquipmentSlot.HEAD);
+			super(material, 0, EntityEquipmentSlot.HEAD);
 			ItemBase.registerItem(name, this);
 			this.name = name;
 		}

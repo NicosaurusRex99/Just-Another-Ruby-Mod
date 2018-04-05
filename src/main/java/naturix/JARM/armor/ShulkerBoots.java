@@ -2,6 +2,7 @@ package naturix.jarm.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
+import naturix.jarm.utils.CustomMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -14,7 +15,7 @@ public class ShulkerBoots extends ItemArmor
 {
 	public ShulkerBoots(String name)
 	{
-		super(JARM.ShulkerArmorMaterial, 0, EntityEquipmentSlot.FEET);
+		super(CustomMaterials.ShulkerArmorMaterial, 0, EntityEquipmentSlot.FEET);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}

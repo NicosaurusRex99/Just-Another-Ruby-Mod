@@ -7,13 +7,14 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 public class ChestplateBase extends ItemArmor 
 {
 	
-	public ChestplateBase(String name)
+	public ChestplateBase(String name, ArmorMaterial material)
 	{
-		super(JARM.AmethystArmorMaterial, 0, EntityEquipmentSlot.CHEST);
+		super(material, 0, EntityEquipmentSlot.CHEST);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}
