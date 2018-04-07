@@ -35,7 +35,7 @@ public class CustomMaterials {
     public static final ItemArmor.ArmorMaterial uraniumArmorMaterial = EnumHelper.addArmorMaterial("uranium", MODID + ":uranium", 4, new int[]{1, 2, 2, 2}, 800, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial nickelArmorMaterial = EnumHelper.addArmorMaterial("nickel", MODID + ":nickel", 4, new int[]{2, 4, 3, 1}, 1214, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial steelArmorMaterial = EnumHelper.addArmorMaterial("steel", MODID + ":steel", 4, new int[]{4, 7, 5, 4}, 2400, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
-    public static final ItemArmor.ArmorMaterial osmiumArmorMaterial = EnumHelper.addArmorMaterial("osmium", MODID + ":osmium", 4, new int[]{4, 6, 6, 4}, 3601, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
+    public static final ItemArmor.ArmorMaterial osmiumArmorMaterial = EnumHelper.addArmorMaterial("osmium", MODID + ":osmium", 4, new int[]{4, 6, 6, 4}, 3601, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F); 
     
     public static final ToolMaterial brauniteToolMaterial = EnumHelper.addToolMaterial("BRAUNITE", 4, 6723, 13, 10, 500);
     public static final ToolMaterial LapisToolMaterial = EnumHelper.addToolMaterial("LAPIS", 1, 100, 2, 1, 50);
