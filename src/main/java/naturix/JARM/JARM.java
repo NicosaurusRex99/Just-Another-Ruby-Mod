@@ -6,17 +6,12 @@ import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.registry.ModItems;
 import naturix.jarm.registry.ModOreDict;
 import naturix.jarm.registry.ModRecipes;
-import naturix.jarm.utils.config.ConfigMain;
 import naturix.jarm.world.ModWorldGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -48,7 +43,7 @@ public class JARM
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        proxy.preInit(event);
+        proxy.preInit(event); 
         GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
     }
 
@@ -97,6 +92,5 @@ public class JARM
 		public static void registerBlocks(RegistryEvent.Register<Block> event) {
 			ModBlocks.register(event.getRegistry());
 		}
-	
 	}
 } 

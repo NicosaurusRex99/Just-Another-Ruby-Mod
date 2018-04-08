@@ -32,13 +32,13 @@ public class CommonProxy {
     public void init(FMLInitializationEvent e)
     {
     	ModRecipes.init();
+
     }
     
     public void postInit(FMLPostInitializationEvent e) 
     {
     	if (config.hasChanged()) {
             config.save();
-
     }
     }
 	@EventHandler 

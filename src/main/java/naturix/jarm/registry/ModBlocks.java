@@ -1,6 +1,9 @@
 package naturix.jarm.registry;
 
-import naturix.jarm.blocks.*;
+import naturix.jarm.blocks.Amethyst;
+import naturix.jarm.blocks.BeaconBase;
+import naturix.jarm.blocks.BlockOre;
+import naturix.jarm.blocks.Meteorite;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

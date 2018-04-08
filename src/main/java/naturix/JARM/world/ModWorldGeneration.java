@@ -2,9 +2,7 @@ package naturix.jarm.world;
 
 import java.util.Random;
 
-import naturix.jarm.JARM;
 import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.utils.ConfigStringToInt;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +14,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import naturix.jarm.utils.ConfigStringToInt;
 
 public class ModWorldGeneration implements IWorldGenerator {
 	

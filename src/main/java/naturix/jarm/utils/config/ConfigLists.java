@@ -1,5 +1,12 @@
 package naturix.jarm.utils.config;
 
+import java.io.File;
+import java.lang.invoke.MethodHandle;
+import java.util.Map;
+import java.util.Optional;
+
+import naturix.jarm.JARM;
+import naturix.jarm.utils.ReflectionUtil;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.common.config.Configuration;
@@ -7,12 +14,6 @@ import net.minecraftforge.fml.client.config.IConfigElement;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import java.io.File;
-import java.lang.invoke.MethodHandle;
-import java.util.Map;
-import java.util.Optional;
-import naturix.jarm.*;
-import naturix.jarm.utils.ReflectionUtil;
 
 @Config(modid = JARM.MODID)
 public class ConfigLists

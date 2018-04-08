@@ -1,4 +1,4 @@
-package naturix.jarm.armor;
+package naturix.jarm.armor.hazmat;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
@@ -8,12 +8,12 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public class BootsBase extends ItemArmor 
+public class HazmatChestplate extends ItemArmor 
 {
 	
-	public BootsBase(String name, ArmorMaterial material)
+	public HazmatChestplate(String name, ArmorMaterial material)
 	{
-		super(material, 0, EntityEquipmentSlot.FEET);
+		super(material, 0, EntityEquipmentSlot.CHEST);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}

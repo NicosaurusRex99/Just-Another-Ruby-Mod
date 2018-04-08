@@ -275,7 +275,7 @@ public class ModRecipes {
 				}
 			if(ConfigMain.uraniumModule == true) {
 			GameRegistry.addSmelting(ModBlocks.ore_uranium, new ItemStack(ModItems.ingot_uranium), 0.7f);
-				}
+				} 
 			if(ConfigMain.meteoriteModule == true) {
 			GameRegistry.addSmelting(ModBlocks.ore_meteorite, new ItemStack(ModItems.gemMeteorite), 0.7f);
 				}

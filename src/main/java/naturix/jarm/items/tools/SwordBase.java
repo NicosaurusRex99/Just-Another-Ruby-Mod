@@ -1,8 +1,6 @@
 package naturix.jarm.items.tools;
 
 import naturix.jarm.JARM;
-import naturix.jarm.items.ItemBase;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSword;
 

@@ -68,7 +68,7 @@ public class ModOreDict {
 			 OreDictionary.registerOre("ingotLuminite", ModItems.ingot_luminite);
 			 OreDictionary.registerOre("ingotLumium", ModItems.ingot_luminite);
 			 	 }
-		 if(ConfigMain.uraniumModule == true) {
+		 if(ConfigMain.uraniumModule == true) { 
 			 OreDictionary.registerOre("ingotUranium", ModItems.ingot_uranium);
 			 	 }
 		 if(ConfigMain.nickelModule == true) {

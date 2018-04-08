@@ -3,8 +3,8 @@ package naturix.jarm.utils;
 import naturix.jarm.JARM;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class CustomMaterials {

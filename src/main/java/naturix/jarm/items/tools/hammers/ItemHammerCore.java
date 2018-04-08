@@ -1,5 +1,10 @@
 package naturix.jarm.items.tools.hammers;
 
+import java.util.Collections;
+import java.util.Set;
+
+import javax.annotation.Nullable;
+
 import gnu.trove.set.hash.THashSet;
 import gnu.trove.set.hash.TLinkedHashSet;
 import net.minecraft.block.Block;
@@ -17,10 +22,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
-
-import javax.annotation.Nullable;
-import java.util.Collections;
-import java.util.Set;
 
 public abstract class ItemHammerCore extends ItemTool implements IAOEBreakItem  {
 
