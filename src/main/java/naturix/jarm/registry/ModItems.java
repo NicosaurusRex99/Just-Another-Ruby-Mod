@@ -8,6 +8,7 @@ import naturix.jarm.armor.LeggingsBase;
 import naturix.jarm.armor.PrismarineHelmet;
 import naturix.jarm.armor.ShulkerBoots;
 import naturix.jarm.items.ItemBase;
+import naturix.jarm.items.UraniumIngot;
 import naturix.jarm.items.tools.AxeBase;
 import naturix.jarm.items.tools.HoeBase;
 import naturix.jarm.items.tools.PickaxeBase;
@@ -42,7 +43,7 @@ public class ModItems {
 	public static ItemBase ingot_mythrill= new ItemBase("ingot_mythrill").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_titanium= new ItemBase("ingot_titanium").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_luminite= new ItemBase("ingot_luminite").setCreativeTab(JARM.JARM);
-	public static ItemBase ingot_uranium= new ItemBase("ingot_uranium").setCreativeTab(JARM.JARM);
+	public static UraniumIngot ingot_uranium= new UraniumIngot("ingot_uranium").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_nickel= new ItemBase("ingot_nickel").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_steel= new ItemBase("ingot_steel").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_osmium= new ItemBase("ingot_osmium").setCreativeTab(JARM.JARM);
