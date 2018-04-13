@@ -1,4 +1,4 @@
-package naturix.jarm.armor;
+package naturix.jarm.items.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
@@ -8,12 +8,11 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public class BootsBase extends ItemArmor 
+public class LeggingsBase extends ItemArmor 
 {
-	
-	public BootsBase(String name, ArmorMaterial material)
+	public LeggingsBase(String name, ArmorMaterial material)
 	{
-		super(material, 0, EntityEquipmentSlot.FEET);
+		super(material, 0, EntityEquipmentSlot.LEGS);
 		ItemBase.registerItem(name, this);
 		this.name = name;
 	}
@@ -29,15 +28,15 @@ public class BootsBase extends ItemArmor
 	{
 		return "jarm:textures/models/armor/"+ name + ".png";
 	}
-
 	private String name;
 	public void registerItemModel() {
 		JARM.proxy.registerItemRenderer(this, 0, name);
 	}
+
 	@Override
 	public int getMaxDamage()
 	{
-		return 2010;
+		return 5010;
 	}
 
 
@@ -47,4 +46,4 @@ public class BootsBase extends ItemArmor
 		return true;
 	}
 
-}
+} 

@@ -1,14 +1,14 @@
 package naturix.jarm.registry;
 
 import naturix.jarm.JARM;
-import naturix.jarm.armor.BootsBase;
-import naturix.jarm.armor.ChestplateBase;
-import naturix.jarm.armor.HelmetBase;
-import naturix.jarm.armor.LeggingsBase;
-import naturix.jarm.armor.PrismarineHelmet;
-import naturix.jarm.armor.ShulkerBoots;
 import naturix.jarm.items.ItemBase;
 import naturix.jarm.items.UraniumIngot;
+import naturix.jarm.items.armor.BootsBase;
+import naturix.jarm.items.armor.ChestplateBase;
+import naturix.jarm.items.armor.HelmetBase;
+import naturix.jarm.items.armor.LeggingsBase;
+import naturix.jarm.items.armor.PrismarineHelmet;
+import naturix.jarm.items.armor.ShulkerBoots;
 import naturix.jarm.items.tools.AxeBase;
 import naturix.jarm.items.tools.HoeBase;
 import naturix.jarm.items.tools.PickaxeBase;

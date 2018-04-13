@@ -1,4 +1,4 @@
-package naturix.jarm.armor;
+package naturix.jarm.items.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
