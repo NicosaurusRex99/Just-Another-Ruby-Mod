@@ -43,6 +43,15 @@ public class BeaconBase extends Block {
 		this.setLightLevel(luminance);
 		this.name = name;
 	}
+	public BeaconBase() {
+        super(Material.ANVIL);
+        setUnlocalizedName(JARM.MODID + "." + name);
+        setRegistryName(name);
+        setCreativeTab(JARM.JARM);
+        setHardness(4f);
+		setResistance(5f);
+		this.name = name;
+	}
 	public BeaconBase setBeaconBase(boolean b){
 		addBeaconBase = b;
 		return this;

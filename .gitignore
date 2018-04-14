@@ -20,9 +20,11 @@ build
 # other
 eclipse
 run
+CREDITS-fml.txt
 *.txt
-libs/
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
+libs/Mantle-1.12-1.3.2.25-deobf.jar
+libs/TConstruct-1.12.2-2.9.1.70-deobf.jar

@@ -56,7 +56,7 @@ public class ConfigMain {
     public static boolean shulkerModule = true;
     public static boolean amberModule = true;
     public static boolean cinnibarModule = true;
-    public static boolean fossilModule = true;
+    public static boolean fossilModule = false;
     public static boolean jadeModule = true;
     public static boolean meteoriteModule = true;
     public static boolean opalModule = true;
@@ -140,7 +140,7 @@ public class ConfigMain {
         shulkerModule = cfg.getBoolean("shulker", CATEGORY_MODULES, shulkerModule, "Disable to remove this module");
         amberModule = cfg.getBoolean("amber", CATEGORY_MODULES, amberModule, "Disable to remove this module");
         cinnibarModule = cfg.getBoolean("cinnibar", CATEGORY_MODULES, cinnibarModule, "Disable to remove this module");
-        fossilModule = cfg.getBoolean("fossil", CATEGORY_MODULES, fossilModule, "Disable to remove this module");
+        fossilModule = cfg.getBoolean("fossil", CATEGORY_MODULES, fossilModule, "Enable to see some WIP stuff");
         jadeModule = cfg.getBoolean("jade", CATEGORY_MODULES, jadeModule, "Disable to remove this module");
         meteoriteModule = cfg.getBoolean("meteorite", CATEGORY_MODULES, meteoriteModule, "Disable to remove this module");
         opalModule = cfg.getBoolean("opal", CATEGORY_MODULES, opalModule, "Disable to remove this module");

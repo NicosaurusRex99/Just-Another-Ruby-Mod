@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.2.2627"
+    version = "1.12.2-14.23.3.2661"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -32,6 +32,7 @@ minecraft {
     mappings = "snapshot_20171003"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
+
 repositories {
     maven {
         name 'progwm\'s maven' // JEI
@@ -60,7 +61,7 @@ dependencies {
 	compile "cofh:ThermalFoundation:${minecraft_version}-2.3.9.4:deobf"
 	compile "cofh:ThermalFoundation:${minecraft_version}-2.3.9.4:deobf"
 	compile "codechicken:CodeChickenLib:${minecraft_version}-3.1.6.339:deobf"
-    compile "cofh:RedstoneFlux:1.12-2.0.0.1:universal"
+    compile "cofh:RedstoneFlux:1.12-2.0.0.1:deobf"
 }
 
 processResources {

@@ -268,6 +268,7 @@ item.OsmiumChestplate.name=Osmium Chestplate
 item.OsmiumLeggings.name=Osmium Leggings
 item.OsmiumBoots.name=Osmium Boots
 
+tile.jarm.block_steel.name=Steel Block
 tile.jarm.block_ruby.name=Ruby Block
 tile.ore_ruby.name=Ruby Ore
 tile.jarm.block_amethyst.name=Amethyst

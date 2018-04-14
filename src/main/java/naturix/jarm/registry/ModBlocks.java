@@ -2,8 +2,8 @@ package naturix.jarm.registry;
 
 import naturix.jarm.blocks.Amethyst;
 import naturix.jarm.blocks.BeaconBase;
+import naturix.jarm.blocks.BlockFalling;
 import naturix.jarm.blocks.BlockOre;
-import naturix.jarm.blocks.Meteorite;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -35,7 +35,7 @@ public class ModBlocks {
 	public static BlockOre ore_titanium = new BlockOre(Material.ROCK, "ore_titanium");
 	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten");
 	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium");
-	public static Meteorite ore_meteorite = new Meteorite("ore_meteorite", 6f, 7f);
+	public static BlockFalling ore_meteorite = new BlockFalling("ore_meteorite");
 	public static BeaconBase block_amber = new BeaconBase(Material.IRON, "block_amber");
 	public static BeaconBase block_cinnibar = new BeaconBase(Material.IRON, "block_cinnibar");
 	public static BeaconBase block_cobalt = new BeaconBase(Material.IRON, "block_cobalt");
@@ -55,6 +55,7 @@ public class ModBlocks {
 	public static BeaconBase block_titanium = new BeaconBase(Material.IRON, "block_titanium");
 	public static BeaconBase block_tungsten = new BeaconBase(Material.IRON, "block_tungsten");
 	public static BeaconBase block_uranium = new BeaconBase(Material.IRON, "block_uranium");
+	public static BeaconBase block_steel = new BeaconBase(Material.IRON, "block_steel");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 	if(ConfigMain.rubyModule == true) {
@@ -193,6 +194,11 @@ public class ModBlocks {
 					ore_meteorite
 	);
 		}
+	if(ConfigMain.steelModule == true) {
+		registry.registerAll(
+				block_steel
+				);
+	}
 	}
 	
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
@@ -329,6 +335,11 @@ public class ModBlocks {
 		ore_meteorite.createItemBlock()
 		);
 		}
+		if(ConfigMain.steelModule == true) {
+			registry.registerAll(
+					block_steel.createItemBlock()
+					);
+		}
 		}
 	}
 	
@@ -423,5 +434,8 @@ public class ModBlocks {
 			if(ConfigMain.meteoriteModule == true) {
 			ore_meteorite.registerItemModel(Item.getItemFromBlock(ore_meteorite));
 				}
+			if(ConfigMain.steelModule == true) {
+				block_steel.registerItemModel(Item.getItemFromBlock(block_steel));
+			}
 	}
 }
