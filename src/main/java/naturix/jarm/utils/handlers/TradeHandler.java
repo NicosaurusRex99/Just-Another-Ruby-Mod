@@ -23,29 +23,22 @@ public class TradeHandler implements EntityVillager.ITradeList
 	   if(ConfigMain.rubyModule == true) {
 		   recipeList.add(new MerchantRecipe(new ItemStack(Items.REDSTONE, 5 + random.nextInt(20)),new ItemStack(ModItems.gemRuby, 1+ random.nextInt(8))));
 	   }
-	   
+	   if(ConfigMain.jadeModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.DIAMOND, 2 + random.nextInt(15)), new ItemStack(ModItems.gemJade, 1 + random.nextInt(8))));
+	   }
+	   if(ConfigMain.meteoriteModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.DIAMOND, 10 + random.nextInt(15)), new ItemStack(ModItems.gemMeteorite, 1 + random.nextInt(4))));
+	   }
+	   if(ConfigMain.opalModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.EMERALD, 5 + random.nextInt(15)), new ItemStack(ModItems.gemOpal, 1 + random.nextInt(8))));
+	   }
+	   if(ConfigMain.jadeModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.GOLD_INGOT, 2 + random.nextInt(15)), new ItemStack(ModItems.gemSaphire, 1 + random.nextInt(8))));
+	   }
 	   /*
-	   gemBraunite
-	   gemAmber
-	   gemCinnibar
-	   gemFossil
-	   gemJade
-	   gemMeteorite
-	   gemOpal
-	   gemSaphire
-	   ingot_tin
-	   ingot_copper
-	   ingot_lead
-	   ingot_silver
-	   ingot_tungsten
 	   ingot_platinum
-	   ingot_cobalt
-	   ingot_mythrill
-	   ingot_titanium
-	   ingot_luminite
-	   ingot_uranium
-	   ingot_nickel
 	   ingot_steel
-	   ingot_osmium*/
+	   ingot_osmium
+	   */
    }
 }
