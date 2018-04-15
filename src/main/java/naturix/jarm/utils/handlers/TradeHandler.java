@@ -35,10 +35,14 @@ public class TradeHandler implements EntityVillager.ITradeList
 	   if(ConfigMain.jadeModule == true) {
 		   recipeList.add(new MerchantRecipe(new ItemStack(Items.GOLD_INGOT, 2 + random.nextInt(15)), new ItemStack(ModItems.gemSaphire, 1 + random.nextInt(8))));
 	   }
-	   /*
-	   ingot_platinum
-	   ingot_steel
-	   ingot_osmium
-	   */
+	   if(ConfigMain.platinumModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.GOLD_INGOT, 2 + random.nextInt(15)), new ItemStack(ModItems.ingot_platinum, 1 + random.nextInt(2))));
+	   }
+	   if(ConfigMain.steelModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.IRON_INGOT, 2 + random.nextInt(15)), new ItemStack(ModItems.ingot_steel, 1 + random.nextInt(3))));
+	   }
+	   if(ConfigMain.osmiumModule == true) {
+		   recipeList.add(new MerchantRecipe(new ItemStack(Items.IRON_INGOT, 2 + random.nextInt(15)), new ItemStack(ModItems.ingot_osmium, 1 + random.nextInt(3))));
+	   }
    }
 }
