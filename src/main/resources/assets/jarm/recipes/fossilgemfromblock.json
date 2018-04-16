@@ -1,11 +1,11 @@
 {
   "result": {
-    "item": "jarm:gem_amber",
+    "item": "jarm:gem_fossil",
     "count": 9
   },
   "ingredients": [
     {
-      "item": "jarm:block_amber"
+      "item": "jarm:block_fossil"
     }
   ],
   "type": "forge:ore_shapeless"

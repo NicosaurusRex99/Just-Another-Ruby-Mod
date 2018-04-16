@@ -10,10 +10,10 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "jarm:gem_cinnibar"
+      "item": "jarm:gem_amber"
     }
   },
   "result": {
-    "item": "jarm:spade_cinnibar"
+    "item": "jarm:spade_amber"
   }
 }

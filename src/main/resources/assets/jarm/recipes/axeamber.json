@@ -7,13 +7,13 @@
   ],
   "key": {
     "X": {
-        "item": "jarm:gem_cinnibar"
+        "item": "jarm:gem_amber"
     },
     "#": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "jarm:axe_cinnibar"
+    "item": "jarm:axe_amber"
   }
 }

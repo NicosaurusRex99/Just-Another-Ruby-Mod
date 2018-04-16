@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
-    "X#X",
-    " # "
+    "XX",
+    " #",
+    " #"
   ],
   "key": {
     "X": {
-        "item": "jarm:gem_amber"
+      "item": "jarm:gem_opal"
     },
     "#": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "jarm:hammer_amber"
+    "item": "jarm:hoe_opal"
   }
 }

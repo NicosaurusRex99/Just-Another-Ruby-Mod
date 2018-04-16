@@ -7,10 +7,10 @@
   ],
   "key": {
     "X": {
-      "item": "jarm:gem_amber"
+      "item": "jarm:gem_jade"
     }
   },
   "result": {
-    "item": "jarm:AmberChestplate"
+    "item": "jarm:JadeChestplate"
   }
 }

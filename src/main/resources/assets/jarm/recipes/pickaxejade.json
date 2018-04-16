@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "XXX",
-    "X#X",
+    " # ",
     " # "
   ],
   "key": {
     "X": {
-        "item": "jarm:gem_amber"
+      "item": "jarm:gem_jade"
     },
     "#": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "jarm:hammer_amber"
+    "item": "jarm:pickaxe_jade"
   }
 }
