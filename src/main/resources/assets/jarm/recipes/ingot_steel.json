@@ -1,16 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
-    " X ",
-    "X#X",
-    " X "
+    " w ",
+    "wxw",
+    " w "
   ],
   "key": {
-    "X": {
-      "item": "minecraft:coal"
+    "x": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
     },
-	"#": {
-      "item": "minecraft:iron_ingot"
+	"w": {
+      "type": "forge:ore_dict",
+      "ore": "gemCoal"
     }
   },
   "result": {

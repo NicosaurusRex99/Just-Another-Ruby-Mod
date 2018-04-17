@@ -1,6 +1,7 @@
 package naturix.jarm.registry;
 
 import naturix.jarm.utils.config.ConfigMain;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -76,6 +77,7 @@ public class ModOreDict {
 			 	 }
 		 if(ConfigMain.steelModule == true) {
 			 OreDictionary.registerOre("ingotSteel", ModItems.ingot_steel);
+			 OreDictionary.registerOre("gemCoal", Items.COAL);
 			 	 }
 		 if(ConfigMain.osmiumModule == true) {
 			 OreDictionary.registerOre("ingotOsmium", ModItems.ingot_osmium);
