@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:ingot_tungsten",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_tungsten"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:ingot_mythrill",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_mythrill"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

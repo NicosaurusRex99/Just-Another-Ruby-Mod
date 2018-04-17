@@ -1,6 +1,7 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
+		"1.12.2.13": "Materials Update (105 new armor pieces)",
 		"1.12.2.12": "Bugfix Update",
 		"1.12.2.11": "Braunite Update",
 		"1.12.2.11": "Hammer Time",
@@ -16,7 +17,7 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.12.2-latest": "1.12.2.12",
-		"1.12.2-recommended": "1.12.2.12"
+		"1.12.2-latest": "1.12.2.13",
+		"1.12.2-recommended": "1.12.2.13"
 	}
 }

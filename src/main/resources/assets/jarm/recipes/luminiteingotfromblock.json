@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:ingot_luminite",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_luminite"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:ingot_titanium",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_titanium"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

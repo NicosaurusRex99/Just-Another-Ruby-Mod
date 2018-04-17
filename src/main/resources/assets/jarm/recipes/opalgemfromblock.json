@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:gem_opal",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_opal"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

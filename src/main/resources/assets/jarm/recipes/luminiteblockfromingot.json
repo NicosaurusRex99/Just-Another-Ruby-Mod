@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "jarm:ingot_luminite"
+    }
+  },
+  "result": {
+    "item": "jarm:block_luminite"
+  }
+}
