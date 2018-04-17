@@ -64,17 +64,14 @@ public class BlockFalling extends Block
         }
         if (worldIn.isBlockPowered(pos)) {
         	WorldInfo worldinfo = worldIn.getWorldInfo();
-        	JARM.logger.info(worldinfo.getRainTime() +" rain time"+ worldinfo.getThunderTime()+" thunder time");
-            int i = (300 + (new Random()).nextInt(600)) * 20;
+        	int i = (300 + (new Random()).nextInt(5000)) * 20;
         	
 			worldinfo.setCleanWeatherTime(i);
             worldinfo.setRainTime(0);
             worldinfo.setThunderTime(0);
             worldinfo.setRaining(false);
             worldinfo.setThundering(false);
-            JARM.logger.info("Clearing weather");
-            JARM.logger.info(worldinfo.getRainTime() +" rain time"+ worldinfo.getThunderTime()+" thunder time");
-        }
+            }
     }
 
     private void checkFallable(World worldIn, BlockPos pos)

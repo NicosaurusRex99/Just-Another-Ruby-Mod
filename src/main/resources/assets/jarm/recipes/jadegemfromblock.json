@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:gem_jade",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_jade"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}
