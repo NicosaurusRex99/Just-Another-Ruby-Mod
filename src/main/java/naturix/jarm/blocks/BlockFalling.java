@@ -16,6 +16,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft.world.storage.WorldInfo;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -23,6 +24,7 @@ public class BlockFalling extends Block
 {
     public static boolean fallInstantly;
 	private String name;
+	private static World world;
 
     public BlockFalling(String name)
     {
@@ -35,6 +37,7 @@ public class BlockFalling extends Block
 		setResistance(5f);
 		this.name = name;
 		this.setHarvestLevel("pickaxe", 3);
+		
     }
     /**
      * Called after the block is set in the Chunk data, but before the Tile Entity is set
@@ -53,12 +56,24 @@ public class BlockFalling extends Block
     {
         worldIn.scheduleUpdate(pos, this, this.tickRate(worldIn));
     }
-
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!worldIn.isRemote)
         {
             this.checkFallable(worldIn, pos);
+        }
+        if (worldIn.isBlockPowered(pos)) {
+        	WorldInfo worldinfo = worldIn.getWorldInfo();
+        	JARM.logger.info(worldinfo.getRainTime() +" rain time"+ worldinfo.getThunderTime()+" thunder time");
+            int i = (300 + (new Random()).nextInt(600)) * 20;
+        	
+			worldinfo.setCleanWeatherTime(i);
+            worldinfo.setRainTime(0);
+            worldinfo.setThunderTime(0);
+            worldinfo.setRaining(false);
+            worldinfo.setThundering(false);
+            JARM.logger.info("Clearing weather");
+            JARM.logger.info(worldinfo.getRainTime() +" rain time"+ worldinfo.getThunderTime()+" thunder time");
         }
     }
 
