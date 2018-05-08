@@ -21,7 +21,7 @@ public class TradeHandler implements EntityVillager.ITradeList
       recipeList.add(new MerchantRecipe(new ItemStack(Items.EMERALD, 10 + random.nextInt(15)),new ItemStack(ModBlocks.block_amethyst,1 + random.nextInt(2))));
    }
 	   if(ConfigMain.rubyModule == true) {
-		   recipeList.add(new MerchantRecipe(new ItemStack(Items.REDSTONE, 5 + random.nextInt(20)),new ItemStack(ModItems.gemRuby, 1+ random.nextInt(8))));
+		   recipeList.add(new MerchantRecipe(new ItemStack(ModBlocks.block_amethyst, 3 + random.nextInt(5)),new ItemStack(ModItems.gemRuby, 1+ random.nextInt(3))));
 	   }
 	   if(ConfigMain.jadeModule == true) {
 		   recipeList.add(new MerchantRecipe(new ItemStack(Items.DIAMOND, 2 + random.nextInt(15)), new ItemStack(ModItems.gemJade, 1 + random.nextInt(8))));
