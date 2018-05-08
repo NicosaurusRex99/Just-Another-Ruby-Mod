@@ -4,7 +4,7 @@ import java.io.File;
 
 import naturix.jarm.registry.ModRecipes;
 import naturix.jarm.utils.config.ConfigMain;
-import naturix.jarm.utils.handlers.TradeHandler;
+import naturix.jarm.utils.handlers.TradeHandlerSmith;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;
@@ -21,12 +21,13 @@ import net.minecraftforge.fml.common.registry.VillagerRegistry;
 public class CommonProxy {
 	public static Configuration config;
 	VillagerRegistry.VillagerProfession smith=ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("minecraft:smith"));
+	VillagerRegistry.VillagerProfession tree=ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("minecraft:farmer"));
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();
 		config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod!.cfg"));
         ConfigMain.readConfig();
-        smith.getCareer(5).addTrade(1,new TradeHandler());
+        smith.getCareer(5).addTrade(1,new TradeHandlerSmith());
 	}
 
     public void init(FMLInitializationEvent e)

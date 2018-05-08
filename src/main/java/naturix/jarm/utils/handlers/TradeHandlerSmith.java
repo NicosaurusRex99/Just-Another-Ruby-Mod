@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.village.MerchantRecipe;
 import net.minecraft.village.MerchantRecipeList;
 
-public class TradeHandler implements EntityVillager.ITradeList
+public class TradeHandlerSmith implements EntityVillager.ITradeList
 {
    @Override
    public void addMerchantRecipe(IMerchant merchant, MerchantRecipeList recipeList, Random random)

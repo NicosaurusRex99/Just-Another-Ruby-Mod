@@ -75,6 +75,7 @@ public class ConfigMain {
     public static boolean nickelModule = true;
     public static boolean steelModule = true;
     public static boolean osmiumModule = true;
+    public static boolean woodModule = true;
     public static boolean updateNotifications = true;
     public static int maxCooldown;
     public static int magRange;
@@ -164,6 +165,7 @@ public class ConfigMain {
         magRange = cfg.getInt("MeteorRange", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor pull range");
         pullSpeed = cfg.getInt("MeteorPullSpeed", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor pull speed");
         maxPull = cfg.getInt("MeteorPull", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor max pull");
+        woodModule = cfg.getBoolean("wood", CATEGORY_MODULES, woodModule, "Disable to remove this module");
         
     }
     public static class GameRules

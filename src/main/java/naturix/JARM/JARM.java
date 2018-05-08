@@ -7,6 +7,7 @@ import naturix.jarm.registry.ModItems;
 import naturix.jarm.registry.ModOreDict;
 import naturix.jarm.registry.ModRecipes;
 import naturix.jarm.world.ModWorldGeneration;
+import naturix.jarm.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -27,7 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JARM
 { 
 	public static final String MODID = "jarm";
-    public static final String VERSION = "1.12.2.13";
+    public static final String VERSION = "1.12.2.14";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
     
@@ -45,6 +46,7 @@ public class JARM
         logger = event.getModLog();
         proxy.preInit(event); 
         GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
+        GameRegistry.registerWorldGenerator(new TreeWorldGen(), 3);
     }
 
     @Mod.EventHandler

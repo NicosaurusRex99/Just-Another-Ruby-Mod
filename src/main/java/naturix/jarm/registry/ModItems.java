@@ -1,6 +1,7 @@
 package naturix.jarm.registry;
 
 import naturix.jarm.JARM;
+import naturix.jarm.items.FoodBase;
 import naturix.jarm.items.ItemBase;
 import naturix.jarm.items.UraniumIngot;
 import naturix.jarm.items.armor.BootsBase;
@@ -290,6 +291,7 @@ public class ModItems {
 	public static LeggingsBase leggingsOsmium= new LeggingsBase("OsmiumLeggings", CustomMaterials.osmiumArmorMaterial);
 	public static ChestplateBase chestplateOsmium= new ChestplateBase("OsmiumChestplate", CustomMaterials.osmiumArmorMaterial);
 	public static HelmetBase helmetOsmium= new HelmetBase("OsmiumHelmet", CustomMaterials.osmiumArmorMaterial);
+	public static FoodBase dwarfApple = new FoodBase("apple_dwarf");
 	
 	public static void register(IForgeRegistry<Item> registry) {
 	if(ConfigMain.rubyModule == true) {
@@ -697,7 +699,10 @@ public class ModItems {
 					helmetOsmium
 				 );
 	 }
-	 
+	 if(ConfigMain.woodModule == true) {
+		 registry.registerAll(
+				 dwarfApple);
+	 }
 	 }}
 
 public static void registerModels() {
@@ -1085,6 +1090,9 @@ if(ConfigMain.osmiumModule == true) {
 		 chestplateOsmium.registerItemModel();
 		 leggingsOsmium.registerItemModel();
 		 bootsOsmium.registerItemModel();
+}
+if(ConfigMain.woodModule == true) {
+	dwarfApple.registerItemModel(dwarfApple);
 }
 	}
 }

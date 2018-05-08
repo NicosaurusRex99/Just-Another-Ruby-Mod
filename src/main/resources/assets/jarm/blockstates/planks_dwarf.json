@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "jarm:planks_dwarf_apple"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

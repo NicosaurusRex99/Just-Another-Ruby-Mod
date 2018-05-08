@@ -4,6 +4,9 @@ import naturix.jarm.blocks.Amethyst;
 import naturix.jarm.blocks.BeaconBase;
 import naturix.jarm.blocks.BlockFalling;
 import naturix.jarm.blocks.BlockOre;
+import naturix.jarm.blocks.LeavesBase;
+import naturix.jarm.blocks.LogBase;
+import naturix.jarm.blocks.SaplingBase;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -56,6 +59,10 @@ public class ModBlocks {
 	public static BeaconBase block_tungsten = new BeaconBase(Material.IRON, "block_tungsten");
 	public static BeaconBase block_uranium = new BeaconBase(Material.IRON, "block_uranium");
 	public static BeaconBase block_steel = new BeaconBase(Material.IRON, "block_steel");
+	public static LogBase log_dwarf = new LogBase("log_dwarf_apple");
+	public static LeavesBase leaves_dwarf = new LeavesBase("leaves_dwarf_apple");
+	public static SaplingBase sapling_dwarf = new SaplingBase();
+	public static BlockOre planks_dwarf = new BlockOre(Material.WOOD, "planks_dwarf");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 	if(ConfigMain.rubyModule == true) {
@@ -199,6 +206,14 @@ public class ModBlocks {
 				block_steel
 				);
 	}
+	if(ConfigMain.woodModule == true) {
+		registry.registerAll(
+				log_dwarf,
+				leaves_dwarf,
+				sapling_dwarf,
+				planks_dwarf
+		);
+		}
 	}
 	
 	public static void registerItemBlocks(IForgeRegistry<Item> registry) {
@@ -340,6 +355,13 @@ public class ModBlocks {
 					block_steel.createItemBlock()
 					);
 		}
+		if(ConfigMain.woodModule == true) {
+			registry.registerAll(
+		log_dwarf.createItemBlock(),
+		leaves_dwarf.createItemBlock(),
+		sapling_dwarf.createItemBlock(),
+		planks_dwarf.createItemBlock()
+		);}
 		}
 	}
 	
@@ -436,6 +458,12 @@ public class ModBlocks {
 				}
 			if(ConfigMain.steelModule == true) {
 				block_steel.registerItemModel(Item.getItemFromBlock(block_steel));
+			}
+			if(ConfigMain.woodModule == true) {
+				log_dwarf.registerItemModel(Item.getItemFromBlock(log_dwarf));
+				leaves_dwarf.registerItemModel(Item.getItemFromBlock(leaves_dwarf));
+				sapling_dwarf.registerItemModel(Item.getItemFromBlock(sapling_dwarf));
+				planks_dwarf.registerItemModel(Item.getItemFromBlock(planks_dwarf));
 			}
 	}
 }

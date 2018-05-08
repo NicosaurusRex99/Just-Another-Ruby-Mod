@@ -267,7 +267,9 @@ item.OsmiumHelmet.name=Osmium Helmet
 item.OsmiumChestplate.name=Osmium Chestplate
 item.OsmiumLeggings.name=Osmium Leggings
 item.OsmiumBoots.name=Osmium Boots
+item.apple_dwarf.name=Dwarf Apple
 
+tile.leaves_dwarf_apple.name=Dwarf Apple
 tile.jarm.block_steel.name=Steel Block
 tile.jarm.block_ruby.name=Ruby Block
 tile.ore_ruby.name=Ruby Ore
@@ -313,6 +315,10 @@ tile.jarm.block_tin.name=Tin Block
 tile.jarm.block_titanium.name=Titanium Block
 tile.jarm.block_tungsten.name=Tungsten Block
 tile.jarm.block_uranium.name=Uranium Block
+tile.log_dwarf_apple.name=Dwarf Apple Log
+tile.leaves_dwarf_apple.name=Dwarf Apple Leaves
+tile.sapling_dwarf_apple.name=Dwarf Apple Sapling
+tile.planks_dwarf.name=Dwarf Planks
 
 itemGroup.JARMTab=Just Another Ruby Mod!
 jarm.general.customdimensions.customdimensionids=Custom Dimension ID's (requires restart)
