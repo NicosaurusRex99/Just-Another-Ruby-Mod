@@ -6,6 +6,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class UraniumIngot extends Item {
 
@@ -34,6 +36,7 @@ public class UraniumIngot extends Item {
 	public void registerItemModel() {
 		JARM.proxy.registerItemRenderer(this, 0, name);
 	}
+	@SideOnly(Side.CLIENT)
 	public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5) {
 		par3Entity.performHurtAnimation();
 	}
