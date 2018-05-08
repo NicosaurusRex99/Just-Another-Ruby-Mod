@@ -2,11 +2,16 @@ package naturix.jarm.items.armor;
 
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
+import naturix.jarm.registry.ModItems;
+import naturix.jarm.utils.FlyUtils;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class ChestplateBase extends ItemArmor 
 {
@@ -31,8 +36,10 @@ public class ChestplateBase extends ItemArmor
 	}
 
 	private String name;
+	private EntityPlayer player;
 	public void registerItemModel() {
 		JARM.proxy.registerItemRenderer(this, 0, name);
+		
 	}
 	@Override
 	public int getMaxDamage()
