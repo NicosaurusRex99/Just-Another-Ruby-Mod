@@ -28,7 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JARM
 { 
 	public static final String MODID = "jarm";
-    public static final String VERSION = "1.12.2.14";
+    public static final String VERSION = "1.12.2.15";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
     

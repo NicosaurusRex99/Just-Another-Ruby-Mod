@@ -4,6 +4,7 @@ import java.util.Random;
 
 import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.world.tree.DwarfApple;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -172,6 +173,9 @@ public class ModWorldGeneration implements IWorldGenerator {
 			if(ConfigMain.meteoriteModule == true) {
 			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, random.nextInt(2), 2);
 				}
+			if(ConfigMain.woodModule == true) {
+				new DwarfApple();
+			}
 		}
 	
 	private void generateModDimensions(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
