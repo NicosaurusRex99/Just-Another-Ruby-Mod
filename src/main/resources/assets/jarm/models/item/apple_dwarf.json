@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft:items/apple"
+    "layer0": "jarm:items/apple_dwarf"
   },
   "display": {
         "ground": {
