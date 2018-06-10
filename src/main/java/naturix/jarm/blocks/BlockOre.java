@@ -10,23 +10,23 @@ public class BlockOre extends Block {
 
 	protected String name;
 
-	public BlockOre(Material material, String name) {
+	public BlockOre(Material material, String name, int level) {
 		super(material);
 		this.name = name;
 		setCreativeTab(JARM.JARM);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHarvestLevel("pickaxe", 3);
+		setHarvestLevel("pickaxe", level);
         setHardness(4f);
 		setResistance(5f);
 	}
-	public BlockOre(Material material, String name, float luminance) {
+	public BlockOre(Material material, String name, float luminance, int level) {
 		super(material);
 		this.name = name;
 		setCreativeTab(JARM.JARM);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHarvestLevel("pickaxe", 3);
+		setHarvestLevel("pickaxe", level);
         setHardness(4f);
 		setResistance(5f);
 		this.setLightLevel(luminance);

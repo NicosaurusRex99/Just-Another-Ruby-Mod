@@ -1,18 +1,29 @@
 package naturix.jarm;
 
 
+import org.lwjgl.opengl.GL11;
+
 import naturix.jarm.proxy.CommonProxy;
 import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.registry.ModItems;
 import naturix.jarm.registry.ModOreDict;
 import naturix.jarm.registry.ModRecipes;
+import naturix.jarm.utils.uuid.LibRegistry;
+import naturix.jarm.utils.uuid.ModelHat;
+import naturix.jarm.utils.uuid.UUIDGrabber;
 import naturix.jarm.world.ModWorldGeneration;
 import naturix.jarm.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -40,13 +51,16 @@ public class JARM
 
     public static org.apache.logging.log4j.Logger logger;
     
-
+    public static KeyBinding keyToggle;
+    public static Minecraft mc;
+    public static EntityPlayer player;
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event); 
         GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
         GameRegistry.registerWorldGenerator(new TreeWorldGen(), 3);
+        
     }
 
     @Mod.EventHandler
@@ -54,18 +68,20 @@ public class JARM
         proxy.init(e);
         ModOreDict.initOreDict();
         ModRecipes.init();
+        
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
+        
     }
     
     @Mod.EventHandler
     public void serverLoad(FMLServerStartingEvent event) {
-
+    	
     }
-    
+
     public static final CreativeTabs JARM = new CreativeTabs("JARMTab")
     {
 
@@ -94,5 +110,22 @@ public class JARM
 		public static void registerBlocks(RegistryEvent.Register<Block> event) {
 			ModBlocks.register(event.getRegistry());
 		}
+		private static ModelHat hat = new ModelHat();
+		private static UUIDGrabber uuid;
+		private AbstractClientPlayer player2;
+		@SubscribeEvent
+		public void playerRender(RenderPlayerEvent.Specials.Pre evt) {
+			if(uuid.isContributor(player2)) {
+				GL11.glPushMatrix();
+				evt.getRenderer().getMainModel().bipedHead.postRender(0.0625f);
+				GL11.glRotatef(180, 0, 0, 1);
+				GL11.glTranslatef(-0.5f, 0.5f, -0.5f);
+				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("jarm:textures/models/devhat.png"));
+				hat.renderAll();
+				GL11.glPopMatrix();
+			}
+		}
 	}
-} 
+    
+}
+

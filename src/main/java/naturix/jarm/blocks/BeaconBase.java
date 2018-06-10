@@ -50,7 +50,6 @@ public class BeaconBase extends Block {
         setCreativeTab(JARM.JARM);
         setHardness(4f);
 		setResistance(5f);
-		this.name = name;
 	}
 	public BeaconBase setBeaconBase(boolean b){
 		addBeaconBase = b;

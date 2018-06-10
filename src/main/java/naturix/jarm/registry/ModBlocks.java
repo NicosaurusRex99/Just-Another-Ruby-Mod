@@ -6,6 +6,7 @@ import naturix.jarm.blocks.BlockFalling;
 import naturix.jarm.blocks.BlockOre;
 import naturix.jarm.blocks.LeavesBase;
 import naturix.jarm.blocks.LogBase;
+import naturix.jarm.blocks.PlanksBase;
 import naturix.jarm.blocks.SaplingBase;
 import naturix.jarm.utils.config.ConfigMain;
 import net.minecraft.block.Block;
@@ -14,30 +15,30 @@ import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static BlockOre ore_ruby = new BlockOre(Material.ROCK, "ore_ruby");
+	public static BlockOre ore_ruby = new BlockOre(Material.ROCK, "ore_ruby", 3);
 	public static BeaconBase block_ruby = new BeaconBase("block_ruby");
 	public static Amethyst block_amethyst = new Amethyst("block_amethyst", 4f, 5f);
-	public static BlockOre ore_braunite = new BlockOre(Material.ROCK, "ore_braunite");
+	public static BlockOre ore_braunite = new BlockOre(Material.ROCK, "ore_braunite", 3);
 	public static BeaconBase block_braunite = new BeaconBase("block_braunite");
-	public static BlockOre ore_amber = new BlockOre(Material.ROCK, "ore_amber");
-	public static BlockOre ore_cinnibar = new BlockOre(Material.ROCK, "ore_cinnibar");
-	public static BlockOre ore_cobalt = new BlockOre(Material.ROCK, "ore_cobalt");
-	public static BlockOre ore_copper = new BlockOre(Material.ROCK, "ore_copper");
-	public static BlockOre ore_fossil = new BlockOre(Material.ROCK, "ore_fossil");
-	public static BlockOre ore_jade = new BlockOre(Material.ROCK, "ore_jade");
-	public static BlockOre ore_lead = new BlockOre(Material.ROCK, "ore_lead");
-	public static BlockOre ore_luminite = new BlockOre(Material.ROCK, "ore_luminite", 4);
-	public static BlockOre ore_mythrill = new BlockOre(Material.ROCK, "ore_mythrill");
-	public static BlockOre ore_nickel = new BlockOre(Material.ROCK, "ore_nickel");
-	public static BlockOre ore_opal = new BlockOre(Material.ROCK, "ore_opal");
-	public static BlockOre ore_osmium = new BlockOre(Material.ROCK, "ore_osmium");
-	public static BlockOre ore_platinum = new BlockOre(Material.ROCK, "ore_platinum");
-	public static BlockOre ore_saphire = new BlockOre(Material.ROCK, "ore_saphire");
-	public static BlockOre ore_silver = new BlockOre(Material.ROCK, "ore_silver");
-	public static BlockOre ore_tin = new BlockOre(Material.ROCK, "ore_tin");
-	public static BlockOre ore_titanium = new BlockOre(Material.ROCK, "ore_titanium");
-	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten");
-	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium");
+	public static BlockOre ore_amber = new BlockOre(Material.ROCK, "ore_amber", 2);
+	public static BlockOre ore_cinnibar = new BlockOre(Material.ROCK, "ore_cinnibar", 2);
+	public static BlockOre ore_cobalt = new BlockOre(Material.ROCK, "ore_cobalt", 3);
+	public static BlockOre ore_copper = new BlockOre(Material.ROCK, "ore_copper", 1);
+	public static BlockOre ore_fossil = new BlockOre(Material.ROCK, "ore_fossil", 3);
+	public static BlockOre ore_jade = new BlockOre(Material.ROCK, "ore_jade", 3);
+	public static BlockOre ore_lead = new BlockOre(Material.ROCK, "ore_lead", 2);
+	public static BlockOre ore_luminite = new BlockOre(Material.ROCK, "ore_luminite", 4, 3);
+	public static BlockOre ore_mythrill = new BlockOre(Material.ROCK, "ore_mythrill", 3);
+	public static BlockOre ore_nickel = new BlockOre(Material.ROCK, "ore_nickel", 2);
+	public static BlockOre ore_opal = new BlockOre(Material.ROCK, "ore_opal", 1);
+	public static BlockOre ore_osmium = new BlockOre(Material.ROCK, "ore_osmium", 2);
+	public static BlockOre ore_platinum = new BlockOre(Material.ROCK, "ore_platinum", 3);
+	public static BlockOre ore_saphire = new BlockOre(Material.ROCK, "ore_saphire", 2);
+	public static BlockOre ore_silver = new BlockOre(Material.ROCK, "ore_silver", 2);
+	public static BlockOre ore_tin = new BlockOre(Material.ROCK, "ore_tin", 1);
+	public static BlockOre ore_titanium = new BlockOre(Material.ROCK, "ore_titanium", 3);
+	public static BlockOre ore_tungsten = new BlockOre(Material.ROCK, "ore_tungsten", 3);
+	public static BlockOre ore_uranium = new BlockOre(Material.ROCK, "ore_uranium", 3);
 	public static BlockFalling ore_meteorite = new BlockFalling("ore_meteorite");
 	public static BeaconBase block_amber = new BeaconBase(Material.IRON, "block_amber");
 	public static BeaconBase block_cinnibar = new BeaconBase(Material.IRON, "block_cinnibar");
@@ -62,7 +63,7 @@ public class ModBlocks {
 	public static LogBase log_dwarf = new LogBase("log_dwarf_apple");
 	public static LeavesBase leaves_dwarf = new LeavesBase("leaves_dwarf_apple");
 	public static SaplingBase sapling_dwarf = new SaplingBase();
-	public static BlockOre planks_dwarf = new BlockOre(Material.WOOD, "planks_dwarf");
+	public static PlanksBase planks_dwarf = new PlanksBase("planks_dwarf");
 	
 	public static void register(IForgeRegistry<Block> registry) {
 	if(ConfigMain.rubyModule == true) {
