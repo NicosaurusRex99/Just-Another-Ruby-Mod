@@ -1,30 +1,24 @@
 package naturix.jarm;
 
 
-import org.lwjgl.opengl.GL11;
-
+import naturix.jarm.integration.ProjectECompat;
 import naturix.jarm.proxy.CommonProxy;
 import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.registry.ModItems;
 import naturix.jarm.registry.ModOreDict;
 import naturix.jarm.registry.ModRecipes;
-import naturix.jarm.utils.uuid.LibRegistry;
-import naturix.jarm.utils.uuid.ModelHat;
-import naturix.jarm.utils.uuid.UUIDGrabber;
 import naturix.jarm.world.ModWorldGeneration;
 import naturix.jarm.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -35,14 +29,14 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-@Mod(modid = JARM.MODID, name = JARM.MOD_NAME, version = JARM.VERSION, updateJSON = JARM.UPDATE_URL, useMetadata = true)
+@Mod(modid = JARM.MODID, name = JARM.MOD_NAME, version = JARM.VERSION, updateJSON = JARM.UPDATE_URL, useMetadata = true, dependencies = JARM.DEPENDENCIES)
 public class JARM
 { 
 	public static final String MODID = "jarm";
     public static final String VERSION = "1.12.2.15";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
-    
+    public static final String DEPENDENCIES = "after:ProjectE";
     @SidedProxy(clientSide = "naturix.jarm.proxy.ClientProxy", serverSide = "naturix.jarm.proxy.ServerProxy")
     public static CommonProxy proxy;
 
@@ -74,7 +68,9 @@ public class JARM
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
-        
+        if(Loader.isModLoaded("projecte")) {
+        ProjectECompat.init();
+    }
     }
     
     @Mod.EventHandler
@@ -110,22 +106,7 @@ public class JARM
 		public static void registerBlocks(RegistryEvent.Register<Block> event) {
 			ModBlocks.register(event.getRegistry());
 		}
-		private static ModelHat hat = new ModelHat();
-		private static UUIDGrabber uuid;
-		private AbstractClientPlayer player2;
-		@SubscribeEvent
-		public void playerRender(RenderPlayerEvent.Specials.Pre evt) {
-			if(uuid.isContributor(player2)) {
-				GL11.glPushMatrix();
-				evt.getRenderer().getMainModel().bipedHead.postRender(0.0625f);
-				GL11.glRotatef(180, 0, 0, 1);
-				GL11.glTranslatef(-0.5f, 0.5f, -0.5f);
-				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("jarm:textures/models/devhat.png"));
-				hat.renderAll();
-				GL11.glPopMatrix();
-			}
-		}
-	}
+		
     
-}
+}}
 

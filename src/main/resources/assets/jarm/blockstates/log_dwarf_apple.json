@@ -5,6 +5,11 @@
   },
   "variants": {
     "normal": [{}],
-    "inventory": [{}]
+    "inventory": [{}],
+	"variant=oak": [{}],
+	"variant=spruce": [{}],
+	"variant=acacia": [{}],
+	"variant=dark_oak": [{}],
+	"variant=birch": [{}]
   }
 }

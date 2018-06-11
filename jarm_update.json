@@ -1,6 +1,7 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
+		"1.12.2.16": "ProjectE compat and many tweaks",
 		"1.12.2.15": "Bug Fixes and improvments",
 		"1.12.2.14": "Bug Fixes and a tree",
 		"1.12.2.13": "Materials Update (105 new armor pieces)",
@@ -19,7 +20,7 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.12.2-latest": "1.12.2.15",
-		"1.12.2-recommended": "1.12.2.15"
+		"1.12.2-latest": "1.12.2.16",
+		"1.12.2-recommended": "1.12.2.16"
 	}
 }
