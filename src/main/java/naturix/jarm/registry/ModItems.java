@@ -19,7 +19,7 @@ import naturix.jarm.items.tools.hammers.BrauniteHammer;
 import naturix.jarm.items.tools.hammers.HammerBase;
 import naturix.jarm.items.tools.hammers.MeteoriteHammer;
 import naturix.jarm.utils.CustomMaterials;
-import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.utils.config.Config;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -294,7 +294,7 @@ public class ModItems {
 	public static FoodBase dwarfApple = new FoodBase("apple_dwarf");
 	
 	public static void register(IForgeRegistry<Item> registry) {
-	if(ConfigMain.rubyModule == true) {
+	if(Config.rubyModule == true) {
 		registry.registerAll(
 				gemRuby,
 				bootsRuby,
@@ -312,7 +312,7 @@ public class ModItems {
 					rubyHammer
 					);
 		}
-	if(ConfigMain.brauniteModule == true) {
+	if(Config.brauniteModule == true) {
 		registry.registerAll(
 				gemBraunite,
 				bootsBraunite,
@@ -331,12 +331,12 @@ public class ModItems {
 		}
 		}
 	 
-	 if(ConfigMain.prismarineModule == true) {
+	 if(Config.prismarineModule == true) {
 		 registry.registerAll(
 					helmetPrismarine
 			);
 	    }
-	 if(ConfigMain.lapisModule == true) {
+	 if(Config.lapisModule == true) {
 		 registry.registerAll(
 					bootsLapis,
 					leggingsLapis,
@@ -349,7 +349,7 @@ public class ModItems {
 					lapisAxe
 			);
 	    }
-	 if(ConfigMain.emeraldModule == true) {
+	 if(Config.emeraldModule == true) {
 		 registry.registerAll(
 				 	bootsEmerald,
 					leggingsEmerald,
@@ -362,7 +362,7 @@ public class ModItems {
 					emeraldAxe
 					);
 	    }
-	 if(ConfigMain.amethystModule == true) {
+	 if(Config.amethystModule == true) {
 		 registry.registerAll(
 				 	bootsAmethyst,
 					leggingsAmethyst,
@@ -380,7 +380,7 @@ public class ModItems {
 						);
 			}
 	    }
-	 if(ConfigMain.shulkerModule == true) {
+	 if(Config.shulkerModule == true) {
 		 registry.registerAll(
 				 	bootsShulker,
 					leggingsShulker,
@@ -388,7 +388,7 @@ public class ModItems {
 					helmetShulker
 					);
 	    }
-	 if(ConfigMain.amberModule == true) {
+	 if(Config.amberModule == true) {
 		 registry.registerAll(
 				 gemAmber,
 				 amberHoe,
@@ -407,7 +407,7 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.cinnibarModule == true) {
+	 if(Config.cinnibarModule == true) {
 		 registry.registerAll(
 				 gemCinnibar,
 				 cinnibarHoe,
@@ -426,12 +426,12 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.fossilModule == true) {
+	 if(Config.fossilModule == true) {
 		 registry.registerAll(
 				 gemFossil
 				 );
 	 }
-	 if(ConfigMain.jadeModule == true) {
+	 if(Config.jadeModule == true) {
 		 registry.registerAll(
 				 gemJade,
 				 jadeHoe,
@@ -450,7 +450,7 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.opalModule == true) {
+	 if(Config.opalModule == true) {
 		 registry.registerAll(
 				 gemOpal,
 				 opalHoe,
@@ -469,7 +469,7 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.saphireModule == true) {
+	 if(Config.saphireModule == true) {
 		 registry.registerAll(
 				 gemSaphire,
 				 saphireHoe,
@@ -488,7 +488,7 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.meteoriteModule == true) {
+	 if(Config.meteoriteModule == true) {
 		 registry.registerAll(
 				 gemMeteorite,
 				 meteoriteHoe,
@@ -507,7 +507,7 @@ public class ModItems {
 						);
 			}
 	 }
-	 if(ConfigMain.tinModule == true) {
+	 if(Config.tinModule == true) {
 		 registry.registerAll(
 				 ingot_tin,
 				 tinHoe,
@@ -522,7 +522,7 @@ public class ModItems {
 				 );
 
 	 }
-	 if(ConfigMain.copperModule == true) {
+	 if(Config.copperModule == true) {
 		 registry.registerAll(
 				 ingot_copper,
 				 copperHoe,
@@ -536,7 +536,7 @@ public class ModItems {
 					helmetCopper
 				 );
 	 }
-	 if(ConfigMain.leadModule == true) {
+	 if(Config.leadModule == true) {
 		 registry.registerAll(
 				 ingot_lead,
 				 leadHoe,
@@ -550,7 +550,7 @@ public class ModItems {
 					helmetLead
 				 );
 	 }
-	 if(ConfigMain.silverModule == true) {
+	 if(Config.silverModule == true) {
 		 registry.registerAll(
 				 ingot_silver,
 				 silverHoe,
@@ -564,7 +564,7 @@ public class ModItems {
 					helmetSilver
 				 );
 	 }
-	 if(ConfigMain.tungstenModule == true) {
+	 if(Config.tungstenModule == true) {
 		 registry.registerAll(
 				 ingot_tungsten,
 				 tungstenHoe,
@@ -578,7 +578,7 @@ public class ModItems {
 					helmetTungsten
 				 );
 	 }
-	 if(ConfigMain.platinumModule == true) {
+	 if(Config.platinumModule == true) {
 		 registry.registerAll(
 				 ingot_platinum,
 				 platinumHoe,
@@ -592,7 +592,7 @@ public class ModItems {
 					helmetPlatinum
 				 );
 	 }
-	 if(ConfigMain.cobaltModule == true) {
+	 if(Config.cobaltModule == true) {
 		 registry.registerAll(
 				 ingot_cobalt,
 				 cobaltHoe,
@@ -606,7 +606,7 @@ public class ModItems {
 					helmetCobalt
 				 );
 	 }
-	 if(ConfigMain.mythrillModule == true) {
+	 if(Config.mythrillModule == true) {
 		 registry.registerAll(
 				 ingot_mythrill,
 				 mythrillHoe,
@@ -620,7 +620,7 @@ public class ModItems {
 					helmetMythrill
 				 );
 	 }
-	 if(ConfigMain.titaniumModule == true) {
+	 if(Config.titaniumModule == true) {
 		 registry.registerAll(
 				 ingot_titanium,
 				 titaniumHoe,
@@ -634,7 +634,7 @@ public class ModItems {
 					helmetTitanium
 				 );
 	 }
-	 if(ConfigMain.luminiteModule == true) {
+	 if(Config.luminiteModule == true) {
 		 registry.registerAll(
 				 ingot_luminite,
 				 luminiteHoe,
@@ -648,7 +648,7 @@ public class ModItems {
 					helmetLuminite
 				 );
 	 }
-	 if(ConfigMain.uraniumModule == true) {
+	 if(Config.uraniumModule == true) {
 		 registry.registerAll(
 				 ingot_uranium,
 					bootsUranium,
@@ -657,7 +657,7 @@ public class ModItems {
 					helmetUranium
 				 );
 	 }
-	 if(ConfigMain.nickelModule == true) {
+	 if(Config.nickelModule == true) {
 		 registry.registerAll(
 				 ingot_nickel,
 				 nickelHoe,
@@ -671,7 +671,7 @@ public class ModItems {
 					helmetNickel
 				 );
 	 }
-	 if(ConfigMain.steelModule == true) {
+	 if(Config.steelModule == true) {
 		 registry.registerAll(
 				 ingot_steel,
 				 steelHoe,
@@ -685,7 +685,7 @@ public class ModItems {
 					helmetSteel
 				 );
 	 }
-	 if(ConfigMain.osmiumModule == true) {
+	 if(Config.osmiumModule == true) {
 		 registry.registerAll(
 				 ingot_osmium,
 				 osmiumHoe,
@@ -699,14 +699,14 @@ public class ModItems {
 					helmetOsmium
 				 );
 	 }
-	 if(ConfigMain.woodModule == true) {
+	 if(Config.woodModule == true) {
 		 registry.registerAll(
 				 dwarfApple);
 	 }
 	 }}
 
 public static void registerModels() {
-	if(ConfigMain.rubyModule == true) {
+	if(Config.rubyModule == true) {
 				gemRuby.registerItemModel();
 				bootsRuby.registerItemModel();
 				leggingsRuby.registerItemModel();
@@ -722,7 +722,7 @@ public static void registerModels() {
 					rubyHammer.registerItemModel();
 				}
 				}
-	if(ConfigMain.brauniteModule == true) {
+	if(Config.brauniteModule == true) {
 				gemBraunite.registerItemModel();
 				bootsBraunite.registerItemModel();
 				leggingsBraunite.registerItemModel();
@@ -738,10 +738,10 @@ public static void registerModels() {
 				}
 		}
 	 
-	 if(ConfigMain.prismarineModule == true) {
+	 if(Config.prismarineModule == true) {
 					helmetPrismarine.registerItemModel();
 	    }
-	 if(ConfigMain.lapisModule == true) {
+	 if(Config.lapisModule == true) {
 					bootsLapis.registerItemModel();
 					leggingsLapis.registerItemModel();
 					chestplateLapis.registerItemModel();
@@ -752,7 +752,7 @@ public static void registerModels() {
 					lapisSword.registerItemModel();
 					lapisAxe.registerItemModel();
 	    }
-	 if(ConfigMain.emeraldModule == true) {
+	 if(Config.emeraldModule == true) {
 				 	bootsEmerald.registerItemModel();
 					leggingsEmerald.registerItemModel();
 					chestplateEmerald.registerItemModel();
@@ -763,7 +763,7 @@ public static void registerModels() {
 					emeraldSword.registerItemModel();
 					emeraldAxe.registerItemModel();
 	    }
-	 if(ConfigMain.amethystModule == true) {
+	 if(Config.amethystModule == true) {
 				 	bootsAmethyst.registerItemModel();
 					leggingsAmethyst.registerItemModel();
 					chestplateAmethyst.registerItemModel();
@@ -777,13 +777,13 @@ public static void registerModels() {
 						amethystHammer.registerItemModel();
 					}
 	    }
-	 if(ConfigMain.shulkerModule == true) {
+	 if(Config.shulkerModule == true) {
 				 	bootsShulker.registerItemModel();
 					leggingsShulker.registerItemModel();
 					chestplateShulker.registerItemModel();
 					helmetShulker.registerItemModel();
 	    }
-	 if(ConfigMain.amberModule == true) {
+	 if(Config.amberModule == true) {
 		 
 		 gemAmber.registerItemModel();
 		 amberHoe.registerItemModel();
@@ -802,7 +802,7 @@ public static void registerModels() {
 				
 	}
 }
-if(ConfigMain.cinnibarModule == true) {
+if(Config.cinnibarModule == true) {
  
 		 gemCinnibar.registerItemModel();
 		 cinnibarHoe.registerItemModel();
@@ -821,12 +821,12 @@ if(ConfigMain.cinnibarModule == true) {
 				
 	}
 }
-if(ConfigMain.fossilModule == true) {
+if(Config.fossilModule == true) {
  
 		 gemFossil.registerItemModel();
 		 
 }
-if(ConfigMain.jadeModule == true) {
+if(Config.jadeModule == true) {
  
 		 gemJade.registerItemModel();
 		 jadeHoe.registerItemModel();
@@ -845,7 +845,7 @@ if(ConfigMain.jadeModule == true) {
 				
 	}
 }
-if(ConfigMain.opalModule == true) {
+if(Config.opalModule == true) {
  
 		 gemOpal.registerItemModel();
 		 opalHoe.registerItemModel();
@@ -864,7 +864,7 @@ if(ConfigMain.opalModule == true) {
 				
 	}
 }
-if(ConfigMain.saphireModule == true) {
+if(Config.saphireModule == true) {
  
 		 gemSaphire.registerItemModel();
 		 saphireHoe.registerItemModel();
@@ -883,7 +883,7 @@ if(ConfigMain.saphireModule == true) {
 				
 	}
 }
-if(ConfigMain.meteoriteModule == true) {
+if(Config.meteoriteModule == true) {
  
 		 gemMeteorite.registerItemModel();
 		 meteoriteHoe.registerItemModel();
@@ -902,7 +902,7 @@ if(ConfigMain.meteoriteModule == true) {
 				
 	}
 }
-if(ConfigMain.tinModule == true) {
+if(Config.tinModule == true) {
  
 		 ingot_tin.registerItemModel();
 		 tinHoe.registerItemModel();
@@ -916,7 +916,7 @@ if(ConfigMain.tinModule == true) {
 		 bootsTin.registerItemModel();
 
 }
-if(ConfigMain.copperModule == true) {
+if(Config.copperModule == true) {
  
 		 ingot_copper.registerItemModel();
 		 copperHoe.registerItemModel();
@@ -930,7 +930,7 @@ if(ConfigMain.copperModule == true) {
 		 bootsCopper.registerItemModel();
 		 
 }
-if(ConfigMain.leadModule == true) {
+if(Config.leadModule == true) {
  
 		 ingot_lead.registerItemModel();
 		 leadHoe.registerItemModel();
@@ -944,7 +944,7 @@ if(ConfigMain.leadModule == true) {
 		 bootsLead.registerItemModel();
 		 
 }
-if(ConfigMain.silverModule == true) {
+if(Config.silverModule == true) {
  
 		 ingot_silver.registerItemModel();
 		 silverHoe.registerItemModel();
@@ -958,7 +958,7 @@ if(ConfigMain.silverModule == true) {
 		 bootsSilver.registerItemModel();
 		 
 }
-if(ConfigMain.tungstenModule == true) {
+if(Config.tungstenModule == true) {
  
 		 ingot_tungsten.registerItemModel();
 		 tungstenHoe.registerItemModel();
@@ -972,7 +972,7 @@ if(ConfigMain.tungstenModule == true) {
 		 bootsTungsten.registerItemModel();
 		 
 }
-if(ConfigMain.platinumModule == true) {
+if(Config.platinumModule == true) {
  
 		 ingot_platinum.registerItemModel();
 		 platinumHoe.registerItemModel();
@@ -986,7 +986,7 @@ if(ConfigMain.platinumModule == true) {
 		 bootsPlatinum.registerItemModel();
 		 
 }
-if(ConfigMain.cobaltModule == true) {
+if(Config.cobaltModule == true) {
  
 		 ingot_cobalt.registerItemModel();
 		 cobaltHoe.registerItemModel();
@@ -1000,7 +1000,7 @@ if(ConfigMain.cobaltModule == true) {
 		 bootsCobalt.registerItemModel();
 		 
 }
-if(ConfigMain.mythrillModule == true) {
+if(Config.mythrillModule == true) {
  
 		 ingot_mythrill.registerItemModel();
 		 mythrillHoe.registerItemModel();
@@ -1014,7 +1014,7 @@ if(ConfigMain.mythrillModule == true) {
 		 bootsMythrill.registerItemModel();
 		 
 }
-if(ConfigMain.titaniumModule == true) {
+if(Config.titaniumModule == true) {
  
 		 ingot_titanium.registerItemModel();
 		 titaniumHoe.registerItemModel();
@@ -1028,7 +1028,7 @@ if(ConfigMain.titaniumModule == true) {
 		 bootsTitanium.registerItemModel();
 		 
 }
-if(ConfigMain.luminiteModule == true) {
+if(Config.luminiteModule == true) {
  
 		 ingot_luminite.registerItemModel();
 		 luminiteHoe.registerItemModel();
@@ -1042,7 +1042,7 @@ if(ConfigMain.luminiteModule == true) {
 		 bootsLuminite.registerItemModel();
 		 
 }
-if(ConfigMain.uraniumModule == true) {
+if(Config.uraniumModule == true) {
  
 		 ingot_uranium.registerItemModel();
 		 helmetUranium.registerItemModel();
@@ -1051,7 +1051,7 @@ if(ConfigMain.uraniumModule == true) {
 		 bootsUranium.registerItemModel();
 		 
 }
-if(ConfigMain.nickelModule == true) {
+if(Config.nickelModule == true) {
  
 		 ingot_nickel.registerItemModel();
 		 nickelHoe.registerItemModel();
@@ -1064,7 +1064,7 @@ if(ConfigMain.nickelModule == true) {
 		 leggingsNickel.registerItemModel();
 		 bootsNickel.registerItemModel();
 }
-if(ConfigMain.steelModule == true) {
+if(Config.steelModule == true) {
  
 		 ingot_steel.registerItemModel();
 		 steelHoe.registerItemModel();
@@ -1078,7 +1078,7 @@ if(ConfigMain.steelModule == true) {
 		 bootsSteel.registerItemModel();
 		 
 }
-if(ConfigMain.osmiumModule == true) {
+if(Config.osmiumModule == true) {
  
 		 ingot_osmium.registerItemModel();
 		 osmiumHoe.registerItemModel();
@@ -1091,7 +1091,7 @@ if(ConfigMain.osmiumModule == true) {
 		 leggingsOsmium.registerItemModel();
 		 bootsOsmium.registerItemModel();
 }
-if(ConfigMain.woodModule == true) {
+if(Config.woodModule == true) {
 	dwarfApple.registerItemModel(dwarfApple);
 }
 	}

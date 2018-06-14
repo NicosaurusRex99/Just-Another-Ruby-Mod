@@ -8,7 +8,7 @@ import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Configuration;
 
 
-public class ConfigMain {
+public class Config {
 
     private static final String CATEGORY_GENERAL = "General";
     private static final String CATEGORY_ORE = "Ore Gen";

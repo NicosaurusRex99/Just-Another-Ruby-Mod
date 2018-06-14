@@ -18,5 +18,5 @@ public class ProjectECompat {
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModBlocks.ore_meteorite, 1, 0), (int) 475);
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModItems.dwarfApple, 1, 0), (int) 16);
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModItems.gemBraunite, 1, 0), (int) 248);
-	}
+	} 
 }

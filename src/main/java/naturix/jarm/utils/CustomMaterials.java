@@ -1,7 +1,7 @@
 package naturix.jarm.utils;
 
 import naturix.jarm.JARM;
-import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.utils.config.Config;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
@@ -9,13 +9,13 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class CustomMaterials {
 	public static String MODID = JARM.MODID;
-    public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{ConfigMain.rubyHelm, ConfigMain.rubyChest, ConfigMain.rubyLeg, ConfigMain.rubyBoot}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final ItemArmor.ArmorMaterial PrismarineArmorMaterial = EnumHelper.addArmorMaterial("prismarine", MODID + ":prismarine", 4, new int[]{ConfigMain.prismarineHelm, 5, 2, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final ItemArmor.ArmorMaterial LapisArmorMaterial = EnumHelper.addArmorMaterial("lapis", MODID + ":lapis", 4, new int[]{ConfigMain.lapisHelm, ConfigMain.lapisChest, ConfigMain.lapisLeg, ConfigMain.lapisBoot}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final ItemArmor.ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("emerald", MODID + ":emerald", 4, new int[]{ConfigMain.emeraldHelm, ConfigMain.emeraldChest, ConfigMain.emeraldLeg, ConfigMain.emeraldBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
-    public static final ItemArmor.ArmorMaterial AmethystArmorMaterial = EnumHelper.addArmorMaterial("amethyst", MODID + ":amethyst", 4, new int[]{ConfigMain.amethystHelm, ConfigMain.amethystChest, ConfigMain.amethystLeg, ConfigMain.amethystBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-    public static final ItemArmor.ArmorMaterial ShulkerArmorMaterial = EnumHelper.addArmorMaterial("SHULKER", MODID + ":shulker", 4, new int[]{ConfigMain.shulkerHelm, ConfigMain.shulkerChest, ConfigMain.shulkerLeg, ConfigMain.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
-    public static final ItemArmor.ArmorMaterial brauniteArmorMaterial = EnumHelper.addArmorMaterial("braunite", MODID + ":braunite", 4, new int[]{ConfigMain.shulkerHelm +1, ConfigMain.shulkerChest+2, ConfigMain.shulkerLeg+2, ConfigMain.shulkerBoot+1}, 500, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F); 
+    public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("ruby", MODID + ":ruby", 15, new int[]{Config.rubyHelm, Config.rubyChest, Config.rubyLeg, Config.rubyBoot}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final ItemArmor.ArmorMaterial PrismarineArmorMaterial = EnumHelper.addArmorMaterial("prismarine", MODID + ":prismarine", 4, new int[]{Config.prismarineHelm, 5, 2, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final ItemArmor.ArmorMaterial LapisArmorMaterial = EnumHelper.addArmorMaterial("lapis", MODID + ":lapis", 4, new int[]{Config.lapisHelm, Config.lapisChest, Config.lapisLeg, Config.lapisBoot}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final ItemArmor.ArmorMaterial EmeraldArmorMaterial = EnumHelper.addArmorMaterial("emerald", MODID + ":emerald", 4, new int[]{Config.emeraldHelm, Config.emeraldChest, Config.emeraldLeg, Config.emeraldBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
+    public static final ItemArmor.ArmorMaterial AmethystArmorMaterial = EnumHelper.addArmorMaterial("amethyst", MODID + ":amethyst", 4, new int[]{Config.amethystHelm, Config.amethystChest, Config.amethystLeg, Config.amethystBoot}, 500, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+    public static final ItemArmor.ArmorMaterial ShulkerArmorMaterial = EnumHelper.addArmorMaterial("SHULKER", MODID + ":shulker", 4, new int[]{Config.shulkerHelm, Config.shulkerChest, Config.shulkerLeg, Config.shulkerBoot}, 500, SoundEvents.ENTITY_SHULKER_AMBIENT, 0.0F); 
+    public static final ItemArmor.ArmorMaterial brauniteArmorMaterial = EnumHelper.addArmorMaterial("braunite", MODID + ":braunite", 4, new int[]{Config.shulkerHelm +1, Config.shulkerChest+2, Config.shulkerLeg+2, Config.shulkerBoot+1}, 500, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F); 
     public static final ItemArmor.ArmorMaterial amberArmorMaterial = EnumHelper.addArmorMaterial("amber", MODID + ":amber", 4, new int[]{3, 5, 4, 1}, 500, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial cinnibarArmorMaterial = EnumHelper.addArmorMaterial("cinnibar", MODID + ":cinnibar", 4, new int[]{1, 2, 2, 1}, 500, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial jadeArmorMaterial = EnumHelper.addArmorMaterial("jade", MODID + ":jade", 4, new int[]{3, 4, 4, 2}, 500, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);

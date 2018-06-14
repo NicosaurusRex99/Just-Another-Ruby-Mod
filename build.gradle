@@ -49,6 +49,11 @@ repositories {
 	name 'chickenbones maven'
 	url "http://chickenbones.net/maven/"
 	}
+	ivy {
+        name 'ProjectE'
+        ivyPattern "https://maven.tterrag.com/[module]-[revision].[ext]"
+        artifactPattern "http://media.forgecdn.net/files/${pe_cf}/[module]-[revision].[ext]"
+    }
 
 }
 
@@ -61,6 +66,8 @@ dependencies {
 	compile "cofh:ThermalFoundation:${minecraft_version}-2.3.9.4:deobf"
 	compile "codechicken:CodeChickenLib:${minecraft_version}-3.1.6.339:deobf"
     compile "cofh:RedstoneFlux:1.12-2.0.0.1:deobf"
+	
+deobfCompile name: 'ProjectE', version: "${pe_version}", ext: 'jar'
 }
 processResources {
     // this will ensure that this task is redone when the versions change.

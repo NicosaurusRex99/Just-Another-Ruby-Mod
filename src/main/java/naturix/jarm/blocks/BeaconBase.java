@@ -1,7 +1,7 @@
 package naturix.jarm.blocks;
 
 import naturix.jarm.JARM;
-import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.utils.config.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 
 public class BeaconBase extends Block {
 
-	public boolean addBeaconBase = ConfigMain.addBeaconBase;
+	public boolean addBeaconBase = Config.addBeaconBase;
 	private String name;
 	
 	public BeaconBase(String name) {

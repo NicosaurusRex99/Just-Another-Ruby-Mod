@@ -11,7 +11,6 @@ import naturix.jarm.world.ModWorldGeneration;
 import naturix.jarm.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -33,10 +32,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JARM
 { 
 	public static final String MODID = "jarm";
-    public static final String VERSION = "1.12.2.15";
+    public static final String VERSION = "1.12.2.16";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
-    public static final String DEPENDENCIES = "after:ProjectE";
+    public static final String DEPENDENCIES = "after:projecte";
     @SidedProxy(clientSide = "naturix.jarm.proxy.ClientProxy", serverSide = "naturix.jarm.proxy.ServerProxy")
     public static CommonProxy proxy;
 
@@ -45,7 +44,6 @@ public class JARM
 
     public static org.apache.logging.log4j.Logger logger;
     
-    public static KeyBinding keyToggle;
     public static Minecraft mc;
     public static EntityPlayer player;
     @Mod.EventHandler
@@ -64,13 +62,18 @@ public class JARM
         ModRecipes.init();
         
     }
-
+    public static boolean ProjectE = false;
+    public static void modChecks()
+	{
+		ProjectE = Loader.isModLoaded("projecte");
+		logger.info(ProjectE);
+	}
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
-        if(Loader.isModLoaded("projecte")) {
-        ProjectECompat.init();
-    }
+        if(ProjectE) {
+            ProjectECompat.init();
+        }
     }
     
     @Mod.EventHandler

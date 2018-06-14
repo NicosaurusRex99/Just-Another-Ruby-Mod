@@ -1,13 +1,11 @@
 package naturix.jarm.items;
 
 import naturix.jarm.JARM;
-import naturix.jarm.registry.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemBase extends Item {
 	protected World world;

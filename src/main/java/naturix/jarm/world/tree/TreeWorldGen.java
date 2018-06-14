@@ -2,7 +2,6 @@ package naturix.jarm.world.tree;
 
 import java.util.Random;
 
-import naturix.jarm.JARM;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

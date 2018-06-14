@@ -3,7 +3,7 @@ package naturix.jarm.utils.handlers;
 import java.util.Random;
 
 import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.utils.config.ConfigMain;
+import naturix.jarm.utils.config.Config;
 import net.minecraft.entity.IMerchant;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.init.Items;
@@ -16,7 +16,7 @@ public class TradeHandlerTree implements EntityVillager.ITradeList
    @Override
    public void addMerchantRecipe(IMerchant merchant, MerchantRecipeList recipeList, Random random)
    {
-	   if(ConfigMain.woodModule == true) {
+	   if(Config.woodModule == true) {
       recipeList.add(new MerchantRecipe(new ItemStack(Items.EMERALD, 3 + random.nextInt(2)),new ItemStack(ModBlocks.sapling_dwarf,1)));
    }
 	   

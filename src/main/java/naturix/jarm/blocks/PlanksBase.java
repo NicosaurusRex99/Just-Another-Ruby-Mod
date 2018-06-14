@@ -1,7 +1,6 @@
 package naturix.jarm.blocks;
 
 import naturix.jarm.JARM;
-import naturix.jarm.blocks.PlanksBase.EnumType;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.creativetab.CreativeTabs;
@@ -10,6 +9,8 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PlanksBase extends BlockPlanks {
 
@@ -35,7 +36,7 @@ public class PlanksBase extends BlockPlanks {
         setHardness(4f);
 		setResistance(5f);
 		}
-	
+	@SideOnly(Side.CLIENT)
 	public void registerItemModel(Item itemBlock) {
 		JARM.proxy.registerItemRenderer(itemBlock, 0, name);
 	}
