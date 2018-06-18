@@ -45,7 +45,9 @@ public class CommonProxy {
     	if (config.hasChanged()) {
             config.save();
     }
-    	
+    if(Loader.isModLoaded("projecte")) {
+    	ProjectECompat.init();
+    }
     }
 	@EventHandler 
 	public void serverLoad(FMLServerStartingEvent event) 
