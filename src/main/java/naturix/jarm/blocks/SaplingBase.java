@@ -1,7 +1,7 @@
 package naturix.jarm.blocks;
 
 import java.util.Random;
-
+import naturix.jarm.proxy.*;
 import naturix.jarm.JARM;
 import naturix.jarm.world.tree.DwarfApple;
 import net.minecraft.block.BlockBush;

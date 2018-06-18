@@ -1,5 +1,6 @@
 package naturix.jarm.blocks;
 
+import naturix.jarm.proxy.*;
 import naturix.jarm.JARM;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.material.MapColor;

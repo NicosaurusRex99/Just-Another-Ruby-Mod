@@ -1,5 +1,6 @@
 package naturix.jarm.blocks;
 
+import naturix.jarm.proxy.*;
 import naturix.jarm.JARM;
 import naturix.jarm.utils.config.Config;
 import net.minecraft.block.Block;

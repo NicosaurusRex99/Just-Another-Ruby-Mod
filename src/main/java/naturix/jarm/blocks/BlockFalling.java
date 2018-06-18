@@ -1,5 +1,6 @@
 package naturix.jarm.blocks;
 
+import naturix.jarm.proxy.*;
 import java.util.Random;
 
 import naturix.jarm.JARM;

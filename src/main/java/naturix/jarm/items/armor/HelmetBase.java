@@ -1,5 +1,6 @@
 package naturix.jarm.items.armor;
 
+import naturix.jarm.proxy.*;
 import naturix.jarm.JARM;
 import naturix.jarm.items.ItemBase;
 import net.minecraft.entity.Entity;

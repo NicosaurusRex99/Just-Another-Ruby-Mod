@@ -26,6 +26,7 @@ public class CommonProxy {
 	public static Configuration config;
 	VillagerRegistry.VillagerProfession smith=ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("minecraft:smith"));
 	VillagerRegistry.VillagerProfession tree=ForgeRegistries.VILLAGER_PROFESSIONS.getValue(new ResourceLocation("minecraft:farmer"));
+	
 	public void preInit(FMLPreInitializationEvent e) 
 	{
 		File directory = e.getModConfigurationDirectory();

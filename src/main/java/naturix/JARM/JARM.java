@@ -10,7 +10,6 @@ import naturix.jarm.registry.ModRecipes;
 import naturix.jarm.world.ModWorldGeneration;
 import naturix.jarm.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -28,6 +27,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.*;
 @Mod(modid = JARM.MODID, name = JARM.MOD_NAME, version = JARM.VERSION, updateJSON = JARM.UPDATE_URL, useMetadata = true, dependencies = JARM.DEPENDENCIES)
 public class JARM
 { 
@@ -36,7 +36,9 @@ public class JARM
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
     public static final String DEPENDENCIES = "after:projecte";
+    
     @SidedProxy(clientSide = "naturix.jarm.proxy.ClientProxy", serverSide = "naturix.jarm.proxy.ServerProxy")
+    
     public static CommonProxy proxy;
 
     @Mod.Instance
@@ -44,7 +46,6 @@ public class JARM
 
     public static org.apache.logging.log4j.Logger logger;
     
-    public static Minecraft mc;
     public static EntityPlayer player;
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {

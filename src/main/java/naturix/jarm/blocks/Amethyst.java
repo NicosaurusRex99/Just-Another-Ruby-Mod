@@ -10,6 +10,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
+import naturix.jarm.proxy.*;
 public class Amethyst  extends Block {
 
 	private String name;

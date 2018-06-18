@@ -1,5 +1,5 @@
 package naturix.jarm.items;
-
+import naturix.jarm.proxy.*;
 import naturix.jarm.JARM;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

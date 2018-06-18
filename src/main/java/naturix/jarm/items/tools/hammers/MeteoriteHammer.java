@@ -1,5 +1,5 @@
 package naturix.jarm.items.tools.hammers;
-
+import naturix.jarm.proxy.*;
 import java.util.ArrayList;
 import java.util.Set;
 
