@@ -118,8 +118,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 				
 			}	
 			if(Config.amethystModule == true) {
-			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3, Config.
-			AmethystSpawnTries, chunkY, Blocks.STONE);
+			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3, Config.AmethystSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.amberModule == true) 	{
 			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.amberMin, Config.amberMax, 2, Config.amberSpawnTries, chunkY, Blocks.STONE);
