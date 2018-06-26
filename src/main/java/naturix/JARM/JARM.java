@@ -1,7 +1,9 @@
 package naturix.jarm;
 
 
+import baubles.common.Baubles;
 import naturix.jarm.integration.ProjectECompat;
+import naturix.jarm.integration.baubles.ModItemsBaubles;
 import naturix.jarm.proxy.CommonProxy;
 import naturix.jarm.registry.ModBlocks;
 import naturix.jarm.registry.ModItems;
@@ -100,11 +102,17 @@ public class JARM
 		public static void registerItems(RegistryEvent.Register<Item> event) {
 			ModItems.register(event.getRegistry());
 			ModBlocks.registerItemBlocks(event.getRegistry());
+			if(Loader.isModLoaded("baubles")) {
+				ModItemsBaubles.register(event.getRegistry());
+			}
 		}
 		@SubscribeEvent
 		public static void registerItems(ModelRegistryEvent event) {
 			ModItems.registerModels();
 			ModBlocks.registerModels();
+			if(Loader.isModLoaded("baubles")) {
+				ModItemsBaubles.registerModels();
+			}
 		}
 		@SubscribeEvent
 		public static void registerBlocks(RegistryEvent.Register<Block> event) {

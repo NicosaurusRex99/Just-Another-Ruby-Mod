@@ -18,11 +18,9 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class ModWorldGeneration implements IWorldGenerator {
 	
-	private static final int ConfigStringToInt = 0;
 	public static ModWorldGeneration instance = new ModWorldGeneration();
-	private int parsedint;
-	public static IBlockState[] glazedStates = {ModBlocks.ore_amber.getDefaultState(), ModBlocks.ore_braunite.getDefaultState(), ModBlocks.ore_cinnibar.getDefaultState(), ModBlocks.ore_cobalt.getDefaultState()};
 
+	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if (world.provider.getDimension() == 0) { //overworld
@@ -88,163 +86,173 @@ public class ModWorldGeneration implements IWorldGenerator {
 		if (world.provider.getDimension() == -3) {//Dimensions From Config
 			generateModDimensions(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
-		parsedint = ConfigStringToInt;
-		if (world.provider.getDimension() == parsedint ) {//Dimensions From Config
-			generateModDimensions(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
-		}
 	}
 	
-
-	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
+	private void generateOre2(IBlockState object, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
 		int deltaY = maxY - minY;
 	
 		for (int i = 0; i < chances; i++) {
 			BlockPos pos = new BlockPos(x + random.nextInt(16), minY + random.nextInt(deltaY), z + random.nextInt(16));
 	
-			WorldGenMinable generator = new WorldGenMinable(ore, size);
+			WorldGenMinable generator = new WorldGenMinable(object, size);
 			generator.generate(world, random, pos);
 		}
 	}
+	public void generateOre(IBlockState block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn)
+    {
+        int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
+        int heightRange = maxY - minY;
+        WorldGenMinable gen = new WorldGenMinable(block, veinSize, BlockMatcher.forBlock(generateIn));
+        for (int i = 0; i < chance; i++){
+            int xRand = chunkX * 16 + random.nextInt(16);
+            int yRand = random.nextInt(heightRange) + minY;
+            int zRand = chunkZ * 16 + random.nextInt(16);
+            gen.generate(world, random, new BlockPos(xRand, yRand, zRand));
+            //LogHelper.info(block.getUnlocalizedName() + " at " + xRand + " " + yRand + " " + zRand);
+        }
+    }
 
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 			if(Config.rubyModule == true) {
-			generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, random.nextInt(Config.rubyVeinSize), Config.rubySpawnTries);
-				}	
+			generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, 5, Config.rubySpawnTries, chunkY, Blocks.STONE);
+				
+			}	
 			if(Config.amethystModule == true) {
-			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, random.nextInt(Config.AmethystVeinSize), Config.AmethystSpawnTries);
+			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3, Config.
+			AmethystSpawnTries, chunkY, Blocks.STONE);
 				}
-			if(Config.brauniteModule == true) {
-			generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.brauniteMin, Config.brauniteMax, random.nextInt(Config.brauniteVeinSize), Config.brauniteSpawnTries);
-				}	
 			if(Config.amberModule == true) 	{
-			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.amberMin, Config.amberMax, random.nextInt(Config.amberVeinSize), Config.amberSpawnTries);
+			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.amberMin, Config.amberMax, 2, Config.amberSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.cinnibarModule == true) {
-			generateOre(ModBlocks.ore_cinnibar.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.cinnibarMin, Config.cinnibarMax, random.nextInt(Config.cinnibarVeinSize), Config.cinnibarSpawnTries);
+			generateOre(ModBlocks.ore_cinnibar.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.cinnibarMin, Config.cinnibarMax, 2, Config.cinnibarSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.copperModule == true) { 
-			generateOre(ModBlocks.ore_copper.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.copperMin, Config.copperMax, random.nextInt(Config.copperVeinSize), Config.copperSpawnTries);
+			generateOre(ModBlocks.ore_copper.getDefaultState(), world, random, chunkX * 16, chunkY * 16,  1 + Config.copperMax, Config.copperMin, 5, Config.copperSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.fossilModule == true) {
-			generateOre(ModBlocks.ore_fossil.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 6, world.provider.getActualHeight(), 1 + random.nextInt(4), 2);
+			generateOre2(ModBlocks.ore_fossil.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 6, world.provider.getActualHeight(), 1 + 4, 2);
 				}
 			if(Config.jadeModule == true) {
-			generateOre(ModBlocks.ore_jade.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.jadeMin, Config.jadeMax, random.nextInt(Config.jadeVeinSize), Config.jadeSpawnTries);
+			generateOre(ModBlocks.ore_jade.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.jadeMin, Config.jadeMax, 2, Config.jadeSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.leadModule == true) {
-			generateOre(ModBlocks.ore_lead.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.leadMin, Config.leadMax, random.nextInt(Config.leadVeinSize), Config.leadSpawnTries);
+			generateOre(ModBlocks.ore_lead.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.leadMin, Config.leadMax, 3, Config.leadSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.luminiteModule == true) {
-			generateOre(ModBlocks.ore_luminite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.luminiteMin, Config.luminiteMax, random.nextInt(Config.luminiteVeinSize), Config.luminiteSpawnTries);
+			generateOre(ModBlocks.ore_luminite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.luminiteMin, Config.luminiteMax, 2, Config.luminiteSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.mythrillModule == true) {
-			generateOre(ModBlocks.ore_mythrill.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.mythrillMin, Config.mythrillMax, random.nextInt(Config.mythrillVeinSize), Config.mythrillSpawnTries);
+			generateOre(ModBlocks.ore_mythrill.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.mythrillMin, Config.mythrillMax, 2, Config.mythrillSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.nickelModule == true) {
-			generateOre(ModBlocks.ore_nickel.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.nickelMin, Config.nickelMax, random.nextInt(Config.nickelVeinSize), Config.nickelSpawnTries);
+			generateOre(ModBlocks.ore_nickel.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.nickelMin, Config.nickelMax, 4, Config.nickelSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.opalModule == true) {
-			generateOre(ModBlocks.ore_opal.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.opalMin, Config.opalMax, random.nextInt(Config.opalVeinSize), Config.opalSpawnTries);
+			generateOre(ModBlocks.ore_opal.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.opalMin, Config.opalMax, 7, Config.opalSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.osmiumModule == true) {
-			generateOre(ModBlocks.ore_osmium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.osmiumMin, Config.osmiumMax, random.nextInt(Config.osmiumVeinSize), Config.osmiumSpawnTries);
+			generateOre(ModBlocks.ore_osmium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.osmiumMin, Config.osmiumMax, 5, Config.osmiumSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.platinumModule == true) {
-			generateOre(ModBlocks.ore_platinum.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.platinumMin, Config.platinumMax, random.nextInt(Config.platinumVeinSize), Config.platinumSpawnTries);
+			generateOre(ModBlocks.ore_platinum.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.platinumMin, Config.platinumMax, 2, Config.platinumSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.saphireModule == true) {
-			generateOre(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.saphireMin, Config.saphireMax, random.nextInt(Config.saphireVeinSize), Config.saphireSpawnTries);
+			generateOre(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.saphireMin, Config.saphireMax, 3, Config.saphireSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.silverModule == true) {
-			generateOre(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.silverMin, Config.silverMax, random.nextInt(Config.silverVeinSize), Config.silverSpawnTries);
+			generateOre(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.silverMin, Config.silverMax, 2, Config.silverSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.tinModule == true) {
-			generateOre(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.tinMin, Config.tinMax, random.nextInt(Config.tinVeinSize), Config.tinSpawnTries);
+			generateOre(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.tinMin, Config.tinMax, 6, Config.tinSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.titaniumModule == true) {
-			generateOre(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.titaniumMin, Config.titaniumMax, random.nextInt(Config.titaniumVeinSize), Config.titaniumSpawnTries);
+			generateOre(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.titaniumMin, Config.titaniumMax, 2, Config.titaniumSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.tungstenModule == true) {	
-			generateOre(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.brauniteMin, Config.tungstenMax, random.nextInt(Config.brauniteVeinSize), Config.tungstenSpawnTries);
+			generateOre(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.tungstenMin, Config.tungstenMax, 3, Config.tungstenSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.uraniumModule == true) {
-			generateOre(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.uraniumMin, Config.uraniumMax, random.nextInt(Config.uraniumVeinSize), Config.uraniumSpawnTries);
+			generateOre(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.uraniumMin, Config.uraniumMax, 2, Config.uraniumSpawnTries, chunkY, Blocks.STONE);
 				}
 			if(Config.meteoriteModule == true) {
-			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, random.nextInt(2), 2);
+			generateOre2(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, 2, 2);
 				}
 			if(Config.woodModule == true) {
 				new DwarfApple();
 			}
-		}
+			if(Config.brauniteModule == true) {
+				generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.brauniteMin, Config.brauniteMax, 2, Config.brauniteSpawnTries, chunkY, Blocks.STONE);
+					}	
+			}
 	
 	private void generateModDimensions(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if(Config.rubyModule == true) {
-		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, Config.rubyVeinSize + 3 + random.nextInt(4), Config.rubySpawnTries + 3);
+		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, 3 + 4, Config.rubySpawnTries, chunkY + 3, Blocks.STONE);
 		}if(Config.amethystModule == true) {
-		generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax + 3, 1 + random.nextInt(4), Config.AmethystSpawnTries + 2);
+		generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax + 3, 1 + 4, Config.AmethystSpawnTries, chunkY + 2, Blocks.STONE);
 		}if(Config.brauniteModule == true) {
-		generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3 + random.nextInt(4), Config.AmethystSpawnTries + 3);
+		generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3 + 4, Config.AmethystSpawnTries, chunkY + 3, Blocks.STONE);
 		if(Config.amberModule == true) {
-			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.cinnibarModule == true) {
-			generateOre(ModBlocks.ore_cinnibar.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 24, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_cinnibar.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 24, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.copperModule == true) 
-			generateOre(ModBlocks.ore_copper.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_copper.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.fossilModule == true) {
-			generateOre(ModBlocks.ore_fossil.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 6, world.provider.getActualHeight(), 1 + random.nextInt(4), 2);
+			generateOre2(ModBlocks.ore_fossil.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 6, world.provider.getActualHeight(), 1 + 4, 2);
 				}
 			if(Config.jadeModule == true) {
-			generateOre(ModBlocks.ore_jade.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 30, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_jade.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 30, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.leadModule == true) {
-			generateOre(ModBlocks.ore_lead.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_lead.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.luminiteModule == true) {
-			generateOre(ModBlocks.ore_luminite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 8, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_luminite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 8, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.mythrillModule == true) {
-			generateOre(ModBlocks.ore_mythrill.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, Config.AmethystMax + 3, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_mythrill.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 1 + Config.AmethystMax + 3, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.nickelModule == true) {
-			generateOre(ModBlocks.ore_nickel.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_nickel.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.opalModule == true) {
-			generateOre(ModBlocks.ore_opal.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 32, 48, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_opal.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 32, 48, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.osmiumModule == true) {
-			generateOre(ModBlocks.ore_osmium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 50, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_osmium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 50, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.platinumModule == true) {
-			generateOre(ModBlocks.ore_platinum.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 18, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_platinum.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 18, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.saphireModule == true) {
-			generateOre(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 32, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 32, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.silverModule == true) {
-			generateOre(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 16, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 16, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.tinModule == true) {
-			generateOre(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.titaniumModule == true) {
-			generateOre(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 18, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 18, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.tungstenModule == true) {	
-			generateOre(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 12, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 12, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.uraniumModule == true) {
-			generateOre(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + random.nextInt(4), 2);
+			generateOre(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 48, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.meteoriteModule == true) {
-			generateOre(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, 1 + random.nextInt(4), 2);
+			generateOre2(ModBlocks.ore_meteorite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, world.getSeaLevel() - 8, world.getSeaLevel() + 8, 1 + 4, 2);
 				}
 		}
 	private void generateNether(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        generateOre2(ModBlocks.ore_cobalt.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 256, random.nextInt(2) + random.nextInt(4), 10, Blocks.NETHERRACK);
+        generateOre(ModBlocks.ore_cobalt.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 256, random.nextInt(2) + random.nextInt(4), 10, chunkZ, Blocks.NETHERRACK);
     }
 
     private void generateOre2(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances, Block block){
