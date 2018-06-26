@@ -115,7 +115,6 @@ public class ModWorldGeneration implements IWorldGenerator {
 	private void generateOverworld(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 			if(Config.rubyModule == true) {
 			generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, 5, Config.rubySpawnTries, chunkY, Blocks.STONE);
-				
 			}	
 			if(Config.amethystModule == true) {
 			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3, Config.AmethystSpawnTries, chunkY, Blocks.STONE);
@@ -186,13 +185,16 @@ public class ModWorldGeneration implements IWorldGenerator {
 			}
 	
 	private void generateModDimensions(Random random, int chunkX, int chunkY, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		if(Config.rubyModule == true) {
-		generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, 3 + 4, Config.rubySpawnTries, chunkY + 3, Blocks.STONE);
-		}if(Config.amethystModule == true) {
-		generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax + 3, 1 + 4, Config.AmethystSpawnTries, chunkY + 2, Blocks.STONE);
-		}if(Config.brauniteModule == true) {
-		generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3 + 4, Config.AmethystSpawnTries, chunkY + 3, Blocks.STONE);
-		if(Config.amberModule == true) {
+			if(Config.rubyModule == true) {
+			generateOre(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.rubyMin, Config.rubyMax, 3 + 4, Config.rubySpawnTries, chunkY + 3, Blocks.STONE);
+			}
+			if(Config.amethystModule == true) {
+			generateOre(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax + 3, 1 + 4, Config.AmethystSpawnTries, chunkY + 2, Blocks.STONE);
+			}
+			if(Config.brauniteModule == true) {
+			generateOre(ModBlocks.ore_braunite.getDefaultState(), world, random, chunkX * 16, chunkY * 16, Config.AmethystMin, Config.AmethystMax, 3 + 4, Config.AmethystSpawnTries, chunkY + 3, Blocks.STONE);
+		
+			if(Config.amberModule == true) {
 			generateOre(ModBlocks.ore_amber.getDefaultState(), world, random, chunkX * 16, chunkY * 16, 1, 63, 1 + 4, 2, chunkY, Blocks.STONE);
 				}
 			if(Config.cinnibarModule == true) {
