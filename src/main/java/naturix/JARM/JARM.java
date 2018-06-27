@@ -55,7 +55,6 @@ public class JARM
         proxy.preInit(event); 
         GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
         GameRegistry.registerWorldGenerator(new TreeWorldGen(), 3);
-        
     }
 
     @Mod.EventHandler
