@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+	"XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "jarm:block_amethyst"
+    },
+	"Y": {
+      "item": "baubles:ring",
+	  "data": 0
+    }
+  },
+  "result": {
+    "item": "jarm:ring_amethyst",
+	"data": 0
+  }
+}

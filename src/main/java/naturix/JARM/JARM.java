@@ -53,9 +53,9 @@ public class JARM
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event); 
-        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
         GameRegistry.registerWorldGenerator(new TreeWorldGen(), 3);
-    }
+        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
+        }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
