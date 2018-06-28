@@ -87,19 +87,19 @@ public class ModWorldGeneration implements IWorldGenerator {
 		 }if(Config.platinumModule == true) {
 		 addOreSpawn(ModBlocks.ore_platinum.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.platinumSpawnTries, Config.platinumMin, Config.platinumMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.rubyModule == true) {
-		 addOreSpawn(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_ruby.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.rubySpawnTries, Config.rubyMin, Config.rubyMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.saphireModule == true) {
-		 addOreSpawn(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_saphire.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.saphireSpawnTries, Config.saphireMin, Config.saphireMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.silverModule == true) {
-		 addOreSpawn(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_silver.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.silverSpawnTries, Config.silverMin, Config.silverMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.tinModule == true) {
-		 addOreSpawn(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_tin.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.tinSpawnTries, Config.tinMin, Config.tinMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.titaniumModule == true) {
-		 addOreSpawn(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_titanium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.titaniumSpawnTries, Config.titaniumMin, Config.titaniumMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.tungstenModule == true) {
-		 addOreSpawn(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE));
+		 addOreSpawn(ModBlocks.ore_tungsten.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.tungstenSpawnTries, Config.tungstenMin, Config.tungstenMax, BlockMatcher.forBlock(Blocks.STONE));
 		 }if(Config.uraniumModule == true) {
-		 addOreSpawn(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.cinnibarSpawnTries, Config.cinnibarMin, Config.cinnibarMax, BlockMatcher.forBlock(Blocks.STONE)); 
+		 addOreSpawn(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.uraniumSpawnTries, Config.uraniumMin, Config.uraniumMax, BlockMatcher.forBlock(Blocks.STONE)); 
 		 }if(Config.amethystModule == true) {
 		 addOreSpawn(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.AmethystSpawnTries, Config.AmethystMin, Config.AmethystMax, BlockMatcher.forBlock(Blocks.STONE)); 
 		 }
