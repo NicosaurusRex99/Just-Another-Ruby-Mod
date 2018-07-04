@@ -34,7 +34,7 @@ import net.minecraft.*;
 public class JARM
 { 
 	public static final String MODID = "jarm";
-    public static final String VERSION = "1.12.2.17c";
+    public static final String VERSION = "1.12.2.18";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
     public static final String DEPENDENCIES = "after:projecte";
