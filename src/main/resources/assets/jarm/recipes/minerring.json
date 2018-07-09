@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+	"XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "jarm:gem_braunite"
+    },
+	"Y": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "baubles:ring",
+	  "data": 0
+  }
+}
