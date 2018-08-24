@@ -104,6 +104,8 @@ public class ModWorldGeneration implements IWorldGenerator {
 		 addOreSpawn(ModBlocks.ore_uranium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.uraniumSpawnTries, Config.uraniumMin, Config.uraniumMax, BlockMatcher.forBlock(Blocks.STONE)); 
 		 }if(Config.amethystModule == true) {
 		 addOreSpawn(ModBlocks.block_amethyst.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.AmethystSpawnTries, Config.AmethystMin, Config.AmethystMax, BlockMatcher.forBlock(Blocks.STONE)); 
+		 }if(Config.amethystModule == true) {
+			 addOreSpawn(ModBlocks.ore_aluminium.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 4, Config.aluminiumSpawnTries, Config.aluminiumMin, Config.aluminiumMax, BlockMatcher.forBlock(Blocks.STONE)); 
 		 }
 	 }
 	 private void genNether(World world, Random random, int chunkX, int chunkZ){

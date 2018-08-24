@@ -76,6 +76,7 @@ public class Config {
     public static boolean steelModule = true;
     public static boolean osmiumModule = true;
     public static boolean woodModule = true;
+    public static boolean aluminiumModule = true;
     public static boolean updateNotifications = true;
     public static boolean debug = false;
     public static int maxCooldown;
@@ -139,6 +140,9 @@ public class Config {
     public static int brauniteMax;
     public static int brauniteMin;
     public static int brauniteSpawnTries;
+    public static int aluminiumMax;
+    public static int aluminiumMin;
+    public static int aluminiumSpawnTries;
     
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -217,6 +221,7 @@ public class Config {
         nickelModule = cfg.getBoolean("nickel", CATEGORY_MODULES, nickelModule, "Disable to remove this module");
         steelModule = cfg.getBoolean("steel", CATEGORY_MODULES, steelModule, "Disable to remove this module");
         osmiumModule = cfg.getBoolean("osmium", CATEGORY_MODULES, osmiumModule, "Disable to remove this module");
+        aluminiumModule = cfg.getBoolean("aluminium", CATEGORY_MODULES, aluminiumModule, "Disable to remove this module");
         updateNotifications = cfg.getBoolean("update alerts", CATEGORY_GENERAL, updateNotifications, "Disable to remove the ingame update notification");
         maxCooldown = cfg.getInt("MeteorCooldown", CATEGORY_GENERAL, 4, 1, 1000000, "How long until the meteor can pull more stuff");
         magRange = cfg.getInt("MeteorRange", CATEGORY_GENERAL, 4, 1, 1000000, "Meteor pull range");
@@ -281,7 +286,10 @@ public class Config {
         brauniteMin  = cfg.getInt("brauniteMin", CATEGORY_ORE, 4, 1, 255, "Choose a number between 1 and 255 to choose the min ore height");
         brauniteSpawnTries  = cfg.getInt("brauniteTries", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the amount of times the ore tries to spawn");
         debug = cfg.getBoolean("debug", CATEGORY_DEBUG, debug, "Enable to debug");
-    	
+        aluminiumMax  = cfg.getInt("aluminiumMax", CATEGORY_ORE, 38, 1, 255, "Choose a number between 1 and 255 to choose the max ore height");
+        aluminiumMin  = cfg.getInt("aluminiumMin", CATEGORY_ORE, 4, 1, 255, "Choose a number between 1 and 255 to choose the min ore height");
+        aluminiumSpawnTries  = cfg.getInt("aluminiumTries", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the amount of times the ore tries to spawn");
+       
     }
     public static class GameRules
     {

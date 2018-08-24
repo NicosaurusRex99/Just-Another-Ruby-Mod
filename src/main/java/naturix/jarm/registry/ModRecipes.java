@@ -219,8 +219,11 @@ public class ModRecipes {
 		}if(Config.brauniteModule == true) {
 		GameRegistry.addSmelting(ModBlocks.ore_braunite, new ItemStack(ModItems.gemBraunite), 0.7f);
 		}
-			if(Config.amberModule == true) {
+		if(Config.amberModule == true) {
 			GameRegistry.addSmelting(ModBlocks.ore_amber, new ItemStack(ModItems.gemAmber), 0.7f);
+				}
+		if(Config.aluminiumModule == true) {
+			GameRegistry.addSmelting(ModBlocks.ore_aluminium, new ItemStack(ModItems.ingot_aluminium), 0.7f);
 				}
 			if(Config.cinnibarModule == true) {
 			GameRegistry.addSmelting(ModBlocks.ore_cinnibar, new ItemStack(ModItems.gemCinnibar), 0.7f);

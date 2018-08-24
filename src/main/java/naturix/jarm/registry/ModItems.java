@@ -48,6 +48,7 @@ public class ModItems {
 	public static ItemBase ingot_nickel= new ItemBase("ingot_nickel").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_steel= new ItemBase("ingot_steel").setCreativeTab(JARM.JARM);
 	public static ItemBase ingot_osmium= new ItemBase("ingot_osmium").setCreativeTab(JARM.JARM);
+	public static ItemBase ingot_aluminium= new ItemBase("ingot_aluminium").setCreativeTab(JARM.JARM);
 	
 	public static BootsBase bootsAmethyst= new BootsBase("AmethystBoots", CustomMaterials.AmethystArmorMaterial);
 	public static LeggingsBase leggingsAmethyst= new LeggingsBase("AmethystLeggings", CustomMaterials.AmethystArmorMaterial);
@@ -292,6 +293,15 @@ public class ModItems {
 	public static ChestplateBase chestplateOsmium= new ChestplateBase("OsmiumChestplate", CustomMaterials.osmiumArmorMaterial);
 	public static HelmetBase helmetOsmium= new HelmetBase("OsmiumHelmet", CustomMaterials.osmiumArmorMaterial);
 	public static FoodBase dwarfApple = new FoodBase("apple_dwarf");
+	public static BootsBase bootsAluminium= new BootsBase("AluminiumBoots", CustomMaterials.aluminiumArmorMaterial);
+	public static LeggingsBase leggingsAluminium= new LeggingsBase("AluminiumLeggings", CustomMaterials.aluminiumArmorMaterial);
+	public static ChestplateBase chestplateAluminium= new ChestplateBase("AluminiumChestplate", CustomMaterials.aluminiumArmorMaterial);
+	public static HelmetBase helmetAluminium= new HelmetBase("AluminiumHelmet", CustomMaterials.aluminiumArmorMaterial);
+	public static SwordBase aluminiumSword = new SwordBase(CustomMaterials.aluminiumToolMaterial, "sword_aluminium");
+	public static SpadeBase aluminiumSpade = new SpadeBase(CustomMaterials.aluminiumToolMaterial, "spade_aluminium");
+	public static PickaxeBase aluminiumPickaxe = new PickaxeBase(CustomMaterials.aluminiumToolMaterial, "pickaxe_aluminium");
+	public static AxeBase aluminiumAxe = new AxeBase(CustomMaterials.aluminiumToolMaterial, "axe_aluminium");
+	public static HoeBase aluminiumHoe = new HoeBase(CustomMaterials.aluminiumToolMaterial, "hoe_aluminium");
 	
 	public static void register(IForgeRegistry<Item> registry) {
 	if(Config.rubyModule == true) {
@@ -312,24 +322,37 @@ public class ModItems {
 					rubyHammer
 					);
 		}
-	if(Config.brauniteModule == true) {
-		registry.registerAll(
-				gemBraunite,
-				bootsBraunite,
-				leggingsBraunite,
-				chestplateBraunite,
-				helmetBraunite,
-				brauniteHoe,
-				braunitePickaxe,
-				brauniteSpade,
-				brauniteSword,
-				brauniteAxe
-		);if(Loader.isModLoaded("thermalfoundation")) {
+		if(Config.brauniteModule == true) {
 			registry.registerAll(
-					brauniteHammer
-					);
-		}
-		}
+					gemBraunite,
+					bootsBraunite,
+					leggingsBraunite,
+					chestplateBraunite,
+					helmetBraunite,
+					brauniteHoe,
+					braunitePickaxe,
+					brauniteSpade,
+					brauniteSword,
+					brauniteAxe
+			);if(Loader.isModLoaded("thermalfoundation")) {
+				registry.registerAll(
+						brauniteHammer
+						);
+			}
+			}if(Config.aluminiumModule == true) {
+				registry.registerAll(
+						bootsAluminium,
+						leggingsAluminium,
+						chestplateAluminium,
+						helmetAluminium,
+						aluminiumHoe,
+						aluminiumPickaxe,
+						aluminiumSpade,
+						aluminiumSword,
+						aluminiumAxe,
+						ingot_aluminium
+				);
+				}
 	 
 	 if(Config.prismarineModule == true) {
 		 registry.registerAll(
@@ -349,6 +372,7 @@ public class ModItems {
 					lapisAxe
 			);
 	    }
+	 
 	 if(Config.emeraldModule == true) {
 		 registry.registerAll(
 				 	bootsEmerald,
@@ -1093,6 +1117,19 @@ if(Config.osmiumModule == true) {
 }
 if(Config.woodModule == true) {
 	dwarfApple.registerItemModel(dwarfApple);
+}
+if(Config.aluminiumModule == true) {
+	 
+	 ingot_aluminium.registerItemModel();
+	 aluminiumHoe.registerItemModel();
+	 aluminiumPickaxe.registerItemModel();
+	 aluminiumSpade.registerItemModel();
+	 aluminiumSword.registerItemModel();
+	 aluminiumAxe.registerItemModel();
+	 helmetAluminium.registerItemModel();
+	 chestplateAluminium.registerItemModel();
+	 leggingsAluminium.registerItemModel();
+	 bootsAluminium.registerItemModel();
 }
 	}
 }

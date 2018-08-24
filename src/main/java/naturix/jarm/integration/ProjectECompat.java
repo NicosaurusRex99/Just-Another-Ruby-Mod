@@ -21,5 +21,6 @@ public class ProjectECompat {
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModItems.gemAmber, 1, 0), (int) 128);
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModItems.gemSaphire, 1, 0), (int) 128);
 		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModBlocks.log_dwarf, 1, 0), (int) 32);
-	} 
+		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(ModItems.ingot_aluminium, 1, 0), (int) 128);
+		} 
 }

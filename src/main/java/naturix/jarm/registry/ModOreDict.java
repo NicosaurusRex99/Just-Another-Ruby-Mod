@@ -113,7 +113,11 @@ public class ModOreDict {
 			 OreDictionary.registerOre("treeWood", ModBlocks.log_dwarf);
 			 OreDictionary.registerOre("treeLeaves", ModBlocks.leaves_dwarf);
 			 OreDictionary.registerOre("treeSapling", ModBlocks.sapling_dwarf);
-		 }
+		 }if(Config.aluminiumModule == true) {
+			 OreDictionary.registerOre("ingotAluminium", ModItems.ingot_aluminium);
+			 OreDictionary.registerOre("ingotAluminum", ModItems.ingot_aluminium);
+			 OreDictionary.registerOre("oreAluminum", ModBlocks.ore_aluminium);
+			 }
 	    
 	}
 }

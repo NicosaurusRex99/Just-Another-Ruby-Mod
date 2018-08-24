@@ -64,14 +64,22 @@ public class ModBlocks {
 	public static LeavesBase leaves_dwarf = new LeavesBase("leaves_dwarf_apple");
 	public static SaplingBase sapling_dwarf = new SaplingBase();
 	public static PlanksBase planks_dwarf = new PlanksBase("planks_dwarf");
+	public static BlockOre ore_aluminium = new BlockOre(Material.IRON, "ore_aluminium", 2);
+	public static BeaconBase block_aluminium = new BeaconBase(Material.IRON, "block_aluminium");
 	
 	public static void register(IForgeRegistry<Block> registry) {
-	if(Config.rubyModule == true) {
-	registry.registerAll(
-			ore_ruby,
-			block_ruby
-	);
-	}
+		if(Config.rubyModule == true) {
+			registry.registerAll(
+					ore_ruby,
+					block_ruby
+			);
+			}
+		if(Config.aluminiumModule == true) {
+			registry.registerAll(
+					ore_aluminium,
+					block_aluminium
+			);
+			}
 	if(Config.amethystModule == true) {
 	registry.registerAll(
 			block_amethyst
@@ -364,6 +372,12 @@ public class ModBlocks {
 		planks_dwarf.createItemBlock()
 		);}
 		}
+		if(Config.aluminiumModule==true) {
+			registry.registerAll(
+					ore_aluminium.createItemBlock(),
+					block_aluminium.createItemBlock()
+					);
+		}
 	}
 	
 	public static void registerModels() {
@@ -465,6 +479,10 @@ public class ModBlocks {
 				leaves_dwarf.registerItemModel(Item.getItemFromBlock(leaves_dwarf));
 				sapling_dwarf.registerItemModel(Item.getItemFromBlock(sapling_dwarf));
 				planks_dwarf.registerItemModel(Item.getItemFromBlock(planks_dwarf));
+			}
+			if(Config.aluminiumModule==true) {
+				ore_aluminium.registerItemModel(Item.getItemFromBlock(ore_aluminium));
+				block_aluminium.registerItemModel(Item.getItemFromBlock(block_aluminium));
 			}
 	}
 }

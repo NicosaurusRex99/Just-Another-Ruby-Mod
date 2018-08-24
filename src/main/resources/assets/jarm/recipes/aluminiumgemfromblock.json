@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "jarm:ingot_aluminium",
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "item": "jarm:block_aluminium"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

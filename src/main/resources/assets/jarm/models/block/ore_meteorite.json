@@ -1,8 +1,8 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
-        "particle": "blocks/ore_meteorite",
-        "0": "blocks/ore_meteorite"
+        "particle": "jarm:blocks/ore_meteorite",
+        "0": "jarm:blocks/ore_meteorite"
     },
     "display": {
         "gui": {

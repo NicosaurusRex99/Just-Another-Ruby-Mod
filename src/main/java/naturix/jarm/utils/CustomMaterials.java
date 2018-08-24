@@ -36,6 +36,7 @@ public class CustomMaterials {
     public static final ItemArmor.ArmorMaterial nickelArmorMaterial = EnumHelper.addArmorMaterial("nickel", MODID + ":nickel", 4, new int[]{2, 4, 3, 1}, 1214, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial steelArmorMaterial = EnumHelper.addArmorMaterial("steel", MODID + ":steel", 4, new int[]{4, 7, 5, 4}, 2400, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F);
     public static final ItemArmor.ArmorMaterial osmiumArmorMaterial = EnumHelper.addArmorMaterial("osmium", MODID + ":osmium", 4, new int[]{4, 6, 6, 4}, 3601, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F); 
+    public static final ItemArmor.ArmorMaterial aluminiumArmorMaterial = EnumHelper.addArmorMaterial("aluminium", MODID + ":aluminium", 4, new int[]{4, 6, 6, 4}, 3601, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F); 
     
     public static final ToolMaterial brauniteToolMaterial = EnumHelper.addToolMaterial("BRAUNITE", 4, 6723, 13, 10, 500);
     public static final ToolMaterial LapisToolMaterial = EnumHelper.addToolMaterial("LAPIS", 1, 100, 2, 1, 50);
@@ -61,4 +62,5 @@ public class CustomMaterials {
     public static final ToolMaterial nickelToolMaterial = EnumHelper.addToolMaterial("NICKEL", 2, 3600, 8, 6, 8);
     public static final ToolMaterial steelToolMaterial = EnumHelper.addToolMaterial("STEEL", 3, 4096, 8, 7, 6);
     public static final ToolMaterial osmiumToolMaterial = EnumHelper.addToolMaterial("OSMIUM", 4, 4096, 8, 8, 5);
+    public static final ToolMaterial aluminiumToolMaterial = EnumHelper.addToolMaterial("ALUMINIUM", 4, 4096, 8, 8, 5);
 }
