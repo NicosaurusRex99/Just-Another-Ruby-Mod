@@ -41,7 +41,9 @@ public class ModWorldGeneration implements IWorldGenerator {
 		   int posX = blockXPos + random.nextInt(maxX);
 		   int posY = minY + random.nextInt(diffMinMaxY);
 		   if(diffMinMaxY <2) {diffMinMaxY = 2;}
+		   if(Config.debug==true) {
 		   JARM.logger.info(block.getBlock().getLocalizedName() + " spawned with a difference of " + diffMinMaxY);
+		   }
 		   int posZ = blockZPos + random.nextInt(maxZ);
 
 		   WorldGenMinable gen = new WorldGenMinable(block, maxVeinSize, blockToSpawnIn);
