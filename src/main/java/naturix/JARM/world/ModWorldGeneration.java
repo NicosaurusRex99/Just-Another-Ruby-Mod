@@ -40,7 +40,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 		  for(int x = 0; x < chance; x++){
 		   int posX = blockXPos + random.nextInt(maxX);
 		   int posY = minY + random.nextInt(diffMinMaxY);
-		   if(diffMinMaxY < minY) {diffMinMaxY = maxY;}
+		   if(diffMinMaxY <2) {diffMinMaxY = 2;}
 		   JARM.logger.info(block.getBlock().getLocalizedName() + " spawned with a difference of " + diffMinMaxY);
 		   int posZ = blockZPos + random.nextInt(maxZ);
 
