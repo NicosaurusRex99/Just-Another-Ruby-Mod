@@ -1,6 +1,7 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
+        "1.12.2.20B": "Fixed World gen issue",
         "1.12.2.20": "Fixed World gen issue",
         "1.12.2.19": "Added Aluminium",
         "1.12.2.18": "Added languages",
@@ -25,7 +26,7 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.12.2-latest": "1.12.2.20",
-		"1.12.2-recommended": "1.12.2.20"
+		"1.12.2-latest": "1.12.2.2B",
+		"1.12.2-recommended": "1.12.2.20B"
 	}
 }

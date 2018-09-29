@@ -37,10 +37,11 @@ public class ModWorldGeneration implements IWorldGenerator {
     }
 	 private void addOreSpawn(IBlockState block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn){
 		  int diffMinMaxY = maxY - minY;
+		   if(diffMinMaxY <2) {diffMinMaxY = 2;}
 		  for(int x = 0; x < chance; x++){
 		   int posX = blockXPos + random.nextInt(maxX);
 		   int posY = minY + random.nextInt(diffMinMaxY);
-		   if(diffMinMaxY <2) {diffMinMaxY = 2;}
+		   if(posY <2) {posY = 2;}
 		   if(Config.debug==true) {
 		   JARM.logger.info(block.getBlock().getLocalizedName() + " spawned with a difference of " + diffMinMaxY);
 		   }
