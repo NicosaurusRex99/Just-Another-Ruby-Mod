@@ -35,20 +35,17 @@ public class ModWorldGeneration implements IWorldGenerator {
             	break;
         }
     }
-	 private void addOreSpawn(IBlockState block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn){
-		  int diffMinMaxY = maxY - minY;
-		   if(diffMinMaxY <2) {diffMinMaxY = 2;}
+	private void addOreSpawn(IBlockState block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn){
+		if(minY < 0) {minY = 2;}  
+		int diffMinMaxY = maxY - minY;
 		  for(int x = 0; x < chance; x++){
 		   int posX = blockXPos + random.nextInt(maxX);
 		   int posY = minY + random.nextInt(diffMinMaxY);
-		   if(posY <2) {posY = 2;}
-		   if(Config.debug==true) {
-		   JARM.logger.info(block.getBlock().getLocalizedName() + " spawned with a difference of " + diffMinMaxY);
-		   }
+		   if(diffMinMaxY < minY) {diffMinMaxY = maxY;}
 		   int posZ = blockZPos + random.nextInt(maxZ);
 
 		   WorldGenMinable gen = new WorldGenMinable(block, maxVeinSize, blockToSpawnIn);
-			
+			JARM.logger.info(block.getBlock().getLocalizedName() + " has spawned with a height difference of " + diffMinMaxY);
 			if(minY > maxY || minY < 0 || maxY > 256) throw new IllegalArgumentException("Ore Generated Out of Bounds");
 			int heighDiff = maxY - minY + 1;
 			
@@ -56,8 +53,8 @@ public class ModWorldGeneration implements IWorldGenerator {
 				int b = blockXPos * 16 + random.nextInt(16);
 				int y = minY + random.nextInt(heighDiff);
 				int z = blockZPos * 16 + random.nextInt(16);
-				
-				gen.generate(world, random, new BlockPos(b, y, z));
+				BlockPos pos2 = new BlockPos(b, y, z);
+				gen.generate(world, random, pos2);
 			}
 		
 		  }

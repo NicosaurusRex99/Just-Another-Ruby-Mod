@@ -1,7 +1,6 @@
 package naturix.jarm;
 
 
-import baubles.common.Baubles;
 import naturix.jarm.integration.ProjectECompat;
 import naturix.jarm.integration.baubles.ModItemsBaubles;
 import naturix.jarm.proxy.CommonProxy;
@@ -17,7 +16,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -29,7 +30,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraft.*;
 @Mod(modid = JARM.MODID, name = JARM.MOD_NAME, version = JARM.VERSION, updateJSON = JARM.UPDATE_URL, useMetadata = true, dependencies = JARM.DEPENDENCIES)
 public class JARM
 { 
@@ -119,5 +119,12 @@ public class JARM
 		}
 		
     
-}}
+}
+    
+    public static void registerEvent(Object event)
+	{
+		FMLCommonHandler.instance().bus().register(event);
+		MinecraftForge.EVENT_BUS.register(event);
+	}
+}
 

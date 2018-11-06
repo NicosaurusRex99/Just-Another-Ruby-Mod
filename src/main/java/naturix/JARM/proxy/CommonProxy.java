@@ -2,6 +2,8 @@ package naturix.jarm.proxy;
 
 import java.io.File;
 
+import naturix.jarm.JARM;
+import naturix.jarm.events.EventArmorSet;
 import naturix.jarm.integration.ProjectECompat;
 import naturix.jarm.registry.ModRecipes;
 import naturix.jarm.utils.config.Config;
@@ -33,6 +35,7 @@ public class CommonProxy {
 		config = new Configuration(new File(directory.getPath(), "naturix/Just Another Ruby Mod!.cfg"));
         Config.readConfig();
         smith.getCareer(5).addTrade(1,new TradeHandlerSmith());
+        JARM.registerEvent(new EventArmorSet());
 	}
 
     public void init(FMLInitializationEvent e)
