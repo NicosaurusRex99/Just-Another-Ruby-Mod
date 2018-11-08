@@ -46,7 +46,7 @@ public class CustomMaterials {
     public static final ToolMaterial amberToolMaterial = EnumHelper.addToolMaterial("AMBER", 1, 1520, 2, 5, 5);
     public static final ToolMaterial cinnibarToolMaterial = EnumHelper.addToolMaterial("CINNIBAR", 1, 1621, 2, 4, 3);
     public static final ToolMaterial jadeToolMaterial = EnumHelper.addToolMaterial("JADE", 2, 3215, 4, 9, 5);
-    public static final ToolMaterial opalToolMaterial = EnumHelper.addToolMaterial("OPAL", 1, 1200, 1, 1, 2);
+    public static final ToolMaterial opalToolMaterial = EnumHelper.addToolMaterial("OPAL", 2, 1200, 3, 1, 2);
     public static final ToolMaterial saphireToolMaterial = EnumHelper.addToolMaterial("SAPHIRE", 4, 4096, 14, 9, 19);
     public static final ToolMaterial meteoriteToolMaterial = EnumHelper.addToolMaterial("METEORITE", 4, 8521, 14, 9, 19);
     public static final ToolMaterial tinToolMaterial = EnumHelper.addToolMaterial("TIN", 3, 4210, 8, 6, 5);
