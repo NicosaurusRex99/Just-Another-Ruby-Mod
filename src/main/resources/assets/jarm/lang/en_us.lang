@@ -335,3 +335,8 @@ tile.jarm.block_aluminium.name=Aluminium Block
 tile.ore_aluminium.name=Aluminium Ore
 itemGroup.JARMTab=Just Another Ruby Mod!
 jarm.general.customdimensions.customdimensionids=Custom Dimension ID's (requires restart)
+
+
+
+advancement.jarm.name=Just Another Ruby Mod!
+advancement.jarm.mine_ruby.desc=Mine some rubies!
