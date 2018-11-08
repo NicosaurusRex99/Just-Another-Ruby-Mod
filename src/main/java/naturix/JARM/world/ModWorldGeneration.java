@@ -45,7 +45,7 @@ public class ModWorldGeneration implements IWorldGenerator {
 		   int posZ = blockZPos + random.nextInt(maxZ);
 
 		   WorldGenMinable gen = new WorldGenMinable(block, maxVeinSize, blockToSpawnIn);
-			JARM.logger.info(block.getBlock().getLocalizedName() + " has spawned with a height difference of " + diffMinMaxY);
+		   
 			if(minY > maxY || minY < 0 || maxY > 256) throw new IllegalArgumentException("Ore Generated Out of Bounds");
 			int heighDiff = maxY - minY + 1;
 			
@@ -55,7 +55,11 @@ public class ModWorldGeneration implements IWorldGenerator {
 				int z = blockZPos * 16 + random.nextInt(16);
 				BlockPos pos2 = new BlockPos(b, y, z);
 				gen.generate(world, random, pos2);
+				if(Config.debug == true) {
+					JARM.logger.info(block.getBlock().getLocalizedName() + " has spawned with a height difference of " + diffMinMaxY + " at " + pos2);
+				   }
 			}
+			
 		
 		  }
 	 }

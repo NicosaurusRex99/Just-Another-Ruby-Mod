@@ -143,6 +143,7 @@ public class Config {
     public static int aluminiumMax;
     public static int aluminiumMin;
     public static int aluminiumSpawnTries;
+	public static int AmethystEMC;
     
     public static void readConfig() {
         Configuration cfg = CommonProxy.config;
@@ -161,6 +162,7 @@ public class Config {
     private static void initGeneralConfig(Configuration cfg) {
         cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration");
         addBeaconBase = cfg.getBoolean("addBeaconBase", CATEGORY_GENERAL, addBeaconBase, "Set to false to disable ingot/gem blocks from being a beacon base");
+        AmethystEMC = cfg.getInt("amethystemc", CATEGORY_GENERAL, 10240, 1, 1000000, "Set the EMC value of Amethyst (for balance reasons)");
         cfg.addCustomCategoryComment(CATEGORY_ORE, "Generation of ore");
         rubyMin = cfg.getInt("rubyMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min ruby ore height");
         rubyMax = cfg.getInt("rubyMax", CATEGORY_ORE, 15, 1, 256, "Choose a number between 1 and 256 to choose the max ruby ore height");
@@ -181,7 +183,7 @@ public class Config {
         prismarineHelm = cfg.getInt("prismarineHelm", CATEGORY_ARMOUR, 2, 1, 1000000, "Damage reduction on the prismarine helmet.");
         AmethystMin = cfg.getInt("AmethystMin", CATEGORY_ORE, 1, 1, 255, "Choose a number between 1 and 255 to choose the min amethyst height");
         AmethystMax = cfg.getInt("AmethystMax", CATEGORY_ORE, 5, 1, 256, "Choose a number between 1 and 256 to choose the max amethyst height");
-        AmethystSpawnTries = cfg.getInt("AmethystSpawnTries", CATEGORY_ORE, 2, 1, 100, "Choose a number between 1 and 100 to change how often you see amethyst");
+        AmethystSpawnTries = cfg.getInt("AmethystSpawnTries", CATEGORY_ORE, 1, 1, 100, "Choose a number between 1 and 100 to change how often you see amethyst");
         amethystHelm = cfg.getInt("amethystHelm", CATEGORY_ARMOUR, 6, 1, 1000000, "Damage reduction on the amethyst helmet.");
         amethystChest = cfg.getInt("amethystChest", CATEGORY_ARMOUR, 10, 1, 1000000, "Damage reduction on the amethyst chestplate.");
         amethystLeg = cfg.getInt("amethystLeg", CATEGORY_ARMOUR, 13, 1, 1000000, "Damage reduction on the amethyst leggings.");
