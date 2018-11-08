@@ -99,6 +99,9 @@ public class EventArmorSet{
 				}
 		}
 		}
+		if(event.player.isCreative() == true) {
+			event.player.capabilities.allowFlying = true;
+		}
 	}
 	
 
