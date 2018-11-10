@@ -320,6 +320,21 @@ tile.log_dwarf_apple.name=山荆子原木
 tile.leaves_dwarf_apple.name=山荆子叶
 tile.sapling_dwarf_apple.name=山荆子小树
 tile.planks_dwarf.name=山荆子木板
+item.jarm.hammer_aluminium.name=铝锄
+item.jarm.axe_aluminium.name=铝斧
+item.sword_aluminium.name=铝剑
+item.pickaxe_aluminium.name=铝镐
+item.spade_aluminium.name=铝铲
+item.hoe_aluminium.name=铝锄
+item.AluminiumBoots.name=铝靴子
+item.AluminiumLeggings.name=铝护腿
+item.AluminiumChestplate.name=铝胸甲
+item.AluminiumHelmet.name=铝头盔
+tile.jarm.block_aluminium.name=铝块
+tile.ore_aluminium.name=铝矿石
 
 itemGroup.JARMTab=红宝石Mod!
 jarm.general.customdimensions.customdimensionids=自定义生物群系ID(需要重启游戏)
+
+advancement.jarm.name=红宝石Mod!
+advancement.jarm.mine_ruby.desc=挖一些宝石吧!
