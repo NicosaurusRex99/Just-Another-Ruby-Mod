@@ -20,7 +20,7 @@ build
 # other
 eclipse
 run
-forge-1.12.2-14.23.5.2772-changelog.txt
+forge-1.12.2-14.23.5.*-changelog.txt
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
@@ -34,3 +34,4 @@ README.md
 secrets.txt
 libs/ProjectE-1.12-PE1.3.0.jar
 libs/Baubles-1.12-1.5.2-deobf.jar
+libs/

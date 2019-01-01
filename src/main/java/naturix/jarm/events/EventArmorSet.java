@@ -19,10 +19,11 @@ public class EventArmorSet{
 	boolean isDone, isDone2, isDone3;
 	@SubscribeEvent
 	public void playerTick(PlayerTickEvent event) {
-		ItemStack stackBoots = event.player.inventory.armorItemInSlot(0);
-		ItemStack stackLegs = event.player.inventory.armorItemInSlot(1);
-		ItemStack stackBody = event.player.inventory.armorItemInSlot(2);
-		ItemStack stackHelmet = event.player.inventory.armorItemInSlot(3);
+		//Literally the same thing that armorItemInSlot does, but not set as client-sided. WTF Forge.
+		ItemStack stackBoots = event.player.inventory.armorInventory.get(0);
+		ItemStack stackLegs = event.player.inventory.armorInventory.get(1);
+		ItemStack stackBody = event.player.inventory.armorInventory.get(2);
+		ItemStack stackHelmet = event.player.inventory.armorInventory.get(3);
 		if(stackBoots != null) boots = stackBoots.getItem();
 		else boots = null;
 		if(stackBody != null) body = stackBody.getItem();
