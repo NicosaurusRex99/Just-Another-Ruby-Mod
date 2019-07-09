@@ -1,6 +1,7 @@
 package naturix.jarm.events;
 
 import naturix.jarm.registry.ModItems;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -77,6 +78,9 @@ public class EventArmorSet{
 
 		@SubscribeEvent
 		public void onLivingHurtEvent(LivingHurtEvent event) {
+			EntityLivingBase entity = (EntityLivingBase)event.getEntity();
+				if(entity instanceof EntityPlayer) {
+			
 			EntityPlayer player = (EntityPlayer)event.getEntity();
 			ItemStack stackBoots = player.inventory.armorInventory.get(0);
 			ItemStack stackLegs = player.inventory.armorInventory.get(1);
@@ -101,6 +105,7 @@ public class EventArmorSet{
 					event.setCanceled(true);
 				}
 			}
+		}
 		}
 
 }

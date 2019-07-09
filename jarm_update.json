@@ -1,7 +1,8 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.12.2": {
-        "1.12.2.21": "Crash fixes",
+        "1.12.2.23": "Fixed armor related crash",
+		"1.12.2.22": "Crash fixes",
         "1.12.2.21": "Flight update",
 		"1.12.2.20B": "Fixed World gen issue",
         "1.12.2.20": "Fixed World gen issue",
@@ -28,7 +29,7 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.12.2-latest": "1.12.2.22",
-		"1.12.2-recommended": "1.12.2.22"
+		"1.12.2-latest": "1.12.2.23",
+		"1.12.2-recommended": "1.12.2.23"
 	}
 }
