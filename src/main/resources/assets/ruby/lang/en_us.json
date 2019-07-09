@@ -1,10 +1,21 @@
-    
 {
     "item.ruby.ruby_gem": "Ruby",
     "item.ruby.braunite_gem": "Braunite",
     "item.ruby.meteorite_gem": "Chunk of Meteorite",
     "item.ruby.opal_gem": "Opal",
+	
+    "item.ruby.ruby_axe": "Ruby Axe",
+    "item.ruby.braunite_axe": "Braunite Axe",
+    "item.ruby.meteorite_axe": "Meteorite Axe",
+    "item.ruby.opal_axe": "Opal Axe",
+    "item.ruby.amethyst_axe": "Amethyst Axe",
     
+    "item.ruby.ruby_pickaxe": "Ruby Pickaxe",
+    "item.ruby.braunite_pickaxe": "Braunite Pickaxe",
+    "item.ruby.meteorite_pickaxe": "Meteorite Pickaxe",
+    "item.ruby.opal_pickaxe": "Opal Pickaxe",
+    "item.ruby.amethyst_pickaxe": "Amethyst Pickaxe",
+	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"
 }

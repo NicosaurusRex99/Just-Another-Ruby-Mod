@@ -6,9 +6,7 @@ import net.minecraft.item.Item;
 public class ItemBase extends Item {
 
     public ItemBase(String name) {
-        super(new Item.Properties()
-                .maxStackSize(1)
-                .group(Ruby.setup.itemGroup));
+        super(new Item.Properties().group(Ruby.setup.itemGroup));
         setRegistryName(name);
         ModItems.ITEMS.add(this);
     }
