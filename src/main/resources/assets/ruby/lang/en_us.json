@@ -1,0 +1,10 @@
+    
+{
+    "item.ruby.ruby_gem": "Ruby",
+    "item.ruby.braunite_gem": "Braunite",
+    "item.ruby.meteorite_gem": "Chunk of Meteorite",
+    "item.ruby.opal_gem": "Opal",
+    
+    "_comment": "Creative Tabs",
+    "itemGroup.ruby": "Just Another Ruby Mod"
+}

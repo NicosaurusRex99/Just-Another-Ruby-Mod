@@ -20,18 +20,15 @@ build
 # other
 eclipse
 run
-forge-1.12.2-14.23.5.*-changelog.txt
+
+# Files from Forge MDK
+forge*changelog.txt
 gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
 gradlew
+gradle/wrapper/gradle-wrapper.properties
 gradlew.bat
-LICENSE-Paulscode IBXM Library.txt
-LICENSE-Paulscode SoundSystem CodecIBXM.txt
 LICENSE.txt
 README.txt
+gradle.properties
 CREDITS.txt
-README.md
-secrets.txt
-libs/ProjectE-1.12-PE1.3.0.jar
-libs/Baubles-1.12-1.5.2-deobf.jar
-libs/
+changelog.txt
