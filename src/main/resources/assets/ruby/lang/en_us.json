@@ -16,6 +16,24 @@
     "item.ruby.opal_pickaxe": "Opal Pickaxe",
     "item.ruby.amethyst_pickaxe": "Amethyst Pickaxe",
 	
+    "item.ruby.ruby_shovel": "Ruby Shovel",
+    "item.ruby.braunite_shovel": "Braunite Shovel",
+    "item.ruby.meteorite_shovel": "Meteorite Shovel",
+    "item.ruby.opal_shovel": "Opal Shovel",
+    "item.ruby.amethyst_shovel": "Amethyst Shovel",
+	
+	"item.ruby.ruby_hoe": "Ruby Hoe",
+    "item.ruby.braunite_hoe": "Braunite Hoe",
+    "item.ruby.meteorite_hoe": "Meteorite Hoe",
+    "item.ruby.opal_hoe": "Opal Hoe",
+    "item.ruby.amethyst_hoe": "Amethyst Hoe",
+	
+	"item.ruby.ruby_sword": "Ruby Sword",
+    "item.ruby.braunite_sword": "Braunite Sword",
+    "item.ruby.meteorite_sword": "Meteorite Sword",
+    "item.ruby.opal_sword": "Opal Sword",
+    "item.ruby.amethyst_sword": "Amethyst Sword",
+	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"
 }

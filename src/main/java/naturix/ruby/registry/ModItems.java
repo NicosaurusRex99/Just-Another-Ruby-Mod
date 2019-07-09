@@ -1,8 +1,6 @@
 package naturix.ruby.registry;
 
-import naturix.ruby.objects.items.AxeBase;
-import naturix.ruby.objects.items.ItemBase;
-import naturix.ruby.objects.items.PickaxeBase;
+import naturix.ruby.objects.items.*;
 import naturix.ruby.utils.ModTier;
 import net.minecraft.item.Item;
 
@@ -28,5 +26,23 @@ public class ModItems {
     public static Item meteoritePickaxe = new PickaxeBase("meteorite_pickaxe", ModTier.METEORITE, 3, ModTier.METEORITE.getEfficiency());
     public static Item opalPickaxe = new PickaxeBase("opal_pickaxe", ModTier.OPAL, 1, ModTier.OPAL.getEfficiency());
     public static Item amethystPickaxe = new PickaxeBase("amethyst_pickaxe", ModTier.AMETHYST, 2, ModTier.AMETHYST.getEfficiency());
+
+    public static Item rubyShovel = new ShovelBase("ruby_shovel", ModTier.RUBY, 3, ModTier.RUBY.getEfficiency());
+    public static Item brauniteShovel = new ShovelBase("braunite_shovel", ModTier.BRAUNITE, 4, ModTier.BRAUNITE.getEfficiency());
+    public static Item meteoriteShovel = new ShovelBase("meteorite_shovel", ModTier.METEORITE, 3, ModTier.METEORITE.getEfficiency());
+    public static Item opalShovel = new ShovelBase("opal_shovel", ModTier.OPAL, 1, ModTier.OPAL.getEfficiency());
+    public static Item amethystShovel = new ShovelBase("amethyst_shovel", ModTier.AMETHYST, 2, ModTier.AMETHYST.getEfficiency());
+
+    public static Item rubyHoe = new HoeBase("ruby_hoe", ModTier.RUBY, ModTier.RUBY.getEfficiency());
+    public static Item brauniteHoe = new HoeBase("braunite_hoe", ModTier.BRAUNITE, ModTier.BRAUNITE.getEfficiency());
+    public static Item meteoriteHoe = new HoeBase("meteorite_hoe", ModTier.METEORITE, ModTier.METEORITE.getEfficiency());
+    public static Item opalHoe = new HoeBase("opal_hoe", ModTier.OPAL, ModTier.OPAL.getEfficiency());
+    public static Item amethystHoe = new HoeBase("amethyst_hoe", ModTier.AMETHYST, ModTier.AMETHYST.getEfficiency());
+
+    public static Item rubySword = new SwordBase("ruby_sword", ModTier.RUBY, 7, ModTier.RUBY.getEfficiency());
+    public static Item brauniteSword = new SwordBase("braunite_sword", ModTier.BRAUNITE, 4, ModTier.BRAUNITE.getEfficiency());
+    public static Item meteoriteSword = new SwordBase("meteorite_sword", ModTier.METEORITE, 5, ModTier.METEORITE.getEfficiency());
+    public static Item opalSword = new SwordBase("opal_sword", ModTier.OPAL, 1, ModTier.OPAL.getEfficiency());
+    public static Item amethystSword = new SwordBase("amethyst_sword", ModTier.AMETHYST, 6, ModTier.AMETHYST.getEfficiency());
 
 }
