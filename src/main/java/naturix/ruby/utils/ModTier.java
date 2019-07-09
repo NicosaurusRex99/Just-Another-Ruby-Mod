@@ -7,11 +7,11 @@ import java.util.function.Supplier;
 
 public enum ModTier implements IItemTier
 {
-    OPAL(2, 1200, 4.0F, 2.0F, 8, ()->{ return Ingredient.fromItems(ModItems.opalGem); }),
-    RUBY(4, 4096, 3.5F, 9.0F, 8, ()->{ return Ingredient.fromItems( ModItems.rubyGem); }),
-    METEORITE(2, 8521, 8.0F, 5.0F, 12, ()->{ return Ingredient.fromItems( ModItems.meteoriteGem); }),
-    AMETHYST(2, 6723, 14.0F, 3.0F, 3, ()->{ return Ingredient.fromItems( ModItems.rubyGem); }),
-    BRAUNITE(4, 6723, 13.0F, 5.0F, 15, ()->{ return Ingredient.fromItems( ModItems.brauniteGem); });
+    OPAL(2, 1200, 4.0F, 1.1F, 8, ()->{ return Ingredient.fromItems(ModItems.opalGem); }),
+    RUBY(4, 4096, 3.5F, 5.0F, 8, ()->{ return Ingredient.fromItems( ModItems.rubyGem); }),
+    METEORITE(2, 8521, 8.0F, 4.0F, 12, ()->{ return Ingredient.fromItems( ModItems.meteoriteGem); }),
+    AMETHYST(2, 6723, 14.0F, 4.0F, 3, ()->{ return Ingredient.fromItems( ModItems.rubyGem); }),
+    BRAUNITE(4, 6723, 13.0F, 2.4F, 15, ()->{ return Ingredient.fromItems( ModItems.brauniteGem); });
 
     private final int harvestLevel;
     private final int maxUses;
