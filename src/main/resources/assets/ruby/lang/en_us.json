@@ -34,6 +34,8 @@
     "item.ruby.opal_sword": "Opal Sword",
     "item.ruby.amethyst_sword": "Amethyst Sword",
 	
+    "block.ruby.ruby_ore": "Ruby Ore",
+	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"
 }

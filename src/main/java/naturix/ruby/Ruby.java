@@ -4,8 +4,10 @@ import naturix.ruby.proxy.ClientProxy;
 import naturix.ruby.proxy.IProxy;
 import naturix.ruby.proxy.ModSetup;
 import naturix.ruby.proxy.ServerProxy;
+import naturix.ruby.registry.ModBlocks;
 import naturix.ruby.registry.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -44,11 +46,15 @@ public class Ruby
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
+            event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
         }
 
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+            event.getRegistry().register(new BlockItem(ModBlocks.ruby_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("ruby_ore"));
+            event.getRegistry().register(new BlockItem(ModBlocks.braunite_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("braunite_ore"));
+            event.getRegistry().register(new BlockItem(ModBlocks.opal_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("opal_ore"));
         }
     }
 }

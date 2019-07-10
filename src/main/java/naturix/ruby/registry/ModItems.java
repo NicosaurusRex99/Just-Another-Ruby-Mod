@@ -1,7 +1,9 @@
 package naturix.ruby.registry;
 
+import naturix.ruby.Ruby;
 import naturix.ruby.objects.items.*;
 import naturix.ruby.utils.ModTier;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 import java.util.ArrayList;
