@@ -15,6 +15,4 @@ public class BlockBase extends Block {
         setRegistryName(name);
         ModBlocks.BLOCKS.add(this);
     }
-
-
 }

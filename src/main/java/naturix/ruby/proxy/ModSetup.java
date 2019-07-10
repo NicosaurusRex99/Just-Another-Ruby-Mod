@@ -1,6 +1,7 @@
 package naturix.ruby.proxy;
 
 import naturix.ruby.registry.ModItems;
+import naturix.ruby.world.ModOreFeature;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 

@@ -35,6 +35,7 @@
     "item.ruby.amethyst_sword": "Amethyst Sword",
 	
     "block.ruby.ruby_ore": "Ruby Ore",
+    "block.ruby.meteorite_ore": "Meteorite",
 	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

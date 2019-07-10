@@ -1,6 +1,8 @@
 package naturix.ruby.registry;
 
+import naturix.ruby.objects.blocks.Amethyst;
 import naturix.ruby.objects.blocks.BlockBase;
+import naturix.ruby.objects.blocks.Meteorite;
 import net.minecraft.block.Block;
 
 import java.util.ArrayList;
@@ -12,5 +14,7 @@ public class ModBlocks {
     public static BlockBase ruby_ore = new BlockBase("ruby_ore");
     public static BlockBase braunite_ore = new BlockBase("braunite_ore");
     public static BlockBase opal_ore = new BlockBase("opal_ore");
+    public static Amethyst amethyst = new Amethyst("amethyst");
+    public static Meteorite meteorite_ore = new Meteorite("meteorite_ore");
 
 }

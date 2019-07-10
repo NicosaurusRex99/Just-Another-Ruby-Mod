@@ -6,6 +6,7 @@ import naturix.ruby.proxy.ModSetup;
 import naturix.ruby.proxy.ServerProxy;
 import naturix.ruby.registry.ModBlocks;
 import naturix.ruby.registry.ModItems;
+import naturix.ruby.world.ModOreFeature;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -38,6 +39,8 @@ public class Ruby
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
         proxy.init();
+
+        ModOreFeature.setupOreGenerator();
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -55,6 +58,8 @@ public class Ruby
             event.getRegistry().register(new BlockItem(ModBlocks.ruby_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("ruby_ore"));
             event.getRegistry().register(new BlockItem(ModBlocks.braunite_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("braunite_ore"));
             event.getRegistry().register(new BlockItem(ModBlocks.opal_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("opal_ore"));
+            event.getRegistry().register(new BlockItem(ModBlocks.amethyst, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("amethyst"));
+            event.getRegistry().register(new BlockItem(ModBlocks.meteorite_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("meteorite_ore"));
         }
     }
 }
