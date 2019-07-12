@@ -27,19 +27,19 @@ public class ModOreFeature
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
                         new OreFeatureConfig(NATURAL_STONE, ModBlocks.ruby_ore.getDefaultState(), 3),
-                        COUNT_RANGE, new CountRangeConfig(4, 2, 15, 16)));
+                        COUNT_RANGE, new CountRangeConfig(6, 2, 15, 16)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
                         new OreFeatureConfig(NATURAL_STONE, ModBlocks.braunite_ore.getDefaultState(), 5),
-                        COUNT_RANGE, new CountRangeConfig(4, 4, 30, 38)));
+                        COUNT_RANGE, new CountRangeConfig(6, 4, 30, 38)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
                         new OreFeatureConfig(NATURAL_STONE, ModBlocks.amethyst.getDefaultState(), 2),
-                        COUNT_RANGE, new CountRangeConfig(4, 2, 8, 13)));
+                        COUNT_RANGE, new CountRangeConfig(4, 2, 12, 13)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
                         new OreFeatureConfig(NATURAL_STONE, ModBlocks.meteorite_ore.getDefaultState(), 2),
-                        COUNT_RANGE, new CountRangeConfig(4, 48, 99, 100)));
+                        COUNT_RANGE, new CountRangeConfig(9, 30, 99, 100)));
 
 
             }
