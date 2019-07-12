@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "opal",
+    "pattern": [
+        "M M",
+		"M M"
+    ],
+    "key": {
+        "M": { "item": "ruby:opal_gem" }
+    },
+    "result": {
+        "item": "ruby:opal_boots"
+    }
+}

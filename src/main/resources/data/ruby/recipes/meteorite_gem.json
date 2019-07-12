@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "ruby:meteorite_ore"
+	},
+	"result": "ruby:meteorite_gem",
+	"experience": 0.4,
+	"cookingtime": 200
+}

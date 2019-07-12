@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ruby",
+    "pattern": [
+        "M",
+        "M",
+        "S"
+    ],
+    "key": {
+        "M": { "item": "ruby:ruby_gem" },
+        "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+        "item": "ruby:ruby_sword"
+    }
+}

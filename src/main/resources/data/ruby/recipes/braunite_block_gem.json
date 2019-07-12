@@ -1,0 +1,11 @@
+{
+	"type" : "minecraft:crafting_shapeless",
+	"group": "braunite_gem",
+	"ingredients" : [
+		{ "item" : "ruby:braunite_block" }
+	],
+	"result" : {
+		"item" : "ruby:braunite_gem",
+		"count" : 9
+	}
+}

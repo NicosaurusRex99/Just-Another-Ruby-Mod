@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "meteorite",
+    "pattern": [
+        "MMM",
+        "M M"
+    ],
+    "key": {
+        "M": { "item": "ruby:meteorite_gem" }
+    },
+    "result": {
+        "item": "ruby:meteorite_helmet"
+    }
+}

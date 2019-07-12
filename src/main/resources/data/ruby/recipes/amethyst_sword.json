@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "amethyst",
+    "pattern": [
+        "M",
+        "M",
+        "S"
+    ],
+    "key": {
+        "M": { "item": "ruby:amethyst" },
+        "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+        "item": "ruby:amethyst_sword"
+    }
+}

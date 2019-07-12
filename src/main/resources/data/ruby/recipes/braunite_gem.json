@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "ruby:braunite_ore"
+	},
+	"result": "ruby:braunite_gem",
+	"experience": 0.4,
+	"cookingtime": 200
+}

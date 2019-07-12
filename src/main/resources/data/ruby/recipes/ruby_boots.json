@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ruby",
+    "pattern": [
+        "M M",
+		"M M"
+    ],
+    "key": {
+        "M": { "item": "ruby:ruby_gem" }
+    },
+    "result": {
+        "item": "ruby:ruby_boots"
+    }
+}

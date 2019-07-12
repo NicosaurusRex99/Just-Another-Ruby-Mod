@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "braunite",
+    "pattern": [
+        "M M",
+        "MMM",
+        "MMM"
+    ],
+    "key": {
+        "M": { "item": "ruby:braunite_gem" }
+    },
+    "result": {
+        "item": "ruby:braunite_chestplate"
+    }
+}

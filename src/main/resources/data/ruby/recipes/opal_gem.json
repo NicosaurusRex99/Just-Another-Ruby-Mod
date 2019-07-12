@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "ruby:opal_ore"
+	},
+	"result": "ruby:opal_gem",
+	"experience": 0.4,
+	"cookingtime": 200
+}
