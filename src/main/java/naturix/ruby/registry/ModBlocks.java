@@ -17,4 +17,7 @@ public class ModBlocks {
     public static Amethyst amethyst = new Amethyst("amethyst", 4);
     public static Meteorite meteorite_ore = new Meteorite("meteorite_ore");
 
+    public static BlockBase braunite_block = new BlockBase("braunite_block");
+    public static BlockBase opal_block = new BlockBase("opal_block");
+    public static BlockBase ruby_block = new BlockBase("ruby_block");
 }

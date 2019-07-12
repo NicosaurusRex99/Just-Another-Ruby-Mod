@@ -60,6 +60,9 @@ public class Ruby
             event.getRegistry().register(new BlockItem(ModBlocks.opal_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("opal_ore"));
             event.getRegistry().register(new BlockItem(ModBlocks.amethyst, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("amethyst"));
             event.getRegistry().register(new BlockItem(ModBlocks.meteorite_ore, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("meteorite_ore"));
+            event.getRegistry().register(new BlockItem(ModBlocks.braunite_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("braunite_block"));
+            event.getRegistry().register(new BlockItem(ModBlocks.opal_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("opal_block"));
+            event.getRegistry().register(new BlockItem(ModBlocks.ruby_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("ruby_block"));
         }
     }
 }

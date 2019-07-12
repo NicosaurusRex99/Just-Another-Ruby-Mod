@@ -39,6 +39,9 @@
     "block.ruby.opal_ore": "Opal Ore",
     "block.ruby.braunite_ore": "Braunite Ore",
     "block.ruby.amethyst": "Amethyst",
+	"block.ruby.ruby_block": "Block of Ruby",
+    "block.ruby.opal_block": "Block of Opal",
+    "block.ruby.braunite_block": "Block of Braunite",
 	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"
