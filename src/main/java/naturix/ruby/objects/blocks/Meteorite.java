@@ -10,8 +10,10 @@ public class Meteorite extends FallingBlock {
     public Meteorite(String name) {
         super(Block.Properties
                 .create(Material.ROCK)
-                .hardnessAndResistance(5.0f, 8.0f));
+                .hardnessAndResistance(5.0f, 8.0f)
+                .harvestLevel(2));
         setRegistryName(name);
+
         ModBlocks.BLOCKS.add(this);
     }
 

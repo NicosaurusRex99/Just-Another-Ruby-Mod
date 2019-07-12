@@ -36,6 +36,9 @@
 	
     "block.ruby.ruby_ore": "Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
+    "block.ruby.opal_ore": "Opal Ore",
+    "block.ruby.braunite_ore": "Braunite Ore",
+    "block.ruby.amethyst": "Amethyst",
 	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

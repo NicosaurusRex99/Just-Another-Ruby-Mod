@@ -15,4 +15,12 @@ public class BlockBase extends Block {
         setRegistryName(name);
         ModBlocks.BLOCKS.add(this);
     }
+    public BlockBase(String name, int level){
+        super(Block.Properties
+                .create(Material.ROCK)
+                .hardnessAndResistance(1.0f, 1.0f)
+                .harvestLevel(level));
+        setRegistryName(name);
+        ModBlocks.BLOCKS.add(this);
+    }
 }
