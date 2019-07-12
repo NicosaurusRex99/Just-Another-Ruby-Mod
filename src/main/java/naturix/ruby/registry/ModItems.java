@@ -2,9 +2,12 @@ package naturix.ruby.registry;
 
 import naturix.ruby.Ruby;
 import naturix.ruby.objects.items.*;
+import naturix.ruby.utils.ModMaterials;
 import naturix.ruby.utils.ModTier;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.SoundEvents;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,5 +49,40 @@ public class ModItems {
     public static Item meteoriteSword = new SwordBase("meteorite_sword", ModTier.METEORITE, 5, ModTier.METEORITE.getEfficiency());
     public static Item opalSword = new SwordBase("opal_sword", ModTier.OPAL, 1, ModTier.OPAL.getEfficiency());
     public static Item amethystSword = new SwordBase("amethyst_sword", ModTier.AMETHYST, 6, ModTier.AMETHYST.getEfficiency());
+
+
+
+    //ARMOR
+    public static ModMaterials rubyMat = new ModMaterials("ruby", 1545, new int[]{5, 9, 12, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+    public static ModMaterials amethystMat = new ModMaterials("amethyst", 500, new int[]{6, 10, 13, 6}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+    public static ModMaterials brauniteMat = new ModMaterials("braunite", 500, new int[]{5, 8, 10, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+    public static ModMaterials opalMat = new ModMaterials("opal", 500, new int[]{2, 3, 2, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+    public static ModMaterials meteoriteMat = new ModMaterials("meteorite", 6546, new int[]{5, 8, 7, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+
+    public static Item rubyHelmet = new ArmorBase("ruby_helmet", rubyMat, EquipmentSlotType.HEAD);
+    public static Item rubyChestplate = new ArmorBase("ruby_chestplate", rubyMat, EquipmentSlotType.CHEST);
+    public static Item rubyLeggings = new ArmorBase("ruby_leggings", rubyMat, EquipmentSlotType.LEGS);
+    public static Item rubyBoots = new ArmorBase("ruby_boots", rubyMat, EquipmentSlotType.FEET);
+
+    public static Item amethystHelmet = new ArmorBase("amethyst_helmet", amethystMat, EquipmentSlotType.HEAD);
+    public static Item amethystChestplate = new ArmorBase("amethyst_chestplate", amethystMat, EquipmentSlotType.CHEST);
+    public static Item amethystLeggings = new ArmorBase("amethyst_leggings", amethystMat, EquipmentSlotType.LEGS);
+    public static Item amethystBoots = new ArmorBase("amethyst_boots", amethystMat, EquipmentSlotType.FEET);
+
+    public static Item brauniteHelmet = new ArmorBase("braunite_helmet", brauniteMat, EquipmentSlotType.HEAD);
+    public static Item brauniteChestplate = new ArmorBase("braunite_chestplate", brauniteMat, EquipmentSlotType.CHEST);
+    public static Item brauniteLeggings = new ArmorBase("braunite_leggings", brauniteMat, EquipmentSlotType.LEGS);
+    public static Item brauniteBoots = new ArmorBase("braunite_boots", brauniteMat, EquipmentSlotType.FEET);
+
+    public static Item opalHelmet = new ArmorBase("opal_helmet", opalMat, EquipmentSlotType.HEAD);
+    public static Item opalChestplate = new ArmorBase("opal_chestplate", opalMat, EquipmentSlotType.CHEST);
+    public static Item opalLeggings = new ArmorBase("opal_leggings", opalMat, EquipmentSlotType.LEGS);
+    public static Item opalBoots = new ArmorBase("opal_boots", opalMat, EquipmentSlotType.FEET);
+
+    public static Item meteoriteHelmet = new ArmorBase("meteorite_helmet", meteoriteMat, EquipmentSlotType.HEAD);
+    public static Item meteoriteChestplate = new ArmorBase("meteorite_chestplate", meteoriteMat, EquipmentSlotType.CHEST);
+    public static Item meteoriteLeggings = new ArmorBase("meteorite_leggings", meteoriteMat, EquipmentSlotType.LEGS);
+    public static Item meteoriteBoots = new ArmorBase("meteorite_boots", meteoriteMat, EquipmentSlotType.FEET);
+
 
 }

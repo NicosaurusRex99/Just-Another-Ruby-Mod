@@ -34,6 +34,31 @@
     "item.ruby.opal_sword": "Opal Sword",
     "item.ruby.amethyst_sword": "Amethyst Sword",
 	
+    "item.ruby.amethyst_helmet": "Amethyst Helmet",
+    "item.ruby.amethyst_chestplate": "Amethyst Chestplate",
+    "item.ruby.amethyst_leggings": "Amethyst Leggings",
+    "item.ruby.amethyst_boots": "Amethyst Boots",
+	
+    "item.ruby.braunite_helmet": "Braunite Helmet",
+    "item.ruby.braunite_chestplate": "Braunite Chestplate",
+    "item.ruby.braunite_leggings": "Braunite Leggings",
+    "item.ruby.braunite_boots": "Braunite Boots",
+	
+    "item.ruby.meteorite_helmet": "Meteorite Helmet",
+    "item.ruby.meteorite_chestplate": "Meteorite Chestplate",
+    "item.ruby.meteorite_leggings": "Meteorite Leggings",
+    "item.ruby.meteorite_boots": "Meteorite Boots",
+	
+    "item.ruby.opal_helmet": "Opal Helmet",
+    "item.ruby.opal_chestplate": "Opal Chestplate",
+    "item.ruby.opal_leggings": "Opal Leggings",
+    "item.ruby.opal_boots": "Opal Boots",
+	
+	"item.ruby.ruby_helmet": "Ruby Helmet",
+    "item.ruby.ruby_chestplate": "Ruby Chestplate",
+    "item.ruby.ruby_leggings": "Ruby Leggings",
+    "item.ruby.ruby_boots": "Ruby Boots",
+	
     "block.ruby.ruby_ore": "Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
     "block.ruby.opal_ore": "Opal Ore",
