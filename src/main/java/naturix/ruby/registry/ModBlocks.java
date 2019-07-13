@@ -2,6 +2,7 @@ package naturix.ruby.registry;
 
 import naturix.ruby.objects.blocks.Amethyst;
 import naturix.ruby.objects.blocks.BlockBase;
+import naturix.ruby.objects.blocks.Bomb;
 import naturix.ruby.objects.blocks.Meteorite;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.ToolType;
@@ -21,4 +22,6 @@ public class ModBlocks {
     public static BlockBase braunite_block = new BlockBase("braunite_block", 2, ToolType.PICKAXE);
     public static BlockBase opal_block = new BlockBase("opal_block", 1, ToolType.PICKAXE);
     public static BlockBase ruby_block = new BlockBase("ruby_block", 2, ToolType.PICKAXE);
+
+    public static Bomb bomb = new Bomb("bomb");
 }

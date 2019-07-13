@@ -67,6 +67,7 @@
 	"block.ruby.ruby_block": "Block of Ruby",
     "block.ruby.opal_block": "Block of Opal",
     "block.ruby.braunite_block": "Block of Braunite",
+    "block.ruby.bomb": "Highly Explosive Device",
 	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

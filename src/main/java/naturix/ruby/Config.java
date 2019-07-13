@@ -34,6 +34,8 @@ public class Config {
     public static ForgeConfigSpec.IntValue RUBYMAX;
     public static ForgeConfigSpec.IntValue RUBYVEIN;
 
+    public static ForgeConfigSpec.IntValue BOMBSTRENGTH;
+
 
 
     static {
@@ -76,6 +78,8 @@ public class Config {
                 .defineInRange("RubyMax", 48, 1, 250);
         RUBYVEIN = COMMON_BUILDER.comment("Maximum vein size of ruby")
                 .defineInRange("RubyVein", 8, 1, 512);
+        BOMBSTRENGTH = COMMON_BUILDER.comment("How strong is the bomb?")
+                .defineInRange("BombStrength", 64, 1, 4096);
 
         COMMON_BUILDER.pop();
     }

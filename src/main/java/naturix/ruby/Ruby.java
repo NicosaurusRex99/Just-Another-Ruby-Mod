@@ -70,6 +70,7 @@ public class Ruby
             event.getRegistry().register(new BlockItem(ModBlocks.braunite_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("braunite_block"));
             event.getRegistry().register(new BlockItem(ModBlocks.opal_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("opal_block"));
             event.getRegistry().register(new BlockItem(ModBlocks.ruby_block, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("ruby_block"));
+            event.getRegistry().register(new BlockItem(ModBlocks.bomb, new Item.Properties().group(Ruby.setup.itemGroup)).setRegistryName("bomb"));
         }
     }
 }
