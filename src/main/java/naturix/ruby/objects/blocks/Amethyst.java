@@ -7,12 +7,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.common.ToolType;
 
 public class Amethyst extends BlockBase {
     public Amethyst(String name, int lvl){
-        super(name, lvl);
+        super(name, lvl, ToolType.PICKAXE);
     }
-
 
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;

@@ -10,6 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.common.ToolType;
 
 public class Meteorite extends FallingBlock {
 
@@ -17,7 +18,8 @@ public class Meteorite extends FallingBlock {
         super(Block.Properties
                 .create(Material.ROCK)
                 .hardnessAndResistance(5.0f, 8.0f)
-                .harvestLevel(2));
+                .harvestLevel(2)
+                .harvestTool(ToolType.PICKAXE));
         setRegistryName(name);
 
         ModBlocks.BLOCKS.add(this);
