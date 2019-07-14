@@ -8,7 +8,7 @@
     ],
     "key": {
         "M": { "item": "minecraft:tnt" },
-        "S": { "item": "minecraft:tnt" },
+        "S": { "item": "minecraft:gunpowder" },
         "V": { "item": "ruby:meteorite_ore" }
     },
     "result": {
