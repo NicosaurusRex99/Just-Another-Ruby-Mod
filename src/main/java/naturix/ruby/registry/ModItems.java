@@ -51,6 +51,13 @@ public class ModItems {
     public static Item amethystSword = new SwordBase("amethyst_sword", ModTier.AMETHYST, 6, ModTier.AMETHYST.getEfficiency());
 
 
+    public static Item amethystMulti = new MultiToolBase("amethyst_multitool", ModTier.AMETHYST, 6, ModTier.AMETHYST.getEfficiency(), new Item.Properties().group(Ruby.setup.itemGroup));
+    public static Item brauniteMulti = new MultiToolBase("braunite_multitool", ModTier.BRAUNITE, 6, ModTier.BRAUNITE.getEfficiency(), new Item.Properties().group(Ruby.setup.itemGroup));
+    public static Item meteoriteMulti = new MultiToolBase("meteorite_multitool", ModTier.METEORITE, 7, ModTier.METEORITE.getEfficiency(), new Item.Properties().group(Ruby.setup.itemGroup));
+    public static Item opalMulti = new MultiToolBase("opal_multitool", ModTier.OPAL, 2, ModTier.OPAL.getEfficiency(), new Item.Properties().group(Ruby.setup.itemGroup));
+    public static Item rubyMulti = new MultiToolBase("ruby_multitool", ModTier.RUBY, 4, ModTier.RUBY.getEfficiency(), new Item.Properties().group(Ruby.setup.itemGroup));
+
+
 
     //ARMOR
     public static ModMaterials rubyMat = new ModMaterials("ruby", 1545, new int[]{5, 9, 12, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
