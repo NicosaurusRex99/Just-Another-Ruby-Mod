@@ -7,6 +7,8 @@ import naturix.ruby.utils.ModTier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvents;
 
 import java.util.ArrayList;
@@ -60,11 +62,11 @@ public class ModItems {
 
 
     //ARMOR
-    public static ModMaterials rubyMat = new ModMaterials("ruby", 1545, new int[]{5, 9, 12, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
-    public static ModMaterials amethystMat = new ModMaterials("amethyst", 500, new int[]{6, 10, 13, 6}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
-    public static ModMaterials brauniteMat = new ModMaterials("braunite", 500, new int[]{5, 8, 10, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
-    public static ModMaterials opalMat = new ModMaterials("opal", 500, new int[]{2, 3, 2, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
-    public static ModMaterials meteoriteMat = new ModMaterials("meteorite", 6546, new int[]{5, 8, 7, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, null);
+    public static ModMaterials rubyMat = new ModMaterials("ruby", 1545, new int[]{5, 9, 12, 5}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, Ingredient.fromStacks(new ItemStack(rubyGem)));
+    public static ModMaterials amethystMat = new ModMaterials("amethyst", 500, new int[]{6, 10, 13, 6}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, Ingredient.fromStacks(new ItemStack(ModBlocks.amethyst)));
+    public static ModMaterials brauniteMat = new ModMaterials("braunite", 500, new int[]{5, 8, 10, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, Ingredient.fromStacks(new ItemStack(brauniteGem)));
+    public static ModMaterials opalMat = new ModMaterials("opal", 500, new int[]{2, 3, 2, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, Ingredient.fromStacks(new ItemStack(opalGem)));
+    public static ModMaterials meteoriteMat = new ModMaterials("meteorite", 6546, new int[]{5, 8, 7, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, Ingredient.fromStacks(new ItemStack(meteoriteGem)));
 
     public static Item rubyHelmet = new ArmorBase("ruby_helmet", rubyMat, EquipmentSlotType.HEAD);
     public static Item rubyChestplate = new ArmorBase("ruby_chestplate", rubyMat, EquipmentSlotType.CHEST);

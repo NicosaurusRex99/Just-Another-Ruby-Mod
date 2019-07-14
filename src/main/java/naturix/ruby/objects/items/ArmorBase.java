@@ -8,10 +8,15 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
 
 public class ArmorBase extends ArmorItem {
-
+    public IArmorMaterial mat;
     public ArmorBase(String name, IArmorMaterial materialIn, EquipmentSlotType slot) {
         super(materialIn, slot, new Item.Properties().group(Ruby.setup.itemGroup));
         setRegistryName(name);
         ModItems.ITEMS.add(this);
+        this.mat = materialIn;
+    }
+
+    public int getItemEnchantability() {
+        return mat.getEnchantability();
     }
 }
