@@ -1,6 +1,7 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.14.3": {
+        "1.14.3.4": "Added multitools",
         "1.14.3.3": "Added an explosive",
         "1.14.3.2": "Fixed oregen",
         "1.14.3.1": "Fixed 2 bugs",
@@ -34,8 +35,8 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.14.3-latest": "1.14.3.3",
-		"1.14.3-recommended": "1.14.3.2",
+		"1.14.3-latest": "1.14.3.4",
+		"1.14.3-recommended": "1.14.3.4",
 		"1.12.2-latest": "1.12.2.23",
 		"1.12.2-recommended": "1.12.2.23"
 	}
