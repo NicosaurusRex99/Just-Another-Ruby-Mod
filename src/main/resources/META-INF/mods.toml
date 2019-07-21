@@ -2,26 +2,17 @@ modLoader="javafml" #mandatory
 loaderVersion="[27,)" #mandatory (24 is 1.13-pre, 25 is 1.13.1-re, 26 is 1.13.2, 27 is 1.14.x)
 issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues" #optional
 
-# A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
-	# The modid of the mod
 	modId="ruby" #mandatory
-	# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 	version="${version}" #mandatory
-	# A display name for the mod
 	displayName="Just Another Ruby Mod" #mandatory
-	# A URL to query for updates for this mod. See the JSON update specification <here>
 	updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.14.3/jarm_update.json" #optional
-	# A URL for the "homepage" for this mod, displayed in the mod UI
 	displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files" #optional
-	# A file name (in the root of the mod JAR) containing a logo for display
 	logoFile="ruby.png" #optional
-	# A text field displayed in the mod UI
 	credits="Silthulu" #optional
-	# A text field displayed in the mod UI
 	authors="NicosaurusRex99" #optional
-	# The description text for the mod (multi line!) (#mandatory)
-	description='''The mod name says basically everything'''
+	description='''I think the mod name says enough
+'''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
