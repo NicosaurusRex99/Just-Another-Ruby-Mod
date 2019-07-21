@@ -5,24 +5,23 @@ issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 	# The modid of the mod
-	modId="jerrysmod" #mandatory
+	modId="ruby" #mandatory
 	# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 	version="${version}" #mandatory
 	# A display name for the mod
-	displayName="Jerry's Mod" #mandatory
+	displayName="Just Another Ruby Mod" #mandatory
 	# A URL to query for updates for this mod. See the JSON update specification <here>
-	updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/Jerry-s-Mod/1.12.2/Jerrys%20Mod%20Updates.json" #optional
+	updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.14.3/jarm_update.json" #optional
 	# A URL for the "homepage" for this mod, displayed in the mod UI
-	displayURL="https://www.curseforge.com/minecraft/mc-mods/jerrys-mod/files" #optional
+	displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files" #optional
 	# A file name (in the root of the mod JAR) containing a logo for display
-	logoFile="jerry.png" #optional
+	logoFile="ruby.png" #optional
 	# A text field displayed in the mod UI
 	credits="Silthulu" #optional
 	# A text field displayed in the mod UI
-	authors="Sniper_mine, Hawaii_Beach and NicosaurusRex99" #optional
+	authors="NicosaurusRex99" #optional
 	# The description text for the mod (multi line!) (#mandatory)
-	description='''Made in honor of Jerry the noble slime!
-'''
+	description='''The mod name says basically everything'''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
@@ -40,6 +39,6 @@ issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues" #optional
 [[dependencies.examplemod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.3]"
+    versionRange="[1.14.4]"
     ordering="NONE"
     side="BOTH"

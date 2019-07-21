@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.14.3.5'
+version = '1.14.3.6'
 group = 'naturix.ruby' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ruby'
 
@@ -20,7 +20,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 minecraft {
 
-    mappings channel: 'snapshot', version: '20190708-1.14.3'
+    mappings channel: 'snapshot', version: '20190720-1.14.3'
     runs {
         client {
             workingDirectory project.file('run')
