@@ -13,7 +13,7 @@ public class Amethyst extends BlockBase {
     public Amethyst(String name, int lvl){
         super(name, lvl, ToolType.PICKAXE);
     }
-
+    @Override
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
@@ -24,4 +24,5 @@ public class Amethyst extends BlockBase {
     {
         return AMETHYSTSHAPE;
     }
+
 }

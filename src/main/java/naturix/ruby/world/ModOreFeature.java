@@ -2,14 +2,16 @@ package naturix.ruby.world;
 import com.google.common.base.Predicate;
 import naturix.ruby.Config;
 import naturix.ruby.registry.ModBlocks;
+import naturix.ruby.world.tree.DwarfAppleFeature;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
 
@@ -18,6 +20,7 @@ import static net.minecraft.world.gen.placement.Placement.COUNT_RANGE;
 public class ModOreFeature
     {
         private static final Predicate<BlockState> STONE = state -> state.getBlock() == Blocks.STONE;
+        public static final AbstractTreeFeature<NoFeatureConfig> TREE = new DwarfAppleFeature.Builder().create();
         public static void setupOreGenerator()
         {
             for(Biome biome : ForgeRegistries.BIOMES)
@@ -43,7 +46,9 @@ public class ModOreFeature
                         COUNT_RANGE, new CountRangeConfig(3
                                 , 30, 50, 100)));
 
-
+                if (biome.equals(Biomes.PLAINS) || biome.equals(Biomes.SUNFLOWER_PLAINS)) {
+                    biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{ModOreFeature.TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.1F}, ModOreFeature.TREE, IFeatureConfig.NO_FEATURE_CONFIG), Placement.COUNT_EXTRA_HEIGHTMAP, new AtSurfaceWithExtraConfig(1, 0.1F, 1)));
+                }
             }
         }
     }

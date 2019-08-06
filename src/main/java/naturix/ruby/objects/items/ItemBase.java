@@ -16,6 +16,11 @@ public class ItemBase extends Item {
         setRegistryName(name);
         ModItems.ITEMS.add(this);
     }
+    public ItemBase(String name, Item.Properties props) {
+        super(props);
+        setRegistryName(name);
+        ModItems.ITEMS.add(this);
+    }
 
 
 }

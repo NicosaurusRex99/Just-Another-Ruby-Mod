@@ -6,6 +6,7 @@ import naturix.ruby.utils.ModMaterials;
 import naturix.ruby.utils.ModTier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
@@ -93,5 +94,8 @@ public class ModItems {
     public static Item meteoriteLeggings = new ArmorBase("meteorite_leggings", meteoriteMat, EquipmentSlotType.LEGS);
     public static Item meteoriteBoots = new ArmorBase("meteorite_boots", meteoriteMat, EquipmentSlotType.FEET);
 
+
+    public static final Food APPLESTAT = (new Food.Builder()).hunger(3).saturation(0.4F).build();
+    public static final Item apple = new ItemBase("dwarf_apple", (new Item.Properties()).group(Ruby.setup.itemGroup).food(APPLESTAT));
 
 }

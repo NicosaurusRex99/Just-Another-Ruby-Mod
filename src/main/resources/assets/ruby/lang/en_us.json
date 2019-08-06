@@ -75,6 +75,16 @@
     "block.ruby.braunite_block": "Block of Braunite",
     "block.ruby.bomb": "Highly Explosive Device",
 	
+	"block.ruby.dwarf_apple_log": "Dwarf Apple Log",
+	"block.ruby.dwarf_apple_sapling": "Dwarf Apple Sapling",
+	"item.ruby.dwarf_apple": "Dwarf Apple",
+	"block.ruby.dwarf_apple_leaves": "Dwarf Apple Leaves",
+	"block.ruby.dwarf_apple_planks": "Dwarf Apple Planks",
+	
+	
+	
+	
+	
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"
 }

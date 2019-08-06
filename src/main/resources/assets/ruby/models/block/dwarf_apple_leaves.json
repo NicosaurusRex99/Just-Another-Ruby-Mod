@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "ruby:blocks/dwarf_apple_leaves"
+    }
+}
