@@ -46,7 +46,7 @@ public class ModOreFeature
                         COUNT_RANGE, new CountRangeConfig(3
                                 , 30, 50, 100)));
 
-                if (biome.equals(Biomes.PLAINS) || biome.equals(Biomes.SUNFLOWER_PLAINS)) {
+                if (biome.equals(Biomes.MOUNTAINS)) {
                     biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{ModOreFeature.TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.1F}, ModOreFeature.TREE, IFeatureConfig.NO_FEATURE_CONFIG), Placement.COUNT_EXTRA_HEIGHTMAP, new AtSurfaceWithExtraConfig(1, 0.1F, 1)));
                 }
             }
