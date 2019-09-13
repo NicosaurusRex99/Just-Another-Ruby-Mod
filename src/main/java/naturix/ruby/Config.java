@@ -14,10 +14,8 @@ public class Config {
     public static final String CATEGORY_GENERAL = "general";
 
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
-    private static final ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
 
     public static ForgeConfigSpec COMMON_CONFIG;
-    public static ForgeConfigSpec CLIENT_CONFIG;
 
 
     public static ForgeConfigSpec.IntValue AMETHYSTMIN;
@@ -46,7 +44,6 @@ public class Config {
         setupConfig();
 
         COMMON_CONFIG = COMMON_BUILDER.build();
-        CLIENT_CONFIG = CLIENT_BUILDER.build();
     }
 
     private static void setupConfig() {
