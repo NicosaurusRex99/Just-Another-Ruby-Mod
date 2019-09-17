@@ -32,6 +32,8 @@ public class Config {
     public static ForgeConfigSpec.IntValue RUBYMAX;
     public static ForgeConfigSpec.IntValue RUBYVEIN;
 
+    public static ForgeConfigSpec.IntValue METEORFREQUENCY;
+
     public static ForgeConfigSpec.IntValue BOMBSTRENGTH;
 
 
@@ -50,34 +52,35 @@ public class Config {
         COMMON_BUILDER.comment("General settings").push(CATEGORY_GENERAL);
 
         AMETHYSTMIN = COMMON_BUILDER.comment("Minimum height amethyst can spawn at")
-                .defineInRange("AmethystMin", 2, 1, 250);
+                .defineInRange("Amethyst Min", 2, 1, 250);
         AMETHYSTMAX = COMMON_BUILDER.comment("Maximum height amethyst can spawn at")
-                .defineInRange("AmethystMax", 16, 1, 250);
+                .defineInRange("Amethyst Max", 16, 1, 250);
         AMETHYSTVEIN = COMMON_BUILDER.comment("Maximum vein size of amethyst")
-                .defineInRange("AmethystVein", 3, 1, 512);
+                .defineInRange("Amethyst Vein", 3, 1, 512);
         BRAUNITEMIN = COMMON_BUILDER.comment("Minimum height braunite can spawn at")
-                .defineInRange("BrauniteMin", 4, 1, 250);
+                .defineInRange("Braunite Min", 4, 1, 250);
         BRAUNITEMAX = COMMON_BUILDER.comment("Maximum height braunite can spawn at")
-                .defineInRange("BrauniteMax", 30, 1, 250);
+                .defineInRange("Braunite Max", 30, 1, 250);
         BRAUNITEVEIN = COMMON_BUILDER.comment("Maximum vein size of braunite")
-                .defineInRange("BrauniteVein", 6, 1, 512);
+                .defineInRange("Braunite Vein", 6, 1, 512);
         METEORITEVEIN = COMMON_BUILDER.comment("Maximum vein size of meteorite")
-                .defineInRange("MeteoriteVein", 3, 1, 512);
+                .defineInRange("Meteorite Vein", 3, 1, 512);
         OPALMIN = COMMON_BUILDER.comment("Minimum height opal can spawn at")
-                .defineInRange("OpalMin", 32, 1, 250);
+                .defineInRange("Opal Min", 32, 1, 250);
         OPALMAX = COMMON_BUILDER.comment("Maximum height opal can spawn at")
-                .defineInRange("OpalMax", 48, 1, 250);
+                .defineInRange("Opal Max", 48, 1, 250);
         OPALVEIN = COMMON_BUILDER.comment("Maximum vein size of opal")
-                .defineInRange("OpalVein", 4, 1, 512);
+                .defineInRange("Opal Vein", 4, 1, 512);
         RUBYMIN = COMMON_BUILDER.comment("Minimum height ruby can spawn at")
-                .defineInRange("RubyMin", 2, 1, 250);
+                .defineInRange("Ruby Min", 2, 1, 250);
         RUBYMAX = COMMON_BUILDER.comment("Maximum height ruby can spawn at")
-                .defineInRange("RubyMax", 48, 1, 250);
+                .defineInRange("Ruby Max", 48, 1, 250);
         RUBYVEIN = COMMON_BUILDER.comment("Maximum vein size of ruby")
-                .defineInRange("RubyVein", 8, 1, 512);
+                .defineInRange("Ruby Vein", 8, 1, 512);
         BOMBSTRENGTH = COMMON_BUILDER.comment("How strong is the bomb?")
-                .defineInRange("BombStrength", 64, 1, 4096);
-
+                .defineInRange("Bomb Strength", 64, 1, 4096);
+        METEORFREQUENCY = COMMON_BUILDER.comment("Lower number is more frequent")
+                .defineInRange("Meteor Frequency", 100000, 1, 100000000);
         COMMON_BUILDER.pop();
     }
 

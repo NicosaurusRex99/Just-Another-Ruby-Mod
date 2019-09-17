@@ -23,11 +23,11 @@ public class ModItems {
     public static Item meteoriteGem = new ItemBase("meteorite_gem");
     public static Item opalGem = new ItemBase("opal_gem");
 
-    public static Item rubyAxe = new AxeBase("ruby_axe", ModTier.RUBY, ModTier.RUBY.getAttackDamage()/2, ModTier.RUBY.getEfficiency());
-    public static Item brauniteAxe = new AxeBase("braunite_axe", ModTier.BRAUNITE, ModTier.BRAUNITE.getAttackDamage()/2, ModTier.BRAUNITE.getEfficiency());
-    public static Item meteoriteAxe = new AxeBase("meteorite_axe", ModTier.METEORITE, ModTier.METEORITE.getAttackDamage()/2, ModTier.METEORITE.getEfficiency());
-    public static Item opalAxe = new AxeBase("opal_axe", ModTier.OPAL, ModTier.OPAL.getAttackDamage()/2, ModTier.OPAL.getEfficiency());
-    public static Item amethystAxe = new AxeBase("amethyst_axe", ModTier.AMETHYST, ModTier.AMETHYST.getAttackDamage()/2, ModTier.AMETHYST.getEfficiency());
+    public static Item rubyAxe = new AxeBase("ruby_axe", ModTier.RUBY, ModTier.RUBY.getAttackDamage()/2, ModTier.RUBY.getEfficiency()*1.25f);
+    public static Item brauniteAxe = new AxeBase("braunite_axe", ModTier.BRAUNITE, ModTier.BRAUNITE.getAttackDamage()/2, ModTier.BRAUNITE.getEfficiency()*1.25f);
+    public static Item meteoriteAxe = new AxeBase("meteorite_axe", ModTier.METEORITE, ModTier.METEORITE.getAttackDamage()/2, ModTier.METEORITE.getEfficiency()*1.25f);
+    public static Item opalAxe = new AxeBase("opal_axe", ModTier.OPAL, ModTier.OPAL.getAttackDamage()/2, ModTier.OPAL.getEfficiency()*1.25f);
+    public static Item amethystAxe = new AxeBase("amethyst_axe", ModTier.AMETHYST, ModTier.AMETHYST.getAttackDamage()/2, ModTier.AMETHYST.getEfficiency()*1.25f);
 
     public static Item rubyPickaxe = new PickaxeBase("ruby_pickaxe", ModTier.RUBY, 3, ModTier.RUBY.getEfficiency());
     public static Item braunitePickaxe = new PickaxeBase("braunite_pickaxe", ModTier.BRAUNITE, 4, ModTier.BRAUNITE.getEfficiency());

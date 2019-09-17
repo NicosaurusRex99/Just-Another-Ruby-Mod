@@ -1,7 +1,9 @@
 {
 	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
 	"1.14.4": {
-		"1.14.4.1": "bug fixes",
+		"1.14.4.3": "Fixed config for worldgen",
+		"1.14.4.2": "Added falling meteors",
+		"1.14.4.1": "Bug fixes",
 		"1.14.4.0": "Updated forge"
 	},"1.14.3": {
         "1.14.3.5": "Fixed enchant book",
@@ -39,8 +41,8 @@
 		"1.12.2.1": "Ported to 1.12"
 	},
 	"promos": {
-		"1.14.4-latest": "1.14.4.1",
-		"1.14.4-recommended": "1.14.4.1",
+		"1.14.4-latest": "1.14.4.3",
+		"1.14.4-recommended": "1.14.4.3",
 		"1.14.3-latest": "1.14.3.5",
 		"1.14.3-recommended": "1.14.3.5",
 		"1.12.2-latest": "1.12.2.23",

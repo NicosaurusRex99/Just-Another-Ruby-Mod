@@ -14,6 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 
 public class Meteorite extends FallingBlock {
@@ -23,6 +24,7 @@ public class Meteorite extends FallingBlock {
                 .create(Material.ROCK)
                 .hardnessAndResistance(5.0f, 8.0f)
                 .harvestLevel(2)
+                .tickRandomly()
                 .harvestTool(ToolType.PICKAXE));
         setRegistryName(name);
         BlockItem itemBlock = new BlockItem(this, new Item.Properties().group(Ruby.setup.itemGroup));

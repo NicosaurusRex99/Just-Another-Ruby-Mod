@@ -26,23 +26,23 @@ public class ModOreFeature
             for(Biome biome : ForgeRegistries.BIOMES)
             {
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.opal_ore.getDefaultState(), Config.OPALVEIN.get()),
-                        COUNT_RANGE, new CountRangeConfig(8, Config.OPALMIN.get(), Config.OPALMAX.get(), Config.OPALMAX.get()+1)));
+                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.opal_ore.getDefaultState(), Config.OPALVEIN.get().intValue()),
+                        COUNT_RANGE, new CountRangeConfig(8, Config.OPALMIN.get().intValue(), Config.OPALMAX.get().intValue(), Config.OPALMAX.get().intValue()+1)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.ruby_ore.getDefaultState(), Config.RUBYVEIN.get()),
-                        COUNT_RANGE, new CountRangeConfig(4, Config.RUBYMIN.get(), Config.RUBYMAX.get()/3, Config.RUBYMAX.get()+1)));
+                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.ruby_ore.getDefaultState(), Config.RUBYVEIN.get().intValue()),
+                        COUNT_RANGE, new CountRangeConfig(4, Config.RUBYMIN.get().intValue(), Config.RUBYMAX.get().intValue()/3, Config.RUBYMAX.get().intValue()+1)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.braunite_ore.getDefaultState(), Config.BRAUNITEVEIN.get()),
-                        COUNT_RANGE, new CountRangeConfig(4, Config.BRAUNITEMIN.get(), Config.BRAUNITEMAX.get()/2, Config.BRAUNITEMAX.get()+1)));
+                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.braunite_ore.getDefaultState(), Config.BRAUNITEVEIN.get().intValue()),
+                        COUNT_RANGE, new CountRangeConfig(4, Config.BRAUNITEMIN.get().intValue(), Config.BRAUNITEMAX.get().intValue()/2, Config.BRAUNITEMAX.get().intValue()+1)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.amethyst.getDefaultState(), Config.AMETHYSTVEIN.get()),
-                        COUNT_RANGE, new CountRangeConfig(6, Config.AMETHYSTMIN.get(), Config.AMETHYSTMAX.get()/2, Config.AMETHYSTMAX.get()+1)));
+                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.amethyst.getDefaultState(), Config.AMETHYSTVEIN.get().intValue()),
+                        COUNT_RANGE, new CountRangeConfig(6, Config.AMETHYSTMIN.get().intValue(), Config.AMETHYSTMAX.get().intValue()/2, Config.AMETHYSTMAX.get().intValue()+1)));
 
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE,
-                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.meteorite_ore.getDefaultState(), Config.METEORITEVEIN.get()),
+                        new OreFeatureConfig(NATURAL_STONE, ModBlocks.meteorite_ore.getDefaultState(), Config.METEORITEVEIN.get().intValue()),
                         COUNT_RANGE, new CountRangeConfig(3
                                 , 30, 50, 100)));
 

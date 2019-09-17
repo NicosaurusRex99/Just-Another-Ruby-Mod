@@ -6,11 +6,13 @@ import naturix.ruby.proxy.ModSetup;
 import naturix.ruby.proxy.ServerProxy;
 import naturix.ruby.registry.ModBlocks;
 import naturix.ruby.registry.ModItems;
+import naturix.ruby.world.MeteorFall;
 import naturix.ruby.world.ModOreFeature;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -61,5 +63,6 @@ public class Ruby
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
         }
+
     }
 }
