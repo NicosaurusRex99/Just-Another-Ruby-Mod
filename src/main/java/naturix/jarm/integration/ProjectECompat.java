@@ -1,9 +1,9 @@
-package naturix.jarm.integration;
+package naturix.JARM.integration;
 
 import moze_intel.projecte.api.ProjectEAPI;
-import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.registry.ModItems;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.registry.ModBlocks;
+import naturix.JARM.registry.ModItems;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.item.ItemStack;
 
 public class ProjectECompat {

@@ -1,9 +1,8 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
-import naturix.jarm.proxy.*;
 import java.util.Random;
 
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

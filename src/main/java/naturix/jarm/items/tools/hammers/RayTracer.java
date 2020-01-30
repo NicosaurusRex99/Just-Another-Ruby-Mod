@@ -1,4 +1,4 @@
-package naturix.jarm.items.tools.hammers;
+package naturix.JARM.items.tools.hammers;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;

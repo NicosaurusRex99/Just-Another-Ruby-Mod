@@ -1,13 +1,13 @@
-package naturix.jarm.proxy;
+package naturix.JARM.proxy;
 
 import java.io.File;
 
-import naturix.jarm.JARM;
-import naturix.jarm.events.EventArmorSet;
-import naturix.jarm.integration.ProjectECompat;
-import naturix.jarm.registry.ModRecipes;
-import naturix.jarm.utils.config.Config;
-import naturix.jarm.utils.handlers.TradeHandlerSmith;
+import naturix.JARM.JARM;
+import naturix.JARM.events.EventArmorSet;
+import naturix.JARM.integration.ProjectECompat;
+import naturix.JARM.registry.ModRecipes;
+import naturix.JARM.utils.config.Config;
+import naturix.JARM.utils.handlers.TradeHandlerSmith;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;

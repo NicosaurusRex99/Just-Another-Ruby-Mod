@@ -1,4 +1,4 @@
-package naturix.jarm.utils;
+package naturix.JARM.utils;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

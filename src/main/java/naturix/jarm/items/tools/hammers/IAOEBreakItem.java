@@ -1,4 +1,4 @@
-package naturix.jarm.items.tools.hammers;
+package naturix.JARM.items.tools.hammers;
 
 import com.google.common.collect.ImmutableList;
 

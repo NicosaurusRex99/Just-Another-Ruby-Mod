@@ -1,10 +1,10 @@
-package naturix.jarm.utils.handlers;
+package naturix.JARM.utils.handlers;
 
 import java.util.Random;
 
-import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.registry.ModItems;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.registry.ModBlocks;
+import naturix.JARM.registry.ModItems;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.entity.IMerchant;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.init.Items;

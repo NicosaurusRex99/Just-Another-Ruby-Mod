@@ -1,6 +1,5 @@
-package naturix.jarm.items.tools;
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
+package naturix.JARM.items.tools;
+import naturix.JARM.JARM;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSword;
 

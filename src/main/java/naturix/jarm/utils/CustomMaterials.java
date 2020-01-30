@@ -1,7 +1,7 @@
-package naturix.jarm.utils;
+package naturix.JARM.utils;
 
-import naturix.jarm.JARM;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.JARM;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;

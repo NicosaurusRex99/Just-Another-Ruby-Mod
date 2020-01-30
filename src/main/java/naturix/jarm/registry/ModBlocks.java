@@ -1,14 +1,7 @@
-package naturix.jarm.registry;
+package naturix.JARM.registry;
 
-import naturix.jarm.blocks.Amethyst;
-import naturix.jarm.blocks.BeaconBase;
-import naturix.jarm.blocks.BlockFalling;
-import naturix.jarm.blocks.BlockOre;
-import naturix.jarm.blocks.LeavesBase;
-import naturix.jarm.blocks.LogBase;
-import naturix.jarm.blocks.PlanksBase;
-import naturix.jarm.blocks.SaplingBase;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.blocks.*;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;

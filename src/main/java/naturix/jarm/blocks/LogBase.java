@@ -1,7 +1,6 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

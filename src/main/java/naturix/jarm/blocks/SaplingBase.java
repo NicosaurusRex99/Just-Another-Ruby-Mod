@@ -1,9 +1,9 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
 import java.util.Random;
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
-import naturix.jarm.world.tree.DwarfApple;
+
+import naturix.JARM.JARM;
+import naturix.JARM.world.tree.DwarfApple;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;

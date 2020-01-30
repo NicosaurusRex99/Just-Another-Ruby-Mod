@@ -1,12 +1,11 @@
-package naturix.jarm.items.tools.hammers;
-import naturix.jarm.proxy.*;
+package naturix.JARM.items.tools.hammers;
 import java.util.ArrayList;
 import java.util.Set;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
 
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

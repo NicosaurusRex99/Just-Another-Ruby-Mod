@@ -1,8 +1,7 @@
-package naturix.jarm.items.armor;
+package naturix.JARM.items.armor;
 
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
-import naturix.jarm.items.ItemBase;
+import naturix.JARM.JARM;
+import naturix.JARM.items.ItemBase;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumRarity;

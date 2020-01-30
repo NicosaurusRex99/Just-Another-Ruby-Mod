@@ -1,15 +1,15 @@
-package naturix.jarm;
+package naturix.JARM;
 
 
-import naturix.jarm.integration.ProjectECompat;
-import naturix.jarm.integration.baubles.ModItemsBaubles;
-import naturix.jarm.proxy.CommonProxy;
-import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.registry.ModItems;
-import naturix.jarm.registry.ModOreDict;
-import naturix.jarm.registry.ModRecipes;
-import naturix.jarm.world.ModWorldGeneration;
-import naturix.jarm.world.tree.TreeWorldGen;
+import naturix.JARM.integration.ProjectECompat;
+import naturix.JARM.integration.baubles.ModItemsBaubles;
+import naturix.JARM.proxy.CommonProxy;
+import naturix.JARM.registry.ModBlocks;
+import naturix.JARM.registry.ModItems;
+import naturix.JARM.registry.ModOreDict;
+import naturix.JARM.registry.ModRecipes;
+import naturix.JARM.world.ModWorldGeneration;
+import naturix.JARM.world.tree.TreeWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -34,12 +34,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class JARM
 { 
 	public static final String MODID = "jarm";
-    public static final String VERSION = "1.12.2.23";
+    public static final String VERSION = "1.12.2.24";
     public static final String MOD_NAME = "Just Another Ruby Mod!";
     public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/1.12.2/jarm_update.json";
     public static final String DEPENDENCIES = "after:projecte";
     
-    @SidedProxy(clientSide = "naturix.jarm.proxy.ClientProxy", serverSide = "naturix.jarm.proxy.ServerProxy")
+    @SidedProxy(clientSide = "naturix.JARM.proxy.ClientProxy", serverSide = "naturix.JARM.proxy.ServerProxy")
     
     public static CommonProxy proxy;
 

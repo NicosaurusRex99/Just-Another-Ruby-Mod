@@ -204,9 +204,9 @@ after the cause of action arose. Each party waives its rights to a jury trial in
 any resulting litigation.
 
 */
-package naturix.jarm.registry;
+package naturix.JARM.registry;
 
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

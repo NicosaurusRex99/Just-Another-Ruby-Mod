@@ -1,11 +1,11 @@
-package naturix.jarm.utils.config;
+package naturix.JARM.utils.config;
 
 import org.apache.logging.log4j.Level;
 
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
+import naturix.JARM.proxy.CommonProxy;
 import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Configuration;
-import naturix.jarm.proxy.*;
 
 
 public class Config {

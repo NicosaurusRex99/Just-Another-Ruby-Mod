@@ -1,10 +1,9 @@
-package naturix.jarm.items.tools;
-import naturix.jarm.proxy.*;
+package naturix.JARM.items.tools;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
 
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 

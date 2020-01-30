@@ -1,13 +1,12 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
-import naturix.jarm.proxy.*;
 import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import naturix.jarm.JARM;
-import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.registry.ModItems;
+import naturix.JARM.JARM;
+import naturix.JARM.registry.ModBlocks;
+import naturix.JARM.registry.ModItems;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;

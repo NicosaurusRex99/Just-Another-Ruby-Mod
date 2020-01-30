@@ -1,6 +1,6 @@
-package naturix.jarm.events;
+package naturix.JARM.events;
 
-import naturix.jarm.registry.ModItems;
+import naturix.JARM.registry.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

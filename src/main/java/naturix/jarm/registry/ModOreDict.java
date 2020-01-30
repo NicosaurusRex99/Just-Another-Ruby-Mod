@@ -1,6 +1,6 @@
-package naturix.jarm.registry;
+package naturix.JARM.registry;
 
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;

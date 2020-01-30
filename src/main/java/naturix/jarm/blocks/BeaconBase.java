@@ -1,8 +1,7 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.JARM;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;

@@ -1,9 +1,9 @@
-package naturix.jarm.world.tree;
+package naturix.JARM.world.tree;
 
 import java.util.Random;
 
-import naturix.jarm.JARM;
-import naturix.jarm.registry.ModBlocks;
+import naturix.JARM.JARM;
+import naturix.JARM.registry.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;

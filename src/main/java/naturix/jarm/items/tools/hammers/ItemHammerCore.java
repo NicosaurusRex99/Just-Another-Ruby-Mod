@@ -1,4 +1,4 @@
-package naturix.jarm.items.tools.hammers;
+package naturix.JARM.items.tools.hammers;
 
 import java.util.Collections;
 import java.util.Set;

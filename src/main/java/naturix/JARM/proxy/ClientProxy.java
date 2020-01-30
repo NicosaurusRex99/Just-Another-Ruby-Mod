@@ -1,17 +1,14 @@
-package naturix.jarm.proxy;
+package naturix.JARM.proxy;
 
-import naturix.jarm.JARM;
-import naturix.jarm.registry.ModItems;
+import naturix.JARM.JARM;
+import naturix.JARM.registry.ModItems;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import naturix.jarm.proxy.*;
-import net.minecraftforge.fml.relauncher.Side;
 
 public class ClientProxy extends CommonProxy {
     @Override

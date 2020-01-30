@@ -1,7 +1,6 @@
-package naturix.jarm.blocks;
+package naturix.JARM.blocks;
 
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
+import naturix.JARM.JARM;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.creativetab.CreativeTabs;

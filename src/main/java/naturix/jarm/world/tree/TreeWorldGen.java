@@ -1,4 +1,4 @@
-package naturix.jarm.world.tree;
+package naturix.JARM.world.tree;
 
 import java.util.Random;
 

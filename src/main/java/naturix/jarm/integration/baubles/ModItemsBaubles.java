@@ -1,7 +1,6 @@
-package naturix.jarm.integration.baubles;
+package naturix.JARM.integration.baubles;
 
-import naturix.jarm.JARM;
-import naturix.jarm.integration.baubles.rings.AmethystMeteorRing;
+import naturix.JARM.integration.baubles.rings.AmethystMeteorRing;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 

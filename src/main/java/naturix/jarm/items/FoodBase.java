@@ -1,6 +1,5 @@
-package naturix.jarm.items;
-import naturix.jarm.proxy.*;
-import naturix.jarm.JARM;
+package naturix.JARM.items;
+import naturix.JARM.JARM;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 

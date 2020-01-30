@@ -1,12 +1,12 @@
-package naturix.jarm.world;
+package naturix.JARM.world;
 
 import java.util.Random;
 
 import com.google.common.base.Predicate;
 
-import naturix.jarm.JARM;
-import naturix.jarm.registry.ModBlocks;
-import naturix.jarm.utils.config.Config;
+import naturix.JARM.JARM;
+import naturix.JARM.registry.ModBlocks;
+import naturix.JARM.utils.config.Config;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
