@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "ruby:blocks/dwarf_apple_log_top",
-        "side": "ruby:blocks/dwarf_apple_log"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "ruby:blocks/dwarf_apple_sapling"
-    }
-}
