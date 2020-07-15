@@ -59,12 +59,6 @@
     "item.ruby.ruby_leggings": "Ruby Leggings",
     "item.ruby.ruby_boots": "Ruby Boots",
 	
-	"item.ruby.ruby_multitool": "Ruby Multitool",
-    "item.ruby.braunite_multitool": "Braunite Multitool",
-    "item.ruby.meteorite_multitool": "Meteorite Multitool",
-    "item.ruby.opal_multitool": "Opal Multitool",
-    "item.ruby.amethyst_multitool": "Amethyst Multitool",
-	
     "block.ruby.ruby_ore": "Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
     "block.ruby.opal_ore": "Opal Ore",
@@ -73,7 +67,6 @@
 	"block.ruby.ruby_block": "Block of Ruby",
     "block.ruby.opal_block": "Block of Opal",
     "block.ruby.braunite_block": "Block of Braunite",
-    "block.ruby.bomb": "Highly Explosive Device",
 		
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

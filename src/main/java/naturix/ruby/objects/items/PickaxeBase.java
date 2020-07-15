@@ -8,10 +8,9 @@ import net.minecraft.item.PickaxeItem;
 
 public class PickaxeBase extends PickaxeItem {
 
-    public PickaxeBase(String name, IItemTier tier, int attackDamageIn, float attackSpeedIn)
+    public PickaxeBase(String name, IItemTier tier)
     {
-        super(tier, attackDamageIn, attackSpeedIn, new Item.Properties().group(Ruby.setup.itemGroup));
-        setRegistryName(name);
-        ModItems.ITEMS.add(this);
+        super(tier, (int)tier.getAttackDamage()/3, -2.1F, new Item.Properties().group(Ruby.setup.itemGroup));
+        setRegistryName(Ruby.MODID, name);
     }
 }

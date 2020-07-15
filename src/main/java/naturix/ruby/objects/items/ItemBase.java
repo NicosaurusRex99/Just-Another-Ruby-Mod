@@ -13,13 +13,11 @@ public class ItemBase extends Item {
 
     public ItemBase(String name) {
         super(new Item.Properties().group(Ruby.setup.itemGroup));
-        setRegistryName(name);
-        ModItems.ITEMS.add(this);
+        setRegistryName(Ruby.MODID, name);
     }
     public ItemBase(String name, Item.Properties props) {
         super(props);
-        setRegistryName(name);
-        ModItems.ITEMS.add(this);
+        setRegistryName(Ruby.MODID, name);
     }
 
 

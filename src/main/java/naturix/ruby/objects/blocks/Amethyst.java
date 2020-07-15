@@ -11,7 +11,7 @@ import net.minecraftforge.common.ToolType;
 
 public class Amethyst extends BlockBase {
     public Amethyst(String name, int lvl){
-        super(name, lvl, ToolType.PICKAXE);
+        super(name, lvl);
     }
     @Override
     public BlockRenderType getRenderType(BlockState state) {

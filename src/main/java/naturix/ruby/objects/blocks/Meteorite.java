@@ -22,14 +22,11 @@ public class Meteorite extends FallingBlock {
         super(Block.Properties
                 .create(Material.ROCK)
                 .hardnessAndResistance(5.0f, 8.0f)
-                .harvestLevel(2)
+//                .harvestLevel(2)
                 .tickRandomly()
-                .harvestTool(ToolType.PICKAXE));
-        setRegistryName(name);
-        BlockItem itemBlock = new BlockItem(this, new Item.Properties().group(Ruby.setup.itemGroup));
-        itemBlock.setRegistryName(name);
-        ModItems.ITEMS.add(itemBlock);
-        ModBlocks.BLOCKS.add(this);
+//                .harvestTool(ToolType.PICKAXE)
+        );
+        setRegistryName(Ruby.MODID, name);
     }
     protected static final VoxelShape METEORESHAPE = Block.makeCuboidShape(1D, 0.0D, 1D, 14D, 10D, 14D);
     protected static final VoxelShape AMETHYSTSHAPE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 4.0D, 12.0D);
@@ -38,11 +35,11 @@ public class Meteorite extends FallingBlock {
 //        return BlockRenderLayer.CUTOUT;
 //    }
 
-    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        if (this == ModBlocks.meteorite_ore) {
-            return METEORESHAPE;
-        }else{
-            return AMETHYSTSHAPE;
-        }
-    }
+//    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+//        if (this == ModBlocks.meteorite_ore) {
+//            return METEORESHAPE;
+//        }else{
+//            return AMETHYSTSHAPE;
+//        }
+//    }
 }

@@ -8,10 +8,9 @@ import net.minecraft.item.HoeItem;
 
 public class HoeBase extends HoeItem {
 
-    public HoeBase(String name, IItemTier tier, float attackSpeedIn)
+    public HoeBase(String name, IItemTier tier)
     {
-        super(tier, attackSpeedIn, new Item.Properties().group(Ruby.setup.itemGroup));
-        setRegistryName(name);
-        ModItems.ITEMS.add(this);
+        super(tier, -1,-1.8F, new Item.Properties().group(Ruby.setup.itemGroup));
+        setRegistryName(Ruby.MODID, name);
     }
 }

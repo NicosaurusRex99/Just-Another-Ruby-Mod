@@ -8,10 +8,9 @@ import net.minecraft.item.ShovelItem;
 
 public class ShovelBase extends ShovelItem {
 
-    public ShovelBase(String name, IItemTier tier, int attackDamageIn, float attackSpeedIn)
+    public ShovelBase(String name, IItemTier tier)
     {
-        super(tier, attackDamageIn, attackSpeedIn, new Item.Properties().group(Ruby.setup.itemGroup));
-        setRegistryName(name);
-        ModItems.ITEMS.add(this);
+        super(tier, tier.getAttackDamage()/4, -2.0F, new Item.Properties().group(Ruby.setup.itemGroup));
+        setRegistryName(Ruby.MODID, name);
     }
 }

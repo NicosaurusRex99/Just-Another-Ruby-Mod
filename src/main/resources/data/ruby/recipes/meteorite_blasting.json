@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ruby:meteorite_ore"
+  },
+  "result": "ruby:meteorite_gem",
+  "experience": 1.0,
+  "cookingtime": 100
+}

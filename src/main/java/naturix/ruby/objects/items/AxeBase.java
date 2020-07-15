@@ -11,11 +11,10 @@ import net.minecraft.item.ItemStack;
 
 public class AxeBase extends AxeItem
 {
-    public AxeBase(String name, IItemTier tier, float attackDamageIn, float attackSpeedIn)
+    public AxeBase(String name, IItemTier tier)
     {
-        super(tier, attackDamageIn, attackSpeedIn, new Item.Properties().group(Ruby.setup.itemGroup));
-    setRegistryName(name);
-    ModItems.ITEMS.add(this);
+        super(tier, tier.getAttackDamage()/2, -2.5F, new Item.Properties().group(Ruby.setup.itemGroup));
+    setRegistryName(Ruby.MODID, name);
     }
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {

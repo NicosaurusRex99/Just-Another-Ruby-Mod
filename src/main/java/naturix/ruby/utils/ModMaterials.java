@@ -61,4 +61,9 @@ public class ModMaterials implements IArmorMaterial {
     public float getToughness() {
         return 0;
     }
+
+    @Override
+    public float func_230304_f_() {
+        return 0;
+    }
 }
