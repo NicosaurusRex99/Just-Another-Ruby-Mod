@@ -1,0 +1,63 @@
+{
+	"homepage": "https://minecraft.curseforge.com/projects/jarm-just-another-ruby-mod/files",
+	"1.16.1": {
+		"1.16.1.0": "1.16.1 port"
+	},
+	"1.15.2": {
+		"1.15.2.0": "Updated forge/Removed dwarf apple tree"
+	},
+	"1.14.4": {
+		"1.14.4.3": "Fixed config for worldgen",
+		"1.14.4.2": "Added falling meteors",
+		"1.14.4.1": "Bug fixes",
+		"1.14.4.0": "Updated forge"
+	},
+	"1.14.3": {
+        "1.14.3.5": "Fixed enchant book",
+        "1.14.3.4": "Added multitools",
+        "1.14.3.3": "Added an explosive",
+        "1.14.3.2": "Fixed oregen",
+        "1.14.3.1": "Fixed 2 bugs",
+		"1.14.3.0": "Ported to 1.14.3"
+	},
+	"1.12.2": {
+        "1.12.2.23": "Fixed armor related crash",
+		"1.12.2.22": "Crash fixes",
+        "1.12.2.21": "Flight update",
+		"1.12.2.20B": "Fixed World gen issue",
+        "1.12.2.20": "Fixed World gen issue",
+        "1.12.2.19": "Added Aluminium",
+        "1.12.2.18": "Added languages",
+		"1.12.2.17c": "Fixed world gen issue",
+		"1.12.2.17b": "Fixed Tin and silver",
+		"1.12.2.17": "World gen fix, thaumcraft compat (baubles)",
+		"1.12.2.16": "ProjectE compat, fixes and many tweaks to config",
+		"1.12.2.15": "Bug Fixes and improvments",
+		"1.12.2.14": "Bug Fixes and a tree",
+		"1.12.2.13": "Materials Update (105 new armor pieces)",
+		"1.12.2.12": "Bugfix Update",
+		"1.12.2.11": "Braunite Update",
+		"1.12.2.10": "Compat Update",
+		"1.12.2.9": "Shulker Armour",
+		"1.12.2.8": "Ore Dictionary Update",
+		"1.12.2.7": "New block properties",
+		"1.12.2.6": "Added amethyst",
+		"1.12.2.5": "Added config options",
+		"1.12.2.4": "World gen fixes",
+		"1.12.2.3": "Added world gen config options",
+		"1.12.2.2": "Ruby sword back end stuff",
+		"1.12.2.1": "Ported to 1.12"
+	},
+	"promos": {
+		"1.16.1-latest": "1.16.1.0",
+		"1.16.1-recommended": "1.16.1.0",
+		"1.15.2-latest": "1.15.2.0",
+		"1.15.2-recommended": "1.15.2.0",
+		"1.14.4-latest": "1.14.4.3",
+		"1.14.4-recommended": "1.14.4.3",
+		"1.14.3-latest": "1.14.3.5",
+		"1.14.3-recommended": "1.14.3.5",
+		"1.12.2-latest": "1.12.2.23",
+		"1.12.2-recommended": "1.12.2.23"
+	}
+}
