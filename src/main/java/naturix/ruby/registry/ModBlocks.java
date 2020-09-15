@@ -39,8 +39,8 @@ public class ModBlocks {
         register(e, new BlockBase("ruby_ore", 3));
         register(e, new BlockBase("braunite_ore", 3));
         register(e, new BlockBase("opal_ore", 1));
-        register(e, new BlockBase("amethyst", 3));
-        register(e, new BlockBase("meteorite_ore", 4));
+        register(e, new Amethyst("amethyst", 3));
+        register(e, new Meteorite("meteorite_ore"));
 
 
         register(e, new BlockBase("braunite_block", 3));

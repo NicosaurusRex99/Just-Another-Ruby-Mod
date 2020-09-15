@@ -20,8 +20,8 @@ public enum ModTier implements IItemTier
     private final int enchantability;
     public Item repairMaterial;
 
-    private ModTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn,
-                               Item repairMaterialIn)
+    ModTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn,
+            Item repairMaterialIn)
     {
         this.harvestLevel = harvestLevelIn;
         this.maxUses = maxUsesIn;

@@ -18,7 +18,7 @@ public class MeteorFall {
         Random random = world.rand;
         BlockPos pos = new BlockPos(playerEntity.getPosX(), playerEntity.world.getHeight() - 1, playerEntity.getPosZ());
         Block block = ModBlocks.meteoriteOre;
-        if (random.nextInt(Config.METEORFREQUENCY.get() * 100) == 0 && playerEntity.getEntityWorld().func_230315_m_() == DimensionType.func_236019_a_() && !world.isRemote && world.canBlockSeeSky(new BlockPos(playerEntity.getPosX(), playerEntity.getPosY()+1, playerEntity.getPosZ()))) {
+        if (random.nextInt(Config.METEORFREQUENCY.get() * 100) == 0 && playerEntity.world.canSeeSky(pos) && !world.isRemote && world.canBlockSeeSky(new BlockPos(playerEntity.getPosX(), playerEntity.getPosY()+1, playerEntity.getPosZ()))) {
             world.setBlockState(pos, block.getDefaultState());
             world.notifyBlockUpdate(pos, world.getBlockState(pos), block.getDefaultState(), 0);
             }

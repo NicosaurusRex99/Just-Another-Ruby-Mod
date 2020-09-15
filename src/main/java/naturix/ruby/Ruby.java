@@ -4,16 +4,8 @@ import naturix.ruby.proxy.ClientProxy;
 import naturix.ruby.proxy.IProxy;
 import naturix.ruby.proxy.ModSetup;
 import naturix.ruby.proxy.ServerProxy;
-import naturix.ruby.registry.ModBlocks;
-import naturix.ruby.registry.ModItems;
-import naturix.ruby.world.MeteorFall;
 import naturix.ruby.world.ModOreFeature;
-import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import naturix.ruby.world.OreGenerator;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -38,14 +30,15 @@ public class Ruby
     public Ruby() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
-        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("ruby-common.toml"));
+        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("Just another ruby mod!.toml"));
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
         proxy.init();
 
-        ModOreFeature.setupOreGenerator();
+        ModOreFeature.initModFeatures();
+        OreGenerator.setupOreGenerator();
     }
 
 }

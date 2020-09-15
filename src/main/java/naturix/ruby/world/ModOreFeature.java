@@ -1,29 +1,81 @@
 package naturix.ruby.world;
-import com.google.common.base.Predicate;
+
 import naturix.ruby.Config;
+import naturix.ruby.Ruby;
 import naturix.ruby.registry.ModBlocks;
-import net.minecraft.block.*;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placement.*;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.TopSolidRangeConfig;
 
-
-import static net.minecraft.world.gen.feature.OreFeatureConfig.FillerBlockType.NATURAL_STONE;
-import static net.minecraft.world.gen.placement.Placement.COUNT_RANGE;
 public class ModOreFeature
+{
+    public static ConfiguredFeature<?, ?> OPAL = Feature.ORE
+            .withConfiguration(new OreFeatureConfig(
+                    OreFeatureConfig.FillerBlockType.field_241882_a, ModBlocks.opalOre.getDefaultState(),
+                    Config.OPALVEIN.get()))
+            .withPlacement(Placement.field_242907_l.configure(
+                    new TopSolidRangeConfig(
+                            Config.OPALMIN.get(),
+                            0,
+                            Config.OPALMAX.get())))
+            .func_242728_a().func_242731_b(Config.OPALTRIES.get());
+
+    public static ConfiguredFeature<?, ?> RUBY = Feature.ORE
+            .withConfiguration(new OreFeatureConfig(
+                    OreFeatureConfig.FillerBlockType.field_241882_a, ModBlocks.rubyOre.getDefaultState(),
+                    Config.RUBYVEIN.get()))
+            .withPlacement(Placement.field_242907_l.configure(
+                    new TopSolidRangeConfig(
+                            Config.RUBYMIN.get(),
+                            0,
+                            Config.RUBYMAX.get())))
+            .func_242728_a().func_242731_b(Config.RUBYTRIES.get());
+
+    public static ConfiguredFeature<?, ?> BRAUNITE = Feature.ORE
+            .withConfiguration(new OreFeatureConfig(
+                    OreFeatureConfig.FillerBlockType.field_241882_a, ModBlocks.brauniteOre.getDefaultState(),
+                    Config.BRAUNITEVEIN.get()))
+            .withPlacement(Placement.field_242907_l.configure(
+                    new TopSolidRangeConfig(
+                            Config.BRAUNITEMIN.get(),
+                            0,
+                            Config.BRAUNITEMAX.get())))
+            .func_242728_a().func_242731_b(Config.BRAUNITETRIES.get());
+
+    public static ConfiguredFeature<?, ?> AMETHYST = Feature.ORE
+            .withConfiguration(new OreFeatureConfig(
+                    OreFeatureConfig.FillerBlockType.field_241882_a, ModBlocks.amethyst.getDefaultState(),
+                    Config.AMETHYSTVEIN.get()))
+            .withPlacement(Placement.field_242907_l.configure(
+                    new TopSolidRangeConfig(
+                            Config.AMETHYSTMIN.get(),
+                            0,
+                            Config.AMETHYSTMAX.get())))
+            .func_242728_a().func_242731_b(Config.AMETHYSTTRIES.get());
+
+    public static ConfiguredFeature<?, ?> METEORITE = Feature.ORE
+            .withConfiguration(new OreFeatureConfig(
+                    OreFeatureConfig.FillerBlockType.field_241882_a, ModBlocks.meteoriteOre.getDefaultState(),
+                    Config.METEORITEVEIN.get()))
+            .withPlacement(Placement.field_242907_l.configure(
+                    new TopSolidRangeConfig(
+                            30,
+                            0,
+                            100)))
+            .func_242728_a().func_242731_b(Config.METEORITETRIES.get());
+
+    public static void initModFeatures ()
     {
-        private static final Predicate<BlockState> STONE = state -> state.getBlock() == Blocks.STONE;
-        public static void setupOreGenerator()
-        {
-            for(Biome biome : ForgeRegistries.BIOMES)
-            {
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(NATURAL_STONE, ModBlocks.opalOre.getDefaultState(), Config.OPALVEIN.get())).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(Config.OPALTRIES.get(), Config.OPALMIN.get(), Config.OPALMIN.get(), Config.OPALMAX.get()))));
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(NATURAL_STONE, ModBlocks.rubyOre.getDefaultState(), Config.RUBYVEIN.get())).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(Config.RUBYTRIES.get(), Config.RUBYMIN.get(), Config.RUBYMIN.get(), Config.RUBYMAX.get()))));
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(NATURAL_STONE, ModBlocks.brauniteOre.getDefaultState(), Config.BRAUNITEVEIN.get())).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(Config.BRAUNITETRIES.get(), Config.BRAUNITEMIN.get(), Config.BRAUNITEMIN.get(), Config.BRAUNITEMAX.get()))));
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(NATURAL_STONE, ModBlocks.amethyst.getDefaultState(), Config.AMETHYSTVEIN.get())).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(Config.AMETHYSTTRIES.get(), Config.AMETHYSTMIN.get(), Config.AMETHYSTMIN.get(), Config.AMETHYSTMAX.get()))));
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(NATURAL_STONE, ModBlocks.meteoriteOre.getDefaultState(), Config.METEORITEVEIN.get())).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(Config.METEORITETRIES.get(), 30, 30, 100))));
-            }
-        }
+        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(Ruby.MODID, "ore_opal"), OPAL);
+        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(Ruby.MODID, "ore_ruby"), RUBY);
+        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(Ruby.MODID, "ore_braunite"), BRAUNITE);
+        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(Ruby.MODID, "ore_amethyst"), AMETHYST);
+        Registry.register(WorldGenRegistries.field_243653_e, new ResourceLocation(Ruby.MODID, "ore_meteorite"), METEORITE);
     }
+
+}
