@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst",
+    "ruby:braunite_ore",
+    "ruby:meteorite_ore",
+    "ruby:opal_ore",
+    "ruby:ruby_ore",
+    "ruby:braunite_block",
+    "ruby:opal_block",
+    "ruby:ruby_block"
+  ]
+}

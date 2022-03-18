@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:braunite_block",
+    "ruby:opal_block",
+    "ruby:ruby_block"
+  ]
+}

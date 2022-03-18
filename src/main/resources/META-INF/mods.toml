@@ -1,36 +1,29 @@
-modLoader="javafml" #mandatory
-loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues" #optional
-license="All rights reserved"
+    modLoader="javafml"
+    loaderVersion="[40,)"
+    license="All rights reserved"
+    issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues"
+    [[mods]]
+    modId="ruby"
+    version="${file.jarVersion}"
+    displayName="Just Anther Ruby Mod"
+    updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/master/jarm_update.json"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files"
+    logoFile="ruby.png"
+    credits="Silthulu"
+    authors="NicosaurusRex99"
+    description='''
+    Just another ruby mod, well not quite!
+    '''
+    [[dependencies.ruby]]
+        modId="forge"
+        mandatory=true
+        versionRange="[40,)"
+        ordering="NONE"
+        side="BOTH"
+    [[dependencies.ruby]]
+        modId="minecraft"
+        mandatory=true
+        versionRange="[1.18.2,1.19)"
+        ordering="NONE"
+        side="BOTH"
 
-[[mods]] #mandatory
-	modId="ruby" #mandatory
-	version="${version}" #mandatory
-	displayName="Just Another Ruby Mod" #mandatory
-	updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/master/jarm_update.json" #optional
-	displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files" #optional
-	logoFile="ruby.png" #optional
-	credits="Silthulu" #optional
-	authors="NicosaurusRex99" #optional
-	description='''I think the mod name says enough
-'''
-
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[32,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
-    ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
-    side="BOTH"
-# Here's another dependency
-[[dependencies.examplemod]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.16.1]"
-    ordering="NONE"
-    side="BOTH"
