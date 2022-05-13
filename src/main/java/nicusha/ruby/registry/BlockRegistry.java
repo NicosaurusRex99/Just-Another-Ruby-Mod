@@ -31,8 +31,9 @@ public class BlockRegistry {
             ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
             return block;
         }
-        RegistryObject<Block> block = BLOCKS.register(id, () -> new OreBlock(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance), UniformInt.of(3, 7)));
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new OreBlock(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance).noOcclusion(), UniformInt.of(3, 7)));
         ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
         return block;
     }
+
 }
