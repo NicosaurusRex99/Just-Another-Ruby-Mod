@@ -1,5 +1,6 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) edited by NicosaurusRex99",
+    "render_type": "cutout_mipped",
     "textures": {
         "particle": "ruby:blocks/amethystrock",
         "0": "ruby:blocks/amethystrock",

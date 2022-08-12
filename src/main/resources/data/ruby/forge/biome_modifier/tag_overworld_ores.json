@@ -1,0 +1,14 @@
+
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": [
+    "ruby:ruby_ore",
+    "ruby:braunite_ore",
+    "ruby:opal_ore",
+    "ruby:meteorite_ore",
+    "ruby:amethyst_stone",
+    "ruby:amethyst_deepslate"
+  ],
+  "step": "underground_ores"
+}

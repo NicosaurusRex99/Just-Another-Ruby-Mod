@@ -1,6 +1,7 @@
 package nicusha.ruby.event;
 
 import net.minecraft.core.*;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.*;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.state.*;
@@ -18,7 +19,7 @@ public class MeteorFallEvent {
     public void meteorFall(TickEvent.PlayerTickEvent event){
         Player player = event.player;
         Level world = player.level;
-        Random random = world.random;
+        RandomSource random = world.random;
         BlockPos pos = player.blockPosition().below();
         BlockState state = BlockRegistry.METEORITE_ORE.get().defaultBlockState();
         if (random.nextInt(Config.METEORFREQUENCY.get() * 100) == 0 && player.level.canSeeSky(pos) && !world.isClientSide && world.canSeeSky(player.blockPosition().above())) {

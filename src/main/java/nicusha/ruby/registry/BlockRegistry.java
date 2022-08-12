@@ -27,11 +27,11 @@ public class BlockRegistry {
 
     private static RegistryObject<Block> createOreBlock(@Nonnull String id, Material material, MaterialColor color, float hardness, float resistance, float harvestLevel, SoundType sound, CreativeModeTab itemGroup, boolean fullBlock){
         if(fullBlock){
-            RegistryObject<Block> block = BLOCKS.register(id, () -> new OreBlock(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance), UniformInt.of(3, 7)));
+            RegistryObject<Block> block = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance)));
             ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
             return block;
         }
-        RegistryObject<Block> block = BLOCKS.register(id, () -> new OreBlock(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance).noOcclusion(), UniformInt.of(3, 7)));
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance).noOcclusion()));
         ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
         return block;
     }

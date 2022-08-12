@@ -1,69 +1,77 @@
-buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
-}
 plugins {
     id 'eclipse'
     id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
 }
-apply plugin: 'net.minecraftforge.gradle'
 
-
-version = '2.1'
-group = 'nicusa.ruby'
+version = '1.19.2'
+group = 'nicusha.ruby' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ruby'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
+    mappings channel: 'official', version: '1.19.2'
 
     runs {
         client {
             workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
+
             property 'forge.logging.console.level', 'debug'
+
             property 'forge.enabledGameTestNamespaces', 'ruby'
+
             mods {
                 ruby {
                     source sourceSets.main
                 }
             }
         }
+
         server {
             workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
+
             property 'forge.logging.console.level', 'debug'
+
             property 'forge.enabledGameTestNamespaces', 'ruby'
+
             mods {
                 ruby {
                     source sourceSets.main
                 }
             }
         }
+
         gameTestServer {
             workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
+
             property 'forge.logging.console.level', 'debug'
+
             property 'forge.enabledGameTestNamespaces', 'ruby'
+
             mods {
                 ruby {
                     source sourceSets.main
                 }
             }
         }
+
         data {
             workingDirectory project.file('run')
+
             property 'forge.logging.markers', 'REGISTRIES'
+
             property 'forge.logging.console.level', 'debug'
+
             args '--mod', 'ruby', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
             mods {
                 ruby {
                     source sourceSets.main
@@ -76,28 +84,31 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    maven {
-        name = "ModMaven"
-        url = "https://modmaven.dev"
-    }
+    maven { url = "https://minecraft.curseforge.com/api/maven/"}
+    maven { url = "https://dvs1.progwml6.com/files/maven/"}
+    maven { url = "https://modmaven.dev"}
+    maven { url = "https://www.cursemaven.com"}
+    maven { url 'https://maven.blamejared.com'}
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.0.18'
-    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.2.135:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.2.135")
+    minecraft 'net.minecraftforge:forge:1.19.2-43.0.8'
+    compileOnly fg.deobf("mezz.jei:jei-1.19-common-api:11.0.0.215") //Just Enough Items
+    compileOnly fg.deobf("mezz.jei:jei-1.19-forge-api:11.0.0.215") //Just Enough Items
+    runtimeOnly fg.deobf("mezz.jei:jei-1.19-common:11.0.0.215") //Just Enough Items
+    runtimeOnly fg.deobf("mezz.jei:jei-1.19-forge:11.0.0.215") //Just Enough Items
 
 }
 
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Just Another Ruby Mod",
+                "Specification-Title"     : "ruby",
                 "Specification-Vendor"    : "Nicusha",
-                "Specification-Version"   : "2.0",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "Nicusa",
+                "Implementation-Vendor"   : "Nicusha",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

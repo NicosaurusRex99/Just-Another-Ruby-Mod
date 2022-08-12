@@ -2,12 +2,8 @@ package nicusha.ruby;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.*;
-import net.minecraft.core.*;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.levelgen.*;
-import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.world.*;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.fml.*;
 import net.minecraftforge.fml.common.Mod;
@@ -15,11 +11,8 @@ import net.minecraftforge.fml.config.*;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.*;
-import nicusha.ruby.feature.*;
 import nicusha.ruby.registry.*;
 import org.slf4j.Logger;
-
-import java.util.*;
 
 
 @Mod("ruby")
@@ -45,8 +38,6 @@ public class Ruby
     }
 
     private void client(final FMLClientSetupEvent event){
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.AMETHYST.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.METEORITE_ORE.get(), RenderType.cutoutMipped());
     }
 
     private void setup(final FMLCommonSetupEvent event)

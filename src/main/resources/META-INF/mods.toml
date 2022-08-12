@@ -1,29 +1,28 @@
-    modLoader="javafml"
-    loaderVersion="[40,)"
-    license="All rights reserved"
-    issueTrackerURL="https://github.com/NicosaurusRex99/JARMGit/issues"
-    [[mods]]
-    modId="ruby"
-    version="${file.jarVersion}"
-    displayName="Just Anther Ruby Mod"
-    updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/master/jarm_update.json"
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files"
-    logoFile="ruby.png"
-    credits="Silthulu"
-    authors="NicosaurusRex99"
-    description='''
-    Just another ruby mod, well not quite!
-    '''
-    [[dependencies.ruby]]
-        modId="forge"
-        mandatory=true
-        versionRange="[40,)"
-        ordering="NONE"
-        side="BOTH"
-    [[dependencies.ruby]]
-        modId="minecraft"
-        mandatory=true
-        versionRange="[1.18.2,1.19)"
-        ordering="NONE"
-        side="BOTH"
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All rights reserved"
+[[mods]]
+modId="ruby"
+version="${file.jarVersion}"
+displayName="Just Another Ruby Mod"
+updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/JARMGit/master/jarm_update.json"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files"
+logoFile="ruby.png"
+credits="Silthulu"
+authors="Nicusha"
 
+description='''
+Just another ruby mod, well not quite!
+'''
+[[dependencies.ruby]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ruby]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
