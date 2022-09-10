@@ -11,6 +11,7 @@ import net.minecraftforge.fml.config.*;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.*;
+import nicusha.ruby.integration.ModCompat;
 import nicusha.ruby.registry.*;
 import org.slf4j.Logger;
 
@@ -42,7 +43,7 @@ public class Ruby
 
     private void setup(final FMLCommonSetupEvent event)
     {
-
+        ModCompat.initCommon(event);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

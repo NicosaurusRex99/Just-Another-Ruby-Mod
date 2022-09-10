@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.2'
+version = '2.3'
 group = 'nicusha.ruby' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ruby'
 
@@ -92,11 +92,13 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.2-43.0.8'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.1.25'
     compileOnly fg.deobf("mezz.jei:jei-1.19-common-api:11.0.0.215") //Just Enough Items
     compileOnly fg.deobf("mezz.jei:jei-1.19-forge-api:11.0.0.215") //Just Enough Items
     runtimeOnly fg.deobf("mezz.jei:jei-1.19-common:11.0.0.215") //Just Enough Items
     runtimeOnly fg.deobf("mezz.jei:jei-1.19-forge:11.0.0.215") //Just Enough Items
+    compileOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
+    runtimeOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
 
 }
 
