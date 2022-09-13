@@ -9,5 +9,8 @@ public class ModCompat {
         if(ModList.get().isLoaded("projecte")){
             ProjectECompat.init();
         }
+        if(ModList.get().isLoaded("jeresources")){
+            JERCompat.init();
+        }
     }
 }

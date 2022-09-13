@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.*;
 import net.minecraft.world.level.material.*;
 import net.minecraftforge.registries.*;
 import nicusha.ruby.*;
+import nicusha.ruby.blocks.*;
 
 import javax.annotation.*;
 
@@ -28,6 +29,16 @@ public class BlockRegistry {
     private static RegistryObject<Block> createOreBlock(@Nonnull String id, Material material, MaterialColor color, float hardness, float resistance, float harvestLevel, SoundType sound, CreativeModeTab itemGroup, boolean fullBlock){
         if(fullBlock){
             RegistryObject<Block> block = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance)));
+            ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
+            return block;
+        }
+        if(id == "amethyst"){
+            RegistryObject<Block> block = BLOCKS.register(id, () -> new Amethyst(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance).noOcclusion()));
+            ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
+            return block;
+        }
+        if(id == "meteorite_ore"){
+            RegistryObject<Block> block = BLOCKS.register(id, () -> new Meteorite(BlockBehaviour.Properties.of(material, color).requiresCorrectToolForDrops().strength(hardness, resistance).noOcclusion()));
             ItemRegistry.ITEMS.register(id, () -> new BlockItem(block.get(), new Item.Properties().tab(itemGroup).fireResistant()));
             return block;
         }

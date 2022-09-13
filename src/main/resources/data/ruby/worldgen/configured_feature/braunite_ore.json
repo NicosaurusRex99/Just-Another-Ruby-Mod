@@ -7,7 +7,7 @@
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "forge:ore_bearing_ground/deepslate"
+          "tag": "forge:stone"
         },
         "state": {
           "Name": "ruby:braunite_ore"

@@ -11,9 +11,9 @@ public enum ToolTiers implements Tier {
 
     OPAL(2, 1200, 4.0F, 1.1F, 8, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "opal_repair")))),
     RUBY(3, 4096, 3.5F, 5.0F, 8, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "ruby_repair")))),
-    METEORITE(2, 8521, 8.0F, 4.0F, 12, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "meteorite_repair")))),
+    METEORITE(2, 8521, 8.0F, 4.0F, 12, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "meteorite_gem")))),
     AMETHYST(4, 6723, 14.0F, 4.0F, 3, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "amethyst_repair")))),
-    BRAUNITE(4, 6723, 13.0F, 2.4F, 15, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "braunite_repair"))));
+    BRAUNITE(4, 6723, 13.0F, 2.4F, 15, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "braunite_gem"))));
 
     private final int harvestLevel;
     private final int maxUses;
