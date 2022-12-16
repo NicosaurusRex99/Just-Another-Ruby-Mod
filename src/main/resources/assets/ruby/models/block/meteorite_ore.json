@@ -2,8 +2,8 @@
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "render_type": "cutout_mipped",
     "textures": {
-        "particle": "ruby:blocks/meteorite_ore",
-        "0": "ruby:blocks/meteorite_ore"
+        "particle": "ruby:block/meteorite_ore",
+        "0": "ruby:block/meteorite_ore"
     },
     "display": {
         "gui": {

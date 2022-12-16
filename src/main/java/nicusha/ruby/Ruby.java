@@ -2,8 +2,11 @@ package nicusha.ruby;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.*;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.*;
 import net.minecraftforge.fml.*;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +14,7 @@ import net.minecraftforge.fml.config.*;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.*;
+import net.minecraftforge.registries.*;
 import nicusha.ruby.integration.ModCompat;
 import nicusha.ruby.registry.*;
 import org.slf4j.Logger;
@@ -25,6 +29,7 @@ public class Ruby
     public Ruby()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        bus.addListener(Ruby::registerTab);
         bus.addListener(this::client);
         bus.addListener(this::setup);
         bus.addListener(this::enqueueIMC);
@@ -56,10 +61,22 @@ public class Ruby
 
     }
 
-    public static final CreativeModeTab RUBY_TAB = new CreativeModeTab("ruby") {
-        public ItemStack makeIcon() {
-            return new ItemStack(BlockRegistry.RUBY_ORE.get());
-        }
-    };
+
+    public static final ResourceLocation TAB = new ResourceLocation(Ruby.MODID, "ruby");
+
+    private static ItemStack makeIcon() {
+        return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Ruby.MODID, "ruby_gem")));
+    }
+
+
+    public static void registerTab(CreativeModeTabEvent.Register event){
+        event.registerCreativeModeTab(TAB, builder -> builder.title(Component.translatable("itemGroup.ruby")).icon(Ruby::makeIcon).displayItems((flags, output, isOp) -> {
+            for(RegistryObject<Item> item : ItemRegistry.ITEMS.getEntries()){
+                output.accept(item.get());
+            }
+        }));
+
+    }
+
 
 }

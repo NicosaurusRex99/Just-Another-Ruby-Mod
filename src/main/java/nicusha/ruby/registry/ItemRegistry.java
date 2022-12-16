@@ -84,51 +84,51 @@ public class ItemRegistry {
 
     private static RegistryObject<Item> createItem(String id, boolean isFireProof){
         if(isFireProof){
-            return ITEMS.register(id, () -> new Item(new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+            return ITEMS.register(id, () -> new Item(new Item.Properties().fireResistant()));
         }
-        return ITEMS.register(id, () -> new Item(new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties()));
     }
 
     private static RegistryObject<Item> createSwordItem(String id, Tier tier, boolean isFireProof) {
         if (isFireProof) {
-            return ITEMS.register(id, () -> new SwordItem(tier, tier.getLevel(), -2.4F, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+            return ITEMS.register(id, () -> new SwordItem(tier, tier.getLevel(), -2.4F, new Item.Properties().fireResistant()));
         }
-    return ITEMS.register(id, ()-> new SwordItem(tier, tier.getLevel(), -2.4F, new Item.Properties().tab(Ruby.RUBY_TAB)));
+    return ITEMS.register(id, ()-> new SwordItem(tier, tier.getLevel(), -2.4F, new Item.Properties()));
     }
 
     private static RegistryObject<Item> createPickaxeItem(String id, Tier tier, boolean isFireProof){
         if (isFireProof) {
-            return ITEMS.register(id, () -> new PickaxeItem(tier, tier.getLevel(), -2.8F, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+            return ITEMS.register(id, () -> new PickaxeItem(tier, tier.getLevel(), -2.8F, new Item.Properties().fireResistant()));
         }
-        return ITEMS.register(id, () -> new PickaxeItem(tier, tier.getLevel(), -2.8F, new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new PickaxeItem(tier, tier.getLevel(), -2.8F, new Item.Properties()));
     }
 
     private static RegistryObject<Item> createAxeItem(String id, Tier tier, boolean isFireProof){
             if (isFireProof) {
-                return ITEMS.register(id, () -> new AxeItem(tier, tier.getLevel(), -3.2F, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+                return ITEMS.register(id, () -> new AxeItem(tier, tier.getLevel(), -3.2F, new Item.Properties().fireResistant()));
             }
-        return ITEMS.register(id, () -> new AxeItem(tier, tier.getLevel(), -3.2F, new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new AxeItem(tier, tier.getLevel(), -3.2F, new Item.Properties()));
     }
 
     private static RegistryObject<Item> createShovelItem(String id, Tier tier, boolean isFireProof){
                 if (isFireProof) {
-                    return ITEMS.register(id, () -> new ShovelItem(tier, tier.getLevel(), -3F, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+                    return ITEMS.register(id, () -> new ShovelItem(tier, tier.getLevel(), -3F, new Item.Properties().fireResistant()));
                 }
 
-        return ITEMS.register(id, () -> new ShovelItem(tier, tier.getLevel(), -3F, new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new ShovelItem(tier, tier.getLevel(), -3F, new Item.Properties()));
     }
 
     private static RegistryObject<Item> createHoeItem(String id, Tier tier, boolean isFireProof){
                 if (isFireProof) {
-                    return ITEMS.register(id, () -> new HoeItem(tier, tier.getLevel(), -3F, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+                    return ITEMS.register(id, () -> new HoeItem(tier, tier.getLevel(), -3F, new Item.Properties().fireResistant()));
                 }
-        return ITEMS.register(id, () -> new HoeItem(tier, tier.getLevel(), -3F, new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new HoeItem(tier, tier.getLevel(), -3F, new Item.Properties()));
     }
 
     private static RegistryObject<Item> createArmorItem(String id, ArmorMaterial material, EquipmentSlot slot, boolean isFireProof){
                 if (isFireProof) {
-                    return ITEMS.register(id, () -> new ArmorItem(material, slot, new Item.Properties().tab(Ruby.RUBY_TAB).fireResistant()));
+                    return ITEMS.register(id, () -> new ArmorItem(material, slot, new Item.Properties().fireResistant()));
                 }
-        return ITEMS.register(id, () -> new ArmorItem(material, slot, new Item.Properties().tab(Ruby.RUBY_TAB)));
+        return ITEMS.register(id, () -> new ArmorItem(material, slot, new Item.Properties()));
     }
 }

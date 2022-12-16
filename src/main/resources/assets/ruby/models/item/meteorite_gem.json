@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "ruby:items/meteorite_gem"
+    "layer0": "ruby:item/meteorite_gem"
   }
 }

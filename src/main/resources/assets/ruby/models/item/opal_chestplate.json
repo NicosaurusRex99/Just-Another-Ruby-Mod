@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "ruby:items/opal_chestplate"
+        "layer0": "ruby:item/opal_chestplate"
     }
 }

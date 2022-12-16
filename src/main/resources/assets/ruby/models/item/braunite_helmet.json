@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "ruby:items/braunite_helmet"
+        "layer0": "ruby:item/braunite_helmet"
     }
 }

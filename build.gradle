@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '2.4'
+version = '2.4.1'
 group = 'nicusha.ruby' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ruby'
 
@@ -12,7 +12,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'official', version: '1.19.3'
 
     runs {
         client {
@@ -92,15 +92,15 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.2-43.1.25'
-    compileOnly fg.deobf("mezz.jei:jei-1.19-common-api:11.0.0.215") //Just Enough Items
-    compileOnly fg.deobf("mezz.jei:jei-1.19-forge-api:11.0.0.215") //Just Enough Items
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19-common:11.0.0.215") //Just Enough Items
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19-forge:11.0.0.215") //Just Enough Items
-    compileOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
-    runtimeOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
-    compileOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
-    runtimeOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
+    minecraft 'net.minecraftforge:forge:1.19.3-44.0.18'
+//    compileOnly fg.deobf("mezz.jei:jei-1.19-common-api:11.0.0.215") //Just Enough Items
+//    compileOnly fg.deobf("mezz.jei:jei-1.19-forge-api:11.0.0.215") //Just Enough Items
+//    runtimeOnly fg.deobf("mezz.jei:jei-1.19-common:11.0.0.215") //Just Enough Items
+//    runtimeOnly fg.deobf("mezz.jei:jei-1.19-forge:11.0.0.215") //Just Enough Items
+//    compileOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
+//    runtimeOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
+//    compileOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
+//    runtimeOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
 
 }
 
