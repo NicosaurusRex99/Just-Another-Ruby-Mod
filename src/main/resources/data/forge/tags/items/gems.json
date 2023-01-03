@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:gems/amethyst",
+    "#forge:gems/braunite",
+    "#forge:gems/meteorite",
+    "#forge:gems/opal",
+    "#forge:gems/ruby"
+  ]
+}

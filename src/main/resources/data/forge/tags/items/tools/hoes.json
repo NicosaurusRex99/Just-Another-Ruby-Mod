@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_hoe",
+    "ruby:braunite_hoe",
+    "ruby:meteorite_hoe",
+    "ruby:opal_hoe",
+    "ruby:ruby_hoe"
+  ]
+}

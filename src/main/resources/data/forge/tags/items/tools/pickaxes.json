@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_pickaxes",
+    "ruby:braunite_pickaxes",
+    "ruby:meteorite_pickaxes",
+    "ruby:opal_pickaxes",
+    "ruby:ruby_pickaxes"
+  ]
+}
