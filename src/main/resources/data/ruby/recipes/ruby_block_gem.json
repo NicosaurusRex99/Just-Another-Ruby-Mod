@@ -2,7 +2,7 @@
 	"type" : "minecraft:crafting_shapeless",
 	"group": "ruby_gem",
 	"ingredients" : [
-		{ "item" : "ruby:ruby_block" }
+		{ "tag" : "forge:storage_blocks/ruby" }
 	],
 	"result" : {
 		"item" : "ruby:ruby_gem",

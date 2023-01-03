@@ -2,7 +2,7 @@
 	"type" : "minecraft:crafting_shapeless",
 	"group": "braunite_gem",
 	"ingredients" : [
-		{ "item" : "ruby:braunite_block" }
+		{ "tag": "forge:storage_blocks/braunite" }
 	],
 	"result" : {
 		"item" : "ruby:braunite_gem",
