@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ruby:braunite_ore"
+    "ruby:braunite_ore",
+    "ruby:braunite_ore_deepslate"
   ]
 }

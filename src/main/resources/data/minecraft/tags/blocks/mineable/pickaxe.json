@@ -3,9 +3,12 @@
   "values": [
     "ruby:amethyst",
     "ruby:braunite_ore",
+    "ruby:braunite_ore_deepslate",
     "ruby:meteorite_ore",
     "ruby:opal_ore",
+    "ruby:opal_ore_deepslate",
     "ruby:ruby_ore",
+    "ruby:ruby_ore_deepslate",
     "ruby:braunite_block",
     "ruby:opal_block",
     "ruby:ruby_block"

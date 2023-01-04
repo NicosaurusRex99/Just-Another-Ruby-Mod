@@ -60,9 +60,12 @@
     "item.ruby.ruby_boots": "Ruby Boots",
 	
     "block.ruby.ruby_ore": "Ruby Ore",
+    "block.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
     "block.ruby.opal_ore": "Opal Ore",
+    "block.ruby.opal_ore_deepslate": "Deepslate Opal Ore",
     "block.ruby.braunite_ore": "Braunite Ore",
+    "block.ruby.braunite_ore_deepslate": "Braunite Ore Deepslate",
     "block.ruby.amethyst": "Amethyst",
 	"block.ruby.ruby_block": "Block of Ruby",
     "block.ruby.opal_block": "Block of Opal",
