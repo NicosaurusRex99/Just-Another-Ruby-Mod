@@ -7,7 +7,7 @@
         "MMM"
     ],
     "key": {
-        "M": { "item": "ruby:amethyst" }
+        "M": { "tag": "forge:gems/amethyst" }
     },
     "result": {
         "item": "ruby:amethyst_chestplate"

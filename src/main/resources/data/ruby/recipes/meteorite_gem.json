@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:smelting",
 	"ingredient": {
-		"item": "ruby:meteorite_ore"
+		"tag": "forge:ores/meteorite"
 	},
 	"result": "ruby:meteorite_gem",
 	"experience": 0.4,

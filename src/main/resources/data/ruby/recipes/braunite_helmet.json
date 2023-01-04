@@ -6,7 +6,7 @@
         "M M"
     ],
     "key": {
-        "M": { "item": "ruby:braunite_gem" }
+        "M": { "tag": "forge:gems/braunite" }
     },
     "result": {
         "item": "ruby:braunite_helmet"

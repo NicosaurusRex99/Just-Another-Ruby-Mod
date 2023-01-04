@@ -7,7 +7,7 @@
         " S "
     ],
     "key": {
-        "M": { "item": "ruby:ruby_gem" },
+        "M": { "tag": "forge:gems/ruby" },
         "S": { "item": "minecraft:stick" }
     },
     "result": {

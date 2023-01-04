@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/amethyst",
+    "#forge:ores/braunite",
+    "#forge:ores/meteorite",
+    "#forge:ores/opal",
+    "#forge:ores/ruby"
+  ]
+}

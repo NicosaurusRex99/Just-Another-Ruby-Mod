@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_boots",
+    "ruby:braunite_boots",
+    "ruby:meteorite_boots",
+    "ruby:opal_boots",
+    "ruby:ruby_boots"
+  ]
+}

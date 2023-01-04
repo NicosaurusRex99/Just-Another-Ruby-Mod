@@ -7,7 +7,7 @@
         " S "
     ],
     "key": {
-        "M": { "item": "ruby:opal_gem" },
+        "M": { "tag": "forge:gems/opal" },
         "S": { "item": "minecraft:stick" }
     },
     "result": {

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_helmet",
+    "ruby:braunite_helmet",
+    "ruby:meteorite_helmet",
+    "ruby:opal_helmet",
+    "ruby:ruby_helmet"
+  ]
+}

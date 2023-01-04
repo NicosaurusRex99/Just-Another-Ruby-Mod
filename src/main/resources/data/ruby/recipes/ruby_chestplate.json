@@ -7,7 +7,7 @@
         "MMM"
     ],
     "key": {
-        "M": { "item": "ruby:ruby_gem" }
+        "M": { "tag": "forge:gems/ruby" }
     },
     "result": {
         "item": "ruby:ruby_chestplate"

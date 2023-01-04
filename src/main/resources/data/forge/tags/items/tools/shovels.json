@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_shovel",
+    "ruby:braunite_shovel",
+    "ruby:meteorite_shovel",
+    "ruby:opal_shovel",
+    "ruby:ruby_shovel"
+  ]
+}

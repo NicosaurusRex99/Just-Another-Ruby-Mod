@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:smelting",
 	"ingredient": {
-		"item": "ruby:opal_ore"
+		"tag": "forge:ores/opal"
 	},
 	"result": "ruby:opal_gem",
 	"experience": 0.4,

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "ruby:braunite_ore"
+    "tag": "forge:ores/braunite"
   },
   "result": "ruby:braunite_gem",
   "experience": 1.0,
