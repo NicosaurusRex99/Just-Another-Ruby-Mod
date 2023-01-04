@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "ruby:amethyst_chestplates",
-    "ruby:braunite_chestplates",
-    "ruby:meteorite_chestplates",
-    "ruby:opal_chestplates",
-    "ruby:ruby_chestplates"
+    "ruby:amethyst_chestplate",
+    "ruby:braunite_chestplate",
+    "ruby:meteorite_chestplate",
+    "ruby:opal_chestplate",
+    "ruby:ruby_chestplate"
   ]
 }

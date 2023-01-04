@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "ruby:block/ruby_ore" }
+        "": { "model": "ruby:block/ruby_ore_deepslate" }
     }
 }
