@@ -18,8 +18,11 @@ public class BlockRegistry {
     private static int WOOD_GOLD = 0, STONE = 1, IRON = 2, DIAMOND = 3, NETHERITE = 4;
 
     public static final RegistryObject<Block> RUBY_ORE = createOreBlock("ruby_ore", Material.STONE, MaterialColor.COLOR_RED, 2, 4, DIAMOND, SoundType.STONE, true);
+    public static final RegistryObject<Block> RUBY_ORE_DEEPSLATE = createOreBlock("ruby_ore_deepslate", Material.STONE, MaterialColor.COLOR_RED, 2, 4, DIAMOND, SoundType.STONE, true);
     public static final RegistryObject<Block> BRAUNITE_ORE = createOreBlock("braunite_ore", Material.STONE, MaterialColor.COLOR_GRAY, 2, 4, DIAMOND, SoundType.STONE, true);
+    public static final RegistryObject<Block> BRAUNITE_ORE_DEEPSLATE = createOreBlock("braunite_ore_deepslate", Material.STONE, MaterialColor.COLOR_GRAY, 2, 4, DIAMOND, SoundType.STONE, true);
     public static final RegistryObject<Block> OPAL_ORE = createOreBlock("opal_ore", Material.STONE, MaterialColor.COLOR_LIGHT_BLUE, 2, 4, DIAMOND, SoundType.STONE, true);
+    public static final RegistryObject<Block> OPAL_ORE_DEEPSLATE = createOreBlock("opal_ore_deepslate", Material.STONE, MaterialColor.COLOR_LIGHT_BLUE, 2, 4, DIAMOND, SoundType.STONE, true);
     public static final RegistryObject<Block> AMETHYST = createOreBlock("amethyst", Material.STONE, MaterialColor.COLOR_PURPLE, 2, 4, DIAMOND, SoundType.STONE, false);
     public static final RegistryObject<Block> METEORITE_ORE = createOreBlock("meteorite_ore", Material.STONE, MaterialColor.COLOR_ORANGE, 5, 8, NETHERITE, SoundType.STONE, false);
     public static final RegistryObject<Block> BRAUNITE_BLOCK = createOreBlock("braunite_block", Material.STONE, MaterialColor.COLOR_GRAY, 2, 4, DIAMOND, SoundType.STONE, true);

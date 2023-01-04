@@ -4,8 +4,11 @@
   "biomes": "#is_overworld",
   "features": [
     "ruby:ruby_ore",
+    "ruby:ruby_ore_deepslate",
     "ruby:braunite_ore",
+    "ruby:braunite_ore_deepslate",
     "ruby:opal_ore",
+    "ruby:opal_ore_deepslate",
     "ruby:meteorite_ore",
     "ruby:amethyst_stone",
     "ruby:amethyst_deepslate"

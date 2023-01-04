@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ruby:ruby_ore"
+    "ruby:ruby_ore",
+    "ruby:ruby_ore_deepslate"
   ]
 }
