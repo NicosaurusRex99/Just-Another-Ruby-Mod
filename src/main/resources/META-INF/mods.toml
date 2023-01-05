@@ -17,7 +17,7 @@ Just another ruby mod, well not quite!
 [[dependencies.ruby]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[44,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.ruby]]
