@@ -36,6 +36,7 @@ public class Ruby
         bus.addListener(this::processIMC);
         BlockRegistry.BLOCKS.register(bus);
         ItemRegistry.ITEMS.register(bus);
+        BlockEntityRegistry.BLOCK_ENTITY.register(bus);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
         Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("Just Another Ruby Mod.toml"));
