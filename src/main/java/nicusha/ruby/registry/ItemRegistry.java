@@ -57,30 +57,30 @@ public class ItemRegistry {
     public static final RegistryObject<Item> OPAL_HOE = createHoeItem("opal_hoe", ToolTiers.OPAL, false);
     public static final RegistryObject<Item> RUBY_HOE = createHoeItem("ruby_hoe", ToolTiers.RUBY, false);
 
-    public static final RegistryObject<Item> AMETHYST_HELMET = createArmorItem("amethyst_helmet", amethystMat, EquipmentSlot.HEAD, false);
-    public static final RegistryObject<Item> AMETHYST_CHESTPLATE = createArmorItem("amethyst_chestplate", amethystMat, EquipmentSlot.CHEST, false);
-    public static final RegistryObject<Item> AMETHYST_LEGGINGS = createArmorItem("amethyst_leggings", amethystMat, EquipmentSlot.LEGS, false);
-    public static final RegistryObject<Item> AMETHYST_BOOTS = createArmorItem("amethyst_boots", amethystMat, EquipmentSlot.FEET, false);
+    public static final RegistryObject<Item> AMETHYST_HELMET = createArmorItem("amethyst_helmet", amethystMat, ArmorItem.Type.HELMET, false);
+    public static final RegistryObject<Item> AMETHYST_CHESTPLATE = createArmorItem("amethyst_chestplate", amethystMat, ArmorItem.Type.CHESTPLATE, false);
+    public static final RegistryObject<Item> AMETHYST_LEGGINGS = createArmorItem("amethyst_leggings", amethystMat, ArmorItem.Type.LEGGINGS, false);
+    public static final RegistryObject<Item> AMETHYST_BOOTS = createArmorItem("amethyst_boots", amethystMat, ArmorItem.Type.BOOTS, false);
 
-    public static final RegistryObject<Item> BRAUNITE_HELMET = createArmorItem("braunite_helmet", brauniteMat, EquipmentSlot.HEAD, false);
-    public static final RegistryObject<Item> BRAUNITE_CHESTPLATE = createArmorItem("braunite_chestplate", brauniteMat, EquipmentSlot.CHEST, false);
-    public static final RegistryObject<Item> BRAUNITE_LEGGINGS = createArmorItem("braunite_leggings", brauniteMat, EquipmentSlot.LEGS, false);
-    public static final RegistryObject<Item> BRAUNITE_BOOTS = createArmorItem("braunite_boots", brauniteMat, EquipmentSlot.FEET, false);
+    public static final RegistryObject<Item> BRAUNITE_HELMET = createArmorItem("braunite_helmet", brauniteMat, ArmorItem.Type.HELMET, false);
+    public static final RegistryObject<Item> BRAUNITE_CHESTPLATE = createArmorItem("braunite_chestplate", brauniteMat, ArmorItem.Type.CHESTPLATE, false);
+    public static final RegistryObject<Item> BRAUNITE_LEGGINGS = createArmorItem("braunite_leggings", brauniteMat, ArmorItem.Type.LEGGINGS, false);
+    public static final RegistryObject<Item> BRAUNITE_BOOTS = createArmorItem("braunite_boots", brauniteMat, ArmorItem.Type.BOOTS, false);
 
-    public static final RegistryObject<Item> METEORITE_HELMET = createArmorItem("meteorite_helmet", meteoriteMat, EquipmentSlot.HEAD, false);
-    public static final RegistryObject<Item> METEORITE_CHESTPLATE = createArmorItem("meteorite_chestplate", meteoriteMat, EquipmentSlot.CHEST, false);
-    public static final RegistryObject<Item> METEORITE_LEGGINGS = createArmorItem("meteorite_leggings", meteoriteMat, EquipmentSlot.LEGS, false);
-    public static final RegistryObject<Item> METEORITE_BOOTS = createArmorItem("meteorite_boots", meteoriteMat, EquipmentSlot.FEET, false);
+    public static final RegistryObject<Item> METEORITE_HELMET = createArmorItem("meteorite_helmet", meteoriteMat, ArmorItem.Type.HELMET, false);
+    public static final RegistryObject<Item> METEORITE_CHESTPLATE = createArmorItem("meteorite_chestplate", meteoriteMat, ArmorItem.Type.CHESTPLATE, false);
+    public static final RegistryObject<Item> METEORITE_LEGGINGS = createArmorItem("meteorite_leggings", meteoriteMat, ArmorItem.Type.LEGGINGS, false);
+    public static final RegistryObject<Item> METEORITE_BOOTS = createArmorItem("meteorite_boots", meteoriteMat, ArmorItem.Type.BOOTS, false);
 
-    public static final RegistryObject<Item> OPAL_HELMET = createArmorItem("opal_helmet", opalMat, EquipmentSlot.HEAD, false);
-    public static final RegistryObject<Item> OPAL_CHESTPLATE = createArmorItem("opal_chestplate", opalMat, EquipmentSlot.CHEST, false);
-    public static final RegistryObject<Item> OPAL_LEGGINGS = createArmorItem("opal_leggings", opalMat, EquipmentSlot.LEGS, false);
-    public static final RegistryObject<Item> OPAL_BOOTS = createArmorItem("opal_boots", opalMat, EquipmentSlot.FEET, false);
+    public static final RegistryObject<Item> OPAL_HELMET = createArmorItem("opal_helmet", opalMat, ArmorItem.Type.HELMET, false);
+    public static final RegistryObject<Item> OPAL_CHESTPLATE = createArmorItem("opal_chestplate", opalMat, ArmorItem.Type.CHESTPLATE, false);
+    public static final RegistryObject<Item> OPAL_LEGGINGS = createArmorItem("opal_leggings", opalMat, ArmorItem.Type.LEGGINGS, false);
+    public static final RegistryObject<Item> OPAL_BOOTS = createArmorItem("opal_boots", opalMat, ArmorItem.Type.BOOTS, false);
 
-    public static final RegistryObject<Item> RUBY_HELMET = createArmorItem("ruby_helmet", rubyMat, EquipmentSlot.HEAD, false);
-    public static final RegistryObject<Item> RUBY_CHESTPLATE = createArmorItem("ruby_chestplate", rubyMat, EquipmentSlot.CHEST, false);
-    public static final RegistryObject<Item> RUBY_LEGGINGS = createArmorItem("ruby_leggings", rubyMat, EquipmentSlot.LEGS, false);
-    public static final RegistryObject<Item> RUBY_BOOTS = createArmorItem("ruby_boots", rubyMat, EquipmentSlot.FEET, false);
+    public static final RegistryObject<Item> RUBY_HELMET = createArmorItem("ruby_helmet", rubyMat, ArmorItem.Type.HELMET, false);
+    public static final RegistryObject<Item> RUBY_CHESTPLATE = createArmorItem("ruby_chestplate", rubyMat, ArmorItem.Type.CHESTPLATE, false);
+    public static final RegistryObject<Item> RUBY_LEGGINGS = createArmorItem("ruby_leggings", rubyMat, ArmorItem.Type.LEGGINGS, false);
+    public static final RegistryObject<Item> RUBY_BOOTS = createArmorItem("ruby_boots", rubyMat, ArmorItem.Type.BOOTS, false);
 
     private static RegistryObject<Item> createItem(String id, boolean isFireProof){
         if(isFireProof){
@@ -125,7 +125,7 @@ public class ItemRegistry {
         return ITEMS.register(id, () -> new HoeItem(tier, tier.getLevel(), -3F, new Item.Properties()));
     }
 
-    private static RegistryObject<Item> createArmorItem(String id, ArmorMaterial material, EquipmentSlot slot, boolean isFireProof){
+    private static RegistryObject<Item> createArmorItem(String id, ArmorMaterial material, ArmorItem.Type slot, boolean isFireProof){
                 if (isFireProof) {
                     return ITEMS.register(id, () -> new ArmorItem(material, slot, new Item.Properties().fireResistant()));
                 }

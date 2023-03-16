@@ -71,7 +71,7 @@ public class Ruby
 
 
     public static void registerTab(CreativeModeTabEvent.Register event){
-        event.registerCreativeModeTab(TAB, builder -> builder.title(Component.translatable("itemGroup.ruby")).icon(Ruby::makeIcon).displayItems((flags, output, isOp) -> {
+        event.registerCreativeModeTab(TAB, builder -> builder.title(Component.translatable("itemGroup.ruby")).icon(Ruby::makeIcon).displayItems((flags, output) -> {
             for(RegistryObject<Item> item : ItemRegistry.ITEMS.getEntries()){
                 output.accept(item.get());
             }

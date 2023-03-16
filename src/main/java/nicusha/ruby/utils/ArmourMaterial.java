@@ -24,14 +24,15 @@ public class ArmourMaterial implements ArmorMaterial {
         this.soundEvent = soundEvent;
         this.repairMaterial = repairMaterial;
     }
+
     @Override
-    public int getDurabilityForSlot(EquipmentSlot p_40410_) {
+    public int getDurabilityForType(ArmorItem.Type type) {
         return durability;
     }
 
     @Override
-    public int getDefenseForSlot(EquipmentSlot slot) {
-        return damageReduction[slot.getIndex()];
+    public int getDefenseForType(ArmorItem.Type type) {
+        return damageReduction[type.getSlot().getIndex()];
     }
 
     @Override
