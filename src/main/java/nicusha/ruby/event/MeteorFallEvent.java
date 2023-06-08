@@ -18,11 +18,11 @@ public class MeteorFallEvent {
     @SubscribeEvent
     public void meteorFall(TickEvent.PlayerTickEvent event){
         Player player = event.player;
-        Level world = player.level;
+        Level world = player.level();
         RandomSource random = world.random;
         BlockPos pos = player.blockPosition().below();
         BlockState state = BlockRegistry.METEORITE_ORE.get().defaultBlockState();
-        if (random.nextInt(Config.METEORFREQUENCY.get() * 100) == 0 && player.level.canSeeSky(pos) && !world.isClientSide && world.canSeeSky(player.blockPosition().above())) {
+        if (random.nextInt(Config.METEORFREQUENCY.get() * 100) == 0 && player.level().canSeeSky(pos) && !world.isClientSide && world.canSeeSky(player.blockPosition().above())) {
             world.setBlockAndUpdate(pos, state);
         }
     }
