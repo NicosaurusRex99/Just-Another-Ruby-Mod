@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '2.6'
+version = '2.6.1'
 group = 'nicusha.ruby' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ruby'
 
@@ -92,18 +92,15 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20-46.0.1'
-//    compileOnly fg.deobf("mezz.jei:jei-1.19.3-common-api:12.0.2.6") //Just Enough Items
-//    compileOnly fg.deobf("mezz.jei:jei-1.19.3-forge-api:12.0.2.6") //Just Enough Items
-//    runtimeOnly fg.deobf("mezz.jei:jei-1.19.3-common:12.0.2.6") //Just Enough Items
-//    runtimeOnly fg.deobf("mezz.jei:jei-1.19.3-forge:12.0.2.6") //Just Enough Items
-//    compileOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
-//    runtimeOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:3951643") //Just Enough Resources
-//    compileOnly fg.deobf("net.darkhax.bookshelf:Bookshelf-Forge-1.19.3:17.0.3") //Bookshelf
-//    compileOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
-//    runtimeOnly fg.deobf("curse.maven:projecte-226410:3941395") //ProjectE
-//    compileOnly fg.deobf("curse.maven:enchantment-descriptions-250419:4277371") //Enchantment Descriptions
-//    runtimeOnly fg.deobf("curse.maven:jade-324717:4330163") //Jade
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.23") //Just Enough Items
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.23") //Just Enough Items
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.2.0.23") //Just Enough Items
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.23") //Just Enough Items
+    compileOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:4631691") //Just Enough Resources
+    runtimeOnly fg.deobf("curse.maven:just-enough-resources-jer-240630:4631691") //Just Enough Resources
+    compileOnly fg.deobf("curse.maven:projecte-226410:4860859") //ProjectE
+    runtimeOnly fg.deobf("curse.maven:projecte-226410:4860859") //ProjectE
 
 }
 
@@ -112,7 +109,7 @@ jar {
         attributes([
                 "Specification-Title"     : "ruby",
                 "Specification-Vendor"    : "Nicusha",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "Nicusha",
