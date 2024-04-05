@@ -1,5 +1,6 @@
 package nicusha.ruby.blocks;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.*;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
@@ -15,6 +16,12 @@ public class Amethyst extends BaseEntityBlock {
 
     public Amethyst(Properties properties) {
         super(properties);
+    }
+
+    public static final MapCodec<Amethyst> CODEC = simpleCodec(Amethyst::new);
+    @Override
+    protected MapCodec<? extends BaseEntityBlock> codec() {
+        return CODEC;
     }
 
     protected static final VoxelShape SHAPE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 4.0D, 12.0D);

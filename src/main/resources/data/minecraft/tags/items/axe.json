@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_axe",
+    "ruby:braunite_axe",
+    "ruby:meteorite_axe",
+    "ruby:opal_axe",
+    "ruby:ruby_axe"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "ruby:amethyst_helmet",
+    "ruby:braunite_helmet",
+    "ruby:meteorite_helmet",
+    "ruby:opal_helmet",
+    "ruby:ruby_helmet",
+    "ruby:amethyst_chestplate",
+    "ruby:braunite_chestplate",
+    "ruby:meteorite_chestplate",
+    "ruby:opal_chestplate",
+    "ruby:ruby_chestplate",
+    "ruby:amethyst_leggings",
+    "ruby:braunite_leggings",
+    "ruby:meteorite_leggings",
+    "ruby:opal_leggings",
+    "ruby:ruby_leggings",
+    "ruby:amethyst_boots",
+    "ruby:braunite_boots",
+    "ruby:meteorite_boots",
+    "ruby:opal_boots",
+    "ruby:ruby_boots"
+  ]
+}
