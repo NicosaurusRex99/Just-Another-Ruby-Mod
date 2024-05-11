@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:ores/braunite",
-    "#forge:ores/opal",
-    "#forge:ores/ruby"
-  ]
-}

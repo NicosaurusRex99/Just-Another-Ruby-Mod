@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:ores/amethyst",
+    "#c:ores/braunite",
+    "#c:ores/meteorite",
+    "#c:ores/opal",
+    "#c:ores/ruby"
+  ]
+}

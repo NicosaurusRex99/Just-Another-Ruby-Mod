@@ -1,9 +1,11 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "forge:ores/opal"
+    "tag": "c:ores/opal"
   },
-  "result": "ruby:opal_gem",
-  "experience": 1.0,
+  "result": {
+    "id": "ruby:opal_gem"
+  },
+  "experience": 1,
   "cookingtime": 100
 }

@@ -1,7 +1,7 @@
 
 {
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
   "features": [
     "ruby:ruby_ore",
     "ruby:ruby_ore_deepslate",

@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#forge:gravel",
+    "#c:gravels",
     "minecraft:dirt",
     "minecraft:snow_block",
     "minecraft:sand",
-    "#forge:stone"
+    "#c:stones"
   ]
 }

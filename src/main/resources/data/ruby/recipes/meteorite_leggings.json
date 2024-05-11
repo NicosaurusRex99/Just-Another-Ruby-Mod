@@ -4,12 +4,14 @@
     "pattern": [
         "MMM",
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/meteorite" }
+        "M": {
+            "tag": "c:gems/meteorite"
+        }
     },
     "result": {
-        "item": "ruby:meteorite_leggings"
+        "id": "ruby:meteorite_leggings"
     }
 }

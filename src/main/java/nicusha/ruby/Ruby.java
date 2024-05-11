@@ -1,60 +1,69 @@
 package nicusha.ruby;
 
-import com.mojang.logging.LogUtils;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.*;
-import net.minecraftforge.fml.*;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.*;
-import net.minecraftforge.fml.event.lifecycle.*;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.*;
-import nicusha.ruby.integration.ModCompat;
-import nicusha.ruby.registry.*;
+import net.minecraft.core.BlockPos;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import nicusha.ruby.registry.ArmourMaterialRegistry;
+import nicusha.ruby.registry.BlockRegistry;
+import nicusha.ruby.registry.CreativeTabRegistry;
+import nicusha.ruby.registry.ItemRegistry;
 import org.slf4j.Logger;
 
+import com.mojang.logging.LogUtils;
 
-@Mod("ruby")
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = Ruby.MODID)
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+
+@Mod(Ruby.MODID)
 public class Ruby
 {
-    public static final Logger LOGGER = LogUtils.getLogger();
     public static final String MODID = "ruby";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-    public Ruby()
+    public Ruby(IEventBus bus, ModContainer container)
     {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        bus.addListener(this::client);
-        bus.addListener(this::setup);
-        bus.addListener(this::enqueueIMC);
-        bus.addListener(this::processIMC);
+        bus.addListener(this::commonSetup);
+
         BlockRegistry.BLOCKS.register(bus);
         ItemRegistry.ITEMS.register(bus);
-        BlockEntityRegistry.BLOCK_ENTITY.register(bus);
-        CreativeTabRegistry.TABS.register(bus);
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
-        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("Just Another Ruby Mod.toml"));
-
-        MinecraftForge.EVENT_BUS.register(this);
+        CreativeTabRegistry.CREATIVE_MODE_TABS.register(bus);
+        ArmourMaterialRegistry.ARMOR_MATERIALS.register(bus);
+        NeoForge.EVENT_BUS.register(this);
+        bus.addListener(this::addCreative);
+        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void client(final FMLClientSetupEvent event){
-    }
-
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        ModCompat.initCommon(event);
-    }
-
-    private void enqueueIMC(final InterModEnqueueEvent event)
+    private void commonSetup(final FMLCommonSetupEvent event)
     {
 
     }
 
-    private void processIMC(final InterModProcessEvent event)
-    {
-
+    @SubscribeEvent
+    public void meteorFall(PlayerTickEvent.Post event){
+        Player player = event.getEntity();
+        Level world = player.level();
+        RandomSource random = world.random;
+        BlockPos pos = player.blockPosition().below();
+        BlockState state = BlockRegistry.METEORITE_ORE.get().defaultBlockState();
+        if (random.nextInt(Config.METEOR_FREQUENCY * 100) == 0 && player.level().canSeeSky(pos) && !world.isClientSide && world.canSeeSky(player.blockPosition().above())) {
+            world.setBlockAndUpdate(pos, state);
+        }
     }
 
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    if (event.getTabKey() == CreativeTabRegistry.TAB.getKey())
+        for (var regObj : ItemRegistry.ITEMS.getEntries()) {
+            event.accept(regObj.get());
+
+        }
+}
 }

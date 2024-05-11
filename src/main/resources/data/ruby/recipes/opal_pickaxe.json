@@ -7,10 +7,14 @@
         " S "
     ],
     "key": {
-        "M": { "tag": "forge:gems/opal" },
-        "S": { "item": "minecraft:stick" }
+        "M": {
+            "tag": "c:gems/opal"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "ruby:opal_pickaxe"
+        "id": "ruby:opal_pickaxe"
     }
 }

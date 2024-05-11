@@ -1,26 +1,21 @@
 package nicusha.ruby.blocks;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.core.*;
-import net.minecraft.world.level.*;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.*;
-import net.minecraft.world.level.block.state.*;
-import net.minecraft.world.phys.shapes.*;
-import nicusha.ruby.blocks.block_entity.AmethystBlockEntity;
-import nicusha.ruby.registry.BlockEntityRegistry;
-import org.checkerframework.checker.units.qual.A;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class Amethyst extends BaseEntityBlock {
-
+public class Amethyst extends Block {
     public Amethyst(Properties properties) {
         super(properties);
     }
 
     public static final MapCodec<Amethyst> CODEC = simpleCodec(Amethyst::new);
     @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
+    protected MapCodec<? extends Block> codec() {
         return CODEC;
     }
 
@@ -29,17 +24,5 @@ public class Amethyst extends BaseEntityBlock {
     @Override
     public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
         return SHAPE;
-    }
-    @Override
-    public RenderShape getRenderShape(BlockState state) {return RenderShape.MODEL;}
-
-    @Nullable
-    @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new AmethystBlockEntity(pos, state);
-    }
-    @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        return level.isClientSide ? null : createTickerHelper(type, BlockEntityRegistry.AMETHYST.get(), AmethystBlockEntity::serverTick);
     }
 }

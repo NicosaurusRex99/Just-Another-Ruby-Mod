@@ -6,9 +6,11 @@
         "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/opal" }
+        "M": {
+            "tag": "c:gems/opal"
+        }
     },
     "result": {
-        "item": "ruby:opal_helmet"
+        "id": "ruby:opal_helmet"
     }
 }

@@ -1,52 +1,37 @@
 package nicusha.ruby;
-import com.electronwill.nightconfig.core.file.CommentedFileConfig;
-import com.electronwill.nightconfig.core.io.WritingMode;
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 
-import java.nio.file.Path;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-@Mod.EventBusSubscriber
-public class Config {
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.config.ModConfigEvent;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-    public static final String CATEGORY_GENERAL = "general";
+@EventBusSubscriber(modid = Ruby.MODID, bus = EventBusSubscriber.Bus.MOD)
+public class Config
+{
+    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
+    private static final ModConfigSpec.IntValue METEOR_COUNT = BUILDER.comment("meteor frequency").defineInRange("meteorFrequency", 100000, 0, Integer.MAX_VALUE);
 
-    public static ForgeConfigSpec COMMON_CONFIG;
+    static final ModConfigSpec SPEC = BUILDER.build();
 
-    public static ForgeConfigSpec.IntValue METEORFREQUENCY;
+    public static int METEOR_FREQUENCY;
 
-    static {
-
-        COMMON_BUILDER.comment("General settings").push(CATEGORY_GENERAL);
-        COMMON_BUILDER.pop();
-
-        setupConfig();
-
-        COMMON_CONFIG = COMMON_BUILDER.build();
+    private static boolean validateItemName(final Object obj)
+    {
+        return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(new ResourceLocation(itemName));
     }
 
-    private static void setupConfig() {
-        COMMON_BUILDER.comment("General settings").push(CATEGORY_GENERAL);
-        METEORFREQUENCY = COMMON_BUILDER.comment("Lower number is more frequent")
-                .defineInRange("Meteor Frequency", 100000, 1, 100000000);
-        COMMON_BUILDER.pop();
+    @SubscribeEvent
+    static void onLoad(final ModConfigEvent event)
+    {
+        METEOR_FREQUENCY = METEOR_COUNT.get();
+
     }
-
-    public static void loadConfig(ForgeConfigSpec spec, Path path) {
-
-        final CommentedFileConfig configData = CommentedFileConfig.builder(path)
-                .sync()
-                .autosave()
-                .writingMode(WritingMode.REPLACE)
-                .build();
-
-        configData.load();
-        spec.setConfig(configData);
-    }
-
-
 }

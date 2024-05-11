@@ -6,9 +6,11 @@
         "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/meteorite" }
+        "M": {
+            "tag": "c:gems/meteorite"
+        }
     },
     "result": {
-        "item": "ruby:meteorite_helmet"
+        "id": "ruby:meteorite_helmet"
     }
 }

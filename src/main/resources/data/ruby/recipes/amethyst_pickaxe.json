@@ -7,10 +7,14 @@
         " S "
     ],
     "key": {
-        "M": { "tag": "forge:gems/amethyst" },
-        "S": { "item": "minecraft:stick" }
+        "M": {
+            "tag": "c:gems/amethyst"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "ruby:amethyst_pickaxe"
+        "id": "ruby:amethyst_pickaxe"
     }
 }

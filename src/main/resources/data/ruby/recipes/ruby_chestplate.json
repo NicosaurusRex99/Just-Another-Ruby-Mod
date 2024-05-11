@@ -7,9 +7,11 @@
         "MMM"
     ],
     "key": {
-        "M": { "tag": "forge:gems/ruby" }
+        "M": {
+            "tag": "c:gems/ruby"
+        }
     },
     "result": {
-        "item": "ruby:ruby_chestplate"
+        "id": "ruby:ruby_chestplate"
     }
 }

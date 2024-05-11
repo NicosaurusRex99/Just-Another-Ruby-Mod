@@ -3,12 +3,14 @@
     "group": "opal",
     "pattern": [
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/opal" }
+        "M": {
+            "tag": "c:gems/opal"
+        }
     },
     "result": {
-        "item": "ruby:opal_boots"
+        "id": "ruby:opal_boots"
     }
 }

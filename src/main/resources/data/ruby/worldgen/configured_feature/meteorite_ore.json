@@ -7,7 +7,7 @@
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "ruby:meteorite_spawn"
+          "tag": "c:meteorite_spawn"
         },
         "state": {
           "Name": "ruby:meteorite_ore"

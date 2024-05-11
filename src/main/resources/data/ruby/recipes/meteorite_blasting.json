@@ -1,9 +1,11 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "forge:ores/meteorite"
+    "tag": "c:ores/meteorite"
   },
-  "result": "ruby:meteorite_gem",
-  "experience": 1.0,
+  "result": {
+    "id": "ruby:meteorite_gem"
+  },
+  "experience": 1,
   "cookingtime": 100
 }

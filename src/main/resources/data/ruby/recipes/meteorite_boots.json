@@ -3,12 +3,14 @@
     "group": "meteorite",
     "pattern": [
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/meteorite" }
+        "M": {
+            "tag": "c:gems/meteorite"
+        }
     },
     "result": {
-        "item": "ruby:meteorite_boots"
+        "id": "ruby:meteorite_boots"
     }
 }

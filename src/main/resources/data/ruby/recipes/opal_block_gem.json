@@ -1,11 +1,13 @@
 {
-	"type" : "minecraft:crafting_shapeless",
+	"type": "minecraft:crafting_shapeless",
 	"group": "opal_gem",
-	"ingredients" : [
-		{ 		"tag": "forge:storage_blocks/opal" }
+	"ingredients": [
+		{
+			"tag": "c:storage_blocks/opal"
+		}
 	],
-	"result" : {
-		"item" : "ruby:opal_gem",
-		"count" : 9
+	"result": {
+		"id": "ruby:opal_gem",
+		"count": 9
 	}
 }

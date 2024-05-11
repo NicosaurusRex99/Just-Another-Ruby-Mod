@@ -7,9 +7,11 @@
         "MMM"
     ],
     "key": {
-        "M": { "tag": "forge:gems/meteorite" }
+        "M": {
+            "tag": "c:gems/meteorite"
+        }
     },
     "result": {
-        "item": "ruby:meteorite_chestplate"
+        "id": "ruby:meteorite_chestplate"
     }
 }

@@ -6,9 +6,11 @@
         "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/braunite" }
+        "M": {
+            "tag": "c:gems/braunite"
+        }
     },
     "result": {
-        "item": "ruby:braunite_helmet"
+        "id": "ruby:braunite_helmet"
     }
 }

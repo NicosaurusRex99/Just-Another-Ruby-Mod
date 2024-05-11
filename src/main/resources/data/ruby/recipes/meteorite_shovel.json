@@ -7,10 +7,14 @@
         "S"
     ],
     "key": {
-        "M": { "tag": "forge:gems/meteorite" },
-        "S": { "item": "minecraft:stick" }
+        "M": {
+            "tag": "c:gems/meteorite"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "ruby:meteorite_shovel"
+        "id": "ruby:meteorite_shovel"
     }
 }

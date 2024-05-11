@@ -7,10 +7,14 @@
         "S"
     ],
     "key": {
-        "M": { "tag": "forge:gems/ruby" },
-        "S": { "item": "minecraft:stick" }
+        "M": {
+            "tag": "c:gems/ruby"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "ruby:ruby_sword"
+        "id": "ruby:ruby_sword"
     }
 }

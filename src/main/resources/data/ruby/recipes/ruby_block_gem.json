@@ -1,11 +1,13 @@
 {
-	"type" : "minecraft:crafting_shapeless",
+	"type": "minecraft:crafting_shapeless",
 	"group": "ruby_gem",
-	"ingredients" : [
-		{ "tag" : "forge:storage_blocks/ruby" }
+	"ingredients": [
+		{
+			"tag": "c:storage_blocks/ruby"
+		}
 	],
-	"result" : {
-		"item" : "ruby:ruby_gem",
-		"count" : 9
+	"result": {
+		"id": "ruby:ruby_gem",
+		"count": 9
 	}
 }

@@ -4,12 +4,14 @@
     "pattern": [
         "MMM",
         "MMM",
-		"MMM"
+        "MMM"
     ],
     "key": {
-        "M": { "tag": "forge:gems/opal" }
+        "M": {
+            "tag": "c:gems/opal"
+        }
     },
     "result": {
-        "item": "ruby:opal_block"
+        "id": "ruby:opal_block"
     }
 }

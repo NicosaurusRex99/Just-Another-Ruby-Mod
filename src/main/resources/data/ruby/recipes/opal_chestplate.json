@@ -7,9 +7,11 @@
         "MMM"
     ],
     "key": {
-        "M": { "tag": "forge:gems/opal" }
+        "M": {
+            "tag": "c:gems/opal"
+        }
     },
     "result": {
-        "item": "ruby:opal_chestplate"
+        "id": "ruby:opal_chestplate"
     }
 }

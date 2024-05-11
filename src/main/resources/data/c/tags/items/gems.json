@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:gems/amethyst",
+    "#c:gems/braunite",
+    "#c:gems/meteorite",
+    "#c:gems/opal",
+    "#c:gems/ruby"
+  ]
+}

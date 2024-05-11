@@ -3,12 +3,14 @@
     "group": "braunite",
     "pattern": [
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/braunite" }
+        "M": {
+            "tag": "c:gems/braunite"
+        }
     },
     "result": {
-        "item": "ruby:braunite_boots"
+        "id": "ruby:braunite_boots"
     }
 }

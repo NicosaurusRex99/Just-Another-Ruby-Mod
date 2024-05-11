@@ -1,9 +1,11 @@
 {
 	"type": "minecraft:smelting",
 	"ingredient": {
-		"tag": "forge:ores/opal"
+		"tag": "c:ores/opal"
 	},
-	"result": "ruby:opal_gem",
+	"result": {
+		"id": "ruby:opal_gem"
+	},
 	"experience": 0.4,
 	"cookingtime": 200
 }

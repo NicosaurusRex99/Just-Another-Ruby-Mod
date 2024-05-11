@@ -4,12 +4,14 @@
     "pattern": [
         "MMM",
         "MMM",
-		"MMM"
+        "MMM"
     ],
     "key": {
-        "M": { "tag": "forge:gems/ruby" }
+        "M": {
+            "tag": "c:gems/ruby"
+        }
     },
     "result": {
-        "item": "ruby:ruby_block"
+        "id": "ruby:ruby_block"
     }
 }

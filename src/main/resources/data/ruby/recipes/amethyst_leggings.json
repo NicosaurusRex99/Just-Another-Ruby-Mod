@@ -4,12 +4,14 @@
     "pattern": [
         "MMM",
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/amethyst" }
+        "M": {
+            "tag": "c:gems/amethyst"
+        }
     },
     "result": {
-        "item": "ruby:amethyst_leggings"
+        "id": "ruby:amethyst_leggings"
     }
 }

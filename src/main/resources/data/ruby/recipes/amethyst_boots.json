@@ -3,12 +3,14 @@
     "group": "amethyst",
     "pattern": [
         "M M",
-		"M M"
+        "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/amethyst" }
+        "M": {
+            "tag": "c:gems/amethyst"
+        }
     },
     "result": {
-        "item": "ruby:amethyst_boots"
+        "id": "ruby:amethyst_boots"
     }
 }

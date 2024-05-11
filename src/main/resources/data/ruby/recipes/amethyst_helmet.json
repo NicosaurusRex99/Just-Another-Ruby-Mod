@@ -6,9 +6,11 @@
         "M M"
     ],
     "key": {
-        "M": { "tag": "forge:gems/amethyst" }
+        "M": {
+            "tag": "c:gems/amethyst"
+        }
     },
     "result": {
-        "item": "ruby:amethyst_helmet"
+        "id": "ruby:amethyst_helmet"
     }
 }

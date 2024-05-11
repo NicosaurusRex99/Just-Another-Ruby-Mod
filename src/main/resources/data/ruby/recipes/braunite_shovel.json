@@ -7,10 +7,14 @@
         "S"
     ],
     "key": {
-        "M": { "tag": "forge:gems/braunite" },
-        "S": { "item": "minecraft:stick" }
+        "M": {
+            "tag": "c:gems/braunite"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "ruby:braunite_shovel"
+        "id": "ruby:braunite_shovel"
     }
 }
