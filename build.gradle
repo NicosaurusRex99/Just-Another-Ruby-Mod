@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.120'
+    id 'net.neoforged.gradle.userdev' version '7.0.142'
 }
 
 version = mod_version
@@ -12,6 +12,8 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.blamejared.com/" }
+    maven { url "https://modmaven.dev" }
 }
 
 base {
@@ -59,6 +61,9 @@ dependencies {
 //    implementation "me.shedaniel.cloth:cloth-config-neoforge:${cloth_version}"
 //    implementation "dev.architectury:architectury-neoforge:${architectury_version}"
 //    implementation "me.shedaniel:RoughlyEnoughItems-neoforge:${rei_version}"
+    compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 }
 
 tasks.withType(ProcessResources).configureEach {

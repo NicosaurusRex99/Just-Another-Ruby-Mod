@@ -1,5 +1,5 @@
 {
-  "feature": "ruby:amethyst_deepslate",
+  "feature": "ruby:amethyst",
   "placement": [
     {
       "type": "minecraft:count",
@@ -12,11 +12,11 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:trapezoid",
-        "min_inclusive": {
-          "absolute": -64
-        },
         "max_inclusive": {
-          "absolute": 0
+          "above_bottom": 48
+        },
+        "min_inclusive": {
+          "above_bottom": -80
         }
       }
     },

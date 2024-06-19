@@ -9,11 +9,11 @@ import nicusha.ruby.*;
 
 public enum ToolTiers implements Tier {
 
-    OPAL(BlockTags.INCORRECT_FOR_IRON_TOOL, 1200, 4.0F, 1.1F, 8, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "opal_repair")))),
-    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 4096, 3.5F, 5.0F, 8, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "ruby_repair")))),
-    METEORITE(BlockTags.INCORRECT_FOR_IRON_TOOL, 8521, 8.0F, 4.0F, 12, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "meteorite_gem")))),
-    AMETHYST(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6723, 14.0F, 4.0F, 3, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "amethyst_repair")))),
-    BRAUNITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6723, 13.0F, 2.4F, 15, Ingredient.of(ItemTags.create(new ResourceLocation(Ruby.MODID, "braunite_gem"))));
+    OPAL(BlockTags.INCORRECT_FOR_IRON_TOOL, 1200, 4.0F, 1.1F, 8, Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Ruby.MODID, "opal_repair")))),
+    RUBY(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 4096, 3.5F, 5.0F, 8, Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Ruby.MODID, "ruby_repair")))),
+    METEORITE(BlockTags.INCORRECT_FOR_IRON_TOOL, 8521, 8.0F, 4.0F, 12, Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Ruby.MODID, "meteorite_gem")))),
+    AMETHYST(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6723, 14.0F, 4.0F, 3, Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Ruby.MODID, "amethyst_repair")))),
+    BRAUNITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 6723, 13.0F, 2.4F, 15, Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath(Ruby.MODID, "braunite_gem"))));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int maxUses;
