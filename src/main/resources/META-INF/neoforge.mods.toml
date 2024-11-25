@@ -1,13 +1,13 @@
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
-license="${mod_license}"
+loaderVersion="[4,)"
+license="https://legacy.curseforge.com/project/224678/license"
 issueTrackerURL="https://github.com/NicosaurusRex99/Just-Another-Ruby-Mod/issues"
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
+modId="ruby"
+version="2.6.6"
+displayName="Just another ruby mod!"
 updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/Just-Another-Ruby-Mod/master/jarm_update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files"
 logoFile="ruby.png"
-authors="${mod_authors}"
-description='''${mod_description}'''
+authors="Nicusha"
+description='''Just another ruby mod... \nwell not quite!'''
