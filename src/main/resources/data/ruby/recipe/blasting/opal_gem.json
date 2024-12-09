@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "#c:ores/opal",
+  "result": {
+    "id": "ruby:opal_gem"
+  },
+  "experience": 1,
+  "cookingtime": 100
+}

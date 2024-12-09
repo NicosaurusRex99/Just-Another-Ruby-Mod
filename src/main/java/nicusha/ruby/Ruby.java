@@ -6,7 +6,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import nicusha.ruby.registry.ArmourMaterialRegistry;
 import nicusha.ruby.registry.BlockRegistry;
 import nicusha.ruby.registry.CreativeTabRegistry;
 import nicusha.ruby.registry.ItemRegistry;
@@ -31,15 +30,13 @@ public class Ruby
 
     public Ruby(IEventBus bus, ModContainer container)
     {
-        bus.addListener(this::commonSetup);
-
         BlockRegistry.BLOCKS.register(bus);
         ItemRegistry.ITEMS.register(bus);
         CreativeTabRegistry.CREATIVE_MODE_TABS.register(bus);
-        ArmourMaterialRegistry.ARMOR_MATERIALS.register(bus);
         NeoForge.EVENT_BUS.register(this);
         bus.addListener(this::addCreative);
-        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        bus.addListener(this::commonSetup);
+        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC, MODID + ".toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -65,5 +62,6 @@ public class Ruby
             event.accept(regObj.get());
 
         }
+
 }
 }

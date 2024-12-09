@@ -58,7 +58,7 @@
     "item.ruby.ruby_chestplate": "Ruby Chestplate",
     "item.ruby.ruby_leggings": "Ruby Leggings",
     "item.ruby.ruby_boots": "Ruby Boots",
-	
+
     "block.ruby.ruby_ore": "Ruby Ore",
     "block.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
@@ -67,9 +67,21 @@
     "block.ruby.braunite_ore": "Braunite Ore",
     "block.ruby.braunite_ore_deepslate": "Braunite Ore Deepslate",
     "block.ruby.amethyst": "Amethyst",
-	"block.ruby.ruby_block": "Block of Ruby",
+    "block.ruby.ruby_block": "Block of Ruby",
     "block.ruby.opal_block": "Block of Opal",
     "block.ruby.braunite_block": "Block of Braunite",
+
+    "item.ruby.ruby_ore": "Ruby Ore",
+    "item.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
+    "item.ruby.meteorite_ore": "Meteorite",
+    "item.ruby.opal_ore": "Opal Ore",
+    "item.ruby.opal_ore_deepslate": "Deepslate Opal Ore",
+    "item.ruby.braunite_ore": "Braunite Ore",
+    "item.ruby.braunite_ore_deepslate": "Braunite Ore Deepslate",
+    "item.ruby.amethyst": "Amethyst",
+    "item.ruby.ruby_block": "Block of Ruby",
+    "item.ruby.opal_block": "Block of Opal",
+    "item.ruby.braunite_block": "Block of Braunite",
 		
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ruby:meteorite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ruby:meteorite"
+      }
+    ]
+  }
+}

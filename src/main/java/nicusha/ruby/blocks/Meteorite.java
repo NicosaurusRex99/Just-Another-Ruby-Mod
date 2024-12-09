@@ -21,7 +21,7 @@ public class Meteorite extends FallingBlock {
     protected static final VoxelShape SHAPE = Block.box(1D, 0.0D, 1D, 14D, 10D, 14D);
 
     @Override
-    public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
 }

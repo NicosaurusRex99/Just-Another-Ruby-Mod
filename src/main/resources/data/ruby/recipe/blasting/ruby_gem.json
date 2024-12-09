@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "#c:ores/ruby",
+  "result": {
+    "id": "ruby:ruby_gem"
+  },
+  "experience": 1,
+  "cookingtime": 100
+}

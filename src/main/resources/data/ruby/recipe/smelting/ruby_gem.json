@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": "#c:ores/ruby",
+	"result": {
+		"id": "ruby:ruby_gem"
+	},
+	"experience": 0.4,
+	"cookingtime": 200
+}

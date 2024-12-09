@@ -1,11 +1,10 @@
 {
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/) edited by NicosaurusRex99",
-    "render_type": "cutout_mipped",
     "textures": {
         "particle": "ruby:block/amethystrock",
         "0": "ruby:block/amethystrock",
         "1": "ruby:block/amethystrocktop",
-        "2": "ruby:block/amethystrockbottom"
+        "2": "ruby:block/amethystrockbottom",
+        "-1": "ruby:block/amethystrockbottom"
     },
     "display": {
         "gui": {

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "meteorite",
+    "pattern": [
+        "M",
+        "M",
+        "S"
+    ],
+    "key": {
+        "M": "#c:gems/meteorite",
+        "S": "minecraft:stick"
+    },
+    "result": {
+        "id": "ruby:meteorite_sword"
+    }
+}

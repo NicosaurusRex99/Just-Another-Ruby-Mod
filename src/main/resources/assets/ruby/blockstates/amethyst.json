@@ -1,5 +1,7 @@
 {
     "variants": {
-        "": { "model": "ruby:block/amethyst" }
+        "": {
+            "model": "ruby:block/amethyst"
+        }
     }
 }

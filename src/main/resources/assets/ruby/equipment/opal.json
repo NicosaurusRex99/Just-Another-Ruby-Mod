@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ruby:opal"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ruby:opal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "meteorite",
+    "pattern": [
+        "M M",
+        "M M"
+    ],
+    "key": {
+        "M": "#c:gems/meteorite"
+    },
+    "result": {
+        "id": "ruby:meteorite_boots"
+    }
+}

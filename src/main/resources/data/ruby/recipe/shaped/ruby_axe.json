@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ruby",
+    "pattern": [
+        "MM",
+        "MS",
+        " S"
+    ],
+    "key": {
+        "M": "#c:gems/ruby",
+        "S": "minecraft:stick"
+    },
+    "result": {
+        "id": "ruby:ruby_axe"
+    }
+}
