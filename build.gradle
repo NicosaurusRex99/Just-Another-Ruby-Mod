@@ -16,6 +16,7 @@ repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.blamejared.com/" }
     maven { url "https://modmaven.dev" }
+    maven { url "<https://maven.architectury.dev/>" }
 }
 
 base {
@@ -79,6 +80,11 @@ dependencies {
 //    compileOnly("mezz.jei:jei-1.21.1-common-api:${jei_version}")
 //    compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${jei_version}")
 //    runtimeOnly("mezz.jei:jei-1.21.1-neoforge:${jei_version}")
+
+//    runtimeOnly("me.shedaniel.cloth:cloth-config-neoforge:$cloth_version")
+//    runtimeOnly("me.shedaniel:RoughlyEnoughItems-api-neoforge:$rei_version")
+//    runtimeOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-neoforge:$rei_version")
+
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

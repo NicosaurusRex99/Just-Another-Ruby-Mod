@@ -6,7 +6,7 @@
         "M M"
     ],
     "key": {
-        "M": "c:gems/amethyst"
+        "M": "#c:gems/amethyst"
     },
     "result": {
         "id": "ruby:amethyst_helmet"

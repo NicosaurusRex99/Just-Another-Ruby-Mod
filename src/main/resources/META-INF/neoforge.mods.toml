@@ -4,7 +4,7 @@ license="https://legacy.curseforge.com/project/224678/license"
 issueTrackerURL="https://github.com/NicosaurusRex99/Just-Another-Ruby-Mod/issues"
 [[mods]]
 modId="ruby"
-version="2.6.8"
+version="2.6.8.1"
 displayName="Just another ruby mod!"
 updateJSONURL="https://raw.githubusercontent.com/NicosaurusRex99/Just-Another-Ruby-Mod/master/jarm_update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/jarm-just-another-ruby-mod/files"
