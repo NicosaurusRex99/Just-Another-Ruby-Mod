@@ -18,6 +18,12 @@ public class Meteorite extends FallingBlock {
     protected MapCodec<? extends FallingBlock> codec() {
         return CODEC;
     }
+
+    @Override
+    public int getDustColor(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+        return blockState.getMapColor(blockGetter, blockPos).col;
+    }
+
     protected static final VoxelShape SHAPE = Block.box(1D, 0.0D, 1D, 14D, 10D, 14D);
 
     @Override

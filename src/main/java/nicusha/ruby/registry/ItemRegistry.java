@@ -87,16 +87,16 @@ public class ItemRegistry {
 
     private static DeferredItem<Item> createSwordItem(String name, ToolMaterial material, boolean isFireProof) {
         if (isFireProof) {
-            return ITEMS.register(name, () -> new SwordItem(material, material.attackDamageBonus(), material.speed(), new Item.Properties().fireResistant().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+            return ITEMS.register(name, () -> new Item(new Item.Properties().fireResistant().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name))).sword(material, material.attackDamageBonus(), material.speed())));
         }
-        return ITEMS.register(name, ()-> new SwordItem(material, material.attackDamageBonus(), material.speed(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+        return ITEMS.register(name, ()-> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name))).sword(material, material.attackDamageBonus(), material.speed())));
     }
 
     private static DeferredItem<Item> createPickaxeItem(String name, ToolMaterial material, boolean isFireProof){
         if (isFireProof) {
-            return ITEMS.register(name, () -> new PickaxeItem(material, material.attackDamageBonus(), material.speed(), new Item.Properties().fireResistant().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+            return ITEMS.register(name, () -> new Item(new Item.Properties().pickaxe(material, material.attackDamageBonus(), material.speed()).fireResistant().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
         }
-        return ITEMS.register(name, () -> new PickaxeItem(material, material.attackDamageBonus(), material.speed(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+        return ITEMS.register(name, () -> new Item(new Item.Properties().pickaxe(material, material.attackDamageBonus(), material.speed()).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
     }
 
     private static DeferredItem<Item> createAxeItem(String name, ToolMaterial material, boolean isFireProof){
@@ -123,9 +123,9 @@ public class ItemRegistry {
 
     private static DeferredItem<Item> createArmorItem(String name, ArmorMaterial material, ArmorType armorType, boolean isFireProof, int durability){
         if (isFireProof) {
-            return ItemRegistry.ITEMS.register(name, () -> new ArmorItem(material, armorType, new Item.Properties().fireResistant().stacksTo(1).durability(durability).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+            return ItemRegistry.ITEMS.register(name, () -> new Item(new Item.Properties().humanoidArmor(material, armorType).fireResistant().stacksTo(1).durability(durability).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
         }
-        return ItemRegistry.ITEMS.register(name, () -> new ArmorItem(material, armorType, new Item.Properties().stacksTo(1).durability(durability).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
+        return ItemRegistry.ITEMS.register(name, () -> new Item(new Item.Properties().humanoidArmor(material, armorType).stacksTo(1).durability(durability).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name)))));
     }
 
 }
