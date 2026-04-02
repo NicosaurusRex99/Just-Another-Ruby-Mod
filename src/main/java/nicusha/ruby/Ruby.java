@@ -48,10 +48,10 @@ public class Ruby
     public void meteorFall(PlayerTickEvent.Post event){
         Player player = event.getEntity();
         Level world = player.level();
-        RandomSource random = world.random;
+        RandomSource random = world.getRandom();
         BlockPos pos = player.blockPosition().below();
         BlockState state = BlockRegistry.METEORITE_ORE.get().defaultBlockState();
-        if (random.nextInt(Config.METEOR_FREQUENCY * 100) == 0 && player.level().canSeeSky(pos) && !world.isClientSide && world.canSeeSky(player.blockPosition().above())) {
+        if (random.nextInt(Config.METEOR_FREQUENCY * 100) == 0 && player.level().canSeeSky(pos) && !world.isClientSide() && world.canSeeSky(player.blockPosition().above())) {
             world.setBlockAndUpdate(pos, state);
         }
     }

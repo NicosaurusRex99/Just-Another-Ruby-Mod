@@ -8,9 +8,13 @@
     ],
     "key": {
         "M": "#c:gems/amethyst",
+<<<<<<< Updated upstream:src/main/resources/data/ruby/recipe/shaped/amethyst_hoe.json
         "S": {
             "item": "minecraft:stick"
         }
+=======
+        "S": "minecraft:stick"
+>>>>>>> Stashed changes:src/main/resources/data/ruby/recipe/amethyst_hoe.json
     },
     "result": {
         "id": "ruby:amethyst_hoe"

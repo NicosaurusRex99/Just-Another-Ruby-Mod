@@ -1,6 +1,10 @@
 {
   "model": {
     "type": "minecraft:model",
+<<<<<<< Updated upstream
     "model": "ruby:block/amethyst"
+=======
+    "model": "ruby:item/amethyst"
+>>>>>>> Stashed changes
   }
 }

@@ -1,6 +1,10 @@
 {
   "model": {
     "type": "minecraft:model",
+<<<<<<< Updated upstream
     "model": "ruby:block/braunite_block"
+=======
+    "model": "ruby:item/braunite_block"
+>>>>>>> Stashed changes
   }
 }

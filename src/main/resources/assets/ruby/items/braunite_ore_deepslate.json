@@ -1,6 +1,10 @@
 {
   "model": {
     "type": "minecraft:model",
+<<<<<<< Updated upstream
     "model": "ruby:block/braunite_ore_deepslate"
+=======
+    "model": "ruby:item/braunite_ore_deepslate"
+>>>>>>> Stashed changes
   }
 }

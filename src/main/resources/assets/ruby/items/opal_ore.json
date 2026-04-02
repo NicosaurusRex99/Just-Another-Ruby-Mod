@@ -1,6 +1,10 @@
 {
   "model": {
     "type": "minecraft:model",
+<<<<<<< Updated upstream
     "model": "ruby:block/opal_ore"
+=======
+    "model": "ruby:item/opal_ore"
+>>>>>>> Stashed changes
   }
 }

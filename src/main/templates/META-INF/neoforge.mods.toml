@@ -1,0 +1,12 @@
+license="${mod_license}"
+issueTrackerURL="${mod_issue_tracker_url}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="${modupdateJSONURL}"
+displayURL="${moddisplayURL}"
+logoFile="ruby.png"
+credits="${mod_credit}"
+authors="${mod_authors}"
+description='''${mod_description}'''
