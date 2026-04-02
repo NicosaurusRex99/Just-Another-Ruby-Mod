@@ -59,8 +59,6 @@
     "item.ruby.ruby_leggings": "Ruby Leggings",
     "item.ruby.ruby_boots": "Ruby Boots",
 
-<<<<<<< Updated upstream
-=======
     "item.ruby.ruby_ore": "Ruby Ore",
     "item.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
     "item.ruby.meteorite_ore": "Meteorite",
@@ -72,8 +70,7 @@
     "item.ruby.ruby_block": "Block of Ruby",
     "item.ruby.opal_block": "Block of Opal",
     "item.ruby.braunite_block": "Block of Braunite",
-	
->>>>>>> Stashed changes
+
     "block.ruby.ruby_ore": "Ruby Ore",
     "block.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
     "block.ruby.meteorite_ore": "Meteorite",
@@ -86,20 +83,6 @@
     "block.ruby.opal_block": "Block of Opal",
     "block.ruby.braunite_block": "Block of Braunite",
 
-<<<<<<< Updated upstream
-    "item.ruby.ruby_ore": "Ruby Ore",
-    "item.ruby.ruby_ore_deepslate": "Deepslate Ruby Ore",
-    "item.ruby.meteorite_ore": "Meteorite",
-    "item.ruby.opal_ore": "Opal Ore",
-    "item.ruby.opal_ore_deepslate": "Deepslate Opal Ore",
-    "item.ruby.braunite_ore": "Braunite Ore",
-    "item.ruby.braunite_ore_deepslate": "Braunite Ore Deepslate",
-    "item.ruby.amethyst": "Amethyst",
-    "item.ruby.ruby_block": "Block of Ruby",
-    "item.ruby.opal_block": "Block of Opal",
-    "item.ruby.braunite_block": "Block of Braunite",
-=======
->>>>>>> Stashed changes
 		
     "_comment": "Creative Tabs",
     "itemGroup.ruby": "Just Another Ruby Mod"

@@ -1,10 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-<<<<<<< Updated upstream
     "model": "ruby:block/ruby_ore_deepslate"
-=======
-    "model": "ruby:item/ruby_ore_deepslate"
->>>>>>> Stashed changes
   }
 }

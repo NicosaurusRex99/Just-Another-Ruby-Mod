@@ -1,13 +1,7 @@
 {
 	"type": "minecraft:crafting_shapeless",
 	"group": "opal_gem",
-<<<<<<< Updated upstream:src/main/resources/data/ruby/recipe/shapeless/opal_block_gem.json
-	"ingredients": [
-		"#c:storage_blocks/opal"
-	],
-=======
 	"ingredients": ["#c:storage_blocks/opal"],
->>>>>>> Stashed changes:src/main/resources/data/ruby/recipe/opal_block_gem.json
 	"result": {
 		"id": "ruby:opal_gem",
 		"count": 9

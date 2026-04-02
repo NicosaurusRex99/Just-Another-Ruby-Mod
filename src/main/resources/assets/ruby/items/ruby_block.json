@@ -1,10 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-<<<<<<< Updated upstream
     "model": "ruby:block/ruby_block"
-=======
-    "model": "ruby:item/ruby_block"
->>>>>>> Stashed changes
   }
 }

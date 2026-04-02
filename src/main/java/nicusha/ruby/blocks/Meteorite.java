@@ -21,11 +21,7 @@ public class Meteorite extends FallingBlock {
 
     @Override
     public int getDustColor(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
-<<<<<<< Updated upstream
         return blockState.getMapColor(blockGetter, blockPos).col;
-=======
-        return 993300;
->>>>>>> Stashed changes
     }
 
     protected static final VoxelShape SHAPE = Block.box(1D, 0.0D, 1D, 14D, 10D, 14D);

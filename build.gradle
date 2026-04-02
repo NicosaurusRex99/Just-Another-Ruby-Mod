@@ -1,12 +1,8 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-<<<<<<< Updated upstream
-    id 'net.neoforged.moddev' version '1.0.23'
-=======
     id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
->>>>>>> Stashed changes
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -23,15 +19,11 @@ sourceSets.main.resources {
 }
 
 repositories {
-<<<<<<< Updated upstream
     mavenLocal()
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.blamejared.com/" }
     maven { url "https://modmaven.dev" }
     maven { url "<https://maven.architectury.dev/>" }
-=======
-
->>>>>>> Stashed changes
 }
 
 base {
@@ -42,7 +34,6 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 neoForge {
     version = project.neo_version
-<<<<<<< Updated upstream
 
     parchment {
         mappingsVersion = project.parchment_mappings_version
@@ -51,9 +42,6 @@ neoForge {
 
     // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
 
-=======
-    // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
->>>>>>> Stashed changes
     runs {
         client {
             client()
@@ -71,35 +59,29 @@ neoForge {
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
-<<<<<<< Updated upstream
-        clientData  {
-            clientData ()
-=======
-        data {
-            clientData()
->>>>>>> Stashed changes
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        clientData {
+                clientData()
+                programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+            }
+
+            configureEach {
+                systemProperty 'forge.logging.markers', 'REGISTRIES'
+                logLevel = org.slf4j.event.Level.DEBUG
+            }
         }
 
-        configureEach {
-            systemProperty 'forge.logging.markers', 'REGISTRIES'
-            logLevel = org.slf4j.event.Level.DEBUG
-        }
-    }
-
-    mods {
-        "${mod_id}" {
-            sourceSet(sourceSets.main)
+        mods {
+            "${mod_id}" {
+                sourceSet(sourceSets.main)
+            }
         }
     }
-}
 
-configurations {
-    runtimeClasspath.extendsFrom localRuntime
-}
+    configurations {
+        runtimeClasspath.extendsFrom localRuntime
+    }
 
-dependencies {
-<<<<<<< Updated upstream
+    dependencies {
 //    compileOnly("mezz.jei:jei-1.21.1-common-api:${jei_version}")
 //    compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${jei_version}")
 //    runtimeOnly("mezz.jei:jei-1.21.1-neoforge:${jei_version}")
@@ -107,58 +89,56 @@ dependencies {
 //    runtimeOnly("me.shedaniel.cloth:cloth-config-neoforge:$cloth_version")
 //    runtimeOnly("me.shedaniel:RoughlyEnoughItems-api-neoforge:$rei_version")
 //    runtimeOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-neoforge:$rei_version")
-=======
->>>>>>> Stashed changes
 
-}
+    }
 
-var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
-    var replaceProperties = [
-            minecraft_version      : minecraft_version,
-            minecraft_version_range: minecraft_version_range,
-            neo_version            : neo_version,
-            neo_version_range      : neo_version_range,
-            loader_version_range   : loader_version_range,
-            mod_id                 : mod_id,
-            mod_name               : mod_name,
-            mod_license            : mod_license,
-            mod_version            : mod_version,
-            mod_authors            : mod_authors,
-            mod_description        : mod_description,
-            mod_issue_tracker_url  : mod_issue_tracker_url,
-            mod_credit             : mod_credit,
-            modupdateJSONURL       : mod_updateJSONURL,
-            moddisplayURL          : moddisplayURL
-    ]
-    inputs.properties replaceProperties
-    expand replaceProperties
-    from "src/main/templates"
-    into "build/generated/sources/modMetadata"
-}
+    var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+        var replaceProperties = [
+                minecraft_version      : minecraft_version,
+                minecraft_version_range: minecraft_version_range,
+                neo_version            : neo_version,
+                neo_version_range      : neo_version_range,
+                loader_version_range   : loader_version_range,
+                mod_id                 : mod_id,
+                mod_name               : mod_name,
+                mod_license            : mod_license,
+                mod_version            : mod_version,
+                mod_authors            : mod_authors,
+                mod_description        : mod_description,
+                mod_issue_tracker_url  : mod_issue_tracker_url,
+                mod_credit             : mod_credit,
+                modupdateJSONURL       : mod_updateJSONURL,
+                moddisplayURL          : moddisplayURL
+        ]
+        inputs.properties replaceProperties
+        expand replaceProperties
+        from "src/main/templates"
+        into "build/generated/sources/modMetadata"
+    }
 
-sourceSets.main.resources.srcDir generateModMetadata
-neoForge.ideSyncTask generateModMetadata
+    sourceSets.main.resources.srcDir generateModMetadata
+    neoForge.ideSyncTask generateModMetadata
 
-publishing {
-    publications {
-        register('mavenJava', MavenPublication) {
-            from components.java
+    publishing {
+        publications {
+            register('mavenJava', MavenPublication) {
+                from components.java
+            }
+        }
+        repositories {
+            maven {
+                url "file://${project.projectDir}/repo"
+            }
         }
     }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+    }
+
+    idea {
+        module {
+            downloadSources = true
+            downloadJavadoc = true
         }
     }
-}
-
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
-}
-
-idea {
-    module {
-        downloadSources = true
-        downloadJavadoc = true
-    }
-}

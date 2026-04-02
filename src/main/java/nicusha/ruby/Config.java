@@ -11,11 +11,8 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class Config
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
-
     private static final ModConfigSpec.IntValue METEOR_COUNT = BUILDER.comment("meteor frequency").defineInRange("meteorFrequency", 100000, 0, Integer.MAX_VALUE);
-
     static final ModConfigSpec SPEC = BUILDER.build();
-
     public static int METEOR_FREQUENCY;
 
     private static boolean validateItemName(final Object obj)
