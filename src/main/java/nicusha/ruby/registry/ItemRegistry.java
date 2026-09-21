@@ -97,15 +97,15 @@ public class ItemRegistry {
     }
 
     private static DeferredItem<Item> axe(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new AxeItem(material, 5.0F, -3.0F, new Item.Properties().setId(key(id)).stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).stacksTo(1).axe(material, 5.0F, -3.0F)));
     }
 
     private static DeferredItem<Item> shovel(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new ShovelItem(material, 1.5F, -3.0F, new Item.Properties().setId(key(id)).stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).stacksTo(1).shovel(material, 1.5F, -3.0F)));
     }
 
     private static DeferredItem<Item> hoe(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new HoeItem(material, -1.0F, -2.0F, new Item.Properties().setId(key(id)).stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).stacksTo(1).hoe(material, -1.0F, -2.0F)));
     }
 
     private static DeferredItem<Item> fireSword(String id, ToolMaterial material) {
@@ -117,15 +117,15 @@ public class ItemRegistry {
     }
 
     private static DeferredItem<Item> fireAxe(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new AxeItem(material, 5.0F, -3.0F, new Item.Properties().setId(key(id)).fireResistant().stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).fireResistant().stacksTo(1).axe(material, 5.0F, -3.0F)));
     }
 
     private static DeferredItem<Item> fireShovel(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new ShovelItem(material, 1.5F, -3.0F, new Item.Properties().setId(key(id)).fireResistant().stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).fireResistant().stacksTo(1).shovel(material, 1.5F, -3.0F)));
     }
 
     private static DeferredItem<Item> fireHoe(String id, ToolMaterial material) {
-        return ITEMS.register(id, () -> new HoeItem(material, -1.0F, -2.0F, new Item.Properties().setId(key(id)).fireResistant().stacksTo(1)));
+        return ITEMS.register(id, () -> new Item(new Item.Properties().setId(key(id)).fireResistant().stacksTo(1).hoe(material, -1.0F, -2.0F)));
     }
 
     private static DeferredItem<Item> armor(String id, net.minecraft.world.item.equipment.ArmorMaterial material, ArmorType type) {

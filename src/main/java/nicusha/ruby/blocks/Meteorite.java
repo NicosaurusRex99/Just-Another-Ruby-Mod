@@ -1,6 +1,5 @@
 package nicusha.ruby.blocks;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -12,11 +11,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Meteorite extends FallingBlock {
     public Meteorite(Properties properties) {
         super(properties);
-    }
-    public static final MapCodec<Meteorite> CODEC = simpleCodec(Meteorite::new);
-    @Override
-    protected MapCodec<? extends FallingBlock> codec() {
-        return CODEC;
     }
 
     @Override
