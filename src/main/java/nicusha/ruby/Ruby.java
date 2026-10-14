@@ -36,7 +36,7 @@ public class Ruby
         NeoForge.EVENT_BUS.register(this);
         bus.addListener(this::addCreative);
         bus.addListener(this::commonSetup);
-        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC, MODID + ".toml");
+        container.registerConfig(ModConfig.Type.LOCAL, Config.SPEC, MODID + ".toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -57,7 +57,7 @@ public class Ruby
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-    if (event.getTabKey() == CreativeTabRegistry.TAB.getKey())
+    if (event.getTabKey() == CreativeTabRegistry.TAB.key())
         for (var regObj : ItemRegistry.ITEMS.getEntries()) {
             event.accept(regObj.get());
 
